@@ -1,0 +1,60 @@
+{
+  "id": "commentary-jingui-chenxiuyuan",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "jingui"
+  ],
+  "author": "陈修园",
+  "title": "《金匮要略浅注》",
+  "relationship": [
+    "direct_commentary",
+    "clinical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "金匱要略淺注",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+  "edition_label": "《金匮要略浅注》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "金匱要略淺注/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "金匱要略淺注",
+      "title": "金匱要略淺注",
+      "page_id": 761006,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+      "revision_id": 2187301,
+      "revision_timestamp": "2022-10-17T23:53:45Z",
+      "source_sha1": "0f0a9dd04861a2aeeb8bd8fb9b188692fa649e51",
+      "source_size": 390757,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:校訂不足的頁面",
+        "Category:漢朝",
+        "Category:陈修园"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-chenxiuyuan/0000.wikitext",
+      "raw_sha256": "fded191ffbfabca615b8b483da1be82acffbfb80c260473f835ca85e8e3edfde"
+    }
+  ],
+  "aggregate_raw_sha256": "9fc6e477bd9705628dababdb7a7ef90864554c4e8ee432f0e4b63ac7809d24bc"
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "commentary-nanjing-huashou",
+  "passage_count": 83,
+  "citable_passage_count": 83,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 14646,
+    "citable_characters": 14646,
+    "citable_passages": 83,
+    "passages": 83,
+    "speaker_type:commentary": 83,
+    "split_blocks": 2
+  },
+  "source_aggregate_sha256": "ff9656ceb1723c9cbb244f178c847e2f1254a1589f31ec7dee44da937ab41967",
+  "traditional_aggregate_sha256": "83e0bde8d1a1d43c48e9f8c8ec5cf8ca3dcea38a9ba79ee35a2d2664e98f6939",
+  "simplified_aggregate_sha256": "f37fa26d8fe272c1edf486ad456a1a76192d53b92ba0439456be08dd16c3b6b5",
+  "search_aggregate_sha256": "fbc0c16e082a34a2bef511289e46c2bdf982bc8eb030b597ae0a638a0b9bd5e4",
+  "citable_traditional_sha256": "83e0bde8d1a1d43c48e9f8c8ec5cf8ca3dcea38a9ba79ee35a2d2664e98f6939",
+  "citable_simplified_sha256": "f37fa26d8fe272c1edf486ad456a1a76192d53b92ba0439456be08dd16c3b6b5",
+  "citable_search_sha256": "fbc0c16e082a34a2bef511289e46c2bdf982bc8eb030b597ae0a638a0b9bd5e4",
+  "processed_path": "sources/processed/commentary-nanjing-huashou/passages.jsonl",
+  "max_simplified_characters": 691
+}

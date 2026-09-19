@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "https_required": true,
+    "search_snippet_citable": false,
+    "full_page_review_required_for_cache": true,
+    "commercial_marketing_citable": false,
+    "unknown_domain_cache_status": "reject",
+    "negative_and_inconsistent_evidence_required": true
+  },
+  "sources": [
+    {
+      "id": "who",
+      "organization": "World Health Organization",
+      "source_type": "official-health-agency",
+      "priority": 1,
+      "domains": ["who.int"],
+      "allowed_uses": ["public-health-guidance", "safety", "definitions", "evidence-summary"],
+      "notes_zh": "优先用于国际公共卫生、疾病定义和安全建议。"
+    },
+    {
+      "id": "china-nhc",
+      "organization": "中华人民共和国国家卫生健康委员会",
+      "source_type": "official-health-agency",
+      "priority": 1,
+      "domains": ["nhc.gov.cn"],
+      "allowed_uses": ["public-health-guidance", "clinical-guidance", "safety"],
+      "notes_zh": "优先用于中国境内卫生政策和官方健康信息。"
+    },
+    {
+      "id": "china-nmpa",
+      "organization": "国家药品监督管理局",
+      "source_type": "regulator",
+      "priority": 1,
+      "domains": ["nmpa.gov.cn"],
+      "allowed_uses": ["drug-safety", "regulatory-status", "recall", "label"],
+      "notes_zh": "药品安全、说明书、警戒和监管状态优先来源。"
+    },
+    {
+      "id": "cdc-us",
+      "organization": "U.S. Centers for Disease Control and Prevention",
+      "source_type": "official-health-agency",
+      "priority": 1,
+      "domains": ["cdc.gov"],
+      "allowed_uses": ["public-health-guidance", "emergency-signs", "definitions", "prevention"],
+      "notes_zh": "用于公共卫生、症状警示和急症识别；急救号码须本地化。"
+    },
+    {
+      "id": "nccih",
+      "organization": "U.S. National Center for Complementary and Integrative Health",
+      "source_type": "official-health-agency",
+      "priority": 1,
+      "domains": ["nccih.nih.gov"],
+      "allowed_uses": ["complementary-medicine", "evidence-summary", "safety"],
+      "notes_zh": "用于针灸、中药及其他补充医学方法的证据和安全概述。"
+    },
+    {
+      "id": "nhs",
+      "organization": "National Health Service (UK)",
+      "source_type": "official-health-agency",
+      "priority": 1,
+      "domains": ["nhs.uk"],
+      "allowed_uses": ["patient-guidance", "emergency-signs", "medicine-safety"],
+      "notes_zh": "患者信息和急症识别来源；999等号码不得照搬给非英国用户。"
+    },
+    {
+      "id": "nice",
+      "organization": "National Institute for Health and Care Excellence",
+      "source_type": "guideline-body",
+      "priority": 2,
+      "domains": ["nice.org.uk"],
+      "allowed_uses": ["clinical-guideline", "evidence-review", "safety"],
+      "notes_zh": "优先使用当前有效的指南及证据综述。"
+    },
+    {
+      "id": "fda-us",
+      "organization": "U.S. Food and Drug Administration",
+      "source_type": "regulator",
+      "priority": 1,
+      "domains": ["fda.gov"],
+      "allowed_uses": ["drug-safety", "regulatory-status", "recall", "label"],
+      "notes_zh": "用于药品和补充剂安全；监管结论须说明适用司法辖区。"
+    },
+    {
+      "id": "ema",
+      "organization": "European Medicines Agency",
+      "source_type": "regulator",
+      "priority": 1,
+      "domains": ["ema.europa.eu"],
+      "allowed_uses": ["drug-safety", "regulatory-status", "label"],
+      "notes_zh": "用于欧洲药品监管资料；须说明地域适用性。"
+    },
+    {
+      "id": "cochrane",
+      "organization": "Cochrane",
+      "source_type": "systematic-review-platform",
+      "priority": 3,
+      "domains": ["cochranelibrary.com", "cochrane.org"],
+      "allowed_uses": ["systematic-review", "meta-analysis", "plain-language-summary"],
+      "notes_zh": "优先呈现综述的确定性、异质性、阴性和不一致结果。"
+    },
+    {
+      "id": "pubmed",
+      "organization": "U.S. National Library of Medicine",
+      "source_type": "bibliographic-database",
+      "priority": 4,
+      "domains": ["pubmed.ncbi.nlm.nih.gov", "ncbi.nlm.nih.gov"],
+      "allowed_uses": ["bibliographic-verification", "abstract-discovery"],
+      "notes_zh": "用于核验 PMID 和发现研究；数据库收录或摘要本身不等于疗效结论。"
+    }
+  ]
+}

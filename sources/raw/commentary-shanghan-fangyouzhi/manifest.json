@@ -1,0 +1,59 @@
+{
+  "id": "commentary-shanghan-fangyouzhi",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "方有执",
+  "title": "《伤寒论条辨》",
+  "relationship": [
+    "direct_commentary",
+    "reordering",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "傷寒論條辨",
+  "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+  "edition_label": "《伤寒论条辨》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "傷寒論條辨/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "傷寒論條辨",
+      "title": "傷寒論條辨",
+      "page_id": 760980,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+      "revision_id": 1315972,
+      "revision_timestamp": "2017-10-14T10:08:52Z",
+      "source_sha1": "488f3587a5560461201af3a90d824ac858896ce4",
+      "source_size": 445372,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:校訂不足的頁面"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-fangyouzhi/0000.wikitext",
+      "raw_sha256": "c0bd094468f15d58e1b8b7ef5c63f6d6987b9e4419f69a5bdf4e44a1ccdce411"
+    }
+  ],
+  "aggregate_raw_sha256": "9bbb62811ece9562a021b2f98ae01dde48a40fa56dedbb9a777163b549892cec"
+}

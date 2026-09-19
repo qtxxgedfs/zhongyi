@@ -1,0 +1,26 @@
+{
+  "source_id": "commentary-shanghan-youyi",
+  "passage_count": 179,
+  "citable_passage_count": 177,
+  "quarantined_passage_count": 2,
+  "statistics": {
+    "characters_simplified": 85744,
+    "citable_characters": 84700,
+    "citable_passages": 177,
+    "passages": 179,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 10,
+    "quarantined_characters": 1044,
+    "quarantined_passages": 2,
+    "speaker_type:commentary": 179,
+    "split_blocks": 46
+  },
+  "source_aggregate_sha256": "60b50435c84b4d018d9d039a73f365c5f5bcdb206e68e3054bc5b2698b7a6cba",
+  "traditional_aggregate_sha256": "83a52718a051d89b2a6ca144231ab5faae16d1248d938f9c2b962a1c85f50cb7",
+  "simplified_aggregate_sha256": "60b50435c84b4d018d9d039a73f365c5f5bcdb206e68e3054bc5b2698b7a6cba",
+  "search_aggregate_sha256": "44ba8d1aebe48a7f39e3147d894041394666ffb2e6ac70db148434ce48b3a8e8",
+  "citable_traditional_sha256": "6765641c1b6efa296831d07c289cb1bb446a0144af2868b8a8a814908a3738db",
+  "citable_simplified_sha256": "2db5750eff48db2c200026c5f655cd73cd00c3cdcbbf8247ef1bacb6c6a78cf4",
+  "citable_search_sha256": "0083e484bcb9fdbef245ec54524e8e6002ce0b4791743cdaf482cc0374c2d28e",
+  "processed_path": "sources/processed/commentary-shanghan-youyi/passages.jsonl",
+  "max_simplified_characters": 700
+}

@@ -1,0 +1,520 @@
+{
+  "id": "commentary-jingui-xubin",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "jingui"
+  ],
+  "author": "徐彬",
+  "title": "《金匮要略论注》",
+  "relationship": [
+    "direct_commentary",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "金匱要畧論註 (四庫全書本)",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+  "edition_label": "《金匮要略论注》四库全书本24卷",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "金匱要畧論註 (四庫全書本)/",
+  "enumerated_subpage_count": 25,
+  "included_subpage_count": 24,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [
+    "金匱要畧論註 (四庫全書本)/全覽"
+  ],
+  "expected_structure": {
+    "kind": "volume",
+    "expected_count": 24,
+    "minimum_accepted": 24
+  },
+  "pages": [
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)",
+      "title": "金匱要畧論註 (四庫全書本)",
+      "page_id": 265138,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+      "revision_id": 640157,
+      "revision_timestamp": "2016-10-14T06:04:26Z",
+      "source_sha1": "e731c418ebb98a6073da500daba2a87b47b7a9a2",
+      "source_size": 3269,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:1781年 (提及)",
+        "Category:PD-old"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0000.wikitext",
+      "raw_sha256": "2fe186226b0c52a1ed99bfce7e085ad41d39624b3853b3e59890ed11b696ccfc"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷01",
+      "title": "金匱要畧論註 (四庫全書本)/卷01",
+      "page_id": 265113,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B701",
+      "revision_id": 793865,
+      "revision_timestamp": "2016-10-28T05:39:59Z",
+      "source_sha1": "e159f01b150198787fd1e375541c4a56497cec31",
+      "source_size": 27635,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0001.wikitext",
+      "raw_sha256": "32ebb8a0594e4419517761755eeaa4748d249de3b4981c62fd3ab628677cfe1e"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷02",
+      "title": "金匱要畧論註 (四庫全書本)/卷02",
+      "page_id": 265114,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B702",
+      "revision_id": 793867,
+      "revision_timestamp": "2016-10-28T05:40:19Z",
+      "source_sha1": "64aa863474aa4b775acf20d8b0404bb02185c585",
+      "source_size": 22172,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0002.wikitext",
+      "raw_sha256": "7420a5469ec91becb33aa9364541198106d08bff6a932231c18ef8767f047f1c"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷03",
+      "title": "金匱要畧論註 (四庫全書本)/卷03",
+      "page_id": 265115,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B703",
+      "revision_id": 793869,
+      "revision_timestamp": "2016-10-28T05:40:39Z",
+      "source_sha1": "514c13cfb45c85af8d1f94c8dfeba2471de56eaa",
+      "source_size": 13585,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0003.wikitext",
+      "raw_sha256": "b8288533a545767e9e24d35fe52a2b7216f798804192294134d11b9839e34222"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷04",
+      "title": "金匱要畧論註 (四庫全書本)/卷04",
+      "page_id": 265116,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+      "revision_id": 793871,
+      "revision_timestamp": "2016-10-28T05:40:59Z",
+      "source_sha1": "e838b610fa45a4871744f9575cabfbd2f57249df",
+      "source_size": 12447,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0004.wikitext",
+      "raw_sha256": "7cf9eecf0f22d700f790084694406155372f9dfc77ee5f4f9f726ce223ea3b54"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷05",
+      "title": "金匱要畧論註 (四庫全書本)/卷05",
+      "page_id": 265117,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+      "revision_id": 793873,
+      "revision_timestamp": "2016-10-28T05:41:19Z",
+      "source_sha1": "3f93c3efb8b7c7a6089af2247f40f11f81928147",
+      "source_size": 18770,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0005.wikitext",
+      "raw_sha256": "c1ef48147166b04e4c8a40d0cb394202d271e2613503d0a0d9cfb656b7e8c5a2"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷06",
+      "title": "金匱要畧論註 (四庫全書本)/卷06",
+      "page_id": 265118,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B706",
+      "revision_id": 793875,
+      "revision_timestamp": "2016-10-28T05:41:39Z",
+      "source_sha1": "078deebc93236c752c27e3e7ec1b5cb7e1e320a0",
+      "source_size": 15548,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0006.wikitext",
+      "raw_sha256": "2fc3706f96d7110ba4ff45d330d2564b9c85384f6273f1d75be5598e4a063faf"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷07",
+      "title": "金匱要畧論註 (四庫全書本)/卷07",
+      "page_id": 265119,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B707",
+      "revision_id": 793877,
+      "revision_timestamp": "2016-10-28T05:41:59Z",
+      "source_sha1": "e792826ec87ad4d468b17c4c3024ea2b48c4dced",
+      "source_size": 14613,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0007.wikitext",
+      "raw_sha256": "6bbf386ec522ca92163ec91b20d0a0c1557743f388662ed47459e702bda14b2a"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷08",
+      "title": "金匱要畧論註 (四庫全書本)/卷08",
+      "page_id": 265120,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B708",
+      "revision_id": 793879,
+      "revision_timestamp": "2016-10-28T05:42:19Z",
+      "source_sha1": "583cd3cee8b270d6e0447e99e92f5481ab85b60c",
+      "source_size": 5902,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0008.wikitext",
+      "raw_sha256": "db34343ce625d5bb7b0d01734535bfe382861cb3697b9e2e8c269af30448819e"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷09",
+      "title": "金匱要畧論註 (四庫全書本)/卷09",
+      "page_id": 265121,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B709",
+      "revision_id": 793881,
+      "revision_timestamp": "2016-10-28T05:42:39Z",
+      "source_sha1": "abf7c7bed25fbef68d67d2a662b05140550189bb",
+      "source_size": 8407,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0009.wikitext",
+      "raw_sha256": "3a2fbcbf1ca69c354b69a3c8092fba654c7db4264f1a00eb7aa10e77ff86ea3c"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷10",
+      "title": "金匱要畧論註 (四庫全書本)/卷10",
+      "page_id": 265122,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B710",
+      "revision_id": 793883,
+      "revision_timestamp": "2016-10-28T05:42:59Z",
+      "source_sha1": "05840d2fd7cc918f85ba851412a54d7dbdfce6f9",
+      "source_size": 14310,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0010.wikitext",
+      "raw_sha256": "74a968c2b99d2a9bd4b1d326b8becd3a63e52c8cc6abb54a678c4cde5cf73a7c"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷11",
+      "title": "金匱要畧論註 (四庫全書本)/卷11",
+      "page_id": 265123,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B711",
+      "revision_id": 793885,
+      "revision_timestamp": "2016-10-28T05:43:19Z",
+      "source_sha1": "ef466b53f963945e3ce243d4fda0e0d67653c2e1",
+      "source_size": 18641,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0011.wikitext",
+      "raw_sha256": "b00f8493f17a9955a62de474938fbddb53fe924acc17235effabaff03e72fe04"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷12",
+      "title": "金匱要畧論註 (四庫全書本)/卷12",
+      "page_id": 265124,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B712",
+      "revision_id": 793887,
+      "revision_timestamp": "2016-10-28T05:43:39Z",
+      "source_sha1": "479e844ab2f01ed87fb6b035874aa45ecba7f404",
+      "source_size": 32107,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0012.wikitext",
+      "raw_sha256": "1010436292e4e4341a3513f768442a168e47f75d1bc2b479cdc6b10441de5839"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷13",
+      "title": "金匱要畧論註 (四庫全書本)/卷13",
+      "page_id": 265125,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B713",
+      "revision_id": 793889,
+      "revision_timestamp": "2016-10-28T05:43:59Z",
+      "source_sha1": "f9395c4708b3656e875556baa1fc4389768eb1f5",
+      "source_size": 8325,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0013.wikitext",
+      "raw_sha256": "ce93d83a571c0773c100a31b801f0f5ad59d8366a18dfd50396a9a0797079eb4"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷14",
+      "title": "金匱要畧論註 (四庫全書本)/卷14",
+      "page_id": 265126,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B714",
+      "revision_id": 793891,
+      "revision_timestamp": "2016-10-28T05:44:19Z",
+      "source_sha1": "5a765f8a42561e53b7717336f79f1d88e7dfd3ca",
+      "source_size": 30293,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0014.wikitext",
+      "raw_sha256": "f2440316e32992268192abcfe56563c88ef6a121c16923396232edf620e3a269"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷15",
+      "title": "金匱要畧論註 (四庫全書本)/卷15",
+      "page_id": 265127,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B715",
+      "revision_id": 793893,
+      "revision_timestamp": "2016-10-28T05:44:39Z",
+      "source_sha1": "1e83d37355a84619859a827d468d32f5b2419fa3",
+      "source_size": 17707,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0015.wikitext",
+      "raw_sha256": "fa649ce284f0cef2aec95fa47ad9159e99711c21142fb922cda9b87727dc0936"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷16",
+      "title": "金匱要畧論註 (四庫全書本)/卷16",
+      "page_id": 265128,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B716",
+      "revision_id": 793895,
+      "revision_timestamp": "2016-10-28T05:44:59Z",
+      "source_sha1": "a1019c6d2ee0a1370afc52000948eb217b1ef290",
+      "source_size": 11143,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0016.wikitext",
+      "raw_sha256": "c7984b9088d243bd04361409f62d527496fa69c1f75198e74dcad05fe9010d02"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷17",
+      "title": "金匱要畧論註 (四庫全書本)/卷17",
+      "page_id": 265129,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B717",
+      "revision_id": 793897,
+      "revision_timestamp": "2016-10-28T05:45:19Z",
+      "source_sha1": "ce452e61309ab79250c46cba26070b814131d5c6",
+      "source_size": 26682,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0017.wikitext",
+      "raw_sha256": "ea1c2f313f87913dec3f1bbe64f03725c3b85d8224e331702d82962df388c2cc"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷18",
+      "title": "金匱要畧論註 (四庫全書本)/卷18",
+      "page_id": 265130,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B718",
+      "revision_id": 793899,
+      "revision_timestamp": "2016-10-28T05:45:39Z",
+      "source_sha1": "466c5dcab83df322272a7ce57a10b024c60506de",
+      "source_size": 6926,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0018.wikitext",
+      "raw_sha256": "951caa45b1b263d5b3668fc43c348ae3d4fca6e9e4453ffe4c65b066ba17b97e"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷19",
+      "title": "金匱要畧論註 (四庫全書本)/卷19",
+      "page_id": 265131,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B719",
+      "revision_id": 793901,
+      "revision_timestamp": "2016-10-28T05:45:59Z",
+      "source_sha1": "5435caed22f483370e74f9eb52a11c0ef3312e71",
+      "source_size": 5312,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0019.wikitext",
+      "raw_sha256": "f85413cc2420765858ecb5f9910ebd87ab2c6b0632f288295b36ca8453a6265a"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷20",
+      "title": "金匱要畧論註 (四庫全書本)/卷20",
+      "page_id": 265132,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B720",
+      "revision_id": 793903,
+      "revision_timestamp": "2016-10-28T05:46:19Z",
+      "source_sha1": "71a1ab423c8e18d6ac70d2eb0c41d02e6e16e643",
+      "source_size": 11966,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0020.wikitext",
+      "raw_sha256": "0412028275f0d316bf01c463ddda7447f26823dc20b1425307e1ebd7b6a4ea9b"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷21",
+      "title": "金匱要畧論註 (四庫全書本)/卷21",
+      "page_id": 265133,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B721",
+      "revision_id": 793905,
+      "revision_timestamp": "2016-10-28T05:46:39Z",
+      "source_sha1": "5b60f7f9c102fdf77b7f30c41ede39353e73083d",
+      "source_size": 13587,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0021.wikitext",
+      "raw_sha256": "8301db9e205663bc5633f13720ae12778358f1988b50465d6e88f54b21fe3501"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷22",
+      "title": "金匱要畧論註 (四庫全書本)/卷22",
+      "page_id": 265134,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B722",
+      "revision_id": 793907,
+      "revision_timestamp": "2016-10-28T05:46:59Z",
+      "source_sha1": "6bdc369b74aac5765e8e11cf646ffefcbf15b6e5",
+      "source_size": 11775,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0022.wikitext",
+      "raw_sha256": "bbf4d3edbed403ed3d8486366d3cb0ab7c6afddab805a99471ea5b991cb7bc0c"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷23",
+      "title": "金匱要畧論註 (四庫全書本)/卷23",
+      "page_id": 265135,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B723",
+      "revision_id": 793909,
+      "revision_timestamp": "2016-10-28T05:47:19Z",
+      "source_sha1": "966060c89e8c2c8bede32ba9694b0bb7be82be36",
+      "source_size": 6073,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0023.wikitext",
+      "raw_sha256": "5a359b903a531831bdb9642d0353026a081aaf2645c9214f2c0a266022be2ed9"
+    },
+    {
+      "requested_title": "金匱要畧論註 (四庫全書本)/卷24",
+      "title": "金匱要畧論註 (四庫全書本)/卷24",
+      "page_id": 265136,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B724",
+      "revision_id": 793911,
+      "revision_timestamp": "2016-10-28T05:47:39Z",
+      "source_sha1": "8bd20eb54cab828285e88f1e4aa45f53f3888da7",
+      "source_size": 14803,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-xubin/0024.wikitext",
+      "raw_sha256": "40e03fd3fe1410d0dad6a2496736a83560f3a7a70eb81c5b07484b76d77ec7f2"
+    }
+  ],
+  "aggregate_raw_sha256": "1b4b8b0986b916a9cf9c0d2f50b237d6c435842133799fc55d7281ad9bd846db"
+}

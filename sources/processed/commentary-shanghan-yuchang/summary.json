@@ -1,0 +1,23 @@
+{
+  "source_id": "commentary-shanghan-yuchang",
+  "passage_count": 1341,
+  "citable_passage_count": 1341,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 79530,
+    "citable_characters": 79530,
+    "citable_passages": 1341,
+    "passages": 1341,
+    "speaker_type:commentary": 1341,
+    "split_blocks": 5
+  },
+  "source_aggregate_sha256": "c2394b2da5fe1c2c9c7e3b37ea99554b131be59be188784c8e918582b8cab9ce",
+  "traditional_aggregate_sha256": "8d1e7301bc5d5f4b978648eca6a45318efcd5def00a19c5b8047b3f80c56f966",
+  "simplified_aggregate_sha256": "bcf0e587df8b14d21f6591e9c46b4b8ecac8cdf342978e884c0cc403db3e2476",
+  "search_aggregate_sha256": "521fb32e84fa32e8b5d7700162d48413179d0b6c37502390360f012ddbe48b7f",
+  "citable_traditional_sha256": "8d1e7301bc5d5f4b978648eca6a45318efcd5def00a19c5b8047b3f80c56f966",
+  "citable_simplified_sha256": "bcf0e587df8b14d21f6591e9c46b4b8ecac8cdf342978e884c0cc403db3e2476",
+  "citable_search_sha256": "521fb32e84fa32e8b5d7700162d48413179d0b6c37502390360f012ddbe48b7f",
+  "processed_path": "sources/processed/commentary-shanghan-yuchang/passages.jsonl",
+  "max_simplified_characters": 700
+}

@@ -1,0 +1,531 @@
+{
+  "id": "core-suwen",
+  "layer": "core",
+  "canon": "huangdi",
+  "target_works": [
+    "suwen"
+  ],
+  "author": "传统题作黄帝、岐伯等",
+  "title": "《素问》",
+  "relationship": [
+    "core"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "黃帝內經",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+  "edition_label": "《黄帝内经》Wikisource工作底本·素问24卷",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "根页曾标记25%；逐卷固定修订并检查81篇，保留缺篇第七十二、七十三的历史状态说明。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "黃帝內經/素問",
+  "enumerated_subpage_count": 24,
+  "included_subpage_count": 24,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "chapter",
+    "expected_count": 81,
+    "minimum_accepted": 79
+  },
+  "pages": [
+    {
+      "requested_title": "黃帝內經",
+      "title": "黃帝內經",
+      "page_id": 16900,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+      "revision_id": 2596804,
+      "revision_timestamp": "2025-09-08T03:48:28Z",
+      "source_sha1": "d010213b3e34acadabcc3dbfdc7b6d02b7d1b3aa",
+      "source_size": 5637,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:25%",
+        "Category:R医药·卫生类",
+        "Category:中医药",
+        "Category:中國",
+        "Category:中國朝代",
+        "Category:中醫",
+        "Category:先秦",
+        "Category:子部",
+        "Category:戰國",
+        "Category:有跨维基链接需要清理",
+        "Category:無名氏",
+        "Category:诸子百家",
+        "Category:醫書"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0000.wikitext",
+      "raw_sha256": "9787fbba32d865211ccc4fa350ee30794799092505f1f89d3769cb1235069de8"
+    },
+    {
+      "requested_title": "黃帝內經/素問第一卷",
+      "title": "黃帝內經/素問第一卷",
+      "page_id": 16902,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%B8%80%E5%8D%B7",
+      "revision_id": 2083230,
+      "revision_timestamp": "2021-10-17T14:30:13Z",
+      "source_sha1": "337b706a511a6ba3d5e2bd6d88490c7e3030a089",
+      "source_size": 13139,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:100%",
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0001.wikitext",
+      "raw_sha256": "f1bb91f185adfaf2c3f9d06d76bc7b1cf6ac152d85c1d6ac377376733d176c4c"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二卷",
+      "title": "黃帝內經/素問第二卷",
+      "page_id": 28094,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%B7",
+      "revision_id": 2627947,
+      "revision_timestamp": "2025-12-03T16:11:19Z",
+      "source_sha1": "cabf6525d4319377bcbaa8c1d7c91b462c07a2ce",
+      "source_size": 11845,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:75%",
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0002.wikitext",
+      "raw_sha256": "047c6a44d4fb6840df1c89d08ff82185953a93d18df382ee96630928341f807b"
+    },
+    {
+      "requested_title": "黃帝內經/素問第三卷",
+      "title": "黃帝內經/素問第三卷",
+      "page_id": 28095,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%B8%89%E5%8D%B7",
+      "revision_id": 2083377,
+      "revision_timestamp": "2021-10-19T13:02:13Z",
+      "source_sha1": "c8af81a46b26ae7c0a9b03842bab699784d8931d",
+      "source_size": 10319,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0003.wikitext",
+      "raw_sha256": "098e972f5691cdd4deceb56370c96bd33c87eb5d657b61faf17000782f0c6096"
+    },
+    {
+      "requested_title": "黃帝內經/素問第四卷",
+      "title": "黃帝內經/素問第四卷",
+      "page_id": 28096,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%9B%9B%E5%8D%B7",
+      "revision_id": 2083507,
+      "revision_timestamp": "2021-10-20T14:31:19Z",
+      "source_sha1": "2853caa8e1ebae92c03cd8013d9294b09e6f17a1",
+      "source_size": 9070,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old",
+        "Category:中醫"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0004.wikitext",
+      "raw_sha256": "6745ed9f54096255b239bc3c2a059334ba4861461a52f60e7d9f754cb9aa06b4"
+    },
+    {
+      "requested_title": "黃帝內經/素問第五卷",
+      "title": "黃帝內經/素問第五卷",
+      "page_id": 28097,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%94%E5%8D%B7",
+      "revision_id": 2083675,
+      "revision_timestamp": "2021-10-21T14:25:15Z",
+      "source_sha1": "de18df30449628659361b0a3d9fa9ab9fa5f8746",
+      "source_size": 10733,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0005.wikitext",
+      "raw_sha256": "db77a68a8f9f60c1f68a294f21bfe8c95bbd356fee268d49839d03a27b415b50"
+    },
+    {
+      "requested_title": "黃帝內經/素問第六卷",
+      "title": "黃帝內經/素問第六卷",
+      "page_id": 28098,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%85%AD%E5%8D%B7",
+      "revision_id": 2083813,
+      "revision_timestamp": "2021-10-23T03:16:33Z",
+      "source_sha1": "3075d87640017a1c8e5ed877fab73a899ae89f16",
+      "source_size": 12428,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0006.wikitext",
+      "raw_sha256": "e8b8753979460d7cb36cbd6a112deb1ae1598a8ac6d625fd396a1010562a074a"
+    },
+    {
+      "requested_title": "黃帝內經/素問第七卷",
+      "title": "黃帝內經/素問第七卷",
+      "page_id": 28099,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%B8%83%E5%8D%B7",
+      "revision_id": 2083821,
+      "revision_timestamp": "2021-10-23T03:37:59Z",
+      "source_sha1": "a35a914b5afec6cdd4ff2822715608d2dea9a45c",
+      "source_size": 9395,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0007.wikitext",
+      "raw_sha256": "3f933e0a7d2292dd4a5a7e19ffa9695faa83dec68c55d6322cb0a5baf92eb6bb"
+    },
+    {
+      "requested_title": "黃帝內經/素問第八卷",
+      "title": "黃帝內經/素問第八卷",
+      "page_id": 28100,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%85%AB%E5%8D%B7",
+      "revision_id": 2084129,
+      "revision_timestamp": "2021-10-24T14:32:23Z",
+      "source_sha1": "22f6c627d261d82c79afe262de9957628179009e",
+      "source_size": 16109,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0008.wikitext",
+      "raw_sha256": "0fd80917df5ec1cd6b32b893bdfa8d6861f9e77e62375df6cd469d1fa2814602"
+    },
+    {
+      "requested_title": "黃帝內經/素問第九卷",
+      "title": "黃帝內經/素問第九卷",
+      "page_id": 28101,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%B9%9D%E5%8D%B7",
+      "revision_id": 2084474,
+      "revision_timestamp": "2021-10-27T14:15:43Z",
+      "source_sha1": "265d1dd564e4daaaa2991a285d3905b7c8ed59ef",
+      "source_size": 10206,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0009.wikitext",
+      "raw_sha256": "7752270b973b9a7bff74ae5af3031d13f858523a76754d6d86aac4e62d14a48c"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十卷",
+      "title": "黃帝內經/素問第十卷",
+      "page_id": 28102,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E5%8D%B7",
+      "revision_id": 2084483,
+      "revision_timestamp": "2021-10-27T14:19:10Z",
+      "source_sha1": "549c441dc7e2a720a982b4c362fc2a792efcbdce",
+      "source_size": 11695,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0010.wikitext",
+      "raw_sha256": "61a2334fba3802018331bac5ae26b0362207dd7e9b235b32bcc7fc93cdd0ab5b"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十一卷",
+      "title": "黃帝內經/素問第十一卷",
+      "page_id": 28103,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%B8%80%E5%8D%B7",
+      "revision_id": 2551001,
+      "revision_timestamp": "2025-04-15T01:33:25Z",
+      "source_sha1": "702c4decddf36069363c141faed1c0db2779ea48",
+      "source_size": 9333,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0011.wikitext",
+      "raw_sha256": "543833a977e094dbdb1ddae6ae5742e13f7dae7ae12a5648303a75c952a8fbde"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十二卷",
+      "title": "黃帝內經/素問第十二卷",
+      "page_id": 28104,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8D%B7",
+      "revision_id": 2550991,
+      "revision_timestamp": "2025-04-15T00:08:17Z",
+      "source_sha1": "c3d754244ae5982424067dba96921541d293cb52",
+      "source_size": 11295,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0012.wikitext",
+      "raw_sha256": "90fec96de7c97975527787ec3d0bd793ec94d21b6d1132029b3e76e308cf61ad"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十三卷",
+      "title": "黃帝內經/素問第十三卷",
+      "page_id": 28105,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%B8%89%E5%8D%B7",
+      "revision_id": 2093305,
+      "revision_timestamp": "2021-12-12T08:26:45Z",
+      "source_sha1": "f2bb1d7678f212e970b3b9dedbde94fcd96a4416",
+      "source_size": 11352,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0013.wikitext",
+      "raw_sha256": "0b0530272d248d7f26d38235db4a79fa0396abf34fb56d8b4b9517335de4ba97"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十四卷",
+      "title": "黃帝內經/素問第十四卷",
+      "page_id": 28106,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%8D%B7",
+      "revision_id": 2085844,
+      "revision_timestamp": "2021-11-05T01:57:46Z",
+      "source_sha1": "c5d219eab73b3f3226ab101cc17fc84462e8ee31",
+      "source_size": 8499,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0014.wikitext",
+      "raw_sha256": "eba2c4a5d610b0c0d10b98b8f878547e1df8f3541b6897442429a24631bd1f4b"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十五卷",
+      "title": "黃帝內經/素問第十五卷",
+      "page_id": 28107,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%BA%94%E5%8D%B7",
+      "revision_id": 2085850,
+      "revision_timestamp": "2021-11-05T02:53:31Z",
+      "source_sha1": "5d7476d576074d65f966bcf426801c745fb01070",
+      "source_size": 8104,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0015.wikitext",
+      "raw_sha256": "98f975ed68ed8e99e136954a8a4a91e77aebeb9318377747959f5c30e0d854b2"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十六卷",
+      "title": "黃帝內經/素問第十六卷",
+      "page_id": 28108,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E5%85%AD%E5%8D%B7",
+      "revision_id": 2085908,
+      "revision_timestamp": "2021-11-05T07:43:34Z",
+      "source_sha1": "ef5b1aef3a8447876c65f8f70038aa5153af5989",
+      "source_size": 6599,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0016.wikitext",
+      "raw_sha256": "b20f7efbef1923b816481fda88c7dfe533b82d51a633bf7b05f5ee863f984fb7"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十七卷",
+      "title": "黃帝內經/素問第十七卷",
+      "page_id": 28109,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%B8%83%E5%8D%B7",
+      "revision_id": 2085909,
+      "revision_timestamp": "2021-11-05T07:55:48Z",
+      "source_sha1": "3db515ace198fe7949d6f95239923e24b2fa20af",
+      "source_size": 7667,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0017.wikitext",
+      "raw_sha256": "c5e77e2e4e5321d5b2642e7789ff98af076419ede4889d284821fc822eb76153"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十八卷",
+      "title": "黃帝內經/素問第十八卷",
+      "page_id": 28110,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E5%85%AB%E5%8D%B7",
+      "revision_id": 2085912,
+      "revision_timestamp": "2021-11-05T08:13:37Z",
+      "source_sha1": "11c259c0910eb398953095d37503f93c4dece9b5",
+      "source_size": 10609,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0018.wikitext",
+      "raw_sha256": "2637cdd3a5df01d7316cee2f1771e95cb2ac679bdcde81408946d5daf98398b9"
+    },
+    {
+      "requested_title": "黃帝內經/素問第十九卷",
+      "title": "黃帝內經/素問第十九卷",
+      "page_id": 28111,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%8D%B7",
+      "revision_id": 2086230,
+      "revision_timestamp": "2021-11-06T13:47:38Z",
+      "source_sha1": "4e5864bd757629dea67ca2d3d95d2a040a4b88a4",
+      "source_size": 18393,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0019.wikitext",
+      "raw_sha256": "50d0fe64250a7eb9eea61e82d18e5dc5e2a2dff6f2b2cd8e28cf29051373e0e0"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二十卷",
+      "title": "黃帝內經/素問第二十卷",
+      "page_id": 28112,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%8D%B7",
+      "revision_id": 2093934,
+      "revision_timestamp": "2021-12-18T12:25:29Z",
+      "source_sha1": "d2936cf16a3fece6991aa8638c169c2075177ec5",
+      "source_size": 25922,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0020.wikitext",
+      "raw_sha256": "6937b4063824e573dfb85bbe1f2483df1c843de3137b21912df75f3c699f4615"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二十一卷",
+      "title": "黃帝內經/素問第二十一卷",
+      "page_id": 28113,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E5%8D%B7",
+      "revision_id": 2093943,
+      "revision_timestamp": "2021-12-18T13:00:49Z",
+      "source_sha1": "8bc63f3eb323b28d2532f6c92c4946f1785bd34a",
+      "source_size": 59773,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0021.wikitext",
+      "raw_sha256": "2499f6d0924318619658ca9fc9b6c4ab322c3a75411d19a0b91056fed5d32713"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二十二卷",
+      "title": "黃帝內經/素問第二十二卷",
+      "page_id": 28114,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%8D%B7",
+      "revision_id": 2093944,
+      "revision_timestamp": "2021-12-18T13:12:06Z",
+      "source_sha1": "1e9988cfe40b5ce27ca7a8269226219fbab496e0",
+      "source_size": 26803,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0022.wikitext",
+      "raw_sha256": "bdf8571ff257d0c30bd8b609c06178b3ecc744c6fc5562d6e2546f5ff35157f4"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二十三卷",
+      "title": "黃帝內經/素問第二十三卷",
+      "page_id": 28115,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E5%8D%B7",
+      "revision_id": 2093947,
+      "revision_timestamp": "2021-12-18T13:21:45Z",
+      "source_sha1": "0b0a47eb6aa49848731e579c1960ae743c4f5361",
+      "source_size": 8471,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0023.wikitext",
+      "raw_sha256": "f54fde04fe2d4f069cc25a5d355229c9e55da0a7178b6b87574e3635846f37ba"
+    },
+    {
+      "requested_title": "黃帝內經/素問第二十四卷",
+      "title": "黃帝內經/素問第二十四卷",
+      "page_id": 28116,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E7%B4%A0%E5%95%8F%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8D%B7",
+      "revision_id": 2093948,
+      "revision_timestamp": "2021-12-18T13:23:19Z",
+      "source_sha1": "91b44856b2ab573a4cd4c90ff4943a8790ca30df",
+      "source_size": 7789,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-suwen/0024.wikitext",
+      "raw_sha256": "5f4c2b41cd4618375d55931f420589035cb48e8d6aa7f2f40a898356e3618e81"
+    }
+  ],
+  "aggregate_raw_sha256": "7164c84a91ccba7b6306128b238e1043c957f85f1f100171585082aed327b843"
+}

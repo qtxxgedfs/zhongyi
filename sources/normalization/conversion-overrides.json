@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "description": "Post-OpenCC display normalizations limited to established medical character conventions. Raw source and generated traditional text remain available for audit.",
+  "display_replacements": [
+    {"from": "五藏", "to": "五脏", "reason": "古医籍藏/脏通用；简体医学阅读统一为五脏"},
+    {"from": "藏腑", "to": "脏腑", "reason": "古医籍藏/脏通用"},
+    {"from": "脏府", "to": "脏腑", "reason": "古医籍府/腑通用"},
+    {"from": "六府", "to": "六腑", "reason": "古医籍府/腑通用"},
+    {"from": "荣卫", "to": "营卫", "reason": "古医籍荣/营通用；现代简体中医术语统一为营卫"},
+    {"from": "荣气", "to": "营气", "reason": "古医籍荣/营通用"},
+    {"from": "荣血", "to": "营血", "reason": "古医籍荣/营通用"},
+    {"from": "荅曰", "to": "答曰", "reason": "异体字阅读规范化"},
+    {"from": "写以", "to": "泻以", "reason": "古医籍治疗语境中的寫读作泻"},
+    {"from": "能写", "to": "能泻", "reason": "古医籍排泄语境中的寫读作泻"},
+    {"from": "二写一补", "to": "二泻一补", "reason": "针刺补泻术语规范化"},
+    {"from": "血写", "to": "血泻", "reason": "古医籍排泄语境中的寫读作泻"},
+    {"from": "如写漆", "to": "如泻漆", "reason": "古医籍病候描述中的寫读作泻"}
+  ],
+  "contextual_display_rules": [
+    {
+      "pattern": "([补補溢濡当當宜可欲疾微大尽盡俱易盛实實虚虛针鍼刺不])写",
+      "replacement": "\\1泻",
+      "reason": "古医籍治疗语境中的寫读作泻；保留传写、误写、抄写等文字学语境"
+    },
+    {
+      "pattern": "(?<![传傳误誤抄书書])写(?=[之其而则則者也矣法热熱邪实實虚虛阳陽阴陰隂气氣血火胃五三足手无無有])",
+      "replacement": "泻",
+      "reason": "古医籍补泻、针刺和排泄语境中的寫读作泻"
+    }
+  ],
+  "search_only_replacements": [
+    {"from": "歧伯", "to": "岐伯"},
+    {"from": "岐伯", "to": "岐伯"},
+    {"from": "藏象", "to": "藏象"},
+    {"from": "写法", "to": "泻法"},
+    {"from": "补写", "to": "补泻"}
+  ]
+}

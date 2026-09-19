@@ -1,0 +1,22 @@
+{
+  "source_id": "lineage-wenbing-yetianshi",
+  "passage_count": 18,
+  "citable_passage_count": 18,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 5261,
+    "citable_characters": 5261,
+    "citable_passages": 18,
+    "passages": 18,
+    "speaker_type:lineage": 18
+  },
+  "source_aggregate_sha256": "9be70d9350c826d7ab5e3615f8d13eb9202e556982438e03b05b8c3f68d89280",
+  "traditional_aggregate_sha256": "fe38bd72ed177387f00acf3817d0e575f4c1b244c2582a16cc66e0c9ddf33c00",
+  "simplified_aggregate_sha256": "521efa3720045e0a937bfaf96e0237966172728d200f73dcbfbdab0c8c94e907",
+  "search_aggregate_sha256": "7540ccc0ac1d5f6c18b0376f2344a07b7dfc4e1497016a3bbed1a329ae4b00a1",
+  "citable_traditional_sha256": "fe38bd72ed177387f00acf3817d0e575f4c1b244c2582a16cc66e0c9ddf33c00",
+  "citable_simplified_sha256": "521efa3720045e0a937bfaf96e0237966172728d200f73dcbfbdab0c8c94e907",
+  "citable_search_sha256": "7540ccc0ac1d5f6c18b0376f2344a07b7dfc4e1497016a3bbed1a329ae4b00a1",
+  "processed_path": "sources/processed/lineage-wenbing-yetianshi/passages.jsonl",
+  "max_simplified_characters": 668
+}

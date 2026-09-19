@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "status": "phase-0-provisional-selection",
+  "selected_candidate_ids": [
+    "core-suwen",
+    "core-lingshu",
+    "core-shanghanlun",
+    "core-jingui",
+    "core-nanjing",
+    "core-wenbingtiaobian",
+    "commentary-suwen-wangbing",
+    "commentary-neijing-leijing",
+    "commentary-lingshu-zhangzhicong",
+    "commentary-shanghan-chengwuji",
+    "commentary-shanghan-fangyouzhi",
+    "commentary-shanghan-yuchang",
+    "commentary-shanghan-keqin",
+    "commentary-shanghan-youyi",
+    "commentary-jingui-xubin",
+    "commentary-jingui-youyi",
+    "commentary-jingui-chenxiuyuan",
+    "commentary-nanjing-huashou",
+    "commentary-nanjing-xudachun",
+    "commentary-nanjing-jizhu",
+    "commentary-wenbing-wangshixiong",
+    "commentary-wenbing-leifeng",
+    "lineage-wenbing-yetianshi",
+    "lineage-wenbing-xuexue"
+  ],
+  "added_replacements": [
+    {
+      "id": "commentary-suwen-zhangzhicong",
+      "replaces": "commentary-suwen-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["suwen"],
+      "author": "张志聪",
+      "title": "《黄帝内经素问集注》",
+      "relationship": ["direct_commentary", "theoretical_extension"],
+      "provider": "zh-wikisource",
+      "page_title": "黃帝內經素問集注",
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F%E9%9B%86%E6%B3%A8",
+      "revision_id_at_audit": 2385250,
+      "page_length_at_audit": 1362238,
+      "reason": "马莳《素问注证发微》未在Wikisource发现可审计全文；张志聪本是原计划备选，关联直接且公开全文可取得。",
+      "quality_warning": "Wikisource标记为排版不佳、校订不足且需要拆分；导入前必须清理并抽样校核。"
+    },
+    {
+      "id": "commentary-lingshu-danbo",
+      "replaces": "commentary-lingshu-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["lingshu"],
+      "author": "丹波元简",
+      "title": "《灵枢识》",
+      "relationship": ["direct_commentary", "textual_collation", "disagreement"],
+      "provider": "zh-wikisource",
+      "page_title": "靈樞識",
+      "page_url": "https://zh.wikisource.org/wiki/%E9%9D%88%E6%A8%9E%E8%AD%98",
+      "revision_id_at_audit": 1316012,
+      "page_length_at_audit": 701960,
+      "reason": "马莳《灵枢注证发微》未在Wikisource发现可审计全文；《灵枢识》是原计划备选，重在汇校与辨析，可与张志聪、张介宾形成互补。",
+      "quality_warning": "Wikisource正文头部把作者写作丹波元珍，而书内及通行书目题丹波元简；必须在来源报告中纠正并保留该元数据冲突。"
+    }
+  ],
+  "excluded_or_deferred": [
+    {
+      "id": "commentary-suwen-mashi",
+      "decision": "replaced",
+      "reason": "Wikisource未发现全文；其他网络文本的底本和再分发许可尚不明确。"
+    },
+    {
+      "id": "commentary-lingshu-mashi",
+      "decision": "replaced",
+      "reason": "Wikisource未发现全文；其他网络文本的底本和再分发许可尚不明确。"
+    },
+    {
+      "id": "commentary-jingui-chenglin",
+      "decision": "excluded",
+      "reason": "自动搜索命中的《金匮玉函经二注》作者是周扬俊，不是程林《金匮要略直解》，不能冒名替代；其余三种《金匮》注本已满足1—5部的范围。"
+    },
+    {
+      "id": "commentary-wenbing-yelin",
+      "decision": "deferred",
+      "reason": "Wikisource未发现《增订温病条辨》全文，暂不采用许可不明的网络转录；首版仍有王士雄、雷丰两种后世扩展及两种明确标记的学术源流。"
+    }
+  ],
+  "selection_count": {
+    "core": 6,
+    "unique_extension_works": 20,
+    "total_unique_works": 26
+  },
+  "release_gate": "本文件只确定作品范围，不等于source-lock。每种作品仍须通过篇卷完整性、正文质量、说话者分层、修订号和许可审计。"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "commentary-wenbing-leifeng",
+  "layer": "commentary",
+  "canon": "wenbing",
+  "target_works": [
+    "wenbingtiaobian"
+  ],
+  "author": "雷丰（雷少逸）",
+  "title": "《时病论》",
+  "relationship": [
+    "theoretical_extension",
+    "clinical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "時病論",
+  "page_url": "https://zh.wikisource.org/wiki/%E6%99%82%E7%97%85%E8%AB%96",
+  "edition_label": "《时病论》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "時病論/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "時病論",
+      "title": "時病論",
+      "page_id": 761989,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%99%82%E7%97%85%E8%AB%96",
+      "revision_id": 2202573,
+      "revision_timestamp": "2022-12-14T11:08:49Z",
+      "source_sha1": "bdabd68297d8d08ca5b1e4c3c94d4f7567778ef2",
+      "source_size": 260122,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:公元1882年",
+        "Category:校訂不足的頁面",
+        "Category:清朝",
+        "Category:雷丰"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-leifeng/0000.wikitext",
+      "raw_sha256": "b595bf0f1664cffdbe9b98a63c4df492545361f579cd5ff2adaaea55a1b6e94b"
+    }
+  ],
+  "aggregate_raw_sha256": "3fbd7b9b4c755d0cd0b79c4e6b7dd62ee19c4d75273ed43eb60846c77a56b9f2"
+}

@@ -1,0 +1,26 @@
+{
+  "source_id": "commentary-wenbing-leifeng",
+  "passage_count": 211,
+  "citable_passage_count": 206,
+  "quarantined_passage_count": 5,
+  "statistics": {
+    "characters_simplified": 84465,
+    "citable_characters": 84109,
+    "citable_passages": 206,
+    "passages": 211,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 5,
+    "quarantined_characters": 356,
+    "quarantined_passages": 5,
+    "speaker_type:commentary": 211,
+    "split_blocks": 32
+  },
+  "source_aggregate_sha256": "633d4cc7837090ff0e7f1ef5173d645c2687a8e30d75e34fea077f114522b1eb",
+  "traditional_aggregate_sha256": "a38e170ec8936a61d97f0a453013b6b0845b1ce6e99b9c76f976471e1b7e3305",
+  "simplified_aggregate_sha256": "377d931e08cc1479533a33254831aa6a3184036354fa66c55be169edec866346",
+  "search_aggregate_sha256": "9104f0ecef4b65a928b7167fa7dd30e9b2c56ae40f32b6a998f10734b8eaf8b7",
+  "citable_traditional_sha256": "68f29c74af6cace3b319cbb4b2f38886a6028f799f20f2bec7cc4131e0c3cffe",
+  "citable_simplified_sha256": "a6720585209f8f921747e55e5978a4dc0339e9c46052e1bdb30ac44e7e41d5cb",
+  "citable_search_sha256": "f319afcc9bec85d984f4f30079a575f1c551398ae5f128c32c523b20a58e4275",
+  "processed_path": "sources/processed/commentary-wenbing-leifeng/passages.jsonl",
+  "max_simplified_characters": 700
+}

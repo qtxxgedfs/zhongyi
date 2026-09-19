@@ -1,0 +1,67 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 13101,
+        "ns": 10,
+        "title": "Template:?",
+        "revisions": [
+          {
+            "revid": 1565051,
+            "parentid": 1319075,
+            "timestamp": "2019-05-17T02:51:50Z",
+            "sha1": "4843187df8c150b106e4580d8fa2e3308c77c245",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "<span style=\"color: red; border: 1px solid red; BACKGROUND: pink\" title=\"{{{1|未填描述，請補上。}}}\"><b>�</b></span><noinclude>{{doc}}\n</noinclude>"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 204609,
+        "ns": 10,
+        "title": "Template:YL",
+        "revisions": [
+          {
+            "revid": 1328562,
+            "parentid": 503194,
+            "timestamp": "2017-12-02T15:19:28Z",
+            "sha1": "fdb204820ef4f7ec439c1cb2ba916ce15105302e",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "#重定向 [[Template:Year Link]]"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 314452,
+        "ns": 10,
+        "title": "Template:SKchar2",
+        "revisions": [
+          {
+            "revid": 2458514,
+            "parentid": 2458510,
+            "timestamp": "2024-10-07T02:09:00Z",
+            "sha1": "09152e9c0782141461762529d8ea0de1571d7620",
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "{{#invoke:SKchar2|skchar2|{{{1}}}|{{{2}}}}}<noinclude>{{documentation}}[[Category:字体模板]]</noinclude>"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

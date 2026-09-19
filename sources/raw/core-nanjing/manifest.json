@@ -1,0 +1,64 @@
+{
+  "id": "core-nanjing",
+  "layer": "core",
+  "canon": "nanjing",
+  "target_works": [
+    "nanjing"
+  ],
+  "author": "传统题作扁鹊（作者与成书问题另作版本说明）",
+  "title": "《难经》",
+  "relationship": [
+    "core"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "難經",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93",
+  "edition_label": "《难经》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "页面曾标记50%；按第一难至第八十一难验收。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "難經/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "difficulty",
+    "expected_count": 81,
+    "minimum_accepted": 81
+  },
+  "pages": [
+    {
+      "requested_title": "難經",
+      "title": "難經",
+      "page_id": 13525,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93",
+      "revision_id": 2559517,
+      "revision_timestamp": "2025-05-07T20:59:56Z",
+      "source_sha1": "ebb3b129592e90b62cb1fe5a18ddcf6eb167e4df",
+      "source_size": 45831,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:50%",
+        "Category:PD-old",
+        "Category:有跨维基链接需要清理",
+        "Category:東漢",
+        "Category:醫家"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-nanjing/0000.wikitext",
+      "raw_sha256": "dcb44d9879a38a07f66bd9e100e570ce97994529570159dedd933de93ce22373"
+    }
+  ],
+  "aggregate_raw_sha256": "e53d0e1bd3fd2e6834e8f8e05ce817c08d5462ecef05b354066edf0baafd6f71"
+}

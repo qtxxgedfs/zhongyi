@@ -1,0 +1,1710 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T11:24:09+00:00",
+  "overall": {
+    "source_count": 26,
+    "snapshot_page_count": 973,
+    "included_page_count": 938,
+    "passage_count": 54088,
+    "citable_passage_count": 53798,
+    "quarantined_passage_count": 290,
+    "simplified_character_count": 3434734,
+    "citable_character_count": 3428892,
+    "quarantined_character_count": 5842,
+    "raw_integrity_status": "pass",
+    "structural_status": "pass",
+    "citable_corpus_status": "pass",
+    "cleanup_status": "pass-with-quarantine",
+    "release_gate_status": "blocked"
+  },
+  "blocking_release_reasons": [
+    {
+      "source_id": "core-suwen",
+      "reason": "core source has upstream 25%/50% quality category and lacks completed second-base collation"
+    },
+    {
+      "source_id": "core-lingshu",
+      "reason": "core source has upstream 25%/50% quality category and lacks completed second-base collation"
+    },
+    {
+      "source_id": "core-shanghanlun",
+      "reason": "core source has upstream 25%/50% quality category and lacks completed second-base collation"
+    },
+    {
+      "source_id": "core-jingui",
+      "reason": "core source has upstream 25%/50% quality category and lacks completed second-base collation"
+    },
+    {
+      "source_id": "core-nanjing",
+      "reason": "core source has upstream 25%/50% quality category and lacks completed second-base collation"
+    },
+    {
+      "source_id": "core-wenbingtiaobian",
+      "reason": "core work contains 2 quarantined unresolved semantic units"
+    },
+    {
+      "source_id": "commentary-suwen-wangbing",
+      "reason": "ProofreadPage contains 805 unproofread/problem pages"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "core-suwen",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 117766,
+      "heading_count": 81,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "25%": 1,
+        "75%": 1
+      },
+      "passage_count": 1228,
+      "citable_passage_count": 1228,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 107555,
+      "citable_character_count": 107555,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "dialogue": 1197,
+        "core_text": 31
+      },
+      "top_speakers": {
+        "黄帝": 612,
+        "岐伯": 566,
+        "原典": 31,
+        "雷公": 16,
+        "答者": 2,
+        "问者": 1
+      },
+      "duplicate_passage_instances": 63,
+      "extraction_to_raw_character_ratio": 0.913294,
+      "conversion_hashes": {
+        "source": "fc70c9f2671aefd3cc6a589a3e52052037abb77862a75bbcb9ed369836811d59",
+        "traditional": "7c95e8a202dd0b45f71b84b4f78aa03bfa53ed3ced8f2d48ee24ed6b2bb3624a",
+        "simplified": "782ac83b272a47a4db3340ecb7c2d67e754cfdfd96124cf96638e90c21c14eb8",
+        "search": "f10231b5ee3c4f50696e431f955fca51f8fa5ebe7b2c5afce672c10d47533f88"
+      },
+      "processed_hashes": {
+        "source": "e617d5ccbb692e33320cbeabbe1ccc3a84fd374073d7b7f69d9c12bfe1abad83",
+        "traditional": "548cd732929f2e0a4c072ad9bab92f9cff9e2eb177b5b7e5b9fbc8032f278949",
+        "simplified": "a23d334ea8919e386738e3dbbf13f1ee02954d4cffef7aaab8cabfca5873894d",
+        "search": "363223d048c1b0cd7fc589f43483b8caf4498629a7537cbfae4364c8e1000dcf",
+        "citable_traditional": "548cd732929f2e0a4c072ad9bab92f9cff9e2eb177b5b7e5b9fbc8032f278949",
+        "citable_simplified": "a23d334ea8919e386738e3dbbf13f1ee02954d4cffef7aaab8cabfca5873894d",
+        "citable_search": "363223d048c1b0cd7fc589f43483b8caf4498629a7537cbfae4364c8e1000dcf"
+      },
+      "structure": {
+        "kind": "chapter",
+        "expected_count": 81,
+        "minimum_accepted": 79,
+        "observed_count": 81,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "core-lingshu",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 85053,
+      "heading_count": 82,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "25%": 1
+      },
+      "passage_count": 862,
+      "citable_passage_count": 862,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 79212,
+      "citable_character_count": 79212,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "dialogue": 780,
+        "core_text": 78,
+        "textual_collation": 4
+      },
+      "top_speakers": {
+        "黄帝": 376,
+        "岐伯": 299,
+        "原典": 78,
+        "伯高": 42,
+        "少俞": 30,
+        "少师": 17,
+        "雷公": 16,
+        "校注": 4
+      },
+      "duplicate_passage_instances": 25,
+      "extraction_to_raw_character_ratio": 0.931325,
+      "conversion_hashes": {
+        "source": "7e8422493a60c9052bdc5ac046b265ab77a27f894f5bedfa60f4bca23e85e8e5",
+        "traditional": "ebd921349b8984a61ab9bd4ae53573b88534c695a3b07b3d5a9a2b45c7d2065d",
+        "simplified": "915c3e2cc0333808d9beadda8b937742db4e4ee3ccbd3a387d2dbb9486d969cc",
+        "search": "c4ff170921ea2e502c30ad10d6e5bdbeff16b1456ea9d40eed77771308125424"
+      },
+      "processed_hashes": {
+        "source": "2b23706975423ab36510479d8cd082d532709e0828102307f085214bd112cf98",
+        "traditional": "52db577281ed8d5043f9cf1ab8eac4ed007ef31da36e64babbb56da1366869d8",
+        "simplified": "3911f17ff6547c3647760099e31187a453c815927f7e475aa82161e09d7d9a4a",
+        "search": "8d6ca7b4db0135ce978bebe1d9cd26c7e717bd2e90616764b01724a01cc44094",
+        "citable_traditional": "52db577281ed8d5043f9cf1ab8eac4ed007ef31da36e64babbb56da1366869d8",
+        "citable_simplified": "3911f17ff6547c3647760099e31187a453c815927f7e475aa82161e09d7d9a4a",
+        "citable_search": "8d6ca7b4db0135ce978bebe1d9cd26c7e717bd2e90616764b01724a01cc44094"
+      },
+      "structure": {
+        "kind": "chapter",
+        "expected_count": 81,
+        "minimum_accepted": 81,
+        "observed_count": 82,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "core-shanghanlun",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 46308,
+      "heading_count": 34,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "25%": 1
+      },
+      "passage_count": 205,
+      "citable_passage_count": 205,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 40852,
+      "citable_character_count": 40852,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "core_text": 147,
+        "dialogue": 58
+      },
+      "top_speakers": {
+        "原典": 147,
+        "问者": 24,
+        "师": 23,
+        "答者": 11
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.88218,
+      "conversion_hashes": {
+        "source": "e6f75b06eb13f81b9c5bbfeb8c2d5c9df32eed06d345182382fb24967b5dddf4",
+        "traditional": "3896cee7a78910e371f885ca0ded7e9bfeecb2fd13baeea3b71b71ad7929e5b7",
+        "simplified": "d060bec940d436616a8e84722ba28fbb77a35ec9456fd3581b5d7e1300b7d3c6",
+        "search": "d4be94ef3aa28a2d3d1a6b4de7b15d3f1a2853534319d3742173f9bdb02ce891"
+      },
+      "processed_hashes": {
+        "source": "cf39019f194d0848224015e2d5c8f113a5bac91f9209497aa589a20c980c0a61",
+        "traditional": "88d2a896b063952e2b7237e2bb6d1904840b088bb13182e39f3ee987df69f848",
+        "simplified": "d6255fc280b5f22be42c6d5b26cc983480a3db679a9660597c0f72bfd5070320",
+        "search": "9bbbe0ab3d5c034308373e3ca674c5574255c33ecb0195ddae30abddf7a936ea",
+        "citable_traditional": "88d2a896b063952e2b7237e2bb6d1904840b088bb13182e39f3ee987df69f848",
+        "citable_simplified": "d6255fc280b5f22be42c6d5b26cc983480a3db679a9660597c0f72bfd5070320",
+        "citable_search": "9bbbe0ab3d5c034308373e3ca674c5574255c33ecb0195ddae30abddf7a936ea"
+      },
+      "structure": {
+        "kind": "chapter",
+        "expected_count": 20,
+        "minimum_accepted": 18,
+        "observed_count": 34,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "core-jingui",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 32415,
+      "heading_count": 31,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "50%": 1
+      },
+      "passage_count": 295,
+      "citable_passage_count": 295,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 28460,
+      "citable_character_count": 28460,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "core_text": 134,
+        "textual_collation": 86,
+        "dialogue": 75
+      },
+      "top_speakers": {
+        "原典": 134,
+        "校注": 86,
+        "师": 49,
+        "问者": 24,
+        "答者": 2
+      },
+      "duplicate_passage_instances": 14,
+      "extraction_to_raw_character_ratio": 0.878019,
+      "conversion_hashes": {
+        "source": "60bb449990b24ca5fcd6dadca4288d1abb9685f6a14fc6111c5153fdb39277a5",
+        "traditional": "29a11db61f12290cae6f04686477d229749dc582178680794fb857e63e14bc8c",
+        "simplified": "3e3dec4f80e404fe0f10861825b9ae63f20f397ee892d1c73492dd4a92919708",
+        "search": "7dcd4180269187824629aacc3c86667059c22d230d412976202db666cf46d7e4"
+      },
+      "processed_hashes": {
+        "source": "e1efdbff79f6f68efdfd2f147c89ee3527331a5540184acceab519ea88232170",
+        "traditional": "6582b70433927623610de782aeb65fae30e2bd5e3e635d45b537a12e1fa8e708",
+        "simplified": "3244a893401d6f7ca2e25e0308d12ef6b25a260623c9168e862b964c0f254d47",
+        "search": "8d515584713cc4331dedc41b557c6668039dec735eb12ad23caa74399c7d5e88",
+        "citable_traditional": "6582b70433927623610de782aeb65fae30e2bd5e3e635d45b537a12e1fa8e708",
+        "citable_simplified": "3244a893401d6f7ca2e25e0308d12ef6b25a260623c9168e862b964c0f254d47",
+        "citable_search": "8d515584713cc4331dedc41b557c6668039dec735eb12ad23caa74399c7d5e88"
+      },
+      "structure": {
+        "kind": "chapter",
+        "expected_count": 25,
+        "minimum_accepted": 22,
+        "observed_count": 31,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "core-nanjing",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 16423,
+      "heading_count": 81,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "50%": 1
+      },
+      "passage_count": 83,
+      "citable_passage_count": 83,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 14759,
+      "citable_character_count": 14759,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "core_text": 83
+      },
+      "top_speakers": {
+        "原典": 83
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.8988,
+      "conversion_hashes": {
+        "source": "348f980f14321d92b7f0f4bea986140bd9380efe6c6f6b1a564f05bbaade83c9",
+        "traditional": "faa1857c26427d45e940d020b3837ad87f54aa90fbb9e5e09033f0d1494a1f9c",
+        "simplified": "e4a28f3b7dd21a8297ce81db4c10890058a357bf12a317588661fc1628ff3e7f",
+        "search": "8bedc3f7473e0e0a8713a89f79be7662b3cf6206d5eefb1b118c3d6892349894"
+      },
+      "processed_hashes": {
+        "source": "ce4abd34fcc84517b5a8d6158e234e00ec30efafac2dfd238e5afdcb55870dff",
+        "traditional": "f4261002f0ba4807f7d1d5902b2c14b080e631c1a2bb04afa0a028a36cb1aacf",
+        "simplified": "8bc8419f71c9037f250f1f18f8df12f1d0dd92fc1a20b902e2e20002acb63c41",
+        "search": "996400a11efeacd256071213a6247ff7adf1a40698a7169ef9639e9dce8d2ce1",
+        "citable_traditional": "f4261002f0ba4807f7d1d5902b2c14b080e631c1a2bb04afa0a028a36cb1aacf",
+        "citable_simplified": "8bc8419f71c9037f250f1f18f8df12f1d0dd92fc1a20b902e2e20002acb63c41",
+        "citable_search": "996400a11efeacd256071213a6247ff7adf1a40698a7169ef9639e9dce8d2ce1"
+      },
+      "structure": {
+        "kind": "difficulty",
+        "expected_count": 81,
+        "minimum_accepted": 81,
+        "observed_count": 81,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "core-wenbingtiaobian",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 127661,
+      "heading_count": 87,
+      "distinct_volume_count": 6,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 239,
+      "citable_passage_count": 237,
+      "quarantined_passage_count": 2,
+      "simplified_character_count": 117542,
+      "citable_character_count": 117355,
+      "quarantined_character_count": 187,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "如庞安常之《卒病论》，朱肱之《活人书》，韩HT 和之《微旨》，王氏之《证治》，刘守真之《伤寒医鉴》、《伤寒直格》，张子和之《伤寒心镜》等书，非以治伤寒之法治温病，即将温暑认作伤寒， 而疑麻桂之法不可用，遂别立防风通圣、双解通圣、九味羌活等汤，甚至于辛温药中加苦寒，王安道《溯洄集》中辨之最详，兹不再辩。",
+          "风为百病之长，六气莫不由风而伤人，所有痉病现证，皆风木刚强屈HT 之象。"
+        ]
+      },
+      "speaker_type_counts": {
+        "core_text": 221,
+        "dialogue": 18
+      },
+      "top_speakers": {
+        "原典": 221,
+        "岐伯": 15,
+        "黄帝": 3
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.920775,
+      "conversion_hashes": {
+        "source": "8a2f41fdba313d0cd23628b2910c8c4abd8907c00bdef51ed86e5edcd9e0b678",
+        "traditional": "1f25715e05704ebfdaf9504ee7096f0ab0fc33f34de69b6f3e081f26e31e3df8",
+        "simplified": "8f44168a4b95c2e09b4377fbbe8ffdea8f02ea9bb37a48e33a9dc10e13e0dacf",
+        "search": "f72a65417fdb53401666ec2d24907cd0932b090586d1137d974d6e2311240567"
+      },
+      "processed_hashes": {
+        "source": "268cab84c50304e90785ba7747432d0f3dae77dcf5f9a3642884117035dd8c03",
+        "traditional": "ba4a390b2c26ba1dd76ab5e7d4832219873bfa65072a7780a042609ccab0362f",
+        "simplified": "4394b05eae52c72441166e6f2d66649f49154cc418838b234e646910f7066f4a",
+        "search": "2f4ca014251013f50be1668a393c55556fc2f9a0723a16367cc817311c112153",
+        "citable_traditional": "d9012673281dcefb9e951076f56924183fdb6270804d5525da7c94b58e2036b8",
+        "citable_simplified": "c4535b28fb23e5aef395b7950db983763eee631d93f86689c53a5adfcbe74804",
+        "citable_search": "04307c15d34e4261114120b26cad60c766e11eb30726fe2f4cb59f8658a7a745"
+      },
+      "structure": {
+        "kind": "volume",
+        "expected_count": 6,
+        "minimum_accepted": 6,
+        "observed_count": 6,
+        "status": "pass",
+        "method": "distinct included page/parent title containing a volume label"
+      }
+    },
+    {
+      "source_id": "commentary-suwen-wangbing",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 494120,
+      "heading_count": 0,
+      "distinct_volume_count": 24,
+      "proofread_page_levels": {
+        "0": 10,
+        "1": 795
+      },
+      "low_quality_category_pages": {},
+      "passage_count": 14170,
+      "citable_passage_count": 14146,
+      "quarantined_passage_count": 24,
+      "simplified_character_count": 286712,
+      "citable_character_count": 285544,
+      "quarantined_character_count": 1168,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "explicit-missing-glyph": 31
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "explicit-missing-glyph": [
+          "气虚冝〔原文缺字〕引之",
+          "〔原文缺字〕读为导导引",
+          "则气行条畅新校正云按甲乙经〔原文缺字〕作掣"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 7145,
+        "quoted_core": 5040,
+        "textual_collation": 1310,
+        "dialogue": 675
+      },
+      "top_speakers": {
+        "王冰": 7145,
+        "经文": 5040,
+        "新校正": 1310,
+        "黄帝": 508,
+        "岐伯": 150,
+        "雷公": 15,
+        "问者": 1,
+        "答者": 1
+      },
+      "duplicate_passage_instances": 496,
+      "extraction_to_raw_character_ratio": 0.580248,
+      "conversion_hashes": {
+        "source": "b16976e951fac8348dcae44854077d30e62eae3e05769a28b87aa68100d620b3",
+        "traditional": "333606477e9e65063a2051ad5d31e5a279fd50f1996466a78b63e8e0f26a1aae",
+        "simplified": "8155d958abc0ad1b1eb66b7a46d159c015094eb81d6bbcd7870cd5f5c3cf22ce",
+        "search": "99c2a51bde4f62f127f49bf901218b2b607092e950a5c23be920be8abb0633a3"
+      },
+      "processed_hashes": {
+        "source": "b16976e951fac8348dcae44854077d30e62eae3e05769a28b87aa68100d620b3",
+        "traditional": "333606477e9e65063a2051ad5d31e5a279fd50f1996466a78b63e8e0f26a1aae",
+        "simplified": "8155d958abc0ad1b1eb66b7a46d159c015094eb81d6bbcd7870cd5f5c3cf22ce",
+        "search": "f426022fad98ea9d0bf7f61fa1bf8196616706fc2c973c25778669293b028095",
+        "citable_traditional": "e361c42ee3befbb9ec3cca5562df31c596ea326dd87c77e951384ed4143ddbaa",
+        "citable_simplified": "cad5489bf60fd20db3772f7ea1c86e9eea02e3a52a21de9035f3936ce018e40f",
+        "citable_search": "03aac51a02b5a5284da9c932985b51f17ff8ea47b4838eaccfb95352ccc05949"
+      },
+      "structure": {
+        "kind": "volume",
+        "expected_count": 24,
+        "minimum_accepted": 24,
+        "observed_count": 24,
+        "status": "pass",
+        "method": "distinct included page/parent title containing a volume label"
+      }
+    },
+    {
+      "source_id": "commentary-neijing-leijing",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 785516,
+      "heading_count": 0,
+      "distinct_volume_count": 32,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 19021,
+      "citable_passage_count": 19019,
+      "quarantined_passage_count": 2,
+      "simplified_character_count": 607231,
+      "citable_character_count": 607153,
+      "quarantined_character_count": 78,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "explicit-missing-glyph": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "explicit-missing-glyph": [
+          "正月朔天和温不风籴贱民不病天寒而风籴贵民多病此所以𠉀歳之风〔原文缺字〕伤人者也",
+          "元旦之气所贵者温和景明则歳𠉀吉而人民安凡四方不和之风皆非所宜○〔原文缺字〕残同"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 9840,
+        "quoted_core": 8120,
+        "dialogue": 1061
+      },
+      "top_speakers": {
+        "张介宾": 9831,
+        "经文辑录": 8120,
+        "黄帝": 710,
+        "岐伯": 307,
+        "雷公": 29,
+        "王": 7,
+        "少俞": 6,
+        "伯高": 5,
+        "少师": 3,
+        "滑寿": 1,
+        "问者": 1,
+        "新校正": 1
+      },
+      "duplicate_passage_instances": 1393,
+      "extraction_to_raw_character_ratio": 0.773035,
+      "conversion_hashes": {
+        "source": "960743c0862b88c6e2e113572c04a806f3520812d11d91fea9c226b95a4003ef",
+        "traditional": "4b35f62f0e6db68932e65c2cf20373510efa603648bc4a37583c6021e6ceca4c",
+        "simplified": "ac298f3cd55fd0e00a27ec84c6763b0624c4c0954ccd180d787b3e913f099d61",
+        "search": "8905e1ad972a6caf1aa539bfa82acec99c9c80ea944db491f1aa2a50a33e6ccd"
+      },
+      "processed_hashes": {
+        "source": "0ffb75a9c68af93976363e5f4e929dd9b6e8b3766c592f306e41ad8b5cc82ee6",
+        "traditional": "92bdf5912f79b08acc4cdcc69f39cf7ce705243d94a91a98e6fa33538d542606",
+        "simplified": "685ebb3cba255003804a8a6fb77b3395487e67e26ba6a5df5878f2b57be5ffed",
+        "search": "116b1ff0d8326306fcfc8859e4e40691669370c75f9edfa8f18c3453dcc91b59",
+        "citable_traditional": "cfbac3161bd8ee184f149b86c8507c8d114f1f5ccdff6c61cd29b3a9d275031f",
+        "citable_simplified": "5e31fe65cae2b99df30daf4c19e7375ee980970c0f225e75561699141ae3039c",
+        "citable_search": "07df067b7a296a6182a1dada68ec70a30e9c1c0939a8975a73657f693110f063"
+      },
+      "structure": {
+        "kind": "volume",
+        "expected_count": 32,
+        "minimum_accepted": 32,
+        "observed_count": 32,
+        "status": "pass",
+        "method": "distinct included page/parent title containing a volume label"
+      }
+    },
+    {
+      "source_id": "commentary-lingshu-zhangzhicong",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 305250,
+      "heading_count": 117,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 1568,
+      "citable_passage_count": 1521,
+      "quarantined_passage_count": 47,
+      "simplified_character_count": 286116,
+      "citable_character_count": 285716,
+      "quarantined_character_count": 400,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 55
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "犹HT 也。",
+          "HT 虽久犹可决也。",
+          "犹决HT 也。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 1210,
+        "commentary": 356,
+        "preface": 2
+      },
+      "top_speakers": {
+        "原文与注文混排": 400,
+        "黄帝": 399,
+        "岐伯": 336,
+        "张志聪": 301,
+        "伯高": 47,
+        "少俞": 33,
+        "少师": 21,
+        "雷公": 16,
+        "马莳": 11,
+        "杨玄操": 2,
+        "方": 1,
+        "王": 1
+      },
+      "duplicate_passage_instances": 37,
+      "extraction_to_raw_character_ratio": 0.93732,
+      "conversion_hashes": {
+        "source": "9cb2ef292d3ae0d285e14723eb89db836f65960c654aea50e80fc36e6e47fb62",
+        "traditional": "e973ff0861abfb0785c5bf0375deedecaf61599e23659b83d0f357ae78be8282",
+        "simplified": "c1db5669014186c71720211fe1fd51bc8eb1eac19a187eb1d586fb5ec4f6632d",
+        "search": "c42d614898f74ecd432a67411a5f9ac0af29fd4718de8fdba8311bfe4e1a8c08"
+      },
+      "processed_hashes": {
+        "source": "061722dac0451ea827ebfcad098a96fa0a2773ebee26c589c85113d57ed7e3a0",
+        "traditional": "7ab515a738aa3b14bc8d82cefed54187d7fb4416ea9811a0ff91a0bf7903edd8",
+        "simplified": "ade2ced1985e5fbafae3fcd199dce44e9762252558e062763213e662916f9b16",
+        "search": "1ebfa6389ed087bba8f7ad59559dad63bb44dd820d803d58ea2aa501a50355b4",
+        "citable_traditional": "6801ccc2a6254b91caa660902b3b1541564b20c86825f419d48cc5cf2defe4e6",
+        "citable_simplified": "afc66b0992dd4e9eeb9854403c1d56cfbcab2831579f8610ae2d8b4ff8273a5c",
+        "citable_search": "674a9cb6a35107f8503eb8d5a67b9e47ed01780c2f895d8bdcb7a6e605f9fb7f"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-shanghan-chengwuji",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 124123,
+      "heading_count": 13,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "25%": 1
+      },
+      "passage_count": 278,
+      "citable_passage_count": 263,
+      "quarantined_passage_count": 15,
+      "simplified_character_count": 116235,
+      "citable_character_count": 115664,
+      "quarantined_character_count": 571,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 27
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "浮则无血，大则为寒，寒气相搏，则为肠鸣，医乃不知，而反饮冷水，令汗大出，水得寒气，冷必相搏，其人即KT。",
+          "寒邪因里虚而入，寒气相搏，乃为肠鸣，医见脉大，以为有热，饮以冷水，欲令水寒胜热而作大汗，里先虚寒，又得冷水，水寒相搏，使中焦之气涩滞，故令KT 也。",
+          "趺阳脉浮，浮则为虚，浮虚相搏，故令气KT，言胃气虚竭也。"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 210,
+        "mixed": 68
+      },
+      "top_speakers": {
+        "成无己": 115,
+        "师": 51,
+        "答者": 39,
+        "问者": 35,
+        "原文与注文混排": 31,
+        "岐伯": 7
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.936458,
+      "conversion_hashes": {
+        "source": "374d92510e1c116e74105dca71084c7872885d2167827ca2b3aa6e204fa4068a",
+        "traditional": "538c4e607e0dac5dbd5c661b33a5265927a642ad53499e5a6922940b7bc2fb42",
+        "simplified": "4bb6bbb0a7e2b64d9536e8da72d0e643a1f8a66ff7b40316cea8b277f40c9328",
+        "search": "af173bb1b25a43ce1929eff3ace572c832c92a2488a8010d645496694d89539e"
+      },
+      "processed_hashes": {
+        "source": "f55e1c843220dd0fd1f847d758a30e73dbc13e4fc9c4948deeb99e368a05c3e7",
+        "traditional": "6601704c84bb7212a77b09217720152f36dbf9d173efbc22d90ea153dd8d6f1c",
+        "simplified": "84088251f16ef0067349f5c5bf336682e1f07c0619215bdd27d011bdadf9cbbe",
+        "search": "b9a6244f0c5672346001c8b8e18573b62d63c5ddac737b2607ff1fa8bc1f58ab",
+        "citable_traditional": "a0a38a6136a3993708a40b05124c228b30d34de81ead75fcc73ce2152eb414d0",
+        "citable_simplified": "a0a3fb2d80165f3aa369445d6aee3c06457d0ae0b8c5a0075f65da58f59020b4",
+        "citable_search": "86418aee5850b4615b5b7d73dce79be60fe10b7c01a08d5244b6ea2912a8c28c"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-shanghan-fangyouzhi",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 155218,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 359,
+      "citable_passage_count": 325,
+      "quarantined_passage_count": 34,
+      "simplified_character_count": 144837,
+      "citable_character_count": 144527,
+      "quarantined_character_count": 310,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 48
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "次脾而缀脊KT。",
+          "HT动也。",
+          "肉HT 而动。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 334,
+        "commentary": 18,
+        "preface": 7
+      },
+      "top_speakers": {
+        "原文与注文混排": 174,
+        "滑寿": 47,
+        "答者": 47,
+        "师": 38,
+        "问者": 29,
+        "成": 12,
+        "方有执": 7,
+        "王": 2,
+        "岐伯": 2,
+        "黄帝": 1
+      },
+      "duplicate_passage_instances": 6,
+      "extraction_to_raw_character_ratio": 0.93312,
+      "conversion_hashes": {
+        "source": "d9296b9fa53da7dd58530e4842fda47517baa753808d9a4034cba7caf70c9549",
+        "traditional": "cc38614dceeaff8d66bf5b06fb100ed8cfdae779b495c51bf8a206bb43e92742",
+        "simplified": "602e1fc46d8afb6e023a95314da88f8b88d3e1494708b76b36db2730f5f1eab8",
+        "search": "08100923ca0adb176924b9c16d62d62552f6fdc26208a67de8122316ff730ae3"
+      },
+      "processed_hashes": {
+        "source": "5cda3595fecfbf79103d23746a0fa402f93a899d49745b2c78bf0739bf9bb40f",
+        "traditional": "c5023b3261f7d34cdaf28442cc34f5721de414caa5b2603c14e2b76a93e7bc1c",
+        "simplified": "102d3f0827a73efcaca17e96711694ab08dd6f8dd701cf107e91bef06fbcc842",
+        "search": "9dec7c9699980b6601008be437631b83021bbad76b365df88425b1e7ff5042d4",
+        "citable_traditional": "55356dacd569195ca928d43b19868a0ee1a4b30075bf50fba5285de63b895664",
+        "citable_simplified": "b1efb3da9757a29da15af3dcddf86712a1182e35df52e37f04bedce0ee176365",
+        "citable_search": "7aedb316d45ae00ea5781a9792d36aaac0fdf856a5a5ea9a69ac72784cb4e9c2"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-shanghan-yuchang",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 94724,
+      "heading_count": 0,
+      "distinct_volume_count": 6,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 1341,
+      "citable_passage_count": 1341,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 79530,
+      "citable_character_count": 79530,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "commentary": 1341
+      },
+      "top_speakers": {
+        "喻昌": 1340,
+        "问者": 1
+      },
+      "duplicate_passage_instances": 356,
+      "extraction_to_raw_character_ratio": 0.839597,
+      "conversion_hashes": {
+        "source": "0f8eef60653c64c775ecb1120ddd3971a8d8f3d1904912d1a79ab11e14fc3693",
+        "traditional": "62725dd05e9f260a0cefb139c18a70f3980cf1d8bc16753e4a5061f4d35c1e2f",
+        "simplified": "9107d794ad7896839f59dcdca9f8ed9f7017900b4da4e0afbc0557e96684edf7",
+        "search": "03672d28fdbe20e39bf247a696856f01543fc652817b7806536e54e9d39da4c2"
+      },
+      "processed_hashes": {
+        "source": "c2394b2da5fe1c2c9c7e3b37ea99554b131be59be188784c8e918582b8cab9ce",
+        "traditional": "8d1e7301bc5d5f4b978648eca6a45318efcd5def00a19c5b8047b3f80c56f966",
+        "simplified": "bcf0e587df8b14d21f6591e9c46b4b8ecac8cdf342978e884c0cc403db3e2476",
+        "search": "521fb32e84fa32e8b5d7700162d48413179d0b6c37502390360f012ddbe48b7f",
+        "citable_traditional": "8d1e7301bc5d5f4b978648eca6a45318efcd5def00a19c5b8047b3f80c56f966",
+        "citable_simplified": "bcf0e587df8b14d21f6591e9c46b4b8ecac8cdf342978e884c0cc403db3e2476",
+        "citable_search": "521fb32e84fa32e8b5d7700162d48413179d0b6c37502390360f012ddbe48b7f"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 7,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-shanghan-keqin",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 112030,
+      "heading_count": 4,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {
+        "25%": 1
+      },
+      "passage_count": 211,
+      "citable_passage_count": 208,
+      "quarantined_passage_count": 3,
+      "simplified_character_count": 104547,
+      "citable_character_count": 104471,
+      "quarantined_character_count": 76,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 6
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "颈动KT KT、脚挛急，凡身以前者属阳明。",
+          "太阳病，项背强KT KT、无汗、恶风者，葛根汤主之。",
+          "太阳病，项背强KT KT 而汗出恶风者，桂枝加葛根汤主之。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 176,
+        "commentary": 33,
+        "preface": 2
+      },
+      "top_speakers": {
+        "原文与注文混排": 144,
+        "答者": 25,
+        "柯琴": 21,
+        "问者": 16,
+        "岐伯": 5
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.933205,
+      "conversion_hashes": {
+        "source": "74010a66631cc36b96f71325af69804b508caaeb94e45e3cfa7f7ed10180785c",
+        "traditional": "d63695ad7883c50e4d2941458921c5b65da1c6ae7655882845e97b3ec4647a82",
+        "simplified": "7b04a75235df6326aa356dd3ecefe4a16d80023c0fc9f4ad2577c6c1b4b93d36",
+        "search": "ffef723a6c87079facb67b28dfdc6153e2b92e33a4bd1dafdecf49dfeef5d61a"
+      },
+      "processed_hashes": {
+        "source": "d2353373980d4b7e23ea5f7b279f44c11229945552b75a4ece73eecbbe5c1dec",
+        "traditional": "475796d42c0859e580546bfad639a1b02c90fdd4b9c5929e5f0c47d546277e80",
+        "simplified": "2a8c5f1ac4c1cc3da92fe9fe727c74eae1127e863953b31e4e21beca5b7783a2",
+        "search": "4203105009c9b845ee12bdcf5587cc2e060218ca2daba534f8ac298303fdf613",
+        "citable_traditional": "98ac46abc639c4e2dd597d10e4bd0c495558bf9ca830ca84368fb02d2a9db663",
+        "citable_simplified": "09849bcc1efbac6524ae63efbc9d0e888d37fbf27b3f1ada3c264ab1d687e23e",
+        "citable_search": "4c957c002a2c12ee2aecc0372062d397a843f1c63dc1a778e6d796a17f86031c"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-shanghan-youyi",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 90755,
+      "heading_count": 105,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 179,
+      "citable_passage_count": 177,
+      "quarantined_passage_count": 2,
+      "simplified_character_count": 85744,
+      "citable_character_count": 84700,
+      "quarantined_character_count": 1044,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 10
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "阳气者．精则养神．柔则养筋．阴阳既衰．筋脉失其濡养．而强直不柔也．此痉病标本虚实之辨也．病者．身热足寒．颈项强急．恶寒．时头热．面赤．目赤．独头动摇．卒口噤．背反张者．痉病也．痉病不离乎表．故身热恶寒．痉为风强病．而筋脉受之．故口噤．头项强．背反张．脉强直．经云．诸暴强直．皆属于风也．头热足寒．面目赤．头动摇者．风为阳邪．其气上行而又主动也．按以上五条．王叔"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 179
+      },
+      "top_speakers": {
+        "尤怡": 174,
+        "问者": 5
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.944785,
+      "conversion_hashes": {
+        "source": "dd254e35c7c93517635415dcc3dd6b51e35b2640564d05c3c8743f6b75be4a7a",
+        "traditional": "500c30fdeab1433e161e51decb840667f734deb434c487aefb703bae398924c1",
+        "simplified": "dd254e35c7c93517635415dcc3dd6b51e35b2640564d05c3c8743f6b75be4a7a",
+        "search": "eabb12895cb1c07c712c75bb724ea45d79cc859d22b2f71f2f9c5fae11cf5d56"
+      },
+      "processed_hashes": {
+        "source": "60b50435c84b4d018d9d039a73f365c5f5bcdb206e68e3054bc5b2698b7a6cba",
+        "traditional": "83a52718a051d89b2a6ca144231ab5faae16d1248d938f9c2b962a1c85f50cb7",
+        "simplified": "60b50435c84b4d018d9d039a73f365c5f5bcdb206e68e3054bc5b2698b7a6cba",
+        "search": "44ba8d1aebe48a7f39e3147d894041394666ffb2e6ac70db148434ce48b3a8e8",
+        "citable_traditional": "6765641c1b6efa296831d07c289cb1bb446a0144af2868b8a8a814908a3738db",
+        "citable_simplified": "2db5750eff48db2c200026c5f655cd73cd00c3cdcbbf8247ef1bacb6c6a78cf4",
+        "citable_search": "0083e484bcb9fdbef245ec54524e8e6002ce0b4791743cdaf482cc0374c2d28e"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-jingui-xubin",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 146406,
+      "heading_count": 0,
+      "distinct_volume_count": 24,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 3066,
+      "citable_passage_count": 3064,
+      "quarantined_passage_count": 2,
+      "simplified_character_count": 103726,
+      "citable_character_count": 103539,
+      "quarantined_character_count": 187,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "explicit-missing-glyph": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "explicit-missing-glyph": [
+          "注曰此方妙在干姜巴黄峻利寒热俱行有干姜以守中则命蒂常存且以通神明而复正性故能治一切中恶卒〔未识别字2636〕耳",
+          "右药各须精新先捣大黄干姜为末研巴豆内中合治一千杵用为散蜜和丸亦佳宻器贮之莫令歇气主心腹诸卒暴百病若中恶客忤心腹胀满卒痛如锥刺气急口噤停尸卒〔未识别字2636〕者以煖水苦酒服大豆许三四丸或不可下捧头起灌令下咽须臾当差如未差更与三丸当腹中鸣即吐下便差若口噤亦须折齿灌之"
+        ]
+      },
+      "speaker_type_counts": {
+        "quoted_core": 1564,
+        "commentary": 1457,
+        "dialogue": 45
+      },
+      "top_speakers": {
+        "张仲景原文": 1564,
+        "徐彬": 1457,
+        "问者": 23,
+        "师": 22
+      },
+      "duplicate_passage_instances": 1332,
+      "extraction_to_raw_character_ratio": 0.708482,
+      "conversion_hashes": {
+        "source": "fa9de81271f549c483ebe80f36b8805b4c4f18679fc10190a997e0d8ca17cac2",
+        "traditional": "5131feed08ecb2f63ecd5b6833409ffdb3f9ab0fee225c6ec1134d6300780bff",
+        "simplified": "4aa1194311f592fd18dfb5ea362a52e6074768ea7c33358506cc61c0244dffcd",
+        "search": "1ccc48262a000b4c95cac1878c5f5d5cafd74dcb8cfe543dced0dbefd7a345d0"
+      },
+      "processed_hashes": {
+        "source": "134b64884be69cb98b4d98148086e3c585b1730dfb06c5c249e5544ce8e0a626",
+        "traditional": "5ac6ab44800655dbcc805270f4c6a6639e9c1e718cd13510aad0762340764411",
+        "simplified": "f474866ad094702b5b4da3ef11c7c018c6f3377def0f7cf0ec939bbb9b79c700",
+        "search": "2f6d8812d43533fbe6281ff8a1b1a8590af9883c66ab40f2382e99095bd3ff92",
+        "citable_traditional": "68798bd4c48f1748aabe7a72231ea12e0bf056b8c46034a40bc216f386960c56",
+        "citable_simplified": "9d5dde17eb833093e4b50d147a3005b82aa50e7820de27f3cd219f4ea9cc9bb7",
+        "citable_search": "17cb896eedaf2557e4200af27ee7be174941ff792eec67c917a016a42bf103d3"
+      },
+      "structure": {
+        "kind": "volume",
+        "expected_count": 24,
+        "minimum_accepted": 24,
+        "observed_count": 24,
+        "status": "pass",
+        "method": "distinct included page/parent title containing a volume label"
+      }
+    },
+    {
+      "source_id": "commentary-jingui-youyi",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 87559,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 199,
+      "citable_passage_count": 193,
+      "quarantined_passage_count": 6,
+      "simplified_character_count": 80012,
+      "citable_character_count": 79946,
+      "quarantined_character_count": 66,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 10
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "肾病禁淬HT 热食温炙衣。",
+          "KT KT 然。",
+          "KT KT。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 133,
+        "commentary": 63,
+        "preface": 3
+      },
+      "top_speakers": {
+        "师": 93,
+        "问者": 24,
+        "尤怡": 21,
+        "原文与注文混排": 21,
+        "徐": 17,
+        "成": 12,
+        "喻": 10,
+        "答者": 1
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.913807,
+      "conversion_hashes": {
+        "source": "b8e80b75057e33e55b623926748d28b031f981c9a9fb8cc074e932c028a6bb22",
+        "traditional": "66c1d350fd627101fb55b3b65bf4b19b2dac0c9e7c03349822b15a15f6f8eb66",
+        "simplified": "eb6f7736126ff65929fd906eb8bcea067bec01493814fd437a84912f832e1fcb",
+        "search": "e7455462202f373c95b71f82972e51bc9dab18d04e97df967982966ed475643d"
+      },
+      "processed_hashes": {
+        "source": "40ab09193e8d96ab9069bba65b3c7404a14228ba2e553198eb6e8a33f65e6aaf",
+        "traditional": "47098fa179e08ec03b80c8fa12e4a81de2b651c98aae186213c3e30b60962378",
+        "simplified": "552603855347570cc71dcdcf864f76361bf5cb7b79e2cb6e3297c899a81a0405",
+        "search": "39a8ec0882aeb9f3b7e8a771452d9c53b5904f34bb58d72ed5dda39b96d1bced",
+        "citable_traditional": "617a3466d32445f409b7d91a2acdd2a6fd80612272f2f61a9b984909df4c528d",
+        "citable_simplified": "bb0ca5f67f0d72e3b413c5338e41112550a3f338c796544de21f59e845784c03",
+        "citable_search": "6e31763c8e4c9e837302419d241424fcd2c7d6369db1c12c5e9d27381ba434e8"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-jingui-chenxiuyuan",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 137677,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 245,
+      "citable_passage_count": 244,
+      "quarantined_passage_count": 1,
+      "simplified_character_count": 126518,
+      "citable_character_count": 126510,
+      "quarantined_character_count": 8,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 1
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "为业医者之HT。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 222,
+        "commentary": 23
+      },
+      "top_speakers": {
+        "师": 132,
+        "原文与注文混排": 72,
+        "问者": 24,
+        "陈修园": 6,
+        "喻": 5,
+        "徐": 4,
+        "答者": 2
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.918948,
+      "conversion_hashes": {
+        "source": "153d6146f428dc4d8fd024f8e1981803e4abb47e193f71dd4682079be160f5d9",
+        "traditional": "39c90f102c28982805aca0bf081bf00404e9922db4f397581c0e08eeae900765",
+        "simplified": "84d1f9442044f85926a57996a28c0e62176b89ea2e32390971c399ebf145c6fd",
+        "search": "7e9ee33be0c125c13601f7c71b6909721671e7e2baaa049231bc73b16ed56c51"
+      },
+      "processed_hashes": {
+        "source": "5bf1e780b679ddd555c232709a10dee524dfe0086e03d2c0b1298b2089a3373b",
+        "traditional": "75485df3b8676746ff34dee369f4221f6635764a83d1602dd20bcce71017dd0f",
+        "simplified": "65ebe81483cd94591b526dfa2c78ffdcbe6a2a9dc2ce829d1b46d7b4318713bd",
+        "search": "9ce421a3e439d16c989bf32243793d958d148e7c2643f2a5daba044984e31a4f",
+        "citable_traditional": "2a239f3e70f488b375e4ede64edcb767417752a1d141b926ccac88e8c811de41",
+        "citable_simplified": "cbf2ed5e65dfbc33a4f2b5562b82e96d2b26bd6f3e198df8b80a294b885b0b91",
+        "citable_search": "8a8f8f6864e5244d651161de618dc26172906c550a6cff9dd7ffa92833288ff5"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-nanjing-huashou",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 16536,
+      "heading_count": 81,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 83,
+      "citable_passage_count": 83,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 14646,
+      "citable_character_count": 14646,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "commentary": 83
+      },
+      "top_speakers": {
+        "滑寿": 83
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.885704,
+      "conversion_hashes": {
+        "source": "f97ea78bfb01bdae2383037bb4ba4c90268a25ac9826015a11a39318189ed19c",
+        "traditional": "a503ca03eb24d0d990dcdbbc0f21c3b917ef45f551b78f821ccc94127e7a520c",
+        "simplified": "2b3e41e6166ce2469d22e11c2f15ad59c87086530145039c6c053a108004e395",
+        "search": "57f4fbec1de3f02ddbb5efb6f63ae1b72b9ecce0cd3b81350c122e1425376842"
+      },
+      "processed_hashes": {
+        "source": "ff9656ceb1723c9cbb244f178c847e2f1254a1589f31ec7dee44da937ab41967",
+        "traditional": "83e0bde8d1a1d43c48e9f8c8ec5cf8ca3dcea38a9ba79ee35a2d2664e98f6939",
+        "simplified": "f37fa26d8fe272c1edf486ad456a1a76192d53b92ba0439456be08dd16c3b6b5",
+        "search": "fbc0c16e082a34a2bef511289e46c2bdf982bc8eb030b597ae0a638a0b9bd5e4",
+        "citable_traditional": "83e0bde8d1a1d43c48e9f8c8ec5cf8ca3dcea38a9ba79ee35a2d2664e98f6939",
+        "citable_simplified": "f37fa26d8fe272c1edf486ad456a1a76192d53b92ba0439456be08dd16c3b6b5",
+        "citable_search": "fbc0c16e082a34a2bef511289e46c2bdf982bc8eb030b597ae0a638a0b9bd5e4"
+      },
+      "structure": {
+        "kind": "difficulty",
+        "expected_count": 81,
+        "minimum_accepted": 81,
+        "observed_count": 81,
+        "status": "pass",
+        "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+      }
+    },
+    {
+      "source_id": "commentary-nanjing-xudachun",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 39131,
+      "heading_count": 3,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 59,
+      "citable_passage_count": 58,
+      "quarantined_passage_count": 1,
+      "simplified_character_count": 37222,
+      "citable_character_count": 37196,
+      "quarantined_character_count": 26,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "诸KT 行喘息， 飞蠕动，（KT、、蠕，皆虫行之状；"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 45,
+        "commentary": 14
+      },
+      "top_speakers": {
+        "原文与注文混排": 22,
+        "岐伯": 22,
+        "徐大椿": 14,
+        "黄帝": 1
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.951215,
+      "conversion_hashes": {
+        "source": "aede05c3c2ee0ebf4594307d79744d3395481d7edb522f4629d74f293e37972a",
+        "traditional": "83ae82d61dc0ff8b37607a8ecdd6508f145b3ada97a48b48cb7c7e8efef02225",
+        "simplified": "096041d8be8bde255e5d12941557cf727ec849c4e1beea965cf728e0e6d7c3fa",
+        "search": "1e93f0cd1de4e980a9b37c46119f9a26c0dc506856f665d380df9f6b35f163df"
+      },
+      "processed_hashes": {
+        "source": "816fb3b0d3eba4e53198ed73d6251c76c7568f8a0e05515a0bf1e6f827722774",
+        "traditional": "67e1449e179cb4fe93eb940afb6b4d56f0c75acfae08dfa8b429e7e07e741e44",
+        "simplified": "b97e9f9a8348871543d5876de6f82baaea28f62e0cc7b94c95ff2ef18c1be5ee",
+        "search": "44e292e9dbdb8c23ec05718e53bcaaa97f40552cded9dab940f4563c2627c7f7",
+        "citable_traditional": "cbcd0615b45fa1703cc5fbf10572f82f2dd30872ab0778b0f47dc385a4065c51",
+        "citable_simplified": "4305d925e2da40d525de9dd5624a173789a99990f52f8a077641ade8fcd0d10c",
+        "citable_search": "2943c8fd55831204c07190eb19166bdd41fef1b9543c397b7727a57fa11b497d"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-nanjing-jizhu",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 77581,
+      "heading_count": 25,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 946,
+      "citable_passage_count": 943,
+      "quarantined_passage_count": 3,
+      "simplified_character_count": 72379,
+      "citable_character_count": 72357,
+      "quarantined_character_count": 22,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "known-ui-text-intrusion": 1,
+        "legacy-glyph-placeholder-ht-kt": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "known-ui-text-intrusion": [
+          "勒成滚动条。"
+        ],
+        "legacy-glyph-placeholder-ht-kt": [
+          "既而耽研无HT。",
+          "督脉起于脊KT。"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 917,
+        "quoted_core": 24,
+        "preface": 5
+      },
+      "top_speakers": {
+        "虞庶": 300,
+        "丁德用": 254,
+        "杨玄操": 203,
+        "吕广": 158,
+        "所引原文": 24,
+        "王九思辑": 5,
+        "岐伯": 1,
+        "黄帝": 1
+      },
+      "duplicate_passage_instances": 1,
+      "extraction_to_raw_character_ratio": 0.932948,
+      "conversion_hashes": {
+        "source": "ee27af1108b79073942fe381af7909f4571d16eb5d18e45a988b43116e02ba46",
+        "traditional": "9a3154091750af79e9349c5a64c7e7fc15c5f72817210e213bfcd27cbf3a9853",
+        "simplified": "6ad343b01479ac90a9fc966a1facdb1b4ccd18b5fb789ceb22cf60f52953988b",
+        "search": "8b45ebb3a3bf59e1b9dc574f5ed374d2b6e6bce5978ec97e06fc4173efe961a6"
+      },
+      "processed_hashes": {
+        "source": "d32bf246dba673cb6ca6be4efb28552214e269fea79fb00240eda20bf87519e6",
+        "traditional": "025a830c1626f784b9bb36a207a7ab0e49153d4be05d06355a6d39355c7cbc8e",
+        "simplified": "4e0a4f5a5d9830db50b02578bf925575469534057eec21941881cad4b852db2a",
+        "search": "47b539b50fec2a1b5c9e2831a8601bca50bdf081cf8dc9e0755d1b06106da634",
+        "citable_traditional": "fcca22cbdb0e7b7dbe3423c1f46ea5f19f35a01df405be100ecfc49784a4edce",
+        "citable_simplified": "a1a8f3600e8207fa254728e520b7067bc9069c96502a99b26bb06ec100b4f4fc",
+        "citable_search": "8b5ca49857a2e125bab4424beaeee65fdcc7e0df94e9130d6b57bfbcda291bf3"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-wenbing-wangshixiong",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 137750,
+      "heading_count": 154,
+      "distinct_volume_count": 5,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 316,
+      "citable_passage_count": 314,
+      "quarantined_passage_count": 2,
+      "simplified_character_count": 132861,
+      "citable_character_count": 132816,
+      "quarantined_character_count": 45,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 2
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "疑古食品之HT。",
+          "匡坐篷窗，间回环KT诵，奇情妙绪，层见叠出，满纸灵光，与严陵山色竞秀争奇。"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 316
+      },
+      "top_speakers": {
+        "王士雄": 272,
+        "岐伯": 17,
+        "杨玄操": 11,
+        "黄帝": 7,
+        "喻": 5,
+        "答者": 4
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.96482,
+      "conversion_hashes": {
+        "source": "7ae482176eb346b6be5fa52d45fbb26c01460e0204a9fc39d4f8e55d0768785c",
+        "traditional": "1d66c8f0249e0cad58bc645c7fc8329929e8d4a57cfffa77b22c641c18bdeebc",
+        "simplified": "7110b04b06e0dee66f33bc3d9b8098b484d317313ea3113802b6ae67c524068d",
+        "search": "45a12eb1e95f04b9feda72abcd616024f614dc06651107629a828fb994e0a47d"
+      },
+      "processed_hashes": {
+        "source": "45fcaf13bca16e385765e9ec7a8f33bb5eb458793ef0cf1fed8f23fbd4c2564d",
+        "traditional": "9b516fc10a14b13bd094b652fc4f95fbb696429dbb6908edb9e93cf05a7b9b59",
+        "simplified": "e785fe9f5d4cc819c211c7f4703345c4fce06ca48287047685ba2fcc2f0193c6",
+        "search": "678240968e0c9310155db336cbbbc11175334f8df39bb4800ae53a8e6ac13978",
+        "citable_traditional": "d10419612a4837fcda1eee6af387f628a57bc91d6f96321762eea62af1f430a5",
+        "citable_simplified": "59f20ce391594493794179d76c45371bed0691ffb51925d5f714cc3511c36b89",
+        "citable_search": "1e7363a9f33faa0b695a4a268b6d9dfc0a33894545d00ae610fbfcfb93ba5a23"
+      },
+      "structure": {
+        "kind": "volume",
+        "expected_count": 5,
+        "minimum_accepted": 5,
+        "observed_count": 5,
+        "status": "pass",
+        "method": "distinct included page/parent title containing a volume label"
+      }
+    },
+    {
+      "source_id": "commentary-wenbing-leifeng",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 90254,
+      "heading_count": 129,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 211,
+      "citable_passage_count": 206,
+      "quarantined_passage_count": 5,
+      "simplified_character_count": 84465,
+      "citable_character_count": 84109,
+      "quarantined_character_count": 356,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 5
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "考暑泻之证，泻出稠粘，小便热赤，脉来濡数，其或沉滑，面垢有汗，口渴喜凉，通体之热，热似火炎，宜以清凉涤暑法，用却燔蒸，譬如商飒然倏动，则炎HT自荡无余矣。",
+          "湿侵于脾，脾失健运，不能渗化，致HT门不克泌清别浊，水谷并入大肠而成泄泻矣。",
+          "（附：秋凉）七月大火西流，暑气渐减，而凉气渐生，其时炎HT尚存，一如盛夏，亦有较盛夏更热之年，人感其热而病者，为秋暑，即世俗所称秋老虎是也。"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 211
+      },
+      "top_speakers": {
+        "雷丰": 176,
+        "答者": 30,
+        "黄帝": 2,
+        "张介宾/张氏": 1,
+        "岐伯": 1,
+        "师": 1
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.935859,
+      "conversion_hashes": {
+        "source": "5471b10e65e477eb643ad1ed660674f638b7b4fcb2c0e053f9a9778518205b37",
+        "traditional": "29c5351c14bcecbd7bfbdd293f84c37a17f294893d0331fee58982ac843165d6",
+        "simplified": "e05efb4a8a9530214b4b9bbabf09fef2caf23c0ad486c708781275da69e48004",
+        "search": "1e9b1eb049073d9a9f20525e2348931481dce8f6f92ec26598a9065f2a43afc7"
+      },
+      "processed_hashes": {
+        "source": "633d4cc7837090ff0e7f1ef5173d645c2687a8e30d75e34fea077f114522b1eb",
+        "traditional": "a38e170ec8936a61d97f0a453013b6b0845b1ce6e99b9c76f976471e1b7e3305",
+        "simplified": "377d931e08cc1479533a33254831aa6a3184036354fa66c55be169edec866346",
+        "search": "9104f0ecef4b65a928b7167fa7dd30e9b2c56ae40f32b6a998f10734b8eaf8b7",
+        "citable_traditional": "68f29c74af6cace3b319cbb4b2f38886a6028f799f20f2bec7cc4131e0c3cffe",
+        "citable_simplified": "a6720585209f8f921747e55e5978a4dc0339e9c46052e1bdb30ac44e7e41d5cb",
+        "citable_search": "f319afcc9bec85d984f4f30079a575f1c551398ae5f128c32c523b20a58e4275"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "lineage-wenbing-yetianshi",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 5714,
+      "heading_count": 18,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 18,
+      "citable_passage_count": 18,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 5261,
+      "citable_character_count": 5261,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "lineage": 18
+      },
+      "top_speakers": {
+        "叶桂": 18
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.920721,
+      "conversion_hashes": {
+        "source": "9be70d9350c826d7ab5e3615f8d13eb9202e556982438e03b05b8c3f68d89280",
+        "traditional": "fe38bd72ed177387f00acf3817d0e575f4c1b244c2582a16cc66e0c9ddf33c00",
+        "simplified": "521efa3720045e0a937bfaf96e0237966172728d200f73dcbfbdab0c8c94e907",
+        "search": "7540ccc0ac1d5f6c18b0376f2344a07b7dfc4e1497016a3bbed1a329ae4b00a1"
+      },
+      "processed_hashes": {
+        "source": "9be70d9350c826d7ab5e3615f8d13eb9202e556982438e03b05b8c3f68d89280",
+        "traditional": "fe38bd72ed177387f00acf3817d0e575f4c1b244c2582a16cc66e0c9ddf33c00",
+        "simplified": "521efa3720045e0a937bfaf96e0237966172728d200f73dcbfbdab0c8c94e907",
+        "search": "7540ccc0ac1d5f6c18b0376f2344a07b7dfc4e1497016a3bbed1a329ae4b00a1",
+        "citable_traditional": "fe38bd72ed177387f00acf3817d0e575f4c1b244c2582a16cc66e0c9ddf33c00",
+        "citable_simplified": "521efa3720045e0a937bfaf96e0237966172728d200f73dcbfbdab0c8c94e907",
+        "citable_search": "7540ccc0ac1d5f6c18b0376f2344a07b7dfc4e1497016a3bbed1a329ae4b00a1"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "lineage-wenbing-xuexue",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 9967,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 15,
+      "citable_passage_count": 15,
+      "quarantined_passage_count": 0,
+      "simplified_character_count": 9011,
+      "citable_character_count": 9011,
+      "quarantined_character_count": 0,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {},
+      "citable_warnings": {},
+      "warning_examples": {},
+      "speaker_type_counts": {
+        "lineage": 15
+      },
+      "top_speakers": {
+        "答者": 9,
+        "薛雪": 6
+      },
+      "duplicate_passage_instances": 0,
+      "extraction_to_raw_character_ratio": 0.904083,
+      "conversion_hashes": {
+        "source": "b6611d599ba7fbd5ffb36bfe8ee25552a5d38622371b5de943b47c5687151e0e",
+        "traditional": "3ed0dbda63c4b3a39b564cc9538e50e6524916bdae656f6437a21886d76f7c77",
+        "simplified": "23e3ced03f6b5fd22a5241519997a47b5cab50a07b6edcf351dc7672e86073ac",
+        "search": "bb9053b1a0442765f2cf7804f5d1be77f2ec13e5dc47957c2a4dcd7a5e3b7ed8"
+      },
+      "processed_hashes": {
+        "source": "990b7f1019bef442252e617bf9af869fd73628c0d28b1f3f76836b095bd48715",
+        "traditional": "f201c65c6f38c9232fb46300ef706cc6810a1ac146442c3f73c22b7d40e5da3f",
+        "simplified": "dad355fa495179ec715c3040d6e0511d41a76607b3afd0449acef4693c435c68",
+        "search": "b1e0b23d36e992ccfd517f903937ce98cf5f993027a321d2955301b75c569bc1",
+        "citable_traditional": "f201c65c6f38c9232fb46300ef706cc6810a1ac146442c3f73c22b7d40e5da3f",
+        "citable_simplified": "dad355fa495179ec715c3040d6e0511d41a76607b3afd0449acef4693c435c68",
+        "citable_search": "b1e0b23d36e992ccfd517f903937ce98cf5f993027a321d2955301b75c569bc1"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-suwen-zhangzhicong",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 467460,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 7309,
+      "citable_passage_count": 7260,
+      "quarantined_passage_count": 49,
+      "simplified_character_count": 446283,
+      "citable_character_count": 445834,
+      "quarantined_character_count": 449,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 67
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "阴阳HT HT。",
+          "（HT HT、气之往来也。",
+          "目HT 绝系。"
+        ]
+      },
+      "speaker_type_counts": {
+        "commentary": 3716,
+        "mixed": 3591,
+        "preface": 2
+      },
+      "top_speakers": {
+        "张志聪": 3666,
+        "原文与注文混排": 2460,
+        "黄帝": 609,
+        "岐伯": 539,
+        "雷公": 16,
+        "师": 4,
+        "答者": 3,
+        "王": 3,
+        "伯高": 3,
+        "马莳": 2,
+        "滑寿": 1,
+        "少俞": 1
+      },
+      "duplicate_passage_instances": 217,
+      "extraction_to_raw_character_ratio": 0.954706,
+      "conversion_hashes": {
+        "source": "6887227448929d5d14124e2d1337bba8ce941aa7ede78a9b8a1fbf60bbd04adf",
+        "traditional": "fb0f5b16585b79e55ff4640758522b4d37d97a21f721339c459dc0c99a2fe563",
+        "simplified": "433c1423916b39540e654772c0a31a7a6ae967c3f861201406a05065d012d551",
+        "search": "346b0c49329bcd14fcc5a9717db71f012054866804c3bf82a52373b500789dfa"
+      },
+      "processed_hashes": {
+        "source": "c5d0fb8ce9891e2d1ee7b94966575a56ac8066e5d24b1efb5edb6476e0eed23e",
+        "traditional": "7ba2f77231fabd645584a292cd699477fea34e060bc9c3775b7adc28bcb0009e",
+        "simplified": "e19cd7b9d908a317344c8d74879e138dfecae377ad5c78b9884ab2ab402c42b4",
+        "search": "db321b44bff96b70cca36209ac17e7dd0472fe23d7322eb9eda3504402a0fe8f",
+        "citable_traditional": "731617e5fe7ae50dfecf7bee449a2e90297dc0f3b162bffd2602c3e0faf159f3",
+        "citable_simplified": "682cb08bb9a97f4b082dc0b9b862f4ad138777a8c8823cbab73371ad2ebd3d59",
+        "citable_search": "b67c0e2829621ebb80bccccae2c049cb91d28b5b2604801163613f9407b507e8"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    },
+    {
+      "source_id": "commentary-lingshu-danbo",
+      "raw_hash_mismatch_count": 0,
+      "raw_hash_mismatch_titles": [],
+      "included_raw_characters": 254062,
+      "heading_count": 0,
+      "distinct_volume_count": 0,
+      "proofread_page_levels": {},
+      "low_quality_category_pages": {},
+      "passage_count": 1582,
+      "citable_passage_count": 1490,
+      "quarantined_passage_count": 92,
+      "simplified_character_count": 223018,
+      "citable_character_count": 222169,
+      "quarantined_character_count": 849,
+      "blocking_issues": {},
+      "blocking_examples": {},
+      "warnings": {
+        "legacy-glyph-placeholder-ht-kt": 105
+      },
+      "citable_warnings": {},
+      "warning_examples": {
+        "legacy-glyph-placeholder-ht-kt": [
+          "一名 KT。",
+          "亦作HT。",
+          "闭马本作HT 云HT。"
+        ]
+      },
+      "speaker_type_counts": {
+        "mixed": 936,
+        "commentary": 646
+      },
+      "top_speakers": {
+        "张介宾/张氏": 734,
+        "张志聪": 368,
+        "马莳": 330,
+        "原文与注文混排": 65,
+        "丹波元简": 29,
+        "滑寿": 24,
+        "黄帝": 10,
+        "岐伯": 9,
+        "杨玄操": 5,
+        "王": 4,
+        "伯高": 2,
+        "新校正": 1
+      },
+      "duplicate_passage_instances": 31,
+      "extraction_to_raw_character_ratio": 0.877825,
+      "conversion_hashes": {
+        "source": "80466336864f3e7a89e97a63d49cbd0f1daa3765216063928aa607c750864026",
+        "traditional": "142c0f79ea035e9c2726c0282246a2d667e3b9556d976bb5c370bec61256e628",
+        "simplified": "4f599140b67d034bebccd7ed18a85f3ee6a9afbd5eee6d1cae63a8849ecd5350",
+        "search": "8762002dd99ec3f54c8a377d545bb9e7696c7fd634ee65e3ccb9f27696d20840"
+      },
+      "processed_hashes": {
+        "source": "c457ecbc084584128ff34e05cd70cf8bacc19202182624269d606076b9edab8f",
+        "traditional": "90f8d2533d6a5c5c95d0590c38097bb2a9f24af008cc362321aaf0bbf109dd95",
+        "simplified": "86693a46fa0a8fbb0445f4f6bb4147f349a2603fb4bb01f489fe6e739b256967",
+        "search": "c15faf9e8b9c22d63f1f5c87b2dea726cc38d3c938486916d0a3478d84e5de99",
+        "citable_traditional": "6f7b23699a4e544f0da35d8437664d3cbc2490f1aa57d37d64a275150282e2e3",
+        "citable_simplified": "16b43f4ec5b3a577cc9367f9601b4e21ef773562eb754d1f5c79c1e9b81269a4",
+        "citable_search": "f231da21c9b418a0bbf3fcf10dbefb05c6b21ea70e720e114717b064ea1fc1ce"
+      },
+      "structure": {
+        "kind": "nonempty-corpus",
+        "expected_count": null,
+        "minimum_accepted": 1,
+        "observed_count": 1,
+        "status": "pass",
+        "method": "included logical or transcluded page count"
+      }
+    }
+  ]
+}

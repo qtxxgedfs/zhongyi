@@ -1,0 +1,64 @@
+{
+  "id": "lineage-wenbing-xuexue",
+  "layer": "lineage",
+  "canon": "wenbing",
+  "target_works": [
+    "wenbingtiaobian"
+  ],
+  "author": "薛雪",
+  "title": "《湿热病篇》",
+  "relationship": [
+    "lineage_predecessor",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "濕熱條辨",
+  "page_url": "https://zh.wikisource.org/wiki/%E6%BF%95%E7%86%B1%E6%A2%9D%E8%BE%A8",
+  "edition_label": "《湿热条辨》（对应计划《湿热病篇》）Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "页面重定向后的实际题名为《湿热条辨》；标为学术源流。",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "濕熱條辨/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "濕熱條辨",
+      "title": "濕熱條辨",
+      "page_id": 61067,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BF%95%E7%86%B1%E6%A2%9D%E8%BE%A8",
+      "revision_id": 2545332,
+      "revision_timestamp": "2025-04-02T20:28:44Z",
+      "source_sha1": "c6c5a5f60686ddc17c2fa61e9f90f35f45364c3f",
+      "source_size": 28061,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old",
+        "Category:中醫",
+        "Category:古代中國",
+        "Category:有跨维基链接需要清理",
+        "Category:清朝",
+        "Category:溫病學派",
+        "Category:薛雪",
+        "Category:醫家"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/lineage-wenbing-xuexue/0000.wikitext",
+      "raw_sha256": "404689f4ea7098b323f6aa84875ff3c9230eb65198a33b07db4948c880b4ad28"
+    }
+  ],
+  "aggregate_raw_sha256": "59906d5ef63e0f1bde7ed85f1e00fe83267df6a28b72c9c8e1a5a22a79e59b1d"
+}

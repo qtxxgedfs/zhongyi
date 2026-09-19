@@ -1,0 +1,62 @@
+{
+  "id": "commentary-nanjing-xudachun",
+  "layer": "commentary",
+  "canon": "nanjing",
+  "target_works": [
+    "nanjing"
+  ],
+  "author": "徐大椿（徐灵胎）",
+  "title": "《难经经释》",
+  "relationship": [
+    "direct_commentary",
+    "textual_collation",
+    "disagreement"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "難經經釋",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E7%B6%93%E9%87%8B",
+  "edition_label": "《难经经释》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "難經經釋/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "難經經釋",
+      "title": "難經經釋",
+      "page_id": 760962,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E7%B6%93%E9%87%8B",
+      "revision_id": 1753330,
+      "revision_timestamp": "2019-12-05T08:57:43Z",
+      "source_sha1": "b831925d426442c92f0e687f3f5007bef357522f",
+      "source_size": 113499,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:公元1644-1911年",
+        "Category:徐灵胎",
+        "Category:校訂不足的頁面",
+        "Category:清朝"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-nanjing-xudachun/0000.wikitext",
+      "raw_sha256": "04121451d2518cc9c752168b8ffb0a65b149ed5171a8039cf008fe2e872d92db"
+    }
+  ],
+  "aggregate_raw_sha256": "0cc7a341e35f2022d89f093040df3726d65c26c9cdabf5d2dd6bb248184988d1"
+}

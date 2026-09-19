@@ -1,0 +1,60 @@
+{
+  "id": "commentary-suwen-zhangzhicong",
+  "layer": "commentary",
+  "canon": "huangdi",
+  "target_works": [
+    "suwen"
+  ],
+  "author": "张志聪",
+  "title": "《黄帝内经素问集注》",
+  "relationship": [
+    "direct_commentary",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "黃帝內經素問集注",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F%E9%9B%86%E6%B3%A8",
+  "edition_label": "《黄帝内经素问集注》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "页面标记排版不佳、校订不足、需要拆分。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "黃帝內經素問集注/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "黃帝內經素問集注",
+      "title": "黃帝內經素問集注",
+      "page_id": 760944,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F%E9%9B%86%E6%B3%A8",
+      "revision_id": 2385250,
+      "revision_timestamp": "2024-04-02T04:58:45Z",
+      "source_sha1": "b289420935de67a758cbccdce399e36603b723c5",
+      "source_size": 1362238,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:排版不佳的頁面",
+        "Category:校訂不足的頁面",
+        "Category:需要拆分的页面"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-suwen-zhangzhicong/0000.wikitext",
+      "raw_sha256": "8b283c163c6b4747589af872fa1ffbd57f0b4b762ed0b7ebd3b07e41e5176a7e"
+    }
+  ],
+  "aggregate_raw_sha256": "b4cd0c0352150c543cc790f0f226df286d6b67d806fddecf4b24d38b0f12372f"
+}

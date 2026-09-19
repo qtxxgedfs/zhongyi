@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-jingui-xubin",
+  "passage_count": 3066,
+  "citable_passage_count": 3064,
+  "quarantined_passage_count": 2,
+  "statistics": {
+    "characters_simplified": 103726,
+    "citable_characters": 103539,
+    "citable_passages": 3064,
+    "passages": 3066,
+    "quarantine_issue:explicit-missing-glyph": 2,
+    "quarantined_characters": 187,
+    "quarantined_passages": 2,
+    "speaker_type:commentary": 1457,
+    "speaker_type:dialogue": 45,
+    "speaker_type:quoted_core": 1564,
+    "split_blocks": 3
+  },
+  "source_aggregate_sha256": "134b64884be69cb98b4d98148086e3c585b1730dfb06c5c249e5544ce8e0a626",
+  "traditional_aggregate_sha256": "5ac6ab44800655dbcc805270f4c6a6639e9c1e718cd13510aad0762340764411",
+  "simplified_aggregate_sha256": "f474866ad094702b5b4da3ef11c7c018c6f3377def0f7cf0ec939bbb9b79c700",
+  "search_aggregate_sha256": "2f6d8812d43533fbe6281ff8a1b1a8590af9883c66ab40f2382e99095bd3ff92",
+  "citable_traditional_sha256": "68798bd4c48f1748aabe7a72231ea12e0bf056b8c46034a40bc216f386960c56",
+  "citable_simplified_sha256": "9d5dde17eb833093e4b50d147a3005b82aa50e7820de27f3cd219f4ea9cc9bb7",
+  "citable_search_sha256": "17cb896eedaf2557e4200af27ee7be174941ff792eec67c917a016a42bf103d3",
+  "processed_path": "sources/processed/commentary-jingui-xubin/passages.jsonl",
+  "max_simplified_characters": 700
+}

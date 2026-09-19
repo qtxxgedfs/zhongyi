@@ -1,0 +1,2 @@
+{{四部叢刊頁眉|title=重廣補注黃帝內經素問|section=卷第二|prev=卷第一|next=卷第三|type=子|notes=唐 王冰 注 宋 林億 等校正 景上海涵芬館藏明翻北宋本}}
+<pages from="60" to="91" index="Sibu Congkan0357-王冰-重廣補注黃帝內經素問-5-1.djvu" />

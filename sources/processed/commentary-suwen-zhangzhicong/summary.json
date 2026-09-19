@@ -1,0 +1,29 @@
+{
+  "source_id": "commentary-suwen-zhangzhicong",
+  "passage_count": 7309,
+  "citable_passage_count": 7260,
+  "quarantined_passage_count": 49,
+  "statistics": {
+    "characters_simplified": 446283,
+    "citable_characters": 445834,
+    "citable_passages": 7260,
+    "dropped_format_only_segments": 2,
+    "passages": 7309,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 67,
+    "quarantined_characters": 449,
+    "quarantined_passages": 49,
+    "speaker_type:commentary": 3716,
+    "speaker_type:mixed": 3591,
+    "speaker_type:preface": 2,
+    "split_blocks": 42
+  },
+  "source_aggregate_sha256": "c5d0fb8ce9891e2d1ee7b94966575a56ac8066e5d24b1efb5edb6476e0eed23e",
+  "traditional_aggregate_sha256": "7ba2f77231fabd645584a292cd699477fea34e060bc9c3775b7adc28bcb0009e",
+  "simplified_aggregate_sha256": "e19cd7b9d908a317344c8d74879e138dfecae377ad5c78b9884ab2ab402c42b4",
+  "search_aggregate_sha256": "db321b44bff96b70cca36209ac17e7dd0472fe23d7322eb9eda3504402a0fe8f",
+  "citable_traditional_sha256": "731617e5fe7ae50dfecf7bee449a2e90297dc0f3b162bffd2602c3e0faf159f3",
+  "citable_simplified_sha256": "682cb08bb9a97f4b082dc0b9b862f4ad138777a8c8823cbab73371ad2ebd3d59",
+  "citable_search_sha256": "b67c0e2829621ebb80bccccae2c049cb91d28b5b2604801163613f9407b507e8",
+  "processed_path": "sources/processed/commentary-suwen-zhangzhicong/passages.jsonl",
+  "max_simplified_characters": 700
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-neijing-leijing",
+  "passage_count": 19021,
+  "citable_passage_count": 19019,
+  "quarantined_passage_count": 2,
+  "statistics": {
+    "characters_simplified": 607231,
+    "citable_characters": 607153,
+    "citable_passages": 19019,
+    "passages": 19021,
+    "quarantine_issue:explicit-missing-glyph": 2,
+    "quarantined_characters": 78,
+    "quarantined_passages": 2,
+    "speaker_type:commentary": 9840,
+    "speaker_type:dialogue": 1061,
+    "speaker_type:quoted_core": 8120,
+    "split_blocks": 31
+  },
+  "source_aggregate_sha256": "0ffb75a9c68af93976363e5f4e929dd9b6e8b3766c592f306e41ad8b5cc82ee6",
+  "traditional_aggregate_sha256": "92bdf5912f79b08acc4cdcc69f39cf7ce705243d94a91a98e6fa33538d542606",
+  "simplified_aggregate_sha256": "685ebb3cba255003804a8a6fb77b3395487e67e26ba6a5df5878f2b57be5ffed",
+  "search_aggregate_sha256": "116b1ff0d8326306fcfc8859e4e40691669370c75f9edfa8f18c3453dcc91b59",
+  "citable_traditional_sha256": "cfbac3161bd8ee184f149b86c8507c8d114f1f5ccdff6c61cd29b3a9d275031f",
+  "citable_simplified_sha256": "5e31fe65cae2b99df30daf4c19e7375ee980970c0f225e75561699141ae3039c",
+  "citable_search_sha256": "07df067b7a296a6182a1dada68ec70a30e9c1c0939a8975a73657f693110f063",
+  "processed_path": "sources/processed/commentary-neijing-leijing/passages.jsonl",
+  "max_simplified_characters": 700
+}

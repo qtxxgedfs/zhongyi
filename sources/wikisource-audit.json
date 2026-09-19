@@ -1,0 +1,2136 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T08:51:43+00:00",
+  "source_candidates": "sources\\source-candidates.json",
+  "method": "MediaWiki OpenSearch + page revision metadata + title-prefix subpage count",
+  "disclaimer": "Automated title discovery is not final bibliographic or licensing approval.",
+  "works": [
+    {
+      "id": "core-suwen",
+      "layer": "core",
+      "canon": "huangdi",
+      "target_works": [
+        "suwen"
+      ],
+      "author": "传统题作黄帝、岐伯等",
+      "title": "《素问》",
+      "relationship": "core",
+      "queries_attempted": [],
+      "status": "configured-title",
+      "selected_candidate": {
+        "title": "黃帝內經",
+        "description": "Configured after manual title review",
+        "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+        "matched_query": "configured-title",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "黃帝內經",
+          "description": "Configured after manual title review",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+          "matched_query": "configured-title",
+          "score": 100.0
+        }
+      ],
+      "subpage_prefix": "黃帝內經/素問",
+      "page_info": {
+        "page_id": 16900,
+        "title": "黃帝內經",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+        "page_length": 5637,
+        "latest_revid": 2596804,
+        "revision_timestamp": "2025-09-08T03:48:28Z",
+        "revision_size": 5637,
+        "missing": false
+      },
+      "subpage_count": 24
+    },
+    {
+      "id": "core-lingshu",
+      "layer": "core",
+      "canon": "huangdi",
+      "target_works": [
+        "lingshu"
+      ],
+      "author": "传统题作黄帝、岐伯等",
+      "title": "《灵枢》",
+      "relationship": "core",
+      "queries_attempted": [],
+      "status": "configured-title",
+      "selected_candidate": {
+        "title": "黃帝內經",
+        "description": "Configured after manual title review",
+        "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+        "matched_query": "configured-title",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "黃帝內經",
+          "description": "Configured after manual title review",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+          "matched_query": "configured-title",
+          "score": 100.0
+        }
+      ],
+      "subpage_prefix": "黃帝內經/靈樞",
+      "page_info": {
+        "page_id": 16900,
+        "title": "黃帝內經",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+        "page_length": 5637,
+        "latest_revid": 2596804,
+        "revision_timestamp": "2025-09-08T03:48:28Z",
+        "revision_size": 5637,
+        "missing": false
+      },
+      "subpage_count": 12
+    },
+    {
+      "id": "core-shanghanlun",
+      "layer": "core",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "传统归于张仲景",
+      "title": "《伤寒论》",
+      "relationship": "core",
+      "queries_attempted": [
+        "傷寒論 宋本",
+        "傷寒論 (宋本)",
+        "傷寒論"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "傷寒論",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96",
+        "matched_query": "傷寒論",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "傷寒論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96",
+          "matched_query": "傷寒論",
+          "score": 100.0
+        },
+        {
+          "title": "傷寒論條辨",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論綱目",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E7%B6%B1%E7%9B%AE",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論翼",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E7%BF%BC",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論輯義",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E8%BC%AF%E7%BE%A9",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論辯證廣注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E8%BE%AF%E8%AD%89%E5%BB%A3%E6%B3%A8",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論類方",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E9%A1%9E%E6%96%B9",
+          "matched_query": "傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷04",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+          "matched_query": "傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷05",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+          "matched_query": "傷寒論",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 16611,
+        "title": "傷寒論",
+        "full_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96",
+        "page_length": 131800,
+        "latest_revid": 2607901,
+        "revision_timestamp": "2025-10-18T22:56:23Z",
+        "revision_size": 131800,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "core-jingui",
+      "layer": "core",
+      "canon": "zhongjing",
+      "target_works": [
+        "jingui"
+      ],
+      "author": "传统归于张仲景",
+      "title": "《金匮要略》",
+      "relationship": "core",
+      "queries_attempted": [
+        "金匱要略"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "金匱要略",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+        "matched_query": "金匱要略",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "金匱要略",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+          "matched_query": "金匱要略",
+          "score": 100.0
+        },
+        {
+          "title": "金匱要略 (高學山)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5_(%E9%AB%98%E5%AD%B8%E5%B1%B1)",
+          "matched_query": "金匱要略",
+          "score": 90.0
+        },
+        {
+          "title": "金匱要略心典",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+          "matched_query": "金匱要略",
+          "score": 90.0
+        },
+        {
+          "title": "金匱要略方論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96",
+          "matched_query": "金匱要略",
+          "score": 90.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "金匱要略",
+          "score": 90.0
+        },
+        {
+          "title": "金匱要略淺注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+          "matched_query": "金匱要略",
+          "score": 90.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "金匱要略",
+          "score": 78.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "金匱要略",
+          "score": 78.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷中",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%AD",
+          "matched_query": "金匱要略",
+          "score": 78.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "金匱要略",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 25028,
+        "title": "金匱要略",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+        "page_length": 91010,
+        "latest_revid": 2598887,
+        "revision_timestamp": "2025-09-20T08:59:53Z",
+        "revision_size": 91010,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "core-nanjing",
+      "layer": "core",
+      "canon": "nanjing",
+      "target_works": [
+        "nanjing"
+      ],
+      "author": "传统题作扁鹊（作者与成书问题另作版本说明）",
+      "title": "《难经》",
+      "relationship": "core",
+      "queries_attempted": [
+        "難經"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "難經",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93",
+        "matched_query": "難經",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "難經",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93",
+          "matched_query": "難經",
+          "score": 100.0
+        },
+        {
+          "title": "難經古義",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E5%8F%A4%E7%BE%A9",
+          "matched_query": "難經",
+          "score": 90.0
+        },
+        {
+          "title": "難經懸解",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%87%B8%E8%A7%A3",
+          "matched_query": "難經",
+          "score": 90.0
+        },
+        {
+          "title": "難經本義/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經本義/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經正義/卷一 論脈",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E4%B8%80_%E8%AB%96%E8%84%88",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經正義/卷三 論臟腑",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E4%B8%89_%E8%AB%96%E8%87%9F%E8%85%91",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經正義/卷六 論針法",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E5%85%AD_%E8%AB%96%E9%87%9D%E6%B3%95",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經正義/卷四 論病",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E5%9B%9B_%E8%AB%96%E7%97%85",
+          "matched_query": "難經",
+          "score": 78.0
+        },
+        {
+          "title": "難經集注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E6%B3%A8",
+          "matched_query": "難經",
+          "score": 70.0
+        }
+      ],
+      "page_info": {
+        "page_id": 13525,
+        "title": "難經",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93",
+        "page_length": 45831,
+        "latest_revid": 2559517,
+        "revision_timestamp": "2025-05-07T20:59:56Z",
+        "revision_size": 45831,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "core-wenbingtiaobian",
+      "layer": "core",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "吴瑭（吴鞠通）",
+      "title": "《温病条辨》",
+      "relationship": "core",
+      "queries_attempted": [
+        "溫病條辨"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "溫病條辨",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8",
+        "matched_query": "溫病條辨",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "溫病條辨",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8",
+          "matched_query": "溫病條辨",
+          "score": 100.0
+        },
+        {
+          "title": "溫病條辨/卷一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E4%B8%80",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/卷三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E4%B8%89",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/卷二",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E4%BA%8C",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/卷五",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E4%BA%94",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/卷六",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E5%85%AD",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/卷四",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8D%B7%E5%9B%9B",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/原病篇",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E5%8E%9F%E7%97%85%E7%AF%87",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        },
+        {
+          "title": "溫病條辨/自序",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8/%E8%87%AA%E5%BA%8F",
+          "matched_query": "溫病條辨",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761987,
+        "title": "溫病條辨",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%97%85%E6%A2%9D%E8%BE%A8",
+        "page_length": 560,
+        "latest_revid": 2178514,
+        "revision_timestamp": "2022-09-12T05:22:12Z",
+        "revision_size": 560,
+        "missing": false
+      },
+      "subpage_count": 8
+    },
+    {
+      "id": "commentary-suwen-wangbing",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": [
+        "suwen"
+      ],
+      "author": "王冰注、林亿等校正",
+      "title": "《重广补注黄帝内经素问》",
+      "relationship": "direct_commentary,textual_collation",
+      "queries_attempted": [
+        "重廣補注黃帝內經素問",
+        "重廣補註黃帝內經素問"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "重廣補注黃帝內經素問 (四部叢刊本)",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+        "matched_query": "重廣補注黃帝內經素問",
+        "score": 90.0
+      },
+      "search_candidates": [
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 90.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%80",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第七",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%83",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%89",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第二",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%BA%8C",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第二十一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第十一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%80",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/卷第十九",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B9%9D",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/序",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%BA%8F",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        },
+        {
+          "title": "重廣補注黃帝內經素問 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "重廣補注黃帝內經素問",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 805680,
+        "title": "重廣補注黃帝內經素問 (四部叢刊本)",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%8D%E5%BB%A3%E8%A3%9C%E6%B3%A8%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+        "page_length": 1006,
+        "latest_revid": 1398254,
+        "revision_timestamp": "2018-04-03T09:17:04Z",
+        "revision_size": 1006,
+        "missing": false
+      },
+      "subpage_count": 26
+    },
+    {
+      "id": "commentary-suwen-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": [
+        "suwen"
+      ],
+      "author": "马莳",
+      "title": "《黄帝内经素问注证发微》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "queries_attempted": [
+        "黃帝內經素問注證發微",
+        "素問注證發微",
+        "黃帝內經素問註證發微"
+      ],
+      "status": "not-found",
+      "selected_candidate": null,
+      "search_candidates": []
+    },
+    {
+      "id": "commentary-neijing-leijing",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": [
+        "suwen",
+        "lingshu"
+      ],
+      "author": "张介宾",
+      "title": "《类经》",
+      "relationship": "classification,theoretical_extension",
+      "queries_attempted": [],
+      "status": "configured-title",
+      "selected_candidate": {
+        "title": "類經 (四庫全書本)",
+        "description": "Configured after manual title review",
+        "url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+        "matched_query": "configured-title",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "類經 (四庫全書本)",
+          "description": "Configured after manual title review",
+          "url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+          "matched_query": "configured-title",
+          "score": 100.0
+        }
+      ],
+      "subpage_prefix": null,
+      "page_info": {
+        "page_id": 265422,
+        "title": "類經 (四庫全書本)",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+        "page_length": 8819,
+        "latest_revid": 640725,
+        "revision_timestamp": "2016-10-14T06:11:15Z",
+        "revision_size": 8819,
+        "missing": false
+      },
+      "subpage_count": 49
+    },
+    {
+      "id": "commentary-lingshu-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": [
+        "lingshu"
+      ],
+      "author": "马莳",
+      "title": "《黄帝内经灵枢注证发微》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "queries_attempted": [
+        "黃帝內經靈樞注證發微",
+        "靈樞注證發微",
+        "黃帝內經靈樞註證發微"
+      ],
+      "status": "not-found",
+      "selected_candidate": null,
+      "search_candidates": []
+    },
+    {
+      "id": "commentary-lingshu-zhangzhicong",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": [
+        "lingshu"
+      ],
+      "author": "张志聪",
+      "title": "《黄帝内经灵枢集注》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "queries_attempted": [
+        "黃帝內經靈樞集注"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "黃帝內經靈樞集注",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E9%9D%88%E6%A8%9E%E9%9B%86%E6%B3%A8",
+        "matched_query": "黃帝內經靈樞集注",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "黃帝內經靈樞集注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E9%9D%88%E6%A8%9E%E9%9B%86%E6%B3%A8",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 100.0
+        },
+        {
+          "title": "黃帝內經靈樞略",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E9%9D%88%E6%A8%9E%E7%95%A5",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 40.0
+        },
+        {
+          "title": "黃帝內經素問集注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F%E9%9B%86%E6%B3%A8",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 36.0
+        },
+        {
+          "title": "黃帝內經/靈樞第七卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%B8%83%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第二卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%BA%8C%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第五卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%BA%94%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第八卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%85%AB%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第六卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%85%AD%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第十卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%8D%81%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 20.73
+        },
+        {
+          "title": "黃帝內經/靈樞第十一卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%8D%81%E4%B8%80%E5%8D%B7",
+          "matched_query": "黃帝內經靈樞集注",
+          "score": 18.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760945,
+        "title": "黃帝內經靈樞集注",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E9%9D%88%E6%A8%9E%E9%9B%86%E6%B3%A8",
+        "page_length": 878896,
+        "latest_revid": 1753026,
+        "revision_timestamp": "2019-12-01T14:50:21Z",
+        "revision_size": 878896,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-shanghan-chengwuji",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "成无己",
+      "title": "《注解伤寒论》",
+      "relationship": "direct_commentary",
+      "queries_attempted": [
+        "注解傷寒論"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "注解傷寒論",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96",
+        "matched_query": "注解傷寒論",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "注解傷寒論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96",
+          "matched_query": "注解傷寒論",
+          "score": 100.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "注解傷寒論",
+          "score": 90.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%80",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第七之八",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%83%E4%B9%8B%E5%85%AB",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%89",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第六",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%85%AD",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第十",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%8D%81",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/卷第四",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%9B%9B",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/後序",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%BE%8C%E5%BA%8F",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        },
+        {
+          "title": "注解傷寒論 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "注解傷寒論",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760971,
+        "title": "注解傷寒論",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96",
+        "page_length": 356578,
+        "latest_revid": 2391578,
+        "revision_timestamp": "2024-04-16T05:09:06Z",
+        "revision_size": 356578,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-shanghan-fangyouzhi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "方有执",
+      "title": "《伤寒论条辨》",
+      "relationship": "direct_commentary,reordering,theoretical_extension",
+      "queries_attempted": [
+        "傷寒論條辨"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "傷寒論條辨",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+        "matched_query": "傷寒論條辨",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "傷寒論條辨",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+          "matched_query": "傷寒論條辨",
+          "score": 100.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+          "matched_query": "傷寒論條辨",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/全覽",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷01",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B701",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷02",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B702",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷03",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B703",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷04",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷05",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷07",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B707",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論條辨 (四庫全書本)/卷11",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B711",
+          "matched_query": "傷寒論條辨",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760980,
+        "title": "傷寒論條辨",
+        "full_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%A2%9D%E8%BE%A8",
+        "page_length": 445372,
+        "latest_revid": 1315972,
+        "revision_timestamp": "2017-10-14T10:08:52Z",
+        "revision_size": 445372,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-shanghan-yuchang",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "喻昌（喻嘉言）",
+      "title": "《尚论篇》",
+      "relationship": "reordering,theoretical_extension,disagreement",
+      "queries_attempted": [],
+      "status": "configured-title",
+      "selected_candidate": {
+        "title": "尚論篇 (四庫全書本)",
+        "description": "Configured after manual title review",
+        "url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+        "matched_query": "configured-title",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "尚論篇 (四庫全書本)",
+          "description": "Configured after manual title review",
+          "url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+          "matched_query": "configured-title",
+          "score": 100.0
+        }
+      ],
+      "subpage_prefix": null,
+      "page_info": {
+        "page_id": 261896,
+        "title": "尚論篇 (四庫全書本)",
+        "full_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+        "page_length": 3409,
+        "latest_revid": 633884,
+        "revision_timestamp": "2016-10-14T04:26:47Z",
+        "revision_size": 3409,
+        "missing": false
+      },
+      "subpage_count": 12
+    },
+    {
+      "id": "commentary-shanghan-keqin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "柯琴",
+      "title": "《伤寒来苏集·伤寒论注》",
+      "relationship": "direct_commentary,reordering,theoretical_extension",
+      "queries_attempted": [
+        "傷寒論注"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "傷寒論注",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+        "matched_query": "傷寒論注",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "傷寒論注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+          "matched_query": "傷寒論注",
+          "score": 100.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+          "matched_query": "傷寒論注",
+          "score": 90.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/全覽",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷01",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B701",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷02",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B702",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷03",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B703",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷04",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷05",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷06",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B706",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        },
+        {
+          "title": "傷寒論注釋 (四庫全書本)/卷07",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8%E9%87%8B_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B707",
+          "matched_query": "傷寒論注",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760982,
+        "title": "傷寒論注",
+        "full_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+        "page_length": 322186,
+        "latest_revid": 2391516,
+        "revision_timestamp": "2024-04-16T05:07:25Z",
+        "revision_size": 322186,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-shanghan-youyi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "shanghanlun"
+      ],
+      "author": "尤怡（尤在泾）",
+      "title": "《伤寒贯珠集》",
+      "relationship": "classification,theoretical_extension",
+      "queries_attempted": [
+        "傷寒貫珠集"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "傷寒貫珠集",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%B2%AB%E7%8F%A0%E9%9B%86",
+        "matched_query": "傷寒貫珠集",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "傷寒貫珠集",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%B2%AB%E7%8F%A0%E9%9B%86",
+          "matched_query": "傷寒貫珠集",
+          "score": 100.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760987,
+        "title": "傷寒貫珠集",
+        "full_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%B2%AB%E7%8F%A0%E9%9B%86",
+        "page_length": 263113,
+        "latest_revid": 2186627,
+        "revision_timestamp": "2022-10-16T09:27:31Z",
+        "revision_size": 263113,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-jingui-xubin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "jingui"
+      ],
+      "author": "徐彬",
+      "title": "《金匮要略论注》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "queries_attempted": [],
+      "status": "configured-title",
+      "selected_candidate": {
+        "title": "金匱要畧論註 (四庫全書本)",
+        "description": "Configured after manual title review",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+        "matched_query": "configured-title",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "金匱要畧論註 (四庫全書本)",
+          "description": "Configured after manual title review",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29",
+          "matched_query": "configured-title",
+          "score": 100.0
+        }
+      ],
+      "subpage_prefix": null,
+      "page_info": {
+        "page_id": 265138,
+        "title": "金匱要畧論註 (四庫全書本)",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A7%E8%AB%96%E8%A8%BB_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+        "page_length": 3269,
+        "latest_revid": 640157,
+        "revision_timestamp": "2016-10-14T06:04:26Z",
+        "revision_size": 3269,
+        "missing": false
+      },
+      "subpage_count": 25
+    },
+    {
+      "id": "commentary-jingui-youyi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "jingui"
+      ],
+      "author": "尤怡（尤在泾）",
+      "title": "《金匮要略心典》",
+      "relationship": "direct_commentary,clinical_extension",
+      "queries_attempted": [
+        "金匱要略心典"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "金匱要略心典",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+        "matched_query": "金匱要略心典",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "金匱要略心典",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+          "matched_query": "金匱要略心典",
+          "score": 100.0
+        },
+        {
+          "title": "金匱要略",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+          "matched_query": "金匱要略心典",
+          "score": 70.0
+        },
+        {
+          "title": "金匱要略方論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96",
+          "matched_query": "金匱要略心典",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略淺注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+          "matched_query": "金匱要略心典",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略 (高學山)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5_(%E9%AB%98%E5%AD%B8%E5%B1%B1)",
+          "matched_query": "金匱要略心典",
+          "score": 26.67
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "金匱要略心典",
+          "score": 18.46
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "金匱要略心典",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "金匱要略心典",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷中",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%AD",
+          "matched_query": "金匱要略心典",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "金匱要略心典",
+          "score": 4.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761008,
+        "title": "金匱要略心典",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+        "page_length": 247555,
+        "latest_revid": 2187302,
+        "revision_timestamp": "2022-10-17T23:54:57Z",
+        "revision_size": 247555,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-jingui-chenglin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "jingui"
+      ],
+      "author": "程林",
+      "title": "《金匮要略直解》",
+      "relationship": "direct_commentary",
+      "queries_attempted": [
+        "金匱要略直解",
+        "金匱玉函經二注"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "金匱玉函經二注",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E7%8E%89%E5%87%BD%E7%B6%93%E4%BA%8C%E6%B3%A8",
+        "matched_query": "金匱玉函經二注",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "金匱玉函經二注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E7%8E%89%E5%87%BD%E7%B6%93%E4%BA%8C%E6%B3%A8",
+          "matched_query": "金匱玉函經二注",
+          "score": 100.0
+        },
+        {
+          "title": "金匱玉函經",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E7%8E%89%E5%87%BD%E7%B6%93",
+          "matched_query": "金匱玉函經二注",
+          "score": 70.0
+        },
+        {
+          "title": "金匱要略",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+          "matched_query": "金匱要略直解",
+          "score": 70.0
+        },
+        {
+          "title": "金匱要略心典",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+          "matched_query": "金匱要略直解",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略方論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96",
+          "matched_query": "金匱要略直解",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略淺注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+          "matched_query": "金匱要略直解",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略 (高學山)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5_(%E9%AB%98%E5%AD%B8%E5%B1%B1)",
+          "matched_query": "金匱要略直解",
+          "score": 26.67
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "金匱要略直解",
+          "score": 18.46
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "金匱要略直解",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "金匱要略直解",
+          "score": 4.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761009,
+        "title": "金匱玉函經二注",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E7%8E%89%E5%87%BD%E7%B6%93%E4%BA%8C%E6%B3%A8",
+        "page_length": 373625,
+        "latest_revid": 2187304,
+        "revision_timestamp": "2022-10-17T23:57:19Z",
+        "revision_size": 373625,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-jingui-chenxiuyuan",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": [
+        "jingui"
+      ],
+      "author": "陈修园",
+      "title": "《金匮要略浅注》",
+      "relationship": "direct_commentary,clinical_extension",
+      "queries_attempted": [
+        "金匱要略淺注"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "金匱要略淺注",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+        "matched_query": "金匱要略淺注",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "金匱要略淺注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+          "matched_query": "金匱要略淺注",
+          "score": 100.0
+        },
+        {
+          "title": "金匱要略",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+          "matched_query": "金匱要略淺注",
+          "score": 70.0
+        },
+        {
+          "title": "金匱要略心典",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+          "matched_query": "金匱要略淺注",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略方論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96",
+          "matched_query": "金匱要略淺注",
+          "score": 30.0
+        },
+        {
+          "title": "金匱要略 (高學山)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5_(%E9%AB%98%E5%AD%B8%E5%B1%B1)",
+          "matched_query": "金匱要略淺注",
+          "score": 26.67
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "金匱要略淺注",
+          "score": 18.46
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "金匱要略淺注",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "金匱要略淺注",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/卷中",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E4%B8%AD",
+          "matched_query": "金匱要略淺注",
+          "score": 4.0
+        },
+        {
+          "title": "金匱要略方論 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%96%B9%E8%AB%96_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "金匱要略淺注",
+          "score": 4.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761006,
+        "title": "金匱要略淺注",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E6%B7%BA%E6%B3%A8",
+        "page_length": 390757,
+        "latest_revid": 2187301,
+        "revision_timestamp": "2022-10-17T23:53:45Z",
+        "revision_size": 390757,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-nanjing-huashou",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": [
+        "nanjing"
+      ],
+      "author": "滑寿",
+      "title": "《难经本义》",
+      "relationship": "direct_commentary,textual_collation",
+      "queries_attempted": [
+        "難經本義"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "難經本義",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9",
+        "matched_query": "難經本義",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "難經本義",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9",
+          "matched_query": "難經本義",
+          "score": 100.0
+        },
+        {
+          "title": "難經本義 (四庫全書本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+          "matched_query": "難經本義",
+          "score": 90.0
+        },
+        {
+          "title": "難經本義 (四庫全書本)/全覽",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD",
+          "matched_query": "難經本義",
+          "score": 78.0
+        },
+        {
+          "title": "難經本義 (四庫全書本)/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "難經本義",
+          "score": 78.0
+        },
+        {
+          "title": "難經本義 (四庫全書本)/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "難經本義",
+          "score": 78.0
+        },
+        {
+          "title": "難經本義/卷上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9/%E5%8D%B7%E4%B8%8A",
+          "matched_query": "難經本義",
+          "score": 78.0
+        },
+        {
+          "title": "難經本義/卷下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9/%E5%8D%B7%E4%B8%8B",
+          "matched_query": "難經本義",
+          "score": 78.0
+        },
+        {
+          "title": "難經正義/卷一 論脈",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E4%B8%80_%E8%AB%96%E8%84%88",
+          "matched_query": "難經本義",
+          "score": 8.0
+        },
+        {
+          "title": "難經正義/卷四 論病",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E5%9B%9B_%E8%AB%96%E7%97%85",
+          "matched_query": "難經本義",
+          "score": 8.0
+        },
+        {
+          "title": "難經正義/卷三 論臟腑",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%AD%A3%E7%BE%A9/%E5%8D%B7%E4%B8%89_%E8%AB%96%E8%87%9F%E8%85%91",
+          "matched_query": "難經本義",
+          "score": 6.0
+        }
+      ],
+      "page_info": {
+        "page_id": 55761,
+        "title": "難經本義",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E6%9C%AC%E7%BE%A9",
+        "page_length": 2330,
+        "latest_revid": 1315069,
+        "revision_timestamp": "2017-10-13T02:54:53Z",
+        "revision_size": 2330,
+        "missing": false
+      },
+      "subpage_count": 2
+    },
+    {
+      "id": "commentary-nanjing-xudachun",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": [
+        "nanjing"
+      ],
+      "author": "徐大椿（徐灵胎）",
+      "title": "《难经经释》",
+      "relationship": "direct_commentary,textual_collation,disagreement",
+      "queries_attempted": [
+        "難經經釋"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "難經經釋",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E7%B6%93%E9%87%8B",
+        "matched_query": "難經經釋",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "難經經釋",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E7%B6%93%E9%87%8B",
+          "matched_query": "難經經釋",
+          "score": 100.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760962,
+        "title": "難經經釋",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E7%B6%93%E9%87%8B",
+        "page_length": 113499,
+        "latest_revid": 1753330,
+        "revision_timestamp": "2019-12-05T08:57:43Z",
+        "revision_size": 113499,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-nanjing-jizhu",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": [
+        "nanjing"
+      ],
+      "author": "王九思辑（内含吕广、杨玄操等旧注）",
+      "title": "《难经集注》",
+      "relationship": "direct_commentary,textual_collation",
+      "queries_attempted": [
+        "難經集注"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "難經集注",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E6%B3%A8",
+        "matched_query": "難經集注",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "難經集注",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E6%B3%A8",
+          "matched_query": "難經集注",
+          "score": 100.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)",
+          "matched_query": "難經集注",
+          "score": 90.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/卷第一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%80",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/卷第三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%B8%89",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/卷第二",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%BA%8C",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/卷第五",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E4%BA%94",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/卷第四",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%9B%9B",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/序",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%BA%8F",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/目録",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E7%9B%AE%E9%8C%B2",
+          "matched_query": "難經集注",
+          "score": 78.0
+        },
+        {
+          "title": "難經集註 (四部叢刊本)/跋",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E8%A8%BB_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E8%B7%8B",
+          "matched_query": "難經集注",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 760965,
+        "title": "難經集注",
+        "full_url": "https://zh.wikisource.org/wiki/%E9%9B%A3%E7%B6%93%E9%9B%86%E6%B3%A8",
+        "page_length": 222837,
+        "latest_revid": 1753329,
+        "revision_timestamp": "2019-12-05T08:53:55Z",
+        "revision_size": 222837,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "commentary-wenbing-yelin",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "叶霖",
+      "title": "《增订温病条辨》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "queries_attempted": [
+        "增訂溫病條辨"
+      ],
+      "status": "not-found",
+      "selected_candidate": null,
+      "search_candidates": []
+    },
+    {
+      "id": "commentary-wenbing-wangshixiong",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "王士雄（王孟英）",
+      "title": "《温热经纬》",
+      "relationship": "classification,theoretical_extension,clinical_extension",
+      "queries_attempted": [
+        "溫熱經緯"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "溫熱經緯",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF",
+        "matched_query": "溫熱經緯",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "溫熱經緯",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF",
+          "matched_query": "溫熱經緯",
+          "score": 100.0
+        },
+        {
+          "title": "溫熱經緯/卷一",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%B8%80",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/卷三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%B8%89",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/卷二",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%8C",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/卷五",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%94",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/卷四",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E5%9B%9B",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/唐跋",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%94%90%E8%B7%8B",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        },
+        {
+          "title": "溫熱經緯/序文",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%BA%8F%E6%96%87",
+          "matched_query": "溫熱經緯",
+          "score": 78.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761999,
+        "title": "溫熱經緯",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF",
+        "page_length": 663,
+        "latest_revid": 2186417,
+        "revision_timestamp": "2022-10-15T16:55:51Z",
+        "revision_size": 663,
+        "missing": false
+      },
+      "subpage_count": 7
+    },
+    {
+      "id": "commentary-wenbing-leifeng",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "雷丰（雷少逸）",
+      "title": "《时病论》",
+      "relationship": "theoretical_extension,clinical_extension",
+      "queries_attempted": [
+        "時病論"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "時病論",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%82%E7%97%85%E8%AB%96",
+        "matched_query": "時病論",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "時病論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E7%97%85%E8%AB%96",
+          "matched_query": "時病論",
+          "score": 100.0
+        },
+        {
+          "title": "時論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E8%AB%96",
+          "matched_query": "時病論",
+          "score": 40.0
+        },
+        {
+          "title": "時務論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E5%8B%99%E8%AB%96",
+          "matched_query": "時病論",
+          "score": 30.0
+        },
+        {
+          "title": "時令論上",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E4%BB%A4%E8%AB%96%E4%B8%8A",
+          "matched_query": "時病論",
+          "score": 24.0
+        },
+        {
+          "title": "時令論下",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E4%BB%A4%E8%AB%96%E4%B8%8B",
+          "matched_query": "時病論",
+          "score": 24.0
+        },
+        {
+          "title": "時論的誤點",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%99%82%E8%AB%96%E7%9A%84%E8%AA%A4%E9%BB%9E",
+          "matched_query": "時病論",
+          "score": 20.0
+        }
+      ],
+      "page_info": {
+        "page_id": 761989,
+        "title": "時病論",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%99%82%E7%97%85%E8%AB%96",
+        "page_length": 260122,
+        "latest_revid": 2202573,
+        "revision_timestamp": "2022-12-14T11:08:49Z",
+        "revision_size": 260122,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "lineage-wenbing-yetianshi",
+      "layer": "lineage",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "叶桂（叶天士）",
+      "title": "《温热论》",
+      "relationship": "lineage_predecessor,theoretical_extension",
+      "queries_attempted": [
+        "溫熱論"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "溫熱論",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E8%AB%96",
+        "matched_query": "溫熱論",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "溫熱論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E8%AB%96",
+          "matched_query": "溫熱論",
+          "score": 100.0
+        },
+        {
+          "title": "溫疫論",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%96%AB%E8%AB%96",
+          "matched_query": "溫熱論",
+          "score": 30.0
+        },
+        {
+          "title": "溫熱逢源",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E9%80%A2%E6%BA%90",
+          "matched_query": "溫熱論",
+          "score": 24.0
+        },
+        {
+          "title": "溫熱暑疫全書",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E6%9A%91%E7%96%AB%E5%85%A8%E6%9B%B8",
+          "matched_query": "溫熱論",
+          "score": 17.14
+        },
+        {
+          "title": "溫疫論/上卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%96%AB%E8%AB%96/%E4%B8%8A%E5%8D%B7",
+          "matched_query": "溫熱論",
+          "score": 8.0
+        },
+        {
+          "title": "溫疫論/下卷",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%96%AB%E8%AB%96/%E4%B8%8B%E5%8D%B7",
+          "matched_query": "溫熱論",
+          "score": 8.0
+        },
+        {
+          "title": "溫熱經緯/卷三",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%B8%89",
+          "matched_query": "溫熱論",
+          "score": 5.14
+        },
+        {
+          "title": "溫熱經緯/卷二",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%8C",
+          "matched_query": "溫熱論",
+          "score": 5.14
+        },
+        {
+          "title": "溫熱經緯/卷五",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%94",
+          "matched_query": "溫熱論",
+          "score": 5.14
+        },
+        {
+          "title": "溫熱經緯/卷四",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E5%9B%9B",
+          "matched_query": "溫熱論",
+          "score": 5.14
+        }
+      ],
+      "page_info": {
+        "page_id": 61021,
+        "title": "溫熱論",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E8%AB%96",
+        "page_length": 16144,
+        "latest_revid": 2264169,
+        "revision_timestamp": "2023-02-24T14:37:42Z",
+        "revision_size": 16144,
+        "missing": false
+      },
+      "subpage_count": 0
+    },
+    {
+      "id": "lineage-wenbing-xuexue",
+      "layer": "lineage",
+      "canon": "wenbing",
+      "target_works": [
+        "wenbingtiaobian"
+      ],
+      "author": "薛雪",
+      "title": "《湿热病篇》",
+      "relationship": "lineage_predecessor,theoretical_extension",
+      "queries_attempted": [
+        "濕熱病篇"
+      ],
+      "status": "likely-title-match",
+      "selected_candidate": {
+        "title": "濕熱病篇",
+        "description": "",
+        "url": "https://zh.wikisource.org/wiki/%E6%BF%95%E7%86%B1%E7%97%85%E7%AF%87",
+        "matched_query": "濕熱病篇",
+        "score": 100.0
+      },
+      "search_candidates": [
+        {
+          "title": "濕熱病篇",
+          "description": "",
+          "url": "https://zh.wikisource.org/wiki/%E6%BF%95%E7%86%B1%E7%97%85%E7%AF%87",
+          "matched_query": "濕熱病篇",
+          "score": 100.0
+        }
+      ],
+      "page_info": {
+        "page_id": 61067,
+        "title": "濕熱條辨",
+        "full_url": "https://zh.wikisource.org/wiki/%E6%BF%95%E7%86%B1%E6%A2%9D%E8%BE%A8",
+        "page_length": 28061,
+        "latest_revid": 2545332,
+        "revision_timestamp": "2025-04-02T20:28:44Z",
+        "revision_size": 28061,
+        "missing": false
+      },
+      "subpage_count": 0
+    }
+  ]
+}

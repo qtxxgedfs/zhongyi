@@ -1,0 +1,24 @@
+{
+  "source_id": "core-shanghanlun",
+  "passage_count": 205,
+  "citable_passage_count": 205,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 40852,
+    "citable_characters": 40852,
+    "citable_passages": 205,
+    "passages": 205,
+    "speaker_type:core_text": 147,
+    "speaker_type:dialogue": 58,
+    "split_blocks": 9
+  },
+  "source_aggregate_sha256": "cf39019f194d0848224015e2d5c8f113a5bac91f9209497aa589a20c980c0a61",
+  "traditional_aggregate_sha256": "88d2a896b063952e2b7237e2bb6d1904840b088bb13182e39f3ee987df69f848",
+  "simplified_aggregate_sha256": "d6255fc280b5f22be42c6d5b26cc983480a3db679a9660597c0f72bfd5070320",
+  "search_aggregate_sha256": "9bbbe0ab3d5c034308373e3ca674c5574255c33ecb0195ddae30abddf7a936ea",
+  "citable_traditional_sha256": "88d2a896b063952e2b7237e2bb6d1904840b088bb13182e39f3ee987df69f848",
+  "citable_simplified_sha256": "d6255fc280b5f22be42c6d5b26cc983480a3db679a9660597c0f72bfd5070320",
+  "citable_search_sha256": "9bbbe0ab3d5c034308373e3ca674c5574255c33ecb0195ddae30abddf7a936ea",
+  "processed_path": "sources/processed/core-shanghanlun/passages.jsonl",
+  "max_simplified_characters": 700
+}

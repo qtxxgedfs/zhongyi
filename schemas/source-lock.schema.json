@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.example/tcm-classics/source-lock.schema.json",
+  "title": "TCM Classics Fixed-Revision Source Lock",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "lock_status",
+    "locked_at",
+    "quality_report",
+    "quality_policy",
+    "normalization",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {"const": 2},
+    "lock_status": {"enum": ["candidate-blocked", "final"]},
+    "locked_at": {"type": "string", "format": "date-time"},
+    "work_base_disclaimer": {"type": "string", "minLength": 1},
+    "quality_report": {
+      "type": "object",
+      "required": ["path", "sha256", "release_gate_status"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "release_gate_status": {"enum": ["pass", "blocked"]},
+        "blocking_reason_count": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "quality_policy": {
+      "type": "object",
+      "required": [
+        "raw_snapshots_unchanged",
+        "unresolved_glyphs_allowed_in_citable_corpus",
+        "quarantined_passages_searchable",
+        "quarantined_passages_citable",
+        "unit_rule",
+        "core_quarantine_blocks_release",
+        "extension_quarantine_may_be_accepted_with_full_disclosure",
+        "exclusions_path",
+        "exclusions_sha256"
+      ],
+      "properties": {
+        "raw_snapshots_unchanged": {"const": true},
+        "unresolved_glyphs_allowed_in_citable_corpus": {"const": false},
+        "quarantined_passages_searchable": {"const": false},
+        "quarantined_passages_citable": {"const": false},
+        "unit_rule": {"type": "string"},
+        "core_quarantine_blocks_release": {"const": true},
+        "extension_quarantine_may_be_accepted_with_full_disclosure": {"const": true},
+        "exclusions_path": {"type": "string"},
+        "exclusions_sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "additionalProperties": false
+    },
+    "normalization": {
+      "type": "object",
+      "required": ["opencc_engine", "opencc_version", "traditional_config", "simplified_config"],
+      "properties": {
+        "opencc_engine": {"type": "string"},
+        "opencc_version": {"type": "string"},
+        "traditional_config": {"type": "string"},
+        "simplified_config": {"type": "string"},
+        "character_map_path": {"type": "string"},
+        "source_dependencies_path": {"type": "string"},
+        "manual_repairs_path": {"type": "string"},
+        "conversion_overrides_path": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "page": {
+      "type": "object",
+      "required": [
+        "title",
+        "page_url",
+        "fixed_revision_url",
+        "revision_id",
+        "revision_timestamp",
+        "role",
+        "include_in_corpus",
+        "raw_wikitext_path",
+        "raw_sha256"
+      ],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "page_url": {"type": "string", "format": "uri"},
+        "fixed_revision_url": {"type": "string", "format": "uri"},
+        "revision_id": {"type": "integer", "minimum": 1},
+        "revision_timestamp": {"type": "string"},
+        "source_sha1": {"type": ["string", "null"]},
+        "source_size": {"type": ["integer", "null"]},
+        "content_model": {"type": ["string", "null"]},
+        "role": {"type": "string"},
+        "include_in_corpus": {"type": "boolean"},
+        "parent_title": {"type": ["string", "null"]},
+        "proofread_quality_level": {"type": ["integer", "null"], "minimum": 0, "maximum": 4},
+        "raw_wikitext_path": {"type": "string"},
+        "raw_sha256": {"$ref": "#/$defs/sha256"},
+        "categories": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "layer",
+        "canon",
+        "target_works",
+        "author",
+        "title",
+        "relationship",
+        "provider",
+        "page_title",
+        "page_url",
+        "edition_label",
+        "retrieved_at",
+        "license",
+        "textual_status",
+        "pages",
+        "aggregate_raw_sha256",
+        "processed",
+        "completeness",
+        "quality_gate"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "layer": {"enum": ["core", "commentary", "lineage"]},
+        "canon": {"enum": ["huangdi", "zhongjing", "nanjing", "wenbing"]},
+        "target_works": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"enum": ["suwen", "lingshu", "shanghanlun", "jingui", "nanjing", "wenbingtiaobian"]}
+        },
+        "author": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "relationship": {"type": "array", "items": {"type": "string"}},
+        "provider": {"type": "string", "minLength": 1},
+        "page_title": {"type": "string", "minLength": 1},
+        "page_url": {"type": "string", "format": "uri"},
+        "edition_label": {"type": "string"},
+        "retrieved_at": {"type": "string", "format": "date-time"},
+        "license": {
+          "type": "object",
+          "required": ["expression", "site_terms_url", "license_url", "notice"],
+          "properties": {
+            "expression": {"type": "string"},
+            "site_terms_url": {"type": "string", "format": "uri"},
+            "license_url": {"type": "string", "format": "uri"},
+            "notice": {"type": "string"}
+          },
+          "additionalProperties": false
+        },
+        "textual_status": {"type": "string", "minLength": 1},
+        "quality_note": {"type": "string"},
+        "scope_note": {"type": "string"},
+        "speaker_method": {"type": "string"},
+        "pages": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/page"}},
+        "aggregate_raw_sha256": {"$ref": "#/$defs/sha256"},
+        "processed": {
+          "type": "object",
+          "required": [
+            "path",
+            "passage_count",
+            "citable_passage_count",
+            "quarantined_passage_count",
+            "source_sha256",
+            "traditional_sha256",
+            "simplified_sha256",
+            "search_sha256",
+            "citable_traditional_sha256",
+            "citable_simplified_sha256",
+            "citable_search_sha256"
+          ],
+          "properties": {
+            "path": {"type": "string"},
+            "passage_count": {"type": "integer", "minimum": 1},
+            "citable_passage_count": {"type": "integer", "minimum": 0},
+            "quarantined_passage_count": {"type": "integer", "minimum": 0},
+            "source_sha256": {"$ref": "#/$defs/sha256"},
+            "traditional_sha256": {"$ref": "#/$defs/sha256"},
+            "simplified_sha256": {"$ref": "#/$defs/sha256"},
+            "search_sha256": {"$ref": "#/$defs/sha256"},
+            "citable_traditional_sha256": {"$ref": "#/$defs/sha256"},
+            "citable_simplified_sha256": {"$ref": "#/$defs/sha256"},
+            "citable_search_sha256": {"$ref": "#/$defs/sha256"},
+            "file_sha256": {"$ref": "#/$defs/sha256"}
+          },
+          "additionalProperties": false
+        },
+        "completeness": {"type": "object"},
+        "speaker_separation": {"type": "object"},
+        "quality_gate": {
+          "type": "object",
+          "required": ["status", "blocking_reasons", "warnings"],
+          "properties": {
+            "status": {"enum": ["pass", "pass-with-quarantine", "blocked"]},
+            "blocking_reasons": {"type": "array", "items": {"type": "string"}},
+            "warnings": {"type": "object"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

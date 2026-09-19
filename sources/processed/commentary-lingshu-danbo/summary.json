@@ -1,0 +1,27 @@
+{
+  "source_id": "commentary-lingshu-danbo",
+  "passage_count": 1582,
+  "citable_passage_count": 1490,
+  "quarantined_passage_count": 92,
+  "statistics": {
+    "characters_simplified": 223018,
+    "citable_characters": 222169,
+    "citable_passages": 1490,
+    "passages": 1582,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 105,
+    "quarantined_characters": 849,
+    "quarantined_passages": 92,
+    "speaker_type:commentary": 646,
+    "speaker_type:mixed": 936,
+    "split_blocks": 61
+  },
+  "source_aggregate_sha256": "c457ecbc084584128ff34e05cd70cf8bacc19202182624269d606076b9edab8f",
+  "traditional_aggregate_sha256": "90f8d2533d6a5c5c95d0590c38097bb2a9f24af008cc362321aaf0bbf109dd95",
+  "simplified_aggregate_sha256": "86693a46fa0a8fbb0445f4f6bb4147f349a2603fb4bb01f489fe6e739b256967",
+  "search_aggregate_sha256": "c15faf9e8b9c22d63f1f5c87b2dea726cc38d3c938486916d0a3478d84e5de99",
+  "citable_traditional_sha256": "6f7b23699a4e544f0da35d8437664d3cbc2490f1aa57d37d64a275150282e2e3",
+  "citable_simplified_sha256": "16b43f4ec5b3a577cc9367f9601b4e21ef773562eb754d1f5c79c1e9b81269a4",
+  "citable_search_sha256": "f231da21c9b418a0bbf3fcf10dbefb05c6b21ea70e720e114717b064ea1fc1ce",
+  "processed_path": "sources/processed/commentary-lingshu-danbo/passages.jsonl",
+  "max_simplified_characters": 700
+}

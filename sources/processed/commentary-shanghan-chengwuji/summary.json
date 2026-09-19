@@ -1,0 +1,27 @@
+{
+  "source_id": "commentary-shanghan-chengwuji",
+  "passage_count": 278,
+  "citable_passage_count": 263,
+  "quarantined_passage_count": 15,
+  "statistics": {
+    "characters_simplified": 116235,
+    "citable_characters": 115664,
+    "citable_passages": 263,
+    "passages": 278,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 27,
+    "quarantined_characters": 571,
+    "quarantined_passages": 15,
+    "speaker_type:commentary": 210,
+    "speaker_type:mixed": 68,
+    "split_blocks": 31
+  },
+  "source_aggregate_sha256": "f55e1c843220dd0fd1f847d758a30e73dbc13e4fc9c4948deeb99e368a05c3e7",
+  "traditional_aggregate_sha256": "6601704c84bb7212a77b09217720152f36dbf9d173efbc22d90ea153dd8d6f1c",
+  "simplified_aggregate_sha256": "84088251f16ef0067349f5c5bf336682e1f07c0619215bdd27d011bdadf9cbbe",
+  "search_aggregate_sha256": "b9a6244f0c5672346001c8b8e18573b62d63c5ddac737b2607ff1fa8bc1f58ab",
+  "citable_traditional_sha256": "a0a38a6136a3993708a40b05124c228b30d34de81ead75fcc73ce2152eb414d0",
+  "citable_simplified_sha256": "a0a3fb2d80165f3aa369445d6aee3c06457d0ae0b8c5a0075f65da58f59020b4",
+  "citable_search_sha256": "86418aee5850b4615b5b7d73dce79be60fe10b7c01a08d5244b6ea2912a8c28c",
+  "processed_path": "sources/processed/commentary-shanghan-chengwuji/passages.jsonl",
+  "max_simplified_characters": 700
+}

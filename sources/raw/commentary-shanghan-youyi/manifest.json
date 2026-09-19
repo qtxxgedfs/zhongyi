@@ -1,0 +1,61 @@
+{
+  "id": "commentary-shanghan-youyi",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "尤怡（尤在泾）",
+  "title": "《伤寒贯珠集》",
+  "relationship": [
+    "classification",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "傷寒貫珠集",
+  "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%B2%AB%E7%8F%A0%E9%9B%86",
+  "edition_label": "《伤寒贯珠集》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "傷寒貫珠集/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "傷寒貫珠集",
+      "title": "傷寒貫珠集",
+      "page_id": 760987,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%B2%AB%E7%8F%A0%E9%9B%86",
+      "revision_id": 2186627,
+      "revision_timestamp": "2022-10-16T09:27:31Z",
+      "source_sha1": "38e438e105a2df66a5adbc4ebf1628ea675af085",
+      "source_size": 263113,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:公元1729年",
+        "Category:尤怡",
+        "Category:校訂不足的頁面",
+        "Category:清朝"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-youyi/0000.wikitext",
+      "raw_sha256": "e679a131a8c7285021d81dfc1fe0bee967789e08dade379a567eb3d6097026fb"
+    }
+  ],
+  "aggregate_raw_sha256": "f7013b14fa56ad8de1cce9ad25277ad9d2a37402d5fd7ea3bcef1398c234aa19"
+}

@@ -1,0 +1,24 @@
+{
+  "source_id": "core-suwen",
+  "passage_count": 1228,
+  "citable_passage_count": 1228,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 107555,
+    "citable_characters": 107555,
+    "citable_passages": 1228,
+    "passages": 1228,
+    "speaker_type:core_text": 31,
+    "speaker_type:dialogue": 1197,
+    "split_blocks": 35
+  },
+  "source_aggregate_sha256": "e617d5ccbb692e33320cbeabbe1ccc3a84fd374073d7b7f69d9c12bfe1abad83",
+  "traditional_aggregate_sha256": "548cd732929f2e0a4c072ad9bab92f9cff9e2eb177b5b7e5b9fbc8032f278949",
+  "simplified_aggregate_sha256": "a23d334ea8919e386738e3dbbf13f1ee02954d4cffef7aaab8cabfca5873894d",
+  "search_aggregate_sha256": "363223d048c1b0cd7fc589f43483b8caf4498629a7537cbfae4364c8e1000dcf",
+  "citable_traditional_sha256": "548cd732929f2e0a4c072ad9bab92f9cff9e2eb177b5b7e5b9fbc8032f278949",
+  "citable_simplified_sha256": "a23d334ea8919e386738e3dbbf13f1ee02954d4cffef7aaab8cabfca5873894d",
+  "citable_search_sha256": "363223d048c1b0cd7fc589f43483b8caf4498629a7537cbfae4364c8e1000dcf",
+  "processed_path": "sources/processed/core-suwen/passages.jsonl",
+  "max_simplified_characters": 700
+}

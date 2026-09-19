@@ -1,0 +1,63 @@
+{
+  "id": "commentary-shanghan-keqin",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "柯琴",
+  "title": "《伤寒来苏集·伤寒论注》",
+  "relationship": [
+    "direct_commentary",
+    "reordering",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "傷寒論注",
+  "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+  "edition_label": "《伤寒论注》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "傷寒論注/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "傷寒論注",
+      "title": "傷寒論注",
+      "page_id": 760982,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96%E6%B3%A8",
+      "revision_id": 2391516,
+      "revision_timestamp": "2024-04-16T05:07:25Z",
+      "source_sha1": "9f9150a115997d0e073d070f76a11fe699698e99",
+      "source_size": 322186,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:25%",
+        "Category:中醫",
+        "Category:公元1644-1911年年",
+        "Category:柯琴",
+        "Category:校訂不足的頁面",
+        "Category:清朝"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-keqin/0000.wikitext",
+      "raw_sha256": "2ce3377a99fc608f436aaf693199a1785a4b110703f7c0bee484a061dac78214"
+    }
+  ],
+  "aggregate_raw_sha256": "27d65c4908d08ddacf315ae38ef16a774df26042e1bc00c7caf273066483a719"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "commentary-shanghan-chengwuji",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "成无己",
+  "title": "《注解伤寒论》",
+  "relationship": [
+    "direct_commentary"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "注解傷寒論",
+  "page_url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96",
+  "edition_label": "《注解伤寒论》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "注解傷寒論/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "注解傷寒論",
+      "title": "注解傷寒論",
+      "page_id": 760971,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%B3%A8%E8%A7%A3%E5%82%B7%E5%AF%92%E8%AB%96",
+      "revision_id": 2391578,
+      "revision_timestamp": "2024-04-16T05:09:06Z",
+      "source_sha1": "fa5be272bcb872e5fce112b8492dc1cedcb19731",
+      "source_size": 356578,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:1144年",
+        "Category:25%",
+        "Category:不應使用簡化字的頁面",
+        "Category:中醫",
+        "Category:宋朝",
+        "Category:成無己",
+        "Category:校訂不足的頁面"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-chengwuji/0000.wikitext",
+      "raw_sha256": "67afa3eb35cbadc70de785d9685b37ebeffd194853ef580df7f815511aecf885"
+    }
+  ],
+  "aggregate_raw_sha256": "1d2a7df551e88c5102ef5ccfef04e1c838e03a078b5404430815b62db2909210"
+}

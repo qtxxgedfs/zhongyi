@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-shanghan-keqin",
+  "passage_count": 211,
+  "citable_passage_count": 208,
+  "quarantined_passage_count": 3,
+  "statistics": {
+    "characters_simplified": 104547,
+    "citable_characters": 104471,
+    "citable_passages": 208,
+    "passages": 211,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 6,
+    "quarantined_characters": 76,
+    "quarantined_passages": 3,
+    "speaker_type:commentary": 33,
+    "speaker_type:mixed": 176,
+    "speaker_type:preface": 2,
+    "split_blocks": 48
+  },
+  "source_aggregate_sha256": "d2353373980d4b7e23ea5f7b279f44c11229945552b75a4ece73eecbbe5c1dec",
+  "traditional_aggregate_sha256": "475796d42c0859e580546bfad639a1b02c90fdd4b9c5929e5f0c47d546277e80",
+  "simplified_aggregate_sha256": "2a8c5f1ac4c1cc3da92fe9fe727c74eae1127e863953b31e4e21beca5b7783a2",
+  "search_aggregate_sha256": "4203105009c9b845ee12bdcf5587cc2e060218ca2daba534f8ac298303fdf613",
+  "citable_traditional_sha256": "98ac46abc639c4e2dd597d10e4bd0c495558bf9ca830ca84368fb02d2a9db663",
+  "citable_simplified_sha256": "09849bcc1efbac6524ae63efbc9d0e888d37fbf27b3f1ada3c264ab1d687e23e",
+  "citable_search_sha256": "4c957c002a2c12ee2aecc0372062d397a843f1c63dc1a778e6d796a17f86031c",
+  "processed_path": "sources/processed/commentary-shanghan-keqin/passages.jsonl",
+  "max_simplified_characters": 700
+}

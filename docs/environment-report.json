@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-18T08:41:42+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.14.1 (tags/v3.14.1:57e0d17, Dec  2 2025, 14:05:07) [MSC v.1944 64 bit (AMD64)]",
+  "python_supported": true,
+  "ssl_version": "OpenSSL 3.0.18 30 Sep 2025",
+  "sqlite": {
+    "version": "3.50.4",
+    "fts5": true,
+    "trigram": true
+  },
+  "workbuddy_skills_dir": "C:\\Users\\wangx\\.workbuddy\\skills",
+  "workbuddy_skills_dir_exists": false,
+  "pi_environment_detected": true,
+  "network": [
+    {
+      "url": "https://zh.wikisource.org/",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1223
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "ok": false,
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1081)>",
+      "elapsed_ms": 685
+    },
+    {
+      "url": "https://www.who.int/",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_ms": 484
+    }
+  ],
+  "owner_confirmed_workbuddy_web_search": true,
+  "owner_confirmed_workbuddy_web_read": true
+}

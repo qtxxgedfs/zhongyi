@@ -1,0 +1,29 @@
+{
+  "source_id": "commentary-nanjing-jizhu",
+  "passage_count": 946,
+  "citable_passage_count": 943,
+  "quarantined_passage_count": 3,
+  "statistics": {
+    "characters_simplified": 72379,
+    "citable_characters": 72357,
+    "citable_passages": 943,
+    "passages": 946,
+    "quarantine_issue:known-ui-text-intrusion": 1,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 2,
+    "quarantined_characters": 22,
+    "quarantined_passages": 3,
+    "speaker_type:commentary": 917,
+    "speaker_type:preface": 5,
+    "speaker_type:quoted_core": 24,
+    "split_blocks": 3
+  },
+  "source_aggregate_sha256": "d32bf246dba673cb6ca6be4efb28552214e269fea79fb00240eda20bf87519e6",
+  "traditional_aggregate_sha256": "025a830c1626f784b9bb36a207a7ab0e49153d4be05d06355a6d39355c7cbc8e",
+  "simplified_aggregate_sha256": "4e0a4f5a5d9830db50b02578bf925575469534057eec21941881cad4b852db2a",
+  "search_aggregate_sha256": "47b539b50fec2a1b5c9e2831a8601bca50bdf081cf8dc9e0755d1b06106da634",
+  "citable_traditional_sha256": "fcca22cbdb0e7b7dbe3423c1f46ea5f19f35a01df405be100ecfc49784a4edce",
+  "citable_simplified_sha256": "a1a8f3600e8207fa254728e520b7067bc9069c96502a99b26bb06ec100b4f4fc",
+  "citable_search_sha256": "8b5ca49857a2e125bab4424beaeee65fdcc7e0df94e9130d6b57bfbcda291bf3",
+  "processed_path": "sources/processed/commentary-nanjing-jizhu/passages.jsonl",
+  "max_simplified_characters": 697
+}

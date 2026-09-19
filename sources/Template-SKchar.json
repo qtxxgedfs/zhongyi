@@ -1,0 +1,23 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 204159,
+        "ns": 10,
+        "title": "Template:SKchar",
+        "revisions": [
+          {
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "{{#invoke:SKchar|skchar|{{{1}}}|{{{2}}}}}<noinclude>{{documentation}}</noinclude>"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

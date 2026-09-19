@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "curated-seed",
+  "database_path": "skill/tcm-classics-study/data/evidence-cache.sqlite",
+  "database_sha256": "89ae44f34111b0738dd36e23c3f2fd35dfe44ff870921daf4ce314f6d0367dcf",
+  "database_size_bytes": 98304,
+  "source_registry_count": 11,
+  "topic_count": 25,
+  "verified_record_count": 6,
+  "inputs": {
+    "source_registry_sha256": "9697506041e5a52c4c6f8e53b647f62c9fbe29afbad8ae0ef7806f6b8f8daac6",
+    "topics_sha256": "8dbb5975781d513557051202977cf2e02713676f4ff220d24f4eb31aadc36fa4",
+    "records_sha256": "7c9df65191784bdec08465b4dcbb6f0f9a712115ade92de89035347e5475c351",
+    "source_audit_sha256": "cd98b7d94c0360cb63e85b89e9ce6954b08213216d143ad7fc6bd4e0612d2a36",
+    "schema_sha256": "2df677399f294bdf13c234bbd5e30d1c5afce01a608744f96f1712572258cace",
+    "record_schema_sha256": "47f2197d9101f5e182d41410bea6c8f8f165e9c8750c6148488c55713a96e627"
+  }
+}

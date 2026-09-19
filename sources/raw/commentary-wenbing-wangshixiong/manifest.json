@@ -1,0 +1,196 @@
+{
+  "id": "commentary-wenbing-wangshixiong",
+  "layer": "commentary",
+  "canon": "wenbing",
+  "target_works": [
+    "wenbingtiaobian"
+  ],
+  "author": "王士雄（王孟英）",
+  "title": "《温热经纬》",
+  "relationship": [
+    "classification",
+    "theoretical_extension",
+    "clinical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "溫熱經緯",
+  "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF",
+  "edition_label": "《温热经纬》Wikisource五卷本",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "溫熱經緯/",
+  "enumerated_subpage_count": 7,
+  "included_subpage_count": 7,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "volume",
+    "expected_count": 5,
+    "minimum_accepted": 5
+  },
+  "pages": [
+    {
+      "requested_title": "溫熱經緯",
+      "title": "溫熱經緯",
+      "page_id": 761999,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF",
+      "revision_id": 2186417,
+      "revision_timestamp": "2022-10-15T16:55:51Z",
+      "source_sha1": "559c0d141faadac808811f018259efaac260271b",
+      "source_size": 663,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old",
+        "Category:有跨维基链接需要清理",
+        "Category:溫病學派",
+        "Category:王士雄"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0000.wikitext",
+      "raw_sha256": "418a8384ee7bd23fecb87c8dbdfffa0b65842d8fb85bc0430bbfb781adadf709"
+    },
+    {
+      "requested_title": "溫熱經緯/卷一",
+      "title": "溫熱經緯/卷一",
+      "page_id": 989070,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%B8%80",
+      "revision_id": 1699323,
+      "revision_timestamp": "2019-08-08T12:51:21Z",
+      "source_sha1": "85509044f07a3cbe60bcdf2b26610f304de3406b",
+      "source_size": 25004,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0001.wikitext",
+      "raw_sha256": "8e777ecf99f0f097ddbcb015bc2ab2f562e8c2daea56cde41194c392650be726"
+    },
+    {
+      "requested_title": "溫熱經緯/卷二",
+      "title": "溫熱經緯/卷二",
+      "page_id": 989126,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%8C",
+      "revision_id": 1699584,
+      "revision_timestamp": "2019-08-08T13:31:09Z",
+      "source_sha1": "07e3903f28f3f12c803e05b5a5c05c546033c9bb",
+      "source_size": 64012,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0002.wikitext",
+      "raw_sha256": "0153d6c3e96454981454e1d0aac3fd6c059414ab8162fc3f0c2dce48f3033977"
+    },
+    {
+      "requested_title": "溫熱經緯/卷三",
+      "title": "溫熱經緯/卷三",
+      "page_id": 989368,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%B8%89",
+      "revision_id": 1699694,
+      "revision_timestamp": "2019-08-08T13:47:55Z",
+      "source_sha1": "41c0811ddcdd5b9f2ad9934fb245ca4ec3641c30",
+      "source_size": 82850,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0003.wikitext",
+      "raw_sha256": "b4a26794010d4cb9b9ee9058eb8a99eb967a79f3842fdc7763170239258104b5"
+    },
+    {
+      "requested_title": "溫熱經緯/卷四",
+      "title": "溫熱經緯/卷四",
+      "page_id": 989488,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E5%9B%9B",
+      "revision_id": 2545330,
+      "revision_timestamp": "2025-04-02T19:51:57Z",
+      "source_sha1": "4017bdfbe1b90fed5c60fb3a3b082d728c73d571",
+      "source_size": 128552,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0004.wikitext",
+      "raw_sha256": "8f0b09db56fb06d9c01254cc45ed0fd0984063bc3166003a04601e9020675f45"
+    },
+    {
+      "requested_title": "溫熱經緯/卷五",
+      "title": "溫熱經緯/卷五",
+      "page_id": 996391,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%8D%B7%E4%BA%94",
+      "revision_id": 1738168,
+      "revision_timestamp": "2019-08-18T12:48:00Z",
+      "source_sha1": "f2325fdb7480a866c7af787c27d8fb340a6c72ff",
+      "source_size": 93482,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0005.wikitext",
+      "raw_sha256": "f991ecef207589f802205316184a1e1878d37b947f985becaeee14913c744957"
+    },
+    {
+      "requested_title": "溫熱經緯/唐跋",
+      "title": "溫熱經緯/唐跋",
+      "page_id": 996541,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%94%90%E8%B7%8B",
+      "revision_id": 1710269,
+      "revision_timestamp": "2019-08-09T10:30:09Z",
+      "source_sha1": "f90d2401234afa4b004a4d61e52285b860cc7a98",
+      "source_size": 659,
+      "content_model": "wikitext",
+      "categories": [],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0006.wikitext",
+      "raw_sha256": "7eaccdc37cd4e3cfac32779706607e902eaad37c754533478107439d3b717a94"
+    },
+    {
+      "requested_title": "溫熱經緯/序文",
+      "title": "溫熱經緯/序文",
+      "page_id": 989049,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E7%B6%93%E7%B7%AF/%E5%BA%8F%E6%96%87",
+      "revision_id": 1738186,
+      "revision_timestamp": "2019-08-18T13:15:03Z",
+      "source_sha1": "f249337ab24daee8526b25cc780bcf0a6f7efcd6",
+      "source_size": 6542,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:校訂不足的頁面"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-wenbing-wangshixiong/0007.wikitext",
+      "raw_sha256": "e30e2d29ddc2f1b338848bddb95c30b04b0962714767f59f1732e6ca6bcabbd7"
+    }
+  ],
+  "aggregate_raw_sha256": "3b7f5fe955ab0f22deb51375818d2b7206be95083b8cae2a8597d7a4403a3683"
+}

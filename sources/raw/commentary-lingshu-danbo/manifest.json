@@ -1,0 +1,59 @@
+{
+  "id": "commentary-lingshu-danbo",
+  "layer": "commentary",
+  "canon": "huangdi",
+  "target_works": [
+    "lingshu"
+  ],
+  "author": "丹波元简",
+  "title": "《灵枢识》",
+  "relationship": [
+    "direct_commentary",
+    "textual_collation",
+    "disagreement"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "靈樞識",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%9D%88%E6%A8%9E%E8%AD%98",
+  "edition_label": "《灵枢识》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "Wikisource头部作者元数据与书内题署冲突；采用经书目复核的丹波元简并保留冲突说明。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "靈樞識/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "靈樞識",
+      "title": "靈樞識",
+      "page_id": 760961,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%9D%88%E6%A8%9E%E8%AD%98",
+      "revision_id": 1316012,
+      "revision_timestamp": "2017-10-14T10:19:14Z",
+      "source_sha1": "e1d7cd78404a5e9bc3a1f4d18368db4e9251ce4b",
+      "source_size": 701960,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:校訂不足的頁面"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-lingshu-danbo/0000.wikitext",
+      "raw_sha256": "c13e4c2f895f1e32f3907e8975f6f587b8f5752450a52459cf9c165f22bbb9df"
+    }
+  ],
+  "aggregate_raw_sha256": "a0bd2c664036297834ba84cce8c48ac6d990ca08f43bbfa004000595cfc515bf"
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "commentary-jingui-chenxiuyuan",
+  "passage_count": 245,
+  "citable_passage_count": 244,
+  "quarantined_passage_count": 1,
+  "statistics": {
+    "characters_simplified": 126518,
+    "citable_characters": 126510,
+    "citable_passages": 244,
+    "passages": 245,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 1,
+    "quarantined_characters": 8,
+    "quarantined_passages": 1,
+    "speaker_type:commentary": 23,
+    "speaker_type:mixed": 222,
+    "split_blocks": 45
+  },
+  "source_aggregate_sha256": "5bf1e780b679ddd555c232709a10dee524dfe0086e03d2c0b1298b2089a3373b",
+  "traditional_aggregate_sha256": "75485df3b8676746ff34dee369f4221f6635764a83d1602dd20bcce71017dd0f",
+  "simplified_aggregate_sha256": "65ebe81483cd94591b526dfa2c78ffdcbe6a2a9dc2ce829d1b46d7b4318713bd",
+  "search_aggregate_sha256": "9ce421a3e439d16c989bf32243793d958d148e7c2643f2a5daba044984e31a4f",
+  "citable_traditional_sha256": "2a239f3e70f488b375e4ede64edcb767417752a1d141b926ccac88e8c811de41",
+  "citable_simplified_sha256": "cbf2ed5e65dfbc33a4f2b5562b82e96d2b26bd6f3e198df8b80a294b885b0b91",
+  "citable_search_sha256": "8a8f8f6864e5244d651161de618dc26172906c550a6cff9dd7ffa92833288ff5",
+  "processed_path": "sources/processed/commentary-jingui-chenxiuyuan/passages.jsonl",
+  "max_simplified_characters": 700
+}

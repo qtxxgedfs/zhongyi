@@ -1,0 +1,15 @@
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf whitespace=-blank-at-eol
+*.json text eol=lf
+*.jsonl text eol=lf
+*.sql text eol=lf
+*.txt text eol=lf
+*.wikitext text eol=lf
+*.lua text eol=lf
+*.sqlite binary
+*.zip binary
+
+# Fixed upstream snapshots preserve source whitespace verbatim.
+sources/raw/** -whitespace

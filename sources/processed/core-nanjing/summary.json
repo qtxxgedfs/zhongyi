@@ -1,0 +1,23 @@
+{
+  "source_id": "core-nanjing",
+  "passage_count": 83,
+  "citable_passage_count": 83,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 14759,
+    "citable_characters": 14759,
+    "citable_passages": 83,
+    "passages": 83,
+    "speaker_type:core_text": 83,
+    "split_blocks": 2
+  },
+  "source_aggregate_sha256": "ce4abd34fcc84517b5a8d6158e234e00ec30efafac2dfd238e5afdcb55870dff",
+  "traditional_aggregate_sha256": "f4261002f0ba4807f7d1d5902b2c14b080e631c1a2bb04afa0a028a36cb1aacf",
+  "simplified_aggregate_sha256": "8bc8419f71c9037f250f1f18f8df12f1d0dd92fc1a20b902e2e20002acb63c41",
+  "search_aggregate_sha256": "996400a11efeacd256071213a6247ff7adf1a40698a7169ef9639e9dce8d2ce1",
+  "citable_traditional_sha256": "f4261002f0ba4807f7d1d5902b2c14b080e631c1a2bb04afa0a028a36cb1aacf",
+  "citable_simplified_sha256": "8bc8419f71c9037f250f1f18f8df12f1d0dd92fc1a20b902e2e20002acb63c41",
+  "citable_search_sha256": "996400a11efeacd256071213a6247ff7adf1a40698a7169ef9639e9dce8d2ce1",
+  "processed_path": "sources/processed/core-nanjing/passages.jsonl",
+  "max_simplified_characters": 689
+}

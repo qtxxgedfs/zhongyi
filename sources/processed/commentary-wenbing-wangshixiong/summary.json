@@ -1,0 +1,26 @@
+{
+  "source_id": "commentary-wenbing-wangshixiong",
+  "passage_count": 316,
+  "citable_passage_count": 314,
+  "quarantined_passage_count": 2,
+  "statistics": {
+    "characters_simplified": 132861,
+    "citable_characters": 132816,
+    "citable_passages": 314,
+    "passages": 316,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 2,
+    "quarantined_characters": 45,
+    "quarantined_passages": 2,
+    "speaker_type:commentary": 316,
+    "split_blocks": 30
+  },
+  "source_aggregate_sha256": "45fcaf13bca16e385765e9ec7a8f33bb5eb458793ef0cf1fed8f23fbd4c2564d",
+  "traditional_aggregate_sha256": "9b516fc10a14b13bd094b652fc4f95fbb696429dbb6908edb9e93cf05a7b9b59",
+  "simplified_aggregate_sha256": "e785fe9f5d4cc819c211c7f4703345c4fce06ca48287047685ba2fcc2f0193c6",
+  "search_aggregate_sha256": "678240968e0c9310155db336cbbbc11175334f8df39bb4800ae53a8e6ac13978",
+  "citable_traditional_sha256": "d10419612a4837fcda1eee6af387f628a57bc91d6f96321762eea62af1f430a5",
+  "citable_simplified_sha256": "59f20ce391594493794179d76c45371bed0691ffb51925d5f714cc3511c36b89",
+  "citable_search_sha256": "1e7363a9f33faa0b695a4a268b6d9dfc0a33894545d00ae610fbfcfb93ba5a23",
+  "processed_path": "sources/processed/commentary-wenbing-wangshixiong/passages.jsonl",
+  "max_simplified_characters": 700
+}

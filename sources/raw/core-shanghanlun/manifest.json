@@ -1,0 +1,67 @@
+{
+  "id": "core-shanghanlun",
+  "layer": "core",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "传统归于张仲景",
+  "title": "《伤寒论》",
+  "relationship": [
+    "core"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "傷寒論",
+  "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96",
+  "edition_label": "宋本《伤寒论》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "高风险：页面标记25%，明示部分篇章及方剂未校订，并有简转繁错误记录。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "傷寒論/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "chapter",
+    "expected_count": 20,
+    "minimum_accepted": 18
+  },
+  "pages": [
+    {
+      "requested_title": "傷寒論",
+      "title": "傷寒論",
+      "page_id": 16611,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%82%B7%E5%AF%92%E8%AB%96",
+      "revision_id": 2607901,
+      "revision_timestamp": "2025-10-18T22:56:23Z",
+      "source_sha1": "20a665ab8939b9e7ef9c850641c7c6de91ad62dc",
+      "source_size": 131800,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:25%",
+        "Category:PD-old",
+        "Category:中醫",
+        "Category:古代中國",
+        "Category:因簡轉繁導致錯誤的頁面",
+        "Category:張仲景",
+        "Category:校訂不足的頁面",
+        "Category:醫家"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-shanghanlun/0000.wikitext",
+      "raw_sha256": "16f02ffaefe856d8ff910374f5002488ce28490d68785e4963af8b15c18146c6"
+    }
+  ],
+  "aggregate_raw_sha256": "1ed06060170f3654450999b93bb74e28b1bb10581e3ec652aa9360f7ad6c7dec"
+}

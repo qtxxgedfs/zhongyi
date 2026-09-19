@@ -1,0 +1,23 @@
+{
+  "source_id": "lineage-wenbing-xuexue",
+  "passage_count": 15,
+  "citable_passage_count": 15,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 9011,
+    "citable_characters": 9011,
+    "citable_passages": 15,
+    "passages": 15,
+    "speaker_type:lineage": 15,
+    "split_blocks": 2
+  },
+  "source_aggregate_sha256": "990b7f1019bef442252e617bf9af869fd73628c0d28b1f3f76836b095bd48715",
+  "traditional_aggregate_sha256": "f201c65c6f38c9232fb46300ef706cc6810a1ac146442c3f73c22b7d40e5da3f",
+  "simplified_aggregate_sha256": "dad355fa495179ec715c3040d6e0511d41a76607b3afd0449acef4693c435c68",
+  "search_aggregate_sha256": "b1e0b23d36e992ccfd517f903937ce98cf5f993027a321d2955301b75c569bc1",
+  "citable_traditional_sha256": "f201c65c6f38c9232fb46300ef706cc6810a1ac146442c3f73c22b7d40e5da3f",
+  "citable_simplified_sha256": "dad355fa495179ec715c3040d6e0511d41a76607b3afd0449acef4693c435c68",
+  "citable_search_sha256": "b1e0b23d36e992ccfd517f903937ce98cf5f993027a321d2955301b75c569bc1",
+  "processed_path": "sources/processed/lineage-wenbing-xuexue/passages.jsonl",
+  "max_simplified_characters": 698
+}

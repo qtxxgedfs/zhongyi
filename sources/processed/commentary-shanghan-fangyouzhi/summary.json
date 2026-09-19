@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-shanghan-fangyouzhi",
+  "passage_count": 359,
+  "citable_passage_count": 325,
+  "quarantined_passage_count": 34,
+  "statistics": {
+    "characters_simplified": 144837,
+    "citable_characters": 144527,
+    "citable_passages": 325,
+    "passages": 359,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 48,
+    "quarantined_characters": 310,
+    "quarantined_passages": 34,
+    "speaker_type:commentary": 18,
+    "speaker_type:mixed": 334,
+    "speaker_type:preface": 7,
+    "split_blocks": 36
+  },
+  "source_aggregate_sha256": "5cda3595fecfbf79103d23746a0fa402f93a899d49745b2c78bf0739bf9bb40f",
+  "traditional_aggregate_sha256": "c5023b3261f7d34cdaf28442cc34f5721de414caa5b2603c14e2b76a93e7bc1c",
+  "simplified_aggregate_sha256": "102d3f0827a73efcaca17e96711694ab08dd6f8dd701cf107e91bef06fbcc842",
+  "search_aggregate_sha256": "9dec7c9699980b6601008be437631b83021bbad76b365df88425b1e7ff5042d4",
+  "citable_traditional_sha256": "55356dacd569195ca928d43b19868a0ee1a4b30075bf50fba5285de63b895664",
+  "citable_simplified_sha256": "b1efb3da9757a29da15af3dcddf86712a1182e35df52e37f04bedce0ee176365",
+  "citable_search_sha256": "7aedb316d45ae00ea5781a9792d36aaac0fdf856a5a5ea9a69ac72784cb4e9c2",
+  "processed_path": "sources/processed/commentary-shanghan-fangyouzhi/passages.jsonl",
+  "max_simplified_characters": 700
+}

@@ -1,0 +1,60 @@
+{
+  "id": "commentary-jingui-youyi",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "jingui"
+  ],
+  "author": "尤怡（尤在泾）",
+  "title": "《金匮要略心典》",
+  "relationship": [
+    "direct_commentary",
+    "clinical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "金匱要略心典",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+  "edition_label": "《金匮要略心典》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "金匱要略心典/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "金匱要略心典",
+      "title": "金匱要略心典",
+      "page_id": 761008,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5%E5%BF%83%E5%85%B8",
+      "revision_id": 2187302,
+      "revision_timestamp": "2022-10-17T23:54:57Z",
+      "source_sha1": "c0eb133f953bf340552be59292d02bf0e503b86f",
+      "source_size": 247555,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:中醫",
+        "Category:尤怡",
+        "Category:校訂不足的頁面",
+        "Category:清朝"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-jingui-youyi/0000.wikitext",
+      "raw_sha256": "d943bd79ed7a3e79ded65ae3f6600b8f6eef01cdedfcbb7d69d5c3dee381e670"
+    }
+  ],
+  "aggregate_raw_sha256": "78453400e05f819e105568a0ccb4ae02c5e5d935079b15c7d280dc0ef8876247"
+}

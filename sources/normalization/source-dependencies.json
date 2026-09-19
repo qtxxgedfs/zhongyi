@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "dependencies": [
+    {
+      "title": "Template:SKchar",
+      "page_url": "https://zh.wikisource.org/wiki/Template:SKchar",
+      "revision_id": 2458515,
+      "revision_timestamp": "2024-10-07T02:18:56Z",
+      "source_sha1": "d5b4a6a1d984bc70926c5453961a20f86577e24e",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Template-SKchar.wikitext",
+      "raw_sha256": "7007eac8e6313cbead41579e7bb3189b2fa935a42b6d659693fae7bfca52c2fd"
+    },
+    {
+      "title": "Module:SKchar",
+      "page_url": "https://zh.wikisource.org/wiki/Module:SKchar",
+      "revision_id": 9459083,
+      "revision_timestamp": "2026-09-11T00:29:59Z",
+      "source_sha1": "9ac0bd8a94d2f08fc0d6530c273ce566de4791d1",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Module-SKchar.lua",
+      "raw_sha256": "d825b69b50ebd14fd5797fe297b3a7c39b88fbb843d2fe061287a067f84ac5ce"
+    },
+    {
+      "title": "Template:SKchar2",
+      "page_url": "https://zh.wikisource.org/wiki/Template:SKchar2",
+      "revision_id": 2458514,
+      "revision_timestamp": "2024-10-07T02:09:00Z",
+      "source_sha1": "09152e9c0782141461762529d8ea0de1571d7620",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Template-SKchar2.wikitext",
+      "raw_sha256": "eae97a6976aa8986a0b8c943c043429f42cbe4ba8ab4c2976073b406fa804e16"
+    },
+    {
+      "title": "Module:SKchar2",
+      "page_url": "https://zh.wikisource.org/wiki/Module:SKchar2",
+      "revision_id": 2468069,
+      "revision_timestamp": "2024-10-17T07:39:38Z",
+      "source_sha1": "0d5e1ca8ef42f77d07abbafa615cb2e4c1f4e285",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Module-SKchar2.lua",
+      "raw_sha256": "87363b4b51088d88120a77ab6517e7573c771ec14d6a494bdf068befb3b0b566"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{{#invoke:SKchar|skchar|{{{1}}}|{{{2}}}}}<noinclude>{{documentation}}</noinclude>

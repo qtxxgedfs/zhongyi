@@ -1,0 +1,1 @@
+{{#invoke:SKchar2|skchar2|{{{1}}}|{{{2}}}}}<noinclude>{{documentation}}[[Category:字体模板]]</noinclude>

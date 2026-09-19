@@ -1,0 +1,68 @@
+{
+  "id": "core-jingui",
+  "layer": "core",
+  "canon": "zhongjing",
+  "target_works": [
+    "jingui"
+  ],
+  "author": "传统归于张仲景",
+  "title": "《金匮要略》",
+  "relationship": [
+    "core"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "金匱要略",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+  "edition_label": "《金匮要略》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "页面曾标记50%；必须检测并处理Unicode私用区字符。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "金匱要略/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "chapter",
+    "expected_count": 25,
+    "minimum_accepted": 22
+  },
+  "pages": [
+    {
+      "requested_title": "金匱要略",
+      "title": "金匱要略",
+      "page_id": 25028,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8C%B1%E8%A6%81%E7%95%A5",
+      "revision_id": 2598887,
+      "revision_timestamp": "2025-09-20T08:59:53Z",
+      "source_sha1": "e044748981188c3ac1eb5101e3ab72c12df2504c",
+      "source_size": 91010,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:50%",
+        "Category:PD-old",
+        "Category:不應使用簡化字的頁面",
+        "Category:中醫",
+        "Category:傷寒雜病論",
+        "Category:包含Unicode私有区字符的条目",
+        "Category:張仲景",
+        "Category:東漢",
+        "Category:醫家"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-jingui/0000.wikitext",
+      "raw_sha256": "4899d4f033a7ce7be8ed85c706b1ed95a31634d4c4130a56d4bfc4d8655be2c2"
+    }
+  ],
+  "aggregate_raw_sha256": "483167bdd2001add8e09cf9a75d94007723c31b088a86f10c67ad443f0c9d67a"
+}

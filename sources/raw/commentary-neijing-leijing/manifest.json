@@ -1,0 +1,691 @@
+{
+  "id": "commentary-neijing-leijing",
+  "layer": "commentary",
+  "canon": "huangdi",
+  "target_works": [
+    "suwen",
+    "lingshu"
+  ],
+  "author": "张介宾",
+  "title": "《类经》",
+  "relationship": [
+    "classification",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "類經 (四庫全書本)",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+  "edition_label": "《类经》四库全书本·正文32卷",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "只收《类经》正文32卷；全览、图翼11卷和附翼4卷不进入本作品语料。",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "類經 (四庫全書本)/",
+  "enumerated_subpage_count": 49,
+  "included_subpage_count": 32,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [
+    "類經 (四庫全書本)/圖翼卷01",
+    "類經 (四庫全書本)/附翼卷01",
+    "類經 (四庫全書本)/圖翼卷02",
+    "類經 (四庫全書本)/附翼卷02",
+    "類經 (四庫全書本)/圖翼卷03",
+    "類經 (四庫全書本)/附翼卷03",
+    "類經 (四庫全書本)/圖翼卷04",
+    "類經 (四庫全書本)/附翼卷04",
+    "類經 (四庫全書本)/圖翼卷05",
+    "類經 (四庫全書本)/圖翼卷06",
+    "類經 (四庫全書本)/圖翼卷07",
+    "類經 (四庫全書本)/圖翼卷08",
+    "類經 (四庫全書本)/圖翼卷09",
+    "類經 (四庫全書本)/圖翼卷10",
+    "類經 (四庫全書本)/圖翼卷11",
+    "類經 (四庫全書本)/全覽1",
+    "類經 (四庫全書本)/全覽2"
+  ],
+  "expected_structure": {
+    "kind": "volume",
+    "expected_count": 32,
+    "minimum_accepted": 32
+  },
+  "pages": [
+    {
+      "requested_title": "類經 (四庫全書本)",
+      "title": "類經 (四庫全書本)",
+      "page_id": 265422,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+      "revision_id": 640725,
+      "revision_timestamp": "2016-10-14T06:11:15Z",
+      "source_sha1": "ceb0d49b2767ae971e108eade916470de046541b",
+      "source_size": 8819,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:1781年 (提及)",
+        "Category:PD-old",
+        "Category:需要指定公元的紀年"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0000.wikitext",
+      "raw_sha256": "4dbbb0098c6cf8f3a106f6711f2d7b9747dc637fe50798bba05957948097dc29"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷01",
+      "title": "類經 (四庫全書本)/卷01",
+      "page_id": 265351,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B701",
+      "revision_id": 640582,
+      "revision_timestamp": "2016-10-14T06:10:37Z",
+      "source_sha1": "20d7a0840b1b43162b4a4efd3226443438cec90c",
+      "source_size": 22072,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0001.wikitext",
+      "raw_sha256": "dac5b4ba6da384cd974fcc905a68350fe31244b7cee7a791edaeae09a56f026e"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷02",
+      "title": "類經 (四庫全書本)/卷02",
+      "page_id": 265352,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B702",
+      "revision_id": 640584,
+      "revision_timestamp": "2016-10-14T06:10:38Z",
+      "source_sha1": "cf6f8fde15727c9abf187cdddcbbe9f8631adf6c",
+      "source_size": 29043,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0002.wikitext",
+      "raw_sha256": "4a097923ccdd827804cb1b2bbeb65c1e8fd3a74736934dc8918b57f0523f9a01"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷03",
+      "title": "類經 (四庫全書本)/卷03",
+      "page_id": 265353,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B703",
+      "revision_id": 640588,
+      "revision_timestamp": "2016-10-14T06:10:38Z",
+      "source_sha1": "0f62cbbfa1d4c4973610223cb09f4bd618dbb55a",
+      "source_size": 77079,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0003.wikitext",
+      "raw_sha256": "25bef0d64afadf01e123a340089caa61e32c1ae4f5d76f62ec603643608593ee"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷04",
+      "title": "類經 (四庫全書本)/卷04",
+      "page_id": 265355,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B704",
+      "revision_id": 794565,
+      "revision_timestamp": "2016-10-28T07:36:35Z",
+      "source_sha1": "a50aa742005a9cca438c62dc6a36088cda652ac5",
+      "source_size": 68476,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0004.wikitext",
+      "raw_sha256": "71193725f9780b84039a7ecd434264478ddf8958564d6450a948d861177683c6"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷05",
+      "title": "類經 (四庫全書本)/卷05",
+      "page_id": 265356,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B705",
+      "revision_id": 794566,
+      "revision_timestamp": "2016-10-28T07:36:45Z",
+      "source_sha1": "b4098cf9537f7dd7357d14d30a30120b8f680bb7",
+      "source_size": 78476,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0005.wikitext",
+      "raw_sha256": "15d443d298cc7335ddde49ccfc0df741fe61f1f65393ff5591dd2d4bd4a5881a"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷06",
+      "title": "類經 (四庫全書本)/卷06",
+      "page_id": 265359,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B706",
+      "revision_id": 794567,
+      "revision_timestamp": "2016-10-28T07:36:55Z",
+      "source_sha1": "0fc32f2a420bd005773a05eeace41b7e470706ec",
+      "source_size": 81803,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0006.wikitext",
+      "raw_sha256": "48d6f777eeb0a0abd19a83808472d6a53fd49f8753ba8e71db358b62cb6a5aec"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷07",
+      "title": "類經 (四庫全書本)/卷07",
+      "page_id": 265361,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B707",
+      "revision_id": 640604,
+      "revision_timestamp": "2016-10-14T06:10:44Z",
+      "source_sha1": "a925d96fbb079c9a12c3d888433d76794d31d9d5",
+      "source_size": 82876,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0007.wikitext",
+      "raw_sha256": "d6e69030af372085278efeef87c2d9bf7b2b1b4f0cf884bbd63dc2b55f7f45ee"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷08",
+      "title": "類經 (四庫全書本)/卷08",
+      "page_id": 265363,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B708",
+      "revision_id": 640607,
+      "revision_timestamp": "2016-10-14T06:10:44Z",
+      "source_sha1": "90561ee61c4ac4499800ddc6cd343d0c5692fba1",
+      "source_size": 65337,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0008.wikitext",
+      "raw_sha256": "308d4042909e4a35980902610dc3633c6dbb9e32cce05cf3749db2384c5b3d98"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷09",
+      "title": "類經 (四庫全書本)/卷09",
+      "page_id": 265365,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B709",
+      "revision_id": 640610,
+      "revision_timestamp": "2016-10-14T06:10:45Z",
+      "source_sha1": "77698d878e839be6fc9a3aaa0de0317fb6847cba",
+      "source_size": 49884,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0009.wikitext",
+      "raw_sha256": "96a322a0574b0a18241bd3fcf90c159f760420028f9d8af3c46f14a22fecf422"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷10",
+      "title": "類經 (四庫全書本)/卷10",
+      "page_id": 265366,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B710",
+      "revision_id": 640612,
+      "revision_timestamp": "2016-10-14T06:10:45Z",
+      "source_sha1": "5325fd4a0236ab752389d3c68a8f5b81bef94776",
+      "source_size": 9784,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0010.wikitext",
+      "raw_sha256": "ece106f8a8803e567c1d4816c1d763696e783d7ccdf26924eb5bbae32f069cb8"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷11",
+      "title": "類經 (四庫全書本)/卷11",
+      "page_id": 265367,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B711",
+      "revision_id": 640615,
+      "revision_timestamp": "2016-10-14T06:10:46Z",
+      "source_sha1": "a4289cc5b92fe275334834a66a0ae39110854f98",
+      "source_size": 13015,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0011.wikitext",
+      "raw_sha256": "2d110c13471e37fc5dcf56a9172c63492dce644ddd15ca37953c6434d5850644"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷12",
+      "title": "類經 (四庫全書本)/卷12",
+      "page_id": 265368,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B712",
+      "revision_id": 640618,
+      "revision_timestamp": "2016-10-14T06:10:46Z",
+      "source_sha1": "d2e58d2feaf09af7e74455fb214800c59bca239d",
+      "source_size": 84374,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0012.wikitext",
+      "raw_sha256": "d44f7d14edb07a8de4c34ea63c36c702efaca3c674b263b9646b41a865a8eee2"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷13",
+      "title": "類經 (四庫全書本)/卷13",
+      "page_id": 265370,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B713",
+      "revision_id": 640622,
+      "revision_timestamp": "2016-10-14T06:10:47Z",
+      "source_sha1": "96ddb9161858b915c5bade8074a8b325330be323",
+      "source_size": 82067,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0013.wikitext",
+      "raw_sha256": "415fd78423a7f8d975813e3b823b96f41b5d92682f81a515ad1aa9168d59a31f"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷14",
+      "title": "類經 (四庫全書本)/卷14",
+      "page_id": 265372,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B714",
+      "revision_id": 794568,
+      "revision_timestamp": "2016-10-28T07:37:05Z",
+      "source_sha1": "72f4bdc1d8a6148db94cb52f5a8bc61922043b43",
+      "source_size": 80107,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0014.wikitext",
+      "raw_sha256": "40fc6c18e6f02f34d080169a9118ce332303e7921c6d679baadbc7a20aafdbde"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷15",
+      "title": "類經 (四庫全書本)/卷15",
+      "page_id": 265374,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B715",
+      "revision_id": 794569,
+      "revision_timestamp": "2016-10-28T07:37:15Z",
+      "source_sha1": "bebf09231165ed8530e8863dfa212250f804226c",
+      "source_size": 94922,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0015.wikitext",
+      "raw_sha256": "f8ed5c208f352655b2ea61f70a07141324141a26508cd4e9997c76c71324910a"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷16",
+      "title": "類經 (四庫全書本)/卷16",
+      "page_id": 265377,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B716",
+      "revision_id": 640634,
+      "revision_timestamp": "2016-10-14T06:10:50Z",
+      "source_sha1": "c6b6ce5e9d508320a6f2f0c1b96f6252c759cd43",
+      "source_size": 65895,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0016.wikitext",
+      "raw_sha256": "697f4ed6f4eb4ef72608d19984b25aeaa5e1def3ab70bb99a0a56c55a07f689a"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷17",
+      "title": "類經 (四庫全書本)/卷17",
+      "page_id": 265378,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B717",
+      "revision_id": 640638,
+      "revision_timestamp": "2016-10-14T06:10:51Z",
+      "source_sha1": "578e6342076ec69e4ae314b79cd4d2c38ccfd88e",
+      "source_size": 69065,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0017.wikitext",
+      "raw_sha256": "421c061a1c3aa9c53bddd8aa50f7d4bd89f182252151211960fe8619820f61e7"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷18",
+      "title": "類經 (四庫全書本)/卷18",
+      "page_id": 265380,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B718",
+      "revision_id": 640642,
+      "revision_timestamp": "2016-10-14T06:10:53Z",
+      "source_sha1": "c0cb9c57caca0fda10d56d239af4739c4de9ed1a",
+      "source_size": 67537,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0018.wikitext",
+      "raw_sha256": "c0c97a750b9615b74c0bd94f82103c85e7c0231a14c8a5b714fc056952eeee97"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷19",
+      "title": "類經 (四庫全書本)/卷19",
+      "page_id": 265382,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B719",
+      "revision_id": 794570,
+      "revision_timestamp": "2016-10-28T07:37:25Z",
+      "source_sha1": "c9da5b9f9bdcd3a0c5f1e0a8bb7784a0cf8951b9",
+      "source_size": 75439,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0019.wikitext",
+      "raw_sha256": "1b2657f24d1dbb698d4aee10bb2549756051f85b03b180ad4cac9240634308e3"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷20",
+      "title": "類經 (四庫全書本)/卷20",
+      "page_id": 265384,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B720",
+      "revision_id": 640652,
+      "revision_timestamp": "2016-10-14T06:10:56Z",
+      "source_sha1": "94c934a4da727f9ca9b0890f696bc2408b7b58c7",
+      "source_size": 72725,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0020.wikitext",
+      "raw_sha256": "0609210c32d33d2f4297427a328e16216c7a9846fe53eaec2721775a885bc2cf"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷21",
+      "title": "類經 (四庫全書本)/卷21",
+      "page_id": 265387,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B721",
+      "revision_id": 640654,
+      "revision_timestamp": "2016-10-14T06:10:56Z",
+      "source_sha1": "e24616b6b9e3d200603e051e0678367c4c4fd4b2",
+      "source_size": 70149,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0021.wikitext",
+      "raw_sha256": "03428e75927c18e939c719d9d6afac808537b9efceb4516f4f58090d11a9a994"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷22",
+      "title": "類經 (四庫全書本)/卷22",
+      "page_id": 265388,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B722",
+      "revision_id": 794571,
+      "revision_timestamp": "2016-10-28T07:37:35Z",
+      "source_sha1": "3525876f06761c7b4cd439558d87691c5a3498ee",
+      "source_size": 70774,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0022.wikitext",
+      "raw_sha256": "86c90c57b72525966951b434385bc1f1cb0e19aad5c0244ce7099f93ea2c4075"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷23",
+      "title": "類經 (四庫全書本)/卷23",
+      "page_id": 265390,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B723",
+      "revision_id": 794572,
+      "revision_timestamp": "2016-10-28T07:37:45Z",
+      "source_sha1": "270a71bc19e11937f669cfc2584dec0d4386bd05",
+      "source_size": 64878,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0023.wikitext",
+      "raw_sha256": "d747ba8cfcb2ed06b4e4623b70e80b08e493dd43a1212fedbfcea73ee5213be3"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷24",
+      "title": "類經 (四庫全書本)/卷24",
+      "page_id": 265391,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B724",
+      "revision_id": 794573,
+      "revision_timestamp": "2016-10-28T07:37:55Z",
+      "source_sha1": "7c17e0e20361c9848cf00a4141f49a2b28f905a6",
+      "source_size": 61990,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old",
+        "Category:需要指定公元的紀年"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0024.wikitext",
+      "raw_sha256": "5e6d23edb7e3ded677ad1aad1a0713b7aae88e44f436e5a2654af435a401d94d"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷25",
+      "title": "類經 (四庫全書本)/卷25",
+      "page_id": 265393,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B725",
+      "revision_id": 640666,
+      "revision_timestamp": "2016-10-14T06:11:01Z",
+      "source_sha1": "8d5147cfde5120eee5bc5ede509ce8e7e99931ce",
+      "source_size": 56144,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0025.wikitext",
+      "raw_sha256": "f11e7c5a71d6fa4ec0e580ddf26b915d4d3bd60ad6f41621d5bb16110a81d9b5"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷26",
+      "title": "類經 (四庫全書本)/卷26",
+      "page_id": 265394,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B726",
+      "revision_id": 794574,
+      "revision_timestamp": "2016-10-28T07:38:05Z",
+      "source_sha1": "d6e505a3e89ef9d92ee278d0bd9076cebcd49469",
+      "source_size": 101583,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0026.wikitext",
+      "raw_sha256": "62f33f7d2c2c88f0c2dd864e7ff8a17e0419cf5f6207a380de9f67324df45310"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷27",
+      "title": "類經 (四庫全書本)/卷27",
+      "page_id": 265399,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B727",
+      "revision_id": 2358014,
+      "revision_timestamp": "2024-01-18T15:20:39Z",
+      "source_sha1": "ba50c8a1aa7d2439cf980109edd1cb3be0954136",
+      "source_size": 73754,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0027.wikitext",
+      "raw_sha256": "7de3ba5ebcac601b6d22bd3e8e0bc2dbf33795c18f138a4f1b947d8922e1d870"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷28",
+      "title": "類經 (四庫全書本)/卷28",
+      "page_id": 265400,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B728",
+      "revision_id": 640681,
+      "revision_timestamp": "2016-10-14T06:11:04Z",
+      "source_sha1": "ff3004df4a19017afe62760559ae25f94b6d164f",
+      "source_size": 68819,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0028.wikitext",
+      "raw_sha256": "f7cb002b6a88feecf7ef1f8b629be98ae2e7ba3223b28befc724a3fc05442d2f"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷29",
+      "title": "類經 (四庫全書本)/卷29",
+      "page_id": 265401,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B729",
+      "revision_id": 794576,
+      "revision_timestamp": "2016-10-28T07:38:25Z",
+      "source_sha1": "4cc2c77226680f3724b8c5e431112ddaccf3ea32",
+      "source_size": 49639,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0029.wikitext",
+      "raw_sha256": "bd6101311762a3843d237fdd02372c079c4b6dacc8a43f888bab49cf15e576f8"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷30",
+      "title": "類經 (四庫全書本)/卷30",
+      "page_id": 265402,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B730",
+      "revision_id": 794577,
+      "revision_timestamp": "2016-10-28T07:38:35Z",
+      "source_sha1": "e840d613da0e1828fa07cd10b4369cca8394ee42",
+      "source_size": 48659,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0030.wikitext",
+      "raw_sha256": "aafbfdf4b758241102e96f6c62c58b0803536fd1acbc7917f300616d04de548d"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷31",
+      "title": "類經 (四庫全書本)/卷31",
+      "page_id": 265403,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B731",
+      "revision_id": 794578,
+      "revision_timestamp": "2016-10-28T07:38:45Z",
+      "source_sha1": "e994773d7022168fe309e6325ff672bde0bb884c",
+      "source_size": 41081,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0031.wikitext",
+      "raw_sha256": "ac5d99159799f227308fff9cb1d009888527019109b1b43f51c6f65c17fafc1c"
+    },
+    {
+      "requested_title": "類經 (四庫全書本)/卷32",
+      "title": "類經 (四庫全書本)/卷32",
+      "page_id": 265404,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%A1%9E%E7%B6%93_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B732",
+      "revision_id": 794579,
+      "revision_timestamp": "2016-10-28T07:38:55Z",
+      "source_sha1": "e2d019c4fb12fd2ef90e84722250fd3a289ff4c4",
+      "source_size": 44646,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-neijing-leijing/0032.wikitext",
+      "raw_sha256": "29753374bc491219783a83029fe23b33b5609de7b4af2a1d059dbc65bba20da2"
+    }
+  ],
+  "aggregate_raw_sha256": "90ae29e51dc518e37f54c2a9bb52ea5c8144a6a43673a9e581d05babf38ca01b"
+}

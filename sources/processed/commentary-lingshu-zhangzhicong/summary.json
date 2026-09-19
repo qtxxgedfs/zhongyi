@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-lingshu-zhangzhicong",
+  "passage_count": 1568,
+  "citable_passage_count": 1521,
+  "quarantined_passage_count": 47,
+  "statistics": {
+    "characters_simplified": 286116,
+    "citable_characters": 285716,
+    "citable_passages": 1521,
+    "passages": 1568,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 55,
+    "quarantined_characters": 400,
+    "quarantined_passages": 47,
+    "speaker_type:commentary": 356,
+    "speaker_type:mixed": 1210,
+    "speaker_type:preface": 2,
+    "split_blocks": 130
+  },
+  "source_aggregate_sha256": "061722dac0451ea827ebfcad098a96fa0a2773ebee26c589c85113d57ed7e3a0",
+  "traditional_aggregate_sha256": "7ab515a738aa3b14bc8d82cefed54187d7fb4416ea9811a0ff91a0bf7903edd8",
+  "simplified_aggregate_sha256": "ade2ced1985e5fbafae3fcd199dce44e9762252558e062763213e662916f9b16",
+  "search_aggregate_sha256": "1ebfa6389ed087bba8f7ad59559dad63bb44dd820d803d58ea2aa501a50355b4",
+  "citable_traditional_sha256": "6801ccc2a6254b91caa660902b3b1541564b20c86825f419d48cc5cf2defe4e6",
+  "citable_simplified_sha256": "afc66b0992dd4e9eeb9854403c1d56cfbcab2831579f8610ae2d8b4ff8273a5c",
+  "citable_search_sha256": "674a9cb6a35107f8503eb8d5a67b9e47ed01780c2f895d8bdcb7a6e605f9fb7f",
+  "processed_path": "sources/processed/commentary-lingshu-zhangzhicong/passages.jsonl",
+  "max_simplified_characters": 700
+}

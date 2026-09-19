@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-suwen-wangbing",
+  "passage_count": 14170,
+  "citable_passage_count": 14146,
+  "quarantined_passage_count": 24,
+  "statistics": {
+    "characters_simplified": 286712,
+    "citable_characters": 285544,
+    "citable_passages": 14146,
+    "passages": 14170,
+    "quarantine_issue:explicit-missing-glyph": 31,
+    "quarantined_characters": 1168,
+    "quarantined_passages": 24,
+    "speaker_type:commentary": 7145,
+    "speaker_type:dialogue": 675,
+    "speaker_type:quoted_core": 5040,
+    "speaker_type:textual_collation": 1310
+  },
+  "source_aggregate_sha256": "b16976e951fac8348dcae44854077d30e62eae3e05769a28b87aa68100d620b3",
+  "traditional_aggregate_sha256": "333606477e9e65063a2051ad5d31e5a279fd50f1996466a78b63e8e0f26a1aae",
+  "simplified_aggregate_sha256": "8155d958abc0ad1b1eb66b7a46d159c015094eb81d6bbcd7870cd5f5c3cf22ce",
+  "search_aggregate_sha256": "f426022fad98ea9d0bf7f61fa1bf8196616706fc2c973c25778669293b028095",
+  "citable_traditional_sha256": "e361c42ee3befbb9ec3cca5562df31c596ea326dd87c77e951384ed4143ddbaa",
+  "citable_simplified_sha256": "cad5489bf60fd20db3772f7ea1c86e9eea02e3a52a21de9035f3936ce018e40f",
+  "citable_search_sha256": "03aac51a02b5a5284da9c932985b51f17ff8ea47b4838eaccfb95352ccc05949",
+  "processed_path": "sources/processed/commentary-suwen-wangbing/passages.jsonl",
+  "max_simplified_characters": 201
+}

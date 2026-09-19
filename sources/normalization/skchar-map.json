@@ -1,0 +1,1402 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T09:44:03+00:00",
+  "description": "Resolved from fixed revisions of Wikisource character modules. Descriptive variants are explicit fallbacks when a module itself uses an image glyph.",
+  "dependencies": [
+    {
+      "title": "Template:SKchar",
+      "page_url": "https://zh.wikisource.org/wiki/Template:SKchar",
+      "revision_id": 2458515,
+      "revision_timestamp": "2024-10-07T02:18:56Z",
+      "source_sha1": "d5b4a6a1d984bc70926c5453961a20f86577e24e",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Template-SKchar.wikitext",
+      "raw_sha256": "7007eac8e6313cbead41579e7bb3189b2fa935a42b6d659693fae7bfca52c2fd"
+    },
+    {
+      "title": "Module:SKchar",
+      "page_url": "https://zh.wikisource.org/wiki/Module:SKchar",
+      "revision_id": 9459083,
+      "revision_timestamp": "2026-09-11T00:29:59Z",
+      "source_sha1": "9ac0bd8a94d2f08fc0d6530c273ce566de4791d1",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Module-SKchar.lua",
+      "raw_sha256": "d825b69b50ebd14fd5797fe297b3a7c39b88fbb843d2fe061287a067f84ac5ce"
+    },
+    {
+      "title": "Template:SKchar2",
+      "page_url": "https://zh.wikisource.org/wiki/Template:SKchar2",
+      "revision_id": 2458514,
+      "revision_timestamp": "2024-10-07T02:09:00Z",
+      "source_sha1": "09152e9c0782141461762529d8ea0de1571d7620",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Template-SKchar2.wikitext",
+      "raw_sha256": "eae97a6976aa8986a0b8c943c043429f42cbe4ba8ab4c2976073b406fa804e16"
+    },
+    {
+      "title": "Module:SKchar2",
+      "page_url": "https://zh.wikisource.org/wiki/Module:SKchar2",
+      "revision_id": 2468069,
+      "revision_timestamp": "2024-10-17T07:39:38Z",
+      "source_sha1": "0d5e1ca8ef42f77d07abbafa615cb2e4c1f4e285",
+      "retrieved_at": "2026-09-18T09:44:03+00:00",
+      "raw_path": "sources/raw/_dependencies/Module-SKchar2.lua",
+      "raw_sha256": "87363b4b51088d88120a77ab6517e7573c771ec14d6a494bdf068befb3b0b566"
+    }
+  ],
+  "used_code_count": 183,
+  "maps": {
+    "SKchar": {
+      "5": {
+        "value": "𠂻",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "331": {
+        "value": "𦟘",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "376": {
+        "value": "𨗳",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "419": {
+        "value": "𤯝",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "443": {
+        "value": "𤻤",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "447": {
+        "value": "𤸷",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "607": {
+        "value": "𦸈",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "624": {
+        "value": "𧁾",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "958": {
+        "value": "𠕂",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "973": {
+        "value": "𠖇",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1000": {
+        "value": "𡚁",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1033": {
+        "value": "𠻳",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1045": {
+        "value": "𡁲",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1242": {
+        "value": "䷋",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1404": {
+        "value": "𣍨",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1406": {
+        "value": "𦛗",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1429": {
+        "value": "𣹬",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1452": {
+        "value": "𨽻",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "1486": {
+        "value": "𤸇",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1488": {
+        "value": "𤸪",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1493": {
+        "value": "𤺋",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1505": {
+        "value": "𦕈",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1521": {
+        "value": "𧌒",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "1606": {
+        "value": "𦂳",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1699": {
+        "value": "雨",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1712": {
+        "value": "𩕄",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1717": {
+        "value": "𩨗",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1722": {
+        "value": "𩩲",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1822": {
+        "value": "𪔣",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1841": {
+        "value": "龜",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1866": {
+        "value": "𣺌",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1968": {
+        "value": "𠂀",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "1974": {
+        "value": "𠉀",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "1975": {
+        "value": "𠋫",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2025": {
+        "value": "⿰",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2026": {
+        "value": "⿱",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2168": {
+        "value": "𣆀",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2177": {
+        "value": "𣲖",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "2201": {
+        "value": "𤓰",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2219": {
+        "value": "𢙣",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2228": {
+        "value": "𥙴",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2513": {
+        "value": "𢽟",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2593": {
+        "value": "𤣥",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2596": {
+        "value": "𦙍",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2598": {
+        "value": "𠩵",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "2603": {
+        "value": "𠕋",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2612": {
+        "value": "𠃔",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2613": {
+        "value": "兎",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "2615": {
+        "value": "垂",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2631": {
+        "value": "𬽦",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2634": {
+        "value": "低",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "2636": {
+        "value": "〔未识别字2636〕",
+        "resolution": "unresolved_placeholder",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "2641": {
+        "value": "舎",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2652": {
+        "value": "𫝊",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2660": {
+        "value": "⿲亻丨匽 -- 偃",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2679": {
+        "value": "肉",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2680": {
+        "value": "𠕋",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2682": {
+        "value": "⿱冝八 -- 𡨋",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2683": {
+        "value": "最",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2698": {
+        "value": "𧰼",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2707": {
+        "value": "𠡠",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2717": {
+        "value": "⿱⿻十𡖇大 -- 𠁊",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2732": {
+        "value": "𣪣",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2733": {
+        "value": "糓",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2765": {
+        "value": "嗜",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2791": {
+        "value": "𡍼",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2825": {
+        "value": "卷 --卷（⿵龹⿱一龴）",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2854": {
+        "value": "孤",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2860": {
+        "value": "𡨚",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2867": {
+        "value": "𭔃",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2869": {
+        "value": "蜜",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2894": {
+        "value": "蚩",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2917": {
+        "value": "𢃄",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "2954": {
+        "value": "𢍆",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2959": {
+        "value": "弦",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2962": {
+        "value": "𤼵",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2968": {
+        "value": "&#194713;",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2973": {
+        "value": "衍",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2974": {
+        "value": "衒",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2975": {
+        "value": "⿰彳囬 -- 徊",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "2982": {
+        "value": "㤀",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "2984": {
+        "value": "𪫟",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2989": {
+        "value": "𢘆",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "2997": {
+        "value": "𰩍",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3000": {
+        "value": "惨",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3001": {
+        "value": "愽",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3005": {
+        "value": "𢢑",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3011": {
+        "value": "𢡖",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3015": {
+        "value": "⿰忄觧 -- 懈",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3023": {
+        "value": "𫻪",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3034": {
+        "value": "⿰扌𤓰 -- 抓",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3065": {
+        "value": "𭣣",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3074": {
+        "value": "數",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3085": {
+        "value": "𭥍",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3099": {
+        "value": "㬰",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3100": {
+        "value": "𭥦",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3108": {
+        "value": "胍",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3110": {
+        "value": "脈",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3115": {
+        "value": "𦙼",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3121": {
+        "value": "𦝫",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3138": {
+        "value": "𬃷",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3145": {
+        "value": "𫞐",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3158": {
+        "value": "𣡸",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3197": {
+        "value": "𭰖",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3205": {
+        "value": "𭰹",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3211": {
+        "value": "鿌",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3220": {
+        "value": "滛",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3222": {
+        "value": "⿰氵⿱口肎",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3228": {
+        "value": "𣻉",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3231": {
+        "value": "𣺯",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3238": {
+        "value": "⿰氵㽞",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3277": {
+        "value": "𤋲",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3284": {
+        "value": "瑩",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3286": {
+        "value": "𦎟",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3287": {
+        "value": "𤎅",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3289": {
+        "value": "𤍠",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3295": {
+        "value": "㸃",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3313": {
+        "value": "狀",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3361": {
+        "value": "留",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3362": {
+        "value": "瘞",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3366": {
+        "value": "⿸疒邕",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3367": {
+        "value": "⿸疒莭",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3369": {
+        "value": "𭼠",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3371": {
+        "value": "⿸疒厯",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3372": {
+        "value": "癮",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3375": {
+        "value": "⿸疒頺",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3376": {
+        "value": "⿸疒頼 -- 癩",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3382": {
+        "value": "⿱⿵乃𰀁皿 -- 盈",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3392": {
+        "value": "眩",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3394": {
+        "value": "⿱兆目 -- 脊",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3397": {
+        "value": "𥆨",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3421": {
+        "value": "𥖎",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3424": {
+        "value": "𥘉",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3429": {
+        "value": "𥙷",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3430": {
+        "value": "𥚃",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3435": {
+        "value": "複",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3436": {
+        "value": "𥚹",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3452": {
+        "value": "穢",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3457": {
+        "value": "⿱穴夘 -- 窌",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3461": {
+        "value": "𥧌",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3470": {
+        "value": "𥬇",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3484": {
+        "value": "𥳑",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3500": {
+        "value": "「絃」字少最後一點",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3508": {
+        "value": "網",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3511": {
+        "value": "縛",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3533": {
+        "value": "𫆀",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3537": {
+        "value": "𦕅",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3597": {
+        "value": "⿱⺾厯",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3615": {
+        "value": "囊",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3622": {
+        "value": "𧇊",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3623": {
+        "value": "⿰虗亏 -- 虧",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3625": {
+        "value": "𧇾",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3641": {
+        "value": "蠶",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3664": {
+        "value": "說",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3681": {
+        "value": "𫎇",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3695": {
+        "value": "𧷤",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3722": {
+        "value": "𮜿",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3736": {
+        "value": "𨑙",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3741": {
+        "value": "逄",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3746": {
+        "value": "𬨨",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3786": {
+        "value": "𮡧",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3800": {
+        "value": "𨳩",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3814": {
+        "value": "𨼆",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3819": {
+        "value": "𮦀",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3837": {
+        "value": "頓",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3843": {
+        "value": "𩔰",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "3853": {
+        "value": "𮪍",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3858": {
+        "value": "𩦸",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3887": {
+        "value": "鼽",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3892": {
+        "value": "𩔖",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3902": {
+        "value": "圑",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      },
+      "3904": {
+        "value": "搏",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3932": {
+        "value": "鬼",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3947": {
+        "value": "愓 --（『昜』上『旦』之『日』與『一』相連）",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-shanghan-yuchang"
+        ]
+      },
+      "3948": {
+        "value": "瘍",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "3951": {
+        "value": "揚 --（『昜』上『旦』之『日』與『一』相連）",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-jingui-xubin",
+          "commentary-neijing-leijing",
+          "commentary-shanghan-yuchang",
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "4043": {
+        "value": "宂（⿱宀儿）",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "4352": {
+        "value": "𨵿",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "4486": {
+        "value": "𨷖",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      }
+    },
+    "SKchar2": {
+      "20": {
+        "value": "〔未识别字20〕",
+        "resolution": "unresolved_placeholder",
+        "source_ids": [
+          "commentary-suwen-wangbing"
+        ]
+      },
+      "26": {
+        "value": "𠤎",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "230": {
+        "value": "𣏌",
+        "resolution": "module_unicode",
+        "source_ids": [
+          "commentary-jingui-xubin"
+        ]
+      },
+      "944": {
+        "value": "⿸疒豕 -- 瘃",
+        "resolution": "module_descriptive_variant",
+        "source_ids": [
+          "commentary-neijing-leijing"
+        ]
+      }
+    }
+  }
+}

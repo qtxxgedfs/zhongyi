@@ -1,0 +1,27 @@
+{
+  "source_id": "commentary-nanjing-xudachun",
+  "passage_count": 59,
+  "citable_passage_count": 58,
+  "quarantined_passage_count": 1,
+  "statistics": {
+    "characters_simplified": 37222,
+    "citable_characters": 37196,
+    "citable_passages": 58,
+    "passages": 59,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 2,
+    "quarantined_characters": 26,
+    "quarantined_passages": 1,
+    "speaker_type:commentary": 14,
+    "speaker_type:mixed": 45,
+    "split_blocks": 5
+  },
+  "source_aggregate_sha256": "816fb3b0d3eba4e53198ed73d6251c76c7568f8a0e05515a0bf1e6f827722774",
+  "traditional_aggregate_sha256": "67e1449e179cb4fe93eb940afb6b4d56f0c75acfae08dfa8b429e7e07e741e44",
+  "simplified_aggregate_sha256": "b97e9f9a8348871543d5876de6f82baaea28f62e0cc7b94c95ff2ef18c1be5ee",
+  "search_aggregate_sha256": "44e292e9dbdb8c23ec05718e53bcaaa97f40552cded9dab940f4563c2627c7f7",
+  "citable_traditional_sha256": "cbcd0615b45fa1703cc5fbf10572f82f2dd30872ab0778b0f47dc385a4065c51",
+  "citable_simplified_sha256": "4305d925e2da40d525de9dd5624a173789a99990f52f8a077641ade8fcd0d10c",
+  "citable_search_sha256": "2943c8fd55831204c07190eb19166bdd41fef1b9543c397b7727a57fa11b497d",
+  "processed_path": "sources/processed/commentary-nanjing-xudachun/passages.jsonl",
+  "max_simplified_characters": 700
+}

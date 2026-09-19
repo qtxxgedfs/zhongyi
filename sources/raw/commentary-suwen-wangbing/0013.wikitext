@@ -1,0 +1,21 @@
+<noinclude><pagequality level="1" user="MidleadingBot" />{{Vtext2Start}}</noinclude>
+
+黃帝内經目録
+
+第一卷
+
+　上古天真論一　　　四氣調神大論二
+
+　生氣通天論三　　　金匱真言論四
+
+第二卷
+
+　隂陽應𧰼大論五　　隂陽離合論六
+
+　隂陽别論七
+
+第三卷
+
+　靈蘭秘典論八　　　六節藏𧰼論九
+
+　五藏生成論十　　　五藏别論十一<noinclude>{{SKQS footer}}</noinclude>

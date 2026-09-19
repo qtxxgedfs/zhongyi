@@ -1,0 +1,26 @@
+{
+  "source_id": "core-jingui",
+  "passage_count": 295,
+  "citable_passage_count": 295,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 28460,
+    "citable_characters": 28460,
+    "citable_passages": 295,
+    "dropped_format_only_segments": 1,
+    "passages": 295,
+    "speaker_type:core_text": 134,
+    "speaker_type:dialogue": 75,
+    "speaker_type:textual_collation": 86,
+    "split_blocks": 1
+  },
+  "source_aggregate_sha256": "e1efdbff79f6f68efdfd2f147c89ee3527331a5540184acceab519ea88232170",
+  "traditional_aggregate_sha256": "6582b70433927623610de782aeb65fae30e2bd5e3e635d45b537a12e1fa8e708",
+  "simplified_aggregate_sha256": "3244a893401d6f7ca2e25e0308d12ef6b25a260623c9168e862b964c0f254d47",
+  "search_aggregate_sha256": "8d515584713cc4331dedc41b557c6668039dec735eb12ad23caa74399c7d5e88",
+  "citable_traditional_sha256": "6582b70433927623610de782aeb65fae30e2bd5e3e635d45b537a12e1fa8e708",
+  "citable_simplified_sha256": "3244a893401d6f7ca2e25e0308d12ef6b25a260623c9168e862b964c0f254d47",
+  "citable_search_sha256": "8d515584713cc4331dedc41b557c6668039dec735eb12ad23caa74399c7d5e88",
+  "processed_path": "sources/processed/core-jingui/passages.jsonl",
+  "max_simplified_characters": 698
+}

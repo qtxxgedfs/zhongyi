@@ -1,0 +1,25 @@
+{
+  "source_id": "core-lingshu",
+  "passage_count": 862,
+  "citable_passage_count": 862,
+  "quarantined_passage_count": 0,
+  "statistics": {
+    "characters_simplified": 79212,
+    "citable_characters": 79212,
+    "citable_passages": 862,
+    "passages": 862,
+    "speaker_type:core_text": 78,
+    "speaker_type:dialogue": 780,
+    "speaker_type:textual_collation": 4,
+    "split_blocks": 23
+  },
+  "source_aggregate_sha256": "2b23706975423ab36510479d8cd082d532709e0828102307f085214bd112cf98",
+  "traditional_aggregate_sha256": "52db577281ed8d5043f9cf1ab8eac4ed007ef31da36e64babbb56da1366869d8",
+  "simplified_aggregate_sha256": "3911f17ff6547c3647760099e31187a453c815927f7e475aa82161e09d7d9a4a",
+  "search_aggregate_sha256": "8d6ca7b4db0135ce978bebe1d9cd26c7e717bd2e90616764b01724a01cc44094",
+  "citable_traditional_sha256": "52db577281ed8d5043f9cf1ab8eac4ed007ef31da36e64babbb56da1366869d8",
+  "citable_simplified_sha256": "3911f17ff6547c3647760099e31187a453c815927f7e475aa82161e09d7d9a4a",
+  "citable_search_sha256": "8d6ca7b4db0135ce978bebe1d9cd26c7e717bd2e90616764b01724a01cc44094",
+  "processed_path": "sources/processed/core-lingshu/passages.jsonl",
+  "max_simplified_characters": 700
+}

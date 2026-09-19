@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-09-18T12:42:12+00:00",
+  "policy": {
+    "full_pages_packaged": false,
+    "cached_downloads_are_transient": true,
+    "stored_release_content": "Chinese evidence summaries and source metadata only",
+    "search_snippets_used_as_evidence": false
+  },
+  "pages": [
+    {
+      "source_registry_id": "nccih",
+      "url": "https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know",
+      "http_status": 200,
+      "retrieved_at": "2026-09-18T12:42:12+00:00",
+      "source_page_date": "2019-04",
+      "downloaded_bytes": 534469,
+      "sha256": "bdf1362bdc114115b292b35fa2eccc49cd8d9db80c87bb7ad38935d36824bdcf",
+      "reviewed_sections": ["effectiveness", "Chinese herbal products", "safety", "more to consider"],
+      "record_ids": ["nccih-tcm-effectiveness-2019", "nccih-tcm-product-safety-2019"]
+    },
+    {
+      "source_registry_id": "nccih",
+      "url": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+      "http_status": 200,
+      "retrieved_at": "2026-09-18T12:42:12+00:00",
+      "source_page_date": "2022-10",
+      "downloaded_bytes": 685423,
+      "sha256": "3b77be87a22c7956d39b3239dba5d78341c27a0e71a46771e58b1634a3107789",
+      "reviewed_sections": ["scientific mechanisms", "pain evidence", "safety"],
+      "record_ids": ["nccih-acupuncture-pain-2022", "nccih-acupuncture-safety-2022"]
+    },
+    {
+      "source_registry_id": "cdc-us",
+      "url": "https://www.cdc.gov/stroke/signs-symptoms/index.html",
+      "http_status": 200,
+      "retrieved_at": "2026-09-18T12:42:12+00:00",
+      "source_page_date": "2026-05-19",
+      "downloaded_bytes": 49472,
+      "sha256": "6caca156152ac8425f046f9f6e383651b2650fc2626ab566e57fbf397d478150",
+      "reviewed_sections": ["signs of stroke", "B.E. F.A.S.T.", "transient ischemic attack"],
+      "record_ids": ["cdc-stroke-emergency-2026"]
+    },
+    {
+      "source_registry_id": "nhs",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "http_status": 200,
+      "retrieved_at": "2026-09-18T12:42:12+00:00",
+      "source_page_date": "2023-06-21",
+      "downloaded_bytes": 41472,
+      "sha256": "0814b81cee80e532eddda0183a1d5f4aa645dd713e1c3c02a31ec8af4a41ad53",
+      "reviewed_sections": ["symptoms", "emergency medical help", "what to do", "hospital treatment"],
+      "record_ids": ["nhs-anaphylaxis-emergency-2023"]
+    }
+  ]
+}

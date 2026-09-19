@@ -1,0 +1,198 @@
+{
+  "id": "commentary-shanghan-yuchang",
+  "layer": "commentary",
+  "canon": "zhongjing",
+  "target_works": [
+    "shanghanlun"
+  ],
+  "author": "喻昌（喻嘉言）",
+  "title": "《尚论篇》",
+  "relationship": [
+    "reordering",
+    "theoretical_extension",
+    "disagreement"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "尚論篇 (四庫全書本)",
+  "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+  "edition_label": "《尚论篇》四库全书本·正文",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "收卷首及正文卷一至卷四；全览和《尚论后篇》四卷不并入《尚论篇》正文。",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "尚論篇 (四庫全書本)/",
+  "enumerated_subpage_count": 12,
+  "included_subpage_count": 7,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [
+    "尚論篇 (四庫全書本)/後篇卷1",
+    "尚論篇 (四庫全書本)/後篇卷2",
+    "尚論篇 (四庫全書本)/後篇卷3",
+    "尚論篇 (四庫全書本)/後篇卷4",
+    "尚論篇 (四庫全書本)/全覽"
+  ],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "尚論篇 (四庫全書本)",
+      "title": "尚論篇 (四庫全書本)",
+      "page_id": 261896,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)",
+      "revision_id": 633884,
+      "revision_timestamp": "2016-10-14T04:26:47Z",
+      "source_sha1": "89fba01de26aa3226379c47f56e05c0a468f5354",
+      "source_size": 3409,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:1779年 (提及)",
+        "Category:PD-old"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0000.wikitext",
+      "raw_sha256": "557e74db0631456ae02979ab0b17af4929f22f24c14e8082a07cc44953db1196"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷首",
+      "title": "尚論篇 (四庫全書本)/卷首",
+      "page_id": 261881,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B7%E9%A6%96",
+      "revision_id": 633854,
+      "revision_timestamp": "2016-10-14T04:26:38Z",
+      "source_sha1": "a83ae2f0897d6b4c47eaca6dd9364cf35ab82745",
+      "source_size": 30627,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0001.wikitext",
+      "raw_sha256": "1282a145c0fd78c5e0d5bb5a2f33db4382657e3447e830edd94bacf1771a5b8a"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷1",
+      "title": "尚論篇 (四庫全書本)/卷1",
+      "page_id": 261882,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B71",
+      "revision_id": 777943,
+      "revision_timestamp": "2016-10-26T09:58:37Z",
+      "source_sha1": "c7c61acc9d7f2f4c69c7baec215896aeafe2fa17",
+      "source_size": 100563,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0002.wikitext",
+      "raw_sha256": "3b016c77e1614f73f7b135bf24738dea0f40e84562ee252bca80e22bb9fefedb"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷2",
+      "title": "尚論篇 (四庫全書本)/卷2",
+      "page_id": 261884,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B72",
+      "revision_id": 777946,
+      "revision_timestamp": "2016-10-26T09:59:06Z",
+      "source_sha1": "54407d9dbfcff0a8b3bb109806ff64858e0584f1",
+      "source_size": 51220,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0003.wikitext",
+      "raw_sha256": "8298d15b190f6debef7915209a3cc0b48194fac9ab5b7a046f0e1526a295e81d"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷3",
+      "title": "尚論篇 (四庫全書本)/卷3",
+      "page_id": 261885,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B73",
+      "revision_id": 777949,
+      "revision_timestamp": "2016-10-26T09:59:36Z",
+      "source_sha1": "3f8aa39de07c362e0e89e50e0c6160d98657c9e6",
+      "source_size": 24760,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0004.wikitext",
+      "raw_sha256": "d091f019ed1ea7294211ca29e9e1107dc4ede1181fc556b82b9dcba790ee95d4"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷4上",
+      "title": "尚論篇 (四庫全書本)/卷4上",
+      "page_id": 261887,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B74%E4%B8%8A",
+      "revision_id": 777952,
+      "revision_timestamp": "2016-10-26T10:00:06Z",
+      "source_sha1": "87ba9e8dc1dd6e2bb8adcdfd519409adfed8dee0",
+      "source_size": 4865,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0005.wikitext",
+      "raw_sha256": "170930aacee3033c7b9f7329fcb4f03bd764648a495447b892c80a23da6ecc73"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷4中",
+      "title": "尚論篇 (四庫全書本)/卷4中",
+      "page_id": 261888,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B74%E4%B8%AD",
+      "revision_id": 777958,
+      "revision_timestamp": "2016-10-26T10:01:06Z",
+      "source_sha1": "d02c33d562774038901953aab98763a28ef842c4",
+      "source_size": 18435,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0006.wikitext",
+      "raw_sha256": "e7a1918ef91d4382cd0663be296a02079cbce067d789a658f3fd02c34a1e514b"
+    },
+    {
+      "requested_title": "尚論篇 (四庫全書本)/卷4下",
+      "title": "尚論篇 (四庫全書本)/卷4下",
+      "page_id": 261889,
+      "page_url": "https://zh.wikisource.org/wiki/%E5%B0%9A%E8%AB%96%E7%AF%87_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%8D%B74%E4%B8%8B",
+      "revision_id": 777955,
+      "revision_timestamp": "2016-10-26T10:00:36Z",
+      "source_sha1": "1eb63183336750ef6faeae502ccdc04571a06e32",
+      "source_size": 28419,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/commentary-shanghan-yuchang/0007.wikitext",
+      "raw_sha256": "32ae6b20c1b65f34229260dbb2305269fb8b3759098d38edee78669e258bc34c"
+    }
+  ],
+  "aggregate_raw_sha256": "cedd1a798e4578deb70d30bf774ab3e4c11ce8d2e897918daef3e665f8ad1ed2"
+}

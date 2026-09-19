@@ -1,0 +1,296 @@
+{
+  "id": "core-lingshu",
+  "layer": "core",
+  "canon": "huangdi",
+  "target_works": [
+    "lingshu"
+  ],
+  "author": "传统题作黄帝、岐伯等",
+  "title": "《灵枢》",
+  "relationship": [
+    "core"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "黃帝內經",
+  "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+  "edition_label": "《黄帝内经》Wikisource工作底本·灵枢12卷",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "根页曾标记25%；逐卷固定修订并检查81篇。",
+  "scope_note": "",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "黃帝內經/靈樞",
+  "enumerated_subpage_count": 12,
+  "included_subpage_count": 12,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": {
+    "kind": "chapter",
+    "expected_count": 81,
+    "minimum_accepted": 81
+  },
+  "pages": [
+    {
+      "requested_title": "黃帝內經",
+      "title": "黃帝內經",
+      "page_id": 16900,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93",
+      "revision_id": 2596804,
+      "revision_timestamp": "2025-09-08T03:48:28Z",
+      "source_sha1": "d010213b3e34acadabcc3dbfdc7b6d02b7d1b3aa",
+      "source_size": 5637,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:25%",
+        "Category:R医药·卫生类",
+        "Category:中医药",
+        "Category:中國",
+        "Category:中國朝代",
+        "Category:中醫",
+        "Category:先秦",
+        "Category:子部",
+        "Category:戰國",
+        "Category:有跨维基链接需要清理",
+        "Category:無名氏",
+        "Category:诸子百家",
+        "Category:醫書"
+      ],
+      "role": "root",
+      "include_in_corpus": false,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0000.wikitext",
+      "raw_sha256": "9787fbba32d865211ccc4fa350ee30794799092505f1f89d3769cb1235069de8"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第一卷",
+      "title": "黃帝內經/靈樞第一卷",
+      "page_id": 28117,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%B8%80%E5%8D%B7",
+      "revision_id": 2099201,
+      "revision_timestamp": "2022-01-12T12:52:25Z",
+      "source_sha1": "f2d6044dfe780c6640d0a6a9dbe43cf9bae199bc",
+      "source_size": 25184,
+      "content_model": "wikitext",
+      "categories": [],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0001.wikitext",
+      "raw_sha256": "cc46078dd98a37b28158487cff5429f5259c56ce830460d12f89eadf6e109643"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第二卷",
+      "title": "黃帝內經/靈樞第二卷",
+      "page_id": 28118,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%BA%8C%E5%8D%B7",
+      "revision_id": 2110925,
+      "revision_timestamp": "2022-03-02T12:05:38Z",
+      "source_sha1": "1f6573f796b9c6a7475e9506e02389925de14868",
+      "source_size": 21979,
+      "content_model": "wikitext",
+      "categories": [],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0002.wikitext",
+      "raw_sha256": "aaf243e89dd320aa1c4aae231ac7665277e1badd708a999683536c06708bf944"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第三卷",
+      "title": "黃帝內經/靈樞第三卷",
+      "page_id": 28119,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%B8%89%E5%8D%B7",
+      "revision_id": 2520099,
+      "revision_timestamp": "2025-01-19T13:26:52Z",
+      "source_sha1": "9fde2625d4552b270b5f65fe45b274ac4cb357a5",
+      "source_size": 21827,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0003.wikitext",
+      "raw_sha256": "9ce4e0803708ade45e5f9a21230bdccecbb689c5d53e8839a9ce17b87216b939"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第四卷",
+      "title": "黃帝內經/靈樞第四卷",
+      "page_id": 28120,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%9B%9B%E5%8D%B7",
+      "revision_id": 1529472,
+      "revision_timestamp": "2019-01-14T10:03:57Z",
+      "source_sha1": "b82dc905bd8ab6b1aed4c27c2b48fbbfe1b96de0",
+      "source_size": 18455,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0004.wikitext",
+      "raw_sha256": "d38898eeaf358437b151421f2ae295d64707fa39f9102c49ce6c44af21eb0a9e"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第五卷",
+      "title": "黃帝內經/靈樞第五卷",
+      "page_id": 28121,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%BA%94%E5%8D%B7",
+      "revision_id": 1748600,
+      "revision_timestamp": "2019-10-21T19:51:54Z",
+      "source_sha1": "e94b15abed394202db4d46002083a66babeaf886",
+      "source_size": 21550,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0005.wikitext",
+      "raw_sha256": "a457eb61b4c720af4818cc50c7bcba12dafac2e46084107292de67d2b5615313"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第六卷",
+      "title": "黃帝內經/靈樞第六卷",
+      "page_id": 28122,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%85%AD%E5%8D%B7",
+      "revision_id": 1529474,
+      "revision_timestamp": "2019-01-14T10:04:06Z",
+      "source_sha1": "05c30eb5d5a3b3c9d101285a4154034ffb7ef72e",
+      "source_size": 20672,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0006.wikitext",
+      "raw_sha256": "106bce13f916ca9a1115da047ddd7cc559914fcab395635241552e772d6749c8"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第七卷",
+      "title": "黃帝內經/靈樞第七卷",
+      "page_id": 28123,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%B8%83%E5%8D%B7",
+      "revision_id": 1529475,
+      "revision_timestamp": "2019-01-14T10:04:11Z",
+      "source_sha1": "67f5b29e2463ce07c4464af311072a8a5d84c200",
+      "source_size": 18661,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0007.wikitext",
+      "raw_sha256": "8442cce16f3bf894410a30cc4580df8a37dc9739f111a5bc103421f1176dfb78"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第八卷",
+      "title": "黃帝內經/靈樞第八卷",
+      "page_id": 28124,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%85%AB%E5%8D%B7",
+      "revision_id": 1529476,
+      "revision_timestamp": "2019-01-14T10:04:15Z",
+      "source_sha1": "09179e5e20756753b42473295701488caa4f1f2f",
+      "source_size": 18204,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0008.wikitext",
+      "raw_sha256": "15eb0514c132896a28111280706f514702d4220cc247a8f41d25637c6ff1a810"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第九卷",
+      "title": "黃帝內經/靈樞第九卷",
+      "page_id": 28125,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E4%B9%9D%E5%8D%B7",
+      "revision_id": 1529477,
+      "revision_timestamp": "2019-01-14T10:04:20Z",
+      "source_sha1": "2ea9179ba2b5b6e9228a664b88974300f594a1e9",
+      "source_size": 20172,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0009.wikitext",
+      "raw_sha256": "32c3be3609e0735dac7f5745466070332061ced9f4f3b45bf6ed29ddbef3b469"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第十卷",
+      "title": "黃帝內經/靈樞第十卷",
+      "page_id": 28126,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%8D%81%E5%8D%B7",
+      "revision_id": 1529478,
+      "revision_timestamp": "2019-01-14T10:04:25Z",
+      "source_sha1": "3aab9dbb563990f1efef95e3bebf8f2f250a5787",
+      "source_size": 19433,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0010.wikitext",
+      "raw_sha256": "baac5707aa0a48384ede18b821c7cf231d54b3b3d045576fd226d7e5a3535625"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第十一卷",
+      "title": "黃帝內經/靈樞第十一卷",
+      "page_id": 28127,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%8D%81%E4%B8%80%E5%8D%B7",
+      "revision_id": 1529479,
+      "revision_timestamp": "2019-01-14T10:04:29Z",
+      "source_sha1": "47a4fbb106e9f2168a27fe5ce91c31dbe12d18ca",
+      "source_size": 21397,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0011.wikitext",
+      "raw_sha256": "5611260b43d1628788cfe1cbacfb5836950421d61a3c0e22ec222fec7b4ff4c7"
+    },
+    {
+      "requested_title": "黃帝內經/靈樞第十二卷",
+      "title": "黃帝內經/靈樞第十二卷",
+      "page_id": 28128,
+      "page_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93/%E9%9D%88%E6%A8%9E%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%8D%B7",
+      "revision_id": 356511,
+      "revision_timestamp": "2012-07-24T06:41:06Z",
+      "source_sha1": "30ebd479f56e444fa90277f14e2047860424ae2f",
+      "source_size": 17751,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old"
+      ],
+      "role": "subpage",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/core-lingshu/0012.wikitext",
+      "raw_sha256": "95018d61d1ba7e47c348efa0530afe194aac2cc7bc457f62fa4f7bc491395341"
+    }
+  ],
+  "aggregate_raw_sha256": "465a6712b975cf738a3359f6767e9913f0aad2f2dd9f347df44f542bdf3c2a58"
+}

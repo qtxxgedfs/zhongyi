@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T09:44:03+00:00",
+  "repairs": [
+    {
+      "source_id": "core-jingui",
+      "source_sequence": "\\uf544\\uf6a5\\uf545",
+      "replacement": "㽲",
+      "context": "产后腹中㽲痛，当归生姜羊肉汤主之",
+      "basis": "Cross-checked against the same passage in Wikisource's 四库全书《御纂医宗金鉴》, which encodes U+3F72 㽲."
+    },
+    {
+      "source_id": "core-nanjing",
+      "source_sequence": "\\uf069",
+      "replacement": "啘",
+      "context": "掌中热而啘",
+      "basis": "Cross-checked against multiple Wikisource transcriptions quoting 难经第十六难; 滑寿注释为‘啘，干呕也’."
+    }
+  ]
+}

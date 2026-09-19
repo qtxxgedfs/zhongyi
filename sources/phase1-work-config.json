@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "provider": "zh-wikisource",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "defaults": {
+    "enumeration": "root-and-recursive-subpages",
+    "include_root_in_corpus_when_subpages_exist": false,
+    "include_root_in_corpus_when_no_subpages_exist": true,
+    "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+    "speaker_method": "rule-based labels with conservative mixed/unknown fallback"
+  },
+  "works": {
+    "core-suwen": {
+      "edition_label": "《黄帝内经》Wikisource工作底本·素问24卷",
+      "subpage_prefix_exact": true,
+      "expected_subpages": 24,
+      "expected_structure": {"kind": "chapter", "expected_count": 81, "minimum_accepted": 79},
+      "quality_note": "根页曾标记25%；逐卷固定修订并检查81篇，保留缺篇第七十二、七十三的历史状态说明。"
+    },
+    "core-lingshu": {
+      "edition_label": "《黄帝内经》Wikisource工作底本·灵枢12卷",
+      "subpage_prefix_exact": true,
+      "expected_subpages": 12,
+      "expected_structure": {"kind": "chapter", "expected_count": 81, "minimum_accepted": 81},
+      "quality_note": "根页曾标记25%；逐卷固定修订并检查81篇。"
+    },
+    "core-shanghanlun": {
+      "edition_label": "宋本《伤寒论》Wikisource工作转录",
+      "expected_subpages": 0,
+      "expected_structure": {"kind": "chapter", "expected_count": 20, "minimum_accepted": 18},
+      "quality_note": "高风险：页面标记25%，明示部分篇章及方剂未校订，并有简转繁错误记录。"
+    },
+    "core-jingui": {
+      "edition_label": "《金匮要略》Wikisource工作转录",
+      "expected_subpages": 0,
+      "expected_structure": {"kind": "chapter", "expected_count": 25, "minimum_accepted": 22},
+      "quality_note": "页面曾标记50%；必须检测并处理Unicode私用区字符。"
+    },
+    "core-nanjing": {
+      "edition_label": "《难经》Wikisource工作转录",
+      "expected_subpages": 0,
+      "expected_structure": {"kind": "difficulty", "expected_count": 81, "minimum_accepted": 81},
+      "quality_note": "页面曾标记50%；按第一难至第八十一难验收。"
+    },
+    "core-wenbingtiaobian": {
+      "edition_label": "《温病条辨》Wikisource六卷本工作转录",
+      "expected_subpages": 8,
+      "expected_structure": {"kind": "volume", "expected_count": 6, "minimum_accepted": 6}
+    },
+    "commentary-suwen-wangbing": {
+      "edition_label": "《重广补注黄帝内经素问》四部丛刊本",
+      "expected_subpages": 26,
+      "expected_structure": {"kind": "volume", "expected_count": 24, "minimum_accepted": 24},
+      "quality_note": "需区分经文、王冰注和新校正语。"
+    },
+    "commentary-neijing-leijing": {
+      "edition_label": "《类经》四库全书本·正文32卷",
+      "expected_subpages": 49,
+      "corpus_title_include_regex": "/卷[0-9]{2}$",
+      "expected_included_subpages": 32,
+      "expected_structure": {"kind": "volume", "expected_count": 32, "minimum_accepted": 32},
+      "scope_note": "只收《类经》正文32卷；全览、图翼11卷和附翼4卷不进入本作品语料。"
+    },
+    "commentary-lingshu-zhangzhicong": {
+      "edition_label": "《黄帝内经灵枢集注》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-shanghan-chengwuji": {
+      "edition_label": "《注解伤寒论》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-shanghan-fangyouzhi": {
+      "edition_label": "《伤寒论条辨》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-shanghan-yuchang": {
+      "edition_label": "《尚论篇》四库全书本·正文",
+      "expected_subpages": 12,
+      "corpus_title_include_regex": "/(?:卷首|卷[1-4](?:上|中|下)?)$",
+      "expected_included_subpages": 7,
+      "scope_note": "收卷首及正文卷一至卷四；全览和《尚论后篇》四卷不并入《尚论篇》正文。"
+    },
+    "commentary-shanghan-keqin": {
+      "edition_label": "《伤寒论注》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-shanghan-youyi": {
+      "edition_label": "《伤寒贯珠集》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-jingui-xubin": {
+      "edition_label": "《金匮要略论注》四库全书本24卷",
+      "expected_subpages": 25,
+      "corpus_title_include_regex": "/卷[0-9]{2}$",
+      "expected_included_subpages": 24,
+      "expected_structure": {"kind": "volume", "expected_count": 24, "minimum_accepted": 24}
+    },
+    "commentary-jingui-youyi": {
+      "edition_label": "《金匮要略心典》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-jingui-chenxiuyuan": {
+      "edition_label": "《金匮要略浅注》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-nanjing-huashou": {
+      "edition_label": "《难经本义》Wikisource两卷本",
+      "expected_subpages": 2,
+      "expected_structure": {"kind": "difficulty", "expected_count": 81, "minimum_accepted": 81}
+    },
+    "commentary-nanjing-xudachun": {
+      "edition_label": "《难经经释》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "commentary-nanjing-jizhu": {
+      "edition_label": "《难经集注》Wikisource工作转录",
+      "expected_subpages": 0,
+      "quality_note": "尽可能保留丁德用、吕广、杨玄操、虞庶等实际署名。"
+    },
+    "commentary-wenbing-wangshixiong": {
+      "edition_label": "《温热经纬》Wikisource五卷本",
+      "expected_subpages": 7,
+      "expected_structure": {"kind": "volume", "expected_count": 5, "minimum_accepted": 5}
+    },
+    "commentary-wenbing-leifeng": {
+      "edition_label": "《时病论》Wikisource工作转录",
+      "expected_subpages": 0
+    },
+    "lineage-wenbing-yetianshi": {
+      "edition_label": "《温热论》Wikisource工作转录",
+      "expected_subpages": 0,
+      "scope_note": "标为学术源流，不标为《温病条辨》后世注家。"
+    },
+    "lineage-wenbing-xuexue": {
+      "edition_label": "《湿热条辨》（对应计划《湿热病篇》）Wikisource工作转录",
+      "expected_subpages": 0,
+      "scope_note": "页面重定向后的实际题名为《湿热条辨》；标为学术源流。"
+    },
+    "commentary-suwen-zhangzhicong": {
+      "edition_label": "《黄帝内经素问集注》Wikisource工作转录",
+      "expected_subpages": 0,
+      "quality_note": "页面标记排版不佳、校订不足、需要拆分。"
+    },
+    "commentary-lingshu-danbo": {
+      "edition_label": "《灵枢识》Wikisource工作转录",
+      "expected_subpages": 0,
+      "quality_note": "Wikisource头部作者元数据与书内题署冲突；采用经书目复核的丹波元简并保留冲突说明。"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "title": "黃帝內經素問集注",
+    "info": {
+      "page_id": 760944,
+      "title": "黃帝內經素問集注",
+      "full_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E5%85%A7%E7%B6%93%E7%B4%A0%E5%95%8F%E9%9B%86%E6%B3%A8",
+      "page_length": 1362238,
+      "latest_revid": 2385250,
+      "revision_timestamp": "2024-04-02T04:58:45Z",
+      "revision_size": 1362238,
+      "missing": false
+    },
+    "subpage_count": 0
+  },
+  {
+    "title": "黃帝素問直解",
+    "info": {
+      "page_id": 760949,
+      "title": "黃帝素問直解",
+      "full_url": "https://zh.wikisource.org/wiki/%E9%BB%83%E5%B8%9D%E7%B4%A0%E5%95%8F%E7%9B%B4%E8%A7%A3",
+      "page_length": 1258857,
+      "latest_revid": 1471902,
+      "revision_timestamp": "2018-05-27T10:16:41Z",
+      "revision_size": 1258857,
+      "missing": false
+    },
+    "subpage_count": 2
+  },
+  {
+    "title": "素問識",
+    "info": {
+      "page_id": 760960,
+      "title": "素問識",
+      "full_url": "https://zh.wikisource.org/wiki/%E7%B4%A0%E5%95%8F%E8%AD%98",
+      "page_length": 696602,
+      "latest_revid": 2490709,
+      "revision_timestamp": "2024-11-13T02:06:16Z",
+      "revision_size": 696602,
+      "missing": false
+    },
+    "subpage_count": 0
+  },
+  {
+    "title": "靈樞識",
+    "info": {
+      "page_id": 760961,
+      "title": "靈樞識",
+      "full_url": "https://zh.wikisource.org/wiki/%E9%9D%88%E6%A8%9E%E8%AD%98",
+      "page_length": 701960,
+      "latest_revid": 1316012,
+      "revision_timestamp": "2017-10-14T10:19:14Z",
+      "revision_size": 701960,
+      "missing": false
+    },
+    "subpage_count": 0
+  }
+]

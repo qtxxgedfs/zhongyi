@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {
+      "id": "classical-concept-boundaries",
+      "title_zh": "古典概念与现代医学概念边界",
+      "category": "classical-concept",
+      "default_level": "M1",
+      "refresh_days": 365,
+      "aliases": ["阴阳", "五行", "脏腑", "经络", "气血", "津液", "营卫", "六经", "三焦", "卫气营血", "病机", "证候"],
+      "search_terms_zh": ["中医概念 现代医学 对应限制"],
+      "search_terms_en": ["traditional Chinese medicine concepts biomedical comparison limitations"]
+    },
+    {
+      "id": "prevention-health",
+      "title_zh": "预防与健康维护",
+      "category": "classical-concept",
+      "default_level": "M1",
+      "refresh_days": 365,
+      "aliases": ["治未病", "未病先防", "预防", "养生"],
+      "search_terms_zh": ["预防医学 健康维护 官方建议"],
+      "search_terms_en": ["preventive health official guidance"]
+    },
+    {
+      "id": "acupuncture",
+      "title_zh": "针灸疗效与安全",
+      "category": "intervention",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["针灸", "针刺", "针法", "艾灸", "灸法", "腧穴", "穴位"],
+      "search_terms_zh": ["针灸 疗效 安全 系统综述"],
+      "search_terms_en": ["acupuncture effectiveness safety systematic review guideline"]
+    },
+    {
+      "id": "chinese-herbal-products",
+      "title_zh": "中药和复方总体证据",
+      "category": "intervention",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["中药", "草药", "汤剂", "丸剂", "散剂", "方剂", "古方", "经方"],
+      "search_terms_zh": ["中药 临床证据 安全 官方"],
+      "search_terms_en": ["Chinese herbal medicine clinical evidence safety official"]
+    },
+    {
+      "id": "herbal-product-safety",
+      "title_zh": "中药产品质量与安全",
+      "category": "herbal-safety",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["中药安全", "重金属", "农药残留", "掺假", "污染", "肝损伤", "肾损伤", "毒性"],
+      "search_terms_zh": ["中药 产品质量 不良反应 药监"],
+      "search_terms_en": ["Chinese herbal products contamination adverse effects regulator"]
+    },
+    {
+      "id": "herb-drug-interactions",
+      "title_zh": "中药与药物相互作用",
+      "category": "herbal-safety",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["相互作用", "一起吃", "同服", "合用", "西药", "抗凝药", "降压药", "降糖药"],
+      "search_terms_zh": ["中药 西药 相互作用 药监"],
+      "search_terms_en": ["herb drug interactions clinical guidance regulator"]
+    },
+    {
+      "id": "dose-and-self-medication",
+      "title_zh": "剂量与自行用药风险",
+      "category": "herbal-safety",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["剂量", "用量", "换算", "怎么吃", "怎么喝", "煎服", "加减", "开方", "处方"],
+      "search_terms_zh": ["合理用药 自行用药 风险 官方"],
+      "search_terms_en": ["self medication dosing risks official guidance"]
+    },
+    {
+      "id": "pregnancy-and-lactation",
+      "title_zh": "孕期与哺乳期用药安全",
+      "category": "population",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["孕妇", "怀孕", "妊娠", "备孕", "哺乳", "喂奶"],
+      "search_terms_zh": ["孕期 哺乳期 中药 用药安全 药监"],
+      "search_terms_en": ["pregnancy breastfeeding herbal medicine safety"]
+    },
+    {
+      "id": "children-medication",
+      "title_zh": "儿童用药安全",
+      "category": "population",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["儿童", "孩子", "宝宝", "婴儿", "幼儿"],
+      "search_terms_zh": ["儿童 中药 用药安全 官方"],
+      "search_terms_en": ["children herbal medicine safety official"]
+    },
+    {
+      "id": "older-adults-medication",
+      "title_zh": "老年人用药安全",
+      "category": "population",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["老人", "老年", "高龄", "多重用药"],
+      "search_terms_zh": ["老年人 多重用药 中药 安全"],
+      "search_terms_en": ["older adults polypharmacy herbal medicine safety"]
+    },
+    {
+      "id": "fever",
+      "title_zh": "发热",
+      "category": "symptom",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["发热", "发烧", "高热", "身热"],
+      "search_terms_zh": ["发热 就医 警示症状 官方"],
+      "search_terms_en": ["fever red flags official patient guidance"]
+    },
+    {
+      "id": "cough-and-breathing",
+      "title_zh": "咳嗽与呼吸道症状",
+      "category": "symptom",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["咳嗽", "咳喘", "喘", "痰", "气短"],
+      "search_terms_zh": ["咳嗽 呼吸道症状 就医 官方"],
+      "search_terms_en": ["cough breathing symptoms red flags official guidance"]
+    },
+    {
+      "id": "pain",
+      "title_zh": "疼痛",
+      "category": "symptom",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["疼痛", "头痛", "腰痛", "颈痛", "关节痛", "腹痛"],
+      "search_terms_zh": ["疼痛 治疗 指南 系统综述"],
+      "search_terms_en": ["pain treatment clinical guideline systematic review"]
+    },
+    {
+      "id": "insomnia",
+      "title_zh": "失眠与睡眠问题",
+      "category": "condition",
+      "default_level": "M2",
+      "refresh_days": 180,
+      "aliases": ["失眠", "睡不着", "不寐", "多梦", "睡眠"],
+      "search_terms_zh": ["失眠 临床指南 系统综述"],
+      "search_terms_en": ["insomnia clinical guideline systematic review"]
+    },
+    {
+      "id": "hypertension",
+      "title_zh": "高血压",
+      "category": "condition",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["高血压", "血压高", "降压"],
+      "search_terms_zh": ["高血压 临床指南 药物相互作用"],
+      "search_terms_en": ["hypertension clinical guideline herb drug interaction"]
+    },
+    {
+      "id": "diabetes",
+      "title_zh": "糖尿病",
+      "category": "condition",
+      "default_level": "M2",
+      "refresh_days": 90,
+      "aliases": ["糖尿病", "血糖高", "消渴", "降糖"],
+      "search_terms_zh": ["糖尿病 临床指南 中药 相互作用"],
+      "search_terms_en": ["diabetes clinical guideline herbal interaction"]
+    },
+    {
+      "id": "stroke-emergency",
+      "title_zh": "卒中急症识别",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["中风", "卒中", "突然嘴歪", "言语不清", "说话不清", "说话不清楚", "说不出话", "单侧无力", "一侧无力", "手脚无力", "手脚没力", "一侧手脚没力", "半边无力", "偏瘫"],
+      "search_terms_zh": ["卒中 警示症状 立即急救 官方"],
+      "search_terms_en": ["stroke signs symptoms emergency official"]
+    },
+    {
+      "id": "chest-pain-emergency",
+      "title_zh": "胸痛急症识别",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["胸痛", "胸闷", "胸部压迫", "胸口压迫", "胸部有压迫感", "胸口有压迫感", "心前区痛"],
+      "search_terms_zh": ["胸痛 胸部压迫 急症 官方"],
+      "search_terms_en": ["chest pain pressure emergency signs official"]
+    },
+    {
+      "id": "breathing-emergency",
+      "title_zh": "严重呼吸困难",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["呼吸困难", "喘不过气", "无法呼吸", "嘴唇发紫", "口唇发紫", "窒息"],
+      "search_terms_zh": ["严重呼吸困难 急救 官方"],
+      "search_terms_en": ["severe breathing difficulty emergency official"]
+    },
+    {
+      "id": "anaphylaxis-emergency",
+      "title_zh": "严重过敏反应",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["严重过敏", "过敏性休克", "喉咙肿", "舌头肿", "全身风团呼吸困难"],
+      "search_terms_zh": ["严重过敏反应 急救 官方"],
+      "search_terms_en": ["anaphylaxis emergency official guidance"]
+    },
+    {
+      "id": "bleeding-emergency",
+      "title_zh": "严重出血与消化道出血",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["大量出血", "止不住血", "呕血", "吐血", "黑便", "便血"],
+      "search_terms_zh": ["严重出血 呕血 黑便 急症 官方"],
+      "search_terms_en": ["severe bleeding vomiting blood black stool emergency official"]
+    },
+    {
+      "id": "abdominal-pain-emergency",
+      "title_zh": "严重腹痛",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["严重腹痛", "剧烈腹痛", "肚子剧痛", "腹痛难忍"],
+      "search_terms_zh": ["严重腹痛 急症 官方"],
+      "search_terms_en": ["severe abdominal pain emergency official"]
+    },
+    {
+      "id": "neurologic-emergency",
+      "title_zh": "意识改变与抽搐",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["意识不清", "昏迷", "叫不醒", "抽搐", "癫痫持续", "突然糊涂"],
+      "search_terms_zh": ["意识改变 抽搐 急救 官方"],
+      "search_terms_en": ["altered consciousness seizure emergency official"]
+    },
+    {
+      "id": "poisoning-overdose-emergency",
+      "title_zh": "中毒与药物过量",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["中毒", "药物过量", "吃多了药", "吃多了", "多吃了", "过量服药", "误服", "农药", "煤气中毒"],
+      "search_terms_zh": ["中毒 药物过量 急救 官方"],
+      "search_terms_en": ["poisoning overdose emergency official"]
+    },
+    {
+      "id": "self-harm-emergency",
+      "title_zh": "自伤或他伤风险",
+      "category": "emergency",
+      "default_level": "M3",
+      "refresh_days": 90,
+      "aliases": ["自杀", "不想活", "自残", "伤害自己", "伤害别人", "他伤"],
+      "search_terms_zh": ["自伤危机 紧急求助 官方"],
+      "search_terms_en": ["self harm crisis emergency help official"]
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18T11:24:09+00:00",
+  "sources": [
+    {
+      "source_id": "core-suwen",
+      "kind": "chapter",
+      "expected_count": 81,
+      "minimum_accepted": 79,
+      "observed_count": 81,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "core-lingshu",
+      "kind": "chapter",
+      "expected_count": 81,
+      "minimum_accepted": 81,
+      "observed_count": 82,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "core-shanghanlun",
+      "kind": "chapter",
+      "expected_count": 20,
+      "minimum_accepted": 18,
+      "observed_count": 34,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "core-jingui",
+      "kind": "chapter",
+      "expected_count": 25,
+      "minimum_accepted": 22,
+      "observed_count": 31,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "core-nanjing",
+      "kind": "difficulty",
+      "expected_count": 81,
+      "minimum_accepted": 81,
+      "observed_count": 81,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "core-wenbingtiaobian",
+      "kind": "volume",
+      "expected_count": 6,
+      "minimum_accepted": 6,
+      "observed_count": 6,
+      "status": "pass",
+      "method": "distinct included page/parent title containing a volume label"
+    },
+    {
+      "source_id": "commentary-suwen-wangbing",
+      "kind": "volume",
+      "expected_count": 24,
+      "minimum_accepted": 24,
+      "observed_count": 24,
+      "status": "pass",
+      "method": "distinct included page/parent title containing a volume label"
+    },
+    {
+      "source_id": "commentary-neijing-leijing",
+      "kind": "volume",
+      "expected_count": 32,
+      "minimum_accepted": 32,
+      "observed_count": 32,
+      "status": "pass",
+      "method": "distinct included page/parent title containing a volume label"
+    },
+    {
+      "source_id": "commentary-lingshu-zhangzhicong",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-shanghan-chengwuji",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-shanghan-fangyouzhi",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-shanghan-yuchang",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 7,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-shanghan-keqin",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-shanghan-youyi",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-jingui-xubin",
+      "kind": "volume",
+      "expected_count": 24,
+      "minimum_accepted": 24,
+      "observed_count": 24,
+      "status": "pass",
+      "method": "distinct included page/parent title containing a volume label"
+    },
+    {
+      "source_id": "commentary-jingui-youyi",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-jingui-chenxiuyuan",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-nanjing-huashou",
+      "kind": "difficulty",
+      "expected_count": 81,
+      "minimum_accepted": 81,
+      "observed_count": 81,
+      "status": "pass",
+      "method": "MediaWiki heading count in included snapshots; includes labeled prefaces where present"
+    },
+    {
+      "source_id": "commentary-nanjing-xudachun",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-nanjing-jizhu",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-wenbing-wangshixiong",
+      "kind": "volume",
+      "expected_count": 5,
+      "minimum_accepted": 5,
+      "observed_count": 5,
+      "status": "pass",
+      "method": "distinct included page/parent title containing a volume label"
+    },
+    {
+      "source_id": "commentary-wenbing-leifeng",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "lineage-wenbing-yetianshi",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "lineage-wenbing-xuexue",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-suwen-zhangzhicong",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    },
+    {
+      "source_id": "commentary-lingshu-danbo",
+      "kind": "nonempty-corpus",
+      "expected_count": null,
+      "minimum_accepted": 1,
+      "observed_count": 1,
+      "status": "pass",
+      "method": "included logical or transcluded page count"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_id": "commentary-jingui-youyi",
+  "passage_count": 199,
+  "citable_passage_count": 193,
+  "quarantined_passage_count": 6,
+  "statistics": {
+    "characters_simplified": 80012,
+    "citable_characters": 79946,
+    "citable_passages": 193,
+    "passages": 199,
+    "quarantine_issue:legacy-glyph-placeholder-ht-kt": 10,
+    "quarantined_characters": 66,
+    "quarantined_passages": 6,
+    "speaker_type:commentary": 63,
+    "speaker_type:mixed": 133,
+    "speaker_type:preface": 3,
+    "split_blocks": 37
+  },
+  "source_aggregate_sha256": "40ab09193e8d96ab9069bba65b3c7404a14228ba2e553198eb6e8a33f65e6aaf",
+  "traditional_aggregate_sha256": "47098fa179e08ec03b80c8fa12e4a81de2b651c98aae186213c3e30b60962378",
+  "simplified_aggregate_sha256": "552603855347570cc71dcdcf864f76361bf5cb7b79e2cb6e3297c899a81a0405",
+  "search_aggregate_sha256": "39a8ec0882aeb9f3b7e8a771452d9c53b5904f34bb58d72ed5dda39b96d1bced",
+  "citable_traditional_sha256": "617a3466d32445f409b7d91a2acdd2a6fd80612272f2f61a9b984909df4c528d",
+  "citable_simplified_sha256": "bb0ca5f67f0d72e3b413c5338e41112550a3f338c796544de21f59e845784c03",
+  "citable_search_sha256": "6e31763c8e4c9e837302419d241424fcd2c7d6369db1c12c5e9d27381ba434e8",
+  "processed_path": "sources/processed/commentary-jingui-youyi/passages.jsonl",
+  "max_simplified_characters": 700
+}

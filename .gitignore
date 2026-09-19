@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Build and transient network caches
+sources/cache/
+build/
+dist/
+*.tmp
+
+# Local agent/session artifacts
+TASK_CHECKPOINT.md
+nul
+
+# Generated corpus snapshots are governed by source-lock.json and may be large.
+# Uncomment locally if raw snapshots are stored outside version control.
+# sources/raw/
+
+# Runtime-generated writable overlays; the curated read-only seed cache is tracked.
+skill/tcm-classics-study/data/evidence-cache.runtime.sqlite*
+skill/tcm-classics-study/data/*.sqlite-wal
+skill/tcm-classics-study/data/*.sqlite-shm
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

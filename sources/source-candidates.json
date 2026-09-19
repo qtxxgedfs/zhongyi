@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "status": "phase-0-candidates",
+  "policy": {
+    "preferred_provider": "zh-wikisource",
+    "fallback_providers_allowed": true,
+    "fallback_examples": [
+      "Kanripo",
+      "Chinese Text Project",
+      "other explicitly licensed public-domain/open repositories"
+    ],
+    "display_script": "simplified-only",
+    "retain_traditional_snapshot_for_audit": true
+  },
+  "works": [
+    {
+      "id": "core-suwen",
+      "layer": "core",
+      "canon": "huangdi",
+      "target_works": ["suwen"],
+      "author": "传统题作黄帝、岐伯等",
+      "title": "《素问》",
+      "relationship": "core",
+      "preferred_wikisource_title": "黃帝內經",
+      "subpage_prefix": "黃帝內經/素問",
+      "wikisource_queries": ["黃帝內經素問", "黄帝内經素問", "黃帝內經素問 四庫全書本"]
+    },
+    {
+      "id": "core-lingshu",
+      "layer": "core",
+      "canon": "huangdi",
+      "target_works": ["lingshu"],
+      "author": "传统题作黄帝、岐伯等",
+      "title": "《灵枢》",
+      "relationship": "core",
+      "preferred_wikisource_title": "黃帝內經",
+      "subpage_prefix": "黃帝內經/靈樞",
+      "wikisource_queries": ["黃帝內經靈樞", "靈樞經", "黄帝内經靈樞"]
+    },
+    {
+      "id": "core-shanghanlun",
+      "layer": "core",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "传统归于张仲景",
+      "title": "《伤寒论》",
+      "relationship": "core",
+      "wikisource_queries": ["傷寒論 宋本", "傷寒論 (宋本)", "傷寒論"]
+    },
+    {
+      "id": "core-jingui",
+      "layer": "core",
+      "canon": "zhongjing",
+      "target_works": ["jingui"],
+      "author": "传统归于张仲景",
+      "title": "《金匮要略》",
+      "relationship": "core",
+      "wikisource_queries": ["金匱要略", "金匱玉函要略", "金匱要畧"]
+    },
+    {
+      "id": "core-nanjing",
+      "layer": "core",
+      "canon": "nanjing",
+      "target_works": ["nanjing"],
+      "author": "传统题作扁鹊（作者与成书问题另作版本说明）",
+      "title": "《难经》",
+      "relationship": "core",
+      "wikisource_queries": ["難經", "黃帝八十一難經", "八十一難經"]
+    },
+    {
+      "id": "core-wenbingtiaobian",
+      "layer": "core",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "吴瑭（吴鞠通）",
+      "title": "《温病条辨》",
+      "relationship": "core",
+      "wikisource_queries": ["溫病條辨", "温病条辨"]
+    },
+    {
+      "id": "commentary-suwen-wangbing",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["suwen"],
+      "author": "王冰注、林亿等校正",
+      "title": "《重广补注黄帝内经素问》",
+      "relationship": "direct_commentary,textual_collation",
+      "wikisource_queries": ["重廣補注黃帝內經素問", "重廣補註黃帝內經素問"]
+    },
+    {
+      "id": "commentary-suwen-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["suwen"],
+      "author": "马莳",
+      "title": "《黄帝内经素问注证发微》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "wikisource_queries": ["黃帝內經素問注證發微", "素問注證發微", "黃帝內經素問註證發微"]
+    },
+    {
+      "id": "commentary-neijing-leijing",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["suwen", "lingshu"],
+      "author": "张介宾",
+      "title": "《类经》",
+      "relationship": "classification,theoretical_extension",
+      "preferred_wikisource_title": "類經 (四庫全書本)",
+      "wikisource_queries": ["類經", "類經 四庫全書本"]
+    },
+    {
+      "id": "commentary-lingshu-mashi",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["lingshu"],
+      "author": "马莳",
+      "title": "《黄帝内经灵枢注证发微》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "wikisource_queries": ["黃帝內經靈樞注證發微", "靈樞注證發微", "黃帝內經靈樞註證發微"]
+    },
+    {
+      "id": "commentary-lingshu-zhangzhicong",
+      "layer": "commentary",
+      "canon": "huangdi",
+      "target_works": ["lingshu"],
+      "author": "张志聪",
+      "title": "《黄帝内经灵枢集注》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "wikisource_queries": ["黃帝內經靈樞集注", "黃帝內經靈樞集註", "靈樞集注"]
+    },
+    {
+      "id": "commentary-shanghan-chengwuji",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "成无己",
+      "title": "《注解伤寒论》",
+      "relationship": "direct_commentary",
+      "wikisource_queries": ["注解傷寒論", "註解傷寒論"]
+    },
+    {
+      "id": "commentary-shanghan-fangyouzhi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "方有执",
+      "title": "《伤寒论条辨》",
+      "relationship": "direct_commentary,reordering,theoretical_extension",
+      "wikisource_queries": ["傷寒論條辨", "傷寒論条辨"]
+    },
+    {
+      "id": "commentary-shanghan-yuchang",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "喻昌（喻嘉言）",
+      "title": "《尚论篇》",
+      "relationship": "reordering,theoretical_extension,disagreement",
+      "preferred_wikisource_title": "尚論篇 (四庫全書本)",
+      "wikisource_queries": ["尚論篇", "尚論篇 四庫全書本"]
+    },
+    {
+      "id": "commentary-shanghan-keqin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "柯琴",
+      "title": "《伤寒来苏集·伤寒论注》",
+      "relationship": "direct_commentary,reordering,theoretical_extension",
+      "wikisource_queries": ["傷寒論注", "傷寒來蘇集", "傷寒論註"]
+    },
+    {
+      "id": "commentary-shanghan-youyi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["shanghanlun"],
+      "author": "尤怡（尤在泾）",
+      "title": "《伤寒贯珠集》",
+      "relationship": "classification,theoretical_extension",
+      "wikisource_queries": ["傷寒貫珠集"]
+    },
+    {
+      "id": "commentary-jingui-xubin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["jingui"],
+      "author": "徐彬",
+      "title": "《金匮要略论注》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "preferred_wikisource_title": "金匱要畧論註 (四庫全書本)",
+      "wikisource_queries": ["金匱要略論注", "金匱要畧論註", "金匱要略論註"]
+    },
+    {
+      "id": "commentary-jingui-youyi",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["jingui"],
+      "author": "尤怡（尤在泾）",
+      "title": "《金匮要略心典》",
+      "relationship": "direct_commentary,clinical_extension",
+      "wikisource_queries": ["金匱要略心典"]
+    },
+    {
+      "id": "commentary-jingui-chenglin",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["jingui"],
+      "author": "程林",
+      "title": "《金匮要略直解》",
+      "relationship": "direct_commentary",
+      "wikisource_queries": ["金匱要略直解", "金匱玉函經二注"]
+    },
+    {
+      "id": "commentary-jingui-chenxiuyuan",
+      "layer": "commentary",
+      "canon": "zhongjing",
+      "target_works": ["jingui"],
+      "author": "陈修园",
+      "title": "《金匮要略浅注》",
+      "relationship": "direct_commentary,clinical_extension",
+      "wikisource_queries": ["金匱要略淺注"]
+    },
+    {
+      "id": "commentary-nanjing-huashou",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": ["nanjing"],
+      "author": "滑寿",
+      "title": "《难经本义》",
+      "relationship": "direct_commentary,textual_collation",
+      "wikisource_queries": ["難經本義", "難經本義 四庫全書本"]
+    },
+    {
+      "id": "commentary-nanjing-xudachun",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": ["nanjing"],
+      "author": "徐大椿（徐灵胎）",
+      "title": "《难经经释》",
+      "relationship": "direct_commentary,textual_collation,disagreement",
+      "wikisource_queries": ["難經經釋", "難經經释"]
+    },
+    {
+      "id": "commentary-nanjing-jizhu",
+      "layer": "commentary",
+      "canon": "nanjing",
+      "target_works": ["nanjing"],
+      "author": "王九思辑（内含吕广、杨玄操等旧注）",
+      "title": "《难经集注》",
+      "relationship": "direct_commentary,textual_collation",
+      "wikisource_queries": ["難經集注", "難經集註", "難經集註 四部叢刊本"]
+    },
+    {
+      "id": "commentary-wenbing-yelin",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "叶霖",
+      "title": "《增订温病条辨》",
+      "relationship": "direct_commentary,theoretical_extension",
+      "wikisource_queries": ["增訂溫病條辨"]
+    },
+    {
+      "id": "commentary-wenbing-wangshixiong",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "王士雄（王孟英）",
+      "title": "《温热经纬》",
+      "relationship": "classification,theoretical_extension,clinical_extension",
+      "wikisource_queries": ["溫熱經緯"]
+    },
+    {
+      "id": "commentary-wenbing-leifeng",
+      "layer": "commentary",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "雷丰（雷少逸）",
+      "title": "《时病论》",
+      "relationship": "theoretical_extension,clinical_extension",
+      "wikisource_queries": ["時病論"]
+    },
+    {
+      "id": "lineage-wenbing-yetianshi",
+      "layer": "lineage",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "叶桂（叶天士）",
+      "title": "《温热论》",
+      "relationship": "lineage_predecessor,theoretical_extension",
+      "wikisource_queries": ["溫熱論", "外感溫熱篇"]
+    },
+    {
+      "id": "lineage-wenbing-xuexue",
+      "layer": "lineage",
+      "canon": "wenbing",
+      "target_works": ["wenbingtiaobian"],
+      "author": "薛雪",
+      "title": "《湿热病篇》",
+      "relationship": "lineage_predecessor,theoretical_extension",
+      "wikisource_queries": ["濕熱病篇", "濕熱條辨"]
+    }
+  ]
+}

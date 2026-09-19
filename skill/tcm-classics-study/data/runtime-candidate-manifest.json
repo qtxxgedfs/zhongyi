@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "candidate-runnable",
+  "release_gate_status": "blocked",
+  "citable_corpus_status": "pass",
+  "warning": "可运行候选版，不是最终无条件发布版；隔离语料不在运行时数据库中。",
+  "classic_passage_count": 53798,
+  "quarantined_passages_excluded": 290,
+  "modern_verified_record_count": 6,
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "9b036250b4cab09846623d51357a00b7f9ac3b364359a3aa68319fab59ba1b4f",
+      "size_bytes": 3829
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "fcb496d197770e89c6fb76c24019752102dc523f5445cc01b59b4e80342e546a",
+      "size_bytes": 2486
+    },
+    {
+      "path": "scripts/search.py",
+      "sha256": "0733c5a8355f76f56f51935b2720c747e8f07b65cc9a9a0c33c71c853c227e29",
+      "size_bytes": 17214
+    },
+    {
+      "path": "scripts/modern_evidence.py",
+      "sha256": "ee293f9b3706e662df415134bca0aa28916295d30cfb744ca934dce3dcf3ed9e",
+      "size_bytes": 19863
+    },
+    {
+      "path": "scripts/study.py",
+      "sha256": "a08140f5184a7c33a26bded39c9b76d432e6b1eb9b6113d33959ff13928fd341",
+      "size_bytes": 7560
+    },
+    {
+      "path": "scripts/render.py",
+      "sha256": "7998cc0c5e1f42ddbda49a832c2a5634aa284f2529cd846153a2b290853a3a2e",
+      "size_bytes": 11553
+    },
+    {
+      "path": "scripts/self_check.py",
+      "sha256": "896cf24f23c7ebeff33cb4f27f302253122a181a18c1271d18b27dbffb6201b6",
+      "size_bytes": 7369
+    },
+    {
+      "path": "references/answer-policy.md",
+      "sha256": "614d6ddb37c1d916938e228de850e0e6b8629902df7ad181dbae2688959c6ae5",
+      "size_bytes": 1236
+    },
+    {
+      "path": "references/modern-evidence-policy.md",
+      "sha256": "3ed4d6c67516d9eedbe0ba9a17f5b4fc024be37cdae7887ab98a3b0efc305610",
+      "size_bytes": 2052
+    },
+    {
+      "path": "references/safety.md",
+      "sha256": "2ed00ddbbb6d4baecfda5ae1d33a75d209ba7f0a063863191efc7a8379a03800",
+      "size_bytes": 1090
+    },
+    {
+      "path": "references/workbuddy-web-evidence.md",
+      "sha256": "71ff769880e39d2135ec4f4ef4d9f9754a37960d93881867e8b52c636194ed97",
+      "size_bytes": 2503
+    },
+    {
+      "path": "data/classics.sqlite",
+      "sha256": "76aeadef973a7ac8a0ed4086d975ab893ccd26decf8f3af38663236312c891d8",
+      "size_bytes": 52330496
+    },
+    {
+      "path": "data/classics-index-manifest.json",
+      "sha256": "ee1f34f7b33a540bf001cffe9c41b46dbac8f1f4c8b3004533c29a018c836262",
+      "size_bytes": 1075
+    },
+    {
+      "path": "data/evidence-cache.sqlite",
+      "sha256": "89ae44f34111b0738dd36e23c3f2fd35dfe44ff870921daf4ce314f6d0367dcf",
+      "size_bytes": 98304
+    },
+    {
+      "path": "data/evidence-cache.manifest.json",
+      "sha256": "9657eb8491db6e87b3931a50ebf5b62ed2069b27407418e1f2425a3ab5314440",
+      "size_bytes": 924
+    },
+    {
+      "path": "data/source-manifest.json",
+      "sha256": "498b07ed8d282c4384fc8b897a19b693657df3597955294edd3ff7f4ac130628",
+      "size_bytes": 555108
+    }
+  ]
+}

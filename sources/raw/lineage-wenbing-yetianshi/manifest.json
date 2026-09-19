@@ -1,0 +1,60 @@
+{
+  "id": "lineage-wenbing-yetianshi",
+  "layer": "lineage",
+  "canon": "wenbing",
+  "target_works": [
+    "wenbingtiaobian"
+  ],
+  "author": "叶桂（叶天士）",
+  "title": "《温热论》",
+  "relationship": [
+    "lineage_predecessor",
+    "theoretical_extension"
+  ],
+  "provider": "zh-wikisource",
+  "page_title": "溫熱論",
+  "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E8%AB%96",
+  "edition_label": "《温热论》Wikisource工作转录",
+  "retrieved_at": "2026-09-18T09:16:20+00:00",
+  "license": {
+    "expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
+    "site_terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "notice": "Only text snapshots and derived text are packaged; scan images are not redistributed. Page-specific categories and templates are retained in the lock for review."
+  },
+  "textual_status": "Wikisource working transcription; fixed revision; not represented as a critical edition",
+  "quality_note": "",
+  "scope_note": "标为学术源流，不标为《温病条辨》后世注家。",
+  "speaker_method": "rule-based labels with conservative mixed/unknown fallback",
+  "subpage_prefix": "溫熱論/",
+  "enumerated_subpage_count": 0,
+  "included_subpage_count": 0,
+  "transcluded_page_count": 0,
+  "excluded_subpage_titles": [],
+  "expected_structure": null,
+  "pages": [
+    {
+      "requested_title": "溫熱論",
+      "title": "溫熱論",
+      "page_id": 61021,
+      "page_url": "https://zh.wikisource.org/wiki/%E6%BA%AB%E7%86%B1%E8%AB%96",
+      "revision_id": 2264169,
+      "revision_timestamp": "2023-02-24T14:37:42Z",
+      "source_sha1": "0e2d48e8493b348365da6d232501dde8262ec7b7",
+      "source_size": 16144,
+      "content_model": "wikitext",
+      "categories": [
+        "Category:PD-old",
+        "Category:清朝",
+        "Category:溫病學派",
+        "Category:葉桂"
+      ],
+      "role": "root",
+      "include_in_corpus": true,
+      "retrieved_at": "2026-09-18T09:16:20+00:00",
+      "raw_wikitext_path": "sources/raw/lineage-wenbing-yetianshi/0000.wikitext",
+      "raw_sha256": "dfed6317740123c396aeed0afabc7ddef8ed2f7171faeb5224f56f979244c98d"
+    }
+  ],
+  "aggregate_raw_sha256": "5f9f7b03a23c1e1914b4d4f5500d07abf0a582a901571d84883164878320b91e"
+}
