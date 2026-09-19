@@ -9,9 +9,25 @@ build/
 dist/
 *.tmp
 
-# Local agent/session artifacts
+# Local agent/session artifacts and user-owned notes
 TASK_CHECKPOINT.md
+memo.md
 nul
+
+# Secrets, credentials, certificates, and database backups
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+*.bak
+*.backup
+*.dump
+*.sqlite.bak
+*.sqlite.backup
 
 # Generated corpus snapshots are governed by source-lock.json and may be large.
 # Uncomment locally if raw snapshots are stored outside version control.
@@ -21,6 +37,7 @@ nul
 skill/tcm-classics-study/data/evidence-cache.runtime.sqlite*
 skill/tcm-classics-study/data/*.sqlite-wal
 skill/tcm-classics-study/data/*.sqlite-shm
+skill/tcm-classics-study/data/package-candidate-manifest.json
 
 # OS/editor
 .DS_Store

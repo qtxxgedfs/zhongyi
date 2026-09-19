@@ -4,6 +4,7 @@
 
 ## 当前状态
 
+- **代码版本：`1.0.0`**，版本规则与历史见 `VERSION` 和 `CHANGELOG.md`。
 - **Phase 0：已完成**，见 `docs/phase0-summary.md`。
 - **Phase 1 构建流水线：已完成；发布质量闸门：未通过**，见 `docs/phase1-summary.md` 和 `docs/phase1-quality-report.md`。
 - **Phase 2 索引与检索：已完成候选版**，已生成可审计的本地 SQLite FTS5 索引和检索 CLI。
