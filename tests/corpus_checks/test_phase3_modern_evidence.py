@@ -61,6 +61,11 @@ class PhaseThreeModernEvidenceTests(unittest.TestCase):
         runtime_paths = {item["path"] for item in runtime["files"]}
         self.assertIn("scripts/study.py", runtime_paths)
         self.assertIn("scripts/render.py", runtime_paths)
+        self.assertIn("USER_GUIDE.md", runtime_paths)
+        guide = (SKILL_DIR / "USER_GUIDE.md").read_text(encoding="utf-8")
+        for title in ("《素问》", "《灵枢》", "《伤寒论》", "《金匮要略》", "《难经》", "《温病条辨》"):
+            self.assertIn(title, guide)
+        self.assertIn("急症提示应当先于古籍检索", guide)
 
     def test_m0_pure_textual_question_does_not_force_modern_layer(self) -> None:
         payload = run_cli("assess", "《素问》治未病原文在哪一篇")

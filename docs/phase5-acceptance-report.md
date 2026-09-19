@@ -30,7 +30,7 @@
 ## 候选包
 
 - `dist/tcm-classics-study-candidate.zip` 已生成；
-- ZIP顶层目录为 `tcm-classics-study/`，共18个文件；
+- ZIP顶层目录为 `tcm-classics-study/`，共19个文件（含用户使用手册）；
 - 在全新临时目录解压后的运行时自检通过；
 - SHA-256、包大小和自检结果记录于 `dist/tcm-classics-study-candidate.manifest.json`；
 - 安装、升级、回滚和断网行为见 `docs/INSTALL.md`。

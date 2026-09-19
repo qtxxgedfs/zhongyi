@@ -14,7 +14,7 @@
 - 原始哈希和结构完整性检查通过；可引用语料未解字为零，清洗状态为 `pass-with-quarantine`。
 - 因五种核心底本尚未完成第二底本校核、《温病条辨》仍有2个核心隔离单元、王冰本805页低校对等级，当前只生成 `sources/source-lock.candidate.json`；**没有生成最终 `source-lock.json`**。
 
-按当前交付范围，代码实现、自动测试、功能验收、运行时自检和候选包构建已经完成。WorkBuddy导入适配及具体用户设备验证由使用方处理，不作为代码完成条件。
+按当前交付范围，代码实现、自动测试、功能验收、运行时自检和候选包构建已经完成。WorkBuddy导入适配及具体用户设备验证由使用方处理，不作为代码完成条件。面向普通读者的使用说明见 [`USER_GUIDE.md`](skill/tcm-classics-study/USER_GUIDE.md)。
 
 `skill/tcm-classics-study/` 现在是可离线运行和安装测试的 **`candidate-runnable` 候选版**，经典数据库和现代证据种子缓存均已装入。它仍不是最终无条件发布版，不能绕过质量闸门把候选锁改名为最终来源锁。
 
@@ -38,6 +38,7 @@
 - `skill/tcm-classics-study/scripts/study.py`：首选单调用入口，生成A/B/C分层研究包
 - `skill/tcm-classics-study/scripts/render.py`：可访问Markdown和自包含HTML渲染
 - `skill/tcm-classics-study/scripts/self_check.py`：运行时数据库、哈希、计数、研究包、渲染和M3分流自检
+- `skill/tcm-classics-study/USER_GUIDE.md`：面向普通读者的大字友好使用手册
 - `tests/acceptance/questions.jsonl`、`build/acceptance-results.json`：150题固定验收集及结果
 
 ## 重建 Phase 1 语料

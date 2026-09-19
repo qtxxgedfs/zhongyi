@@ -20,6 +20,7 @@ EXCLUDED_SUFFIXES = (".pyc", ".sqlite-wal", ".sqlite-shm")
 EXCLUDED_NAMES = {"package-candidate-manifest.json", "evidence-cache.runtime.sqlite"}
 REQUIRED_RUNTIME_PATHS = {
     "SKILL.md",
+    "USER_GUIDE.md",
     "scripts/search.py",
     "scripts/modern_evidence.py",
     "scripts/study.py",

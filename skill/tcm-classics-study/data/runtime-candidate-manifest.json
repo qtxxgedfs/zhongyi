@@ -14,6 +14,11 @@
       "size_bytes": 3829
     },
     {
+      "path": "USER_GUIDE.md",
+      "sha256": "a8c12b88ab997a95c0edc949d4ddf5b581a2f9e5a5d6e029d332e725ceef67e9",
+      "size_bytes": 10390
+    },
+    {
       "path": "NOTICE.md",
       "sha256": "fcb496d197770e89c6fb76c24019752102dc523f5445cc01b59b4e80342e546a",
       "size_bytes": 2486

@@ -72,6 +72,7 @@ def main() -> None:
 
     runtime_files = [
         args.skill_dir / "SKILL.md",
+        args.skill_dir / "USER_GUIDE.md",
         args.skill_dir / "NOTICE.md",
         args.skill_dir / "scripts" / "search.py",
         args.skill_dir / "scripts" / "modern_evidence.py",
