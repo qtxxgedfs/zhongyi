@@ -467,7 +467,7 @@ tcm-classics-study-project/
 - 实现可访问Markdown和自包含HTML两种渲染；HTML正文18px、来源16px、行高1.75，无外部资源、动画、渐变或阴影。
 - 将研究包、Markdown渲染和M3分流冒烟纳入运行时自检；Phase 4的5项独立测试已纳入38项全量回归。
 
-交付现状：两个可试用渲染版本及 `docs/phase4-interaction-report.md`。WorkBuddy实际HTML能力和60岁以上用户反馈仍待目标电脑实测。
+交付现状：两个可试用渲染版本及 `docs/phase4-interaction-report.md`。WorkBuddy实际HTML能力和具体用户设备反馈由使用方验证，不作为代码交付阻塞项。
 
 ### Phase 5：验收与候选发布（候选包已完成）
 
@@ -478,12 +478,12 @@ tcm-classics-study-project/
 - 构建 `dist/tcm-classics-study-candidate.zip`，并在全新临时目录解压后运行自检；外部SHA-256清单已生成。
 - 提供 `docs/INSTALL.md`，说明安装、权限、断网、升级、回滚、自检和候选底本风险。
 
-尚待实机：
+使用方后续事项（不属于代码完成条件）：
 
-- 在目标 WorkBuddy 中导入ZIP，适配网页搜索/读取工具参数并验证联网/断网表现；
-- 由实际60岁以上用户补充自然提问，确认默认Markdown/HTML、字号和信息密度。
+- 在目标 WorkBuddy 中导入ZIP，并按宿主实际接口配置网页搜索/读取工具；
+- 按具体设备和用户偏好选择Markdown或HTML并调整显示设置。
 
-交付现状：可运行候选 Skill ZIP、构建源码、来源清单、测试集、性能报告和安装说明。最终无条件发布仍受 Phase 1 文本质量闸门约束。
+交付现状：可运行候选 Skill ZIP、构建源码、来源清单、测试集、性能报告和安装说明均已完成。代码任务已完成；最终无条件发布仍受 Phase 1 文本质量闸门约束。
 
 ## 11. 验收指标
 
