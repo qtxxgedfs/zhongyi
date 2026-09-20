@@ -32,13 +32,41 @@ def conclusion(packet: dict[str, Any]) -> str:
         return "以下将古籍记载与现代疗效或安全证据严格分开；内容用于研读，不构成个体诊疗或用药建议。"
     if level == "M1":
         return "古典理论与现代医学概念通常不能直接等同；以下先列工作底本文献，再说明可核验的对应边界。"
-    return "以下是当前所收工作底本中的原典和医家材料；本题属于文献研读，不强行附会现代医学。"
+    return "以下只列当前工作底本中足够直接的材料；未为凑数加入弱相关段落。"
+
+
+def route_notice(packet: dict[str, Any]) -> str:
+    return clean_inline(
+        packet.get("classic_search", {}).get("route_resolution", {}).get("message", "")
+    )
+
+
+def clarification(packet: dict[str, Any]) -> str:
+    item = packet.get("classic_search", {}).get("needs_clarification", {})
+    return clean_inline(item.get("prompt", "")) if item.get("required") else ""
 
 
 def markdown_item(item: dict[str, Any], label: str) -> list[str]:
     author = clean_inline(item.get("author", ""))
     speaker = clean_inline(item.get("speaker", ""))
-    lines = [f"### {label}｜{clean_inline(item['title'])}", "", f"**{label}原文**", "", quote_markdown(item["text_simplified"]), ""]
+    core_quote = item.get("core_quote") or item["text_simplified"]
+    lines = [f"### {label}｜{clean_inline(item['title'])}", ""]
+    match = item.get("match", {})
+    if match.get("label"):
+        lines.extend([f"**匹配说明：** {clean_inline(match['label'])}  "])
+    if item.get("context_role"):
+        role_labels = {"before": "上文", "anchor": "本段", "after": "下文"}
+        lines.extend([f"**上下文位置：** {role_labels.get(item['context_role'], item['context_role'])}  "])
+    lines.extend([f"**{label}核心引文**", "", quote_markdown(core_quote), ""])
+    if item.get("full_text_available"):
+        lines.extend(
+            [
+                f"**完整段落：** 本段共{item.get('full_text_characters', len(item['text_simplified']))}字，默认未展开；可按段落ID继续查看全文或前后文。",
+                "",
+            ]
+        )
+    if label == "医家" and item.get("relationship"):
+        lines.extend([f"**材料关系：** {'、'.join(item['relationship'])}  "])
     if author:
         lines.extend([f"**作者/题署：** {author}  "])
     if speaker:
@@ -81,21 +109,25 @@ def render_markdown(packet: dict[str, Any]) -> str:
     ]
     if packet["safety_first"]["required"]:
         lines.extend(["## ⚠️ 先看安全提醒", "", f"**{clean_inline(packet['safety_first']['message'])}**", "", "---", ""])
-    lines.extend(["## 一句话结论", "", conclusion(packet), "", "---", "", "## 🟩 A｜原典", ""])
+    notice = route_notice(packet)
+    if notice:
+        lines.extend(["## 范围核对", "", f"**{notice}**", ""])
+    clarify = clarification(packet)
+    if clarify:
+        lines.extend(["## 范围提示", "", clarify, ""])
+    lines.extend(["## 一句话主旨", "", conclusion(packet), "", "---", "", "## 🟩 A｜原典", ""])
     if packet["A_core"]:
         for item in packet["A_core"]:
             lines.extend(markdown_item(item, "原典"))
     elif packet["safety_first"]["classic_retrieval_deferred"]:
         lines.extend(["急症风险问题已暂缓古籍检索；处理现实安全后，才可另作纯文献研读。", ""])
     else:
-        lines.extend(["当前所收工作底本未检得足够匹配的原典段落。", ""])
+        lines.extend(["当前所收工作底本未检得足够直接且可独立理解的原典材料。", ""])
 
-    lines.extend(["---", "", "## 🟧 B｜历代医家", ""])
     if packet["B_physicians"]:
+        lines.extend(["---", "", "## 🟧 B｜历代医家", ""])
         for item in packet["B_physicians"]:
             lines.extend(markdown_item(item, "医家"))
-    else:
-        lines.extend(["当前所收工作底本未检得合格的医家材料；不凭模型记忆补造。", ""])
 
     modern = packet["C_modern"]
     if modern["required"]:
@@ -114,6 +146,18 @@ def render_markdown(packet: dict[str, Any]) -> str:
         if not records:
             lines.extend(["当前没有可直接引用的有效缓存。若联网失败，本次不提供未经核验的现代疗效结论。", ""])
 
+    anchor = packet.get("answer_contract", {}).get("primary_passage_id")
+    if anchor:
+        lines.extend(
+            [
+                "---",
+                "",
+                "### 继续研读",
+                "",
+                f"如需全文或前后文，可继续追问并使用本次主段落ID：`{anchor}`。",
+                "",
+            ]
+        )
     lines.extend(
         [
             "---",
@@ -137,12 +181,35 @@ def classic_html(items: list[dict[str, Any]], empty: str) -> str:
     if not items:
         return f"<p>{html.escape(empty)}</p>"
     output: list[str] = []
+    role_labels = {"before": "上文", "anchor": "本段", "after": "下文"}
     for item in items:
+        core_quote = item.get("core_quote") or item["text_simplified"]
+        match = item.get("match", {})
+        metadata: list[str] = []
+        if match.get("label"):
+            metadata.append(f"<p><strong>匹配说明：</strong>{html.escape(match['label'])}</p>")
+        if item.get("context_role"):
+            metadata.append(
+                f"<p><strong>上下文位置：</strong>{html.escape(role_labels.get(item['context_role'], item['context_role']))}</p>"
+            )
+        if item.get("relationship") and item.get("layer") != "core":
+            metadata.append(
+                f"<p><strong>材料关系：</strong>{html.escape('、'.join(item['relationship']))}</p>"
+            )
+        full_text = ""
+        if item.get("full_text_available"):
+            full_text = (
+                "<details><summary>展开完整段落（"
+                f"{item.get('full_text_characters', len(item['text_simplified']))}字）</summary>"
+                f"<blockquote>{html.escape(item['text_simplified'])}</blockquote></details>"
+            )
         output.append(
             "<article>"
             f"<h3>{html.escape(clean_inline(item['title']))}</h3>"
-            f"<blockquote>{html.escape(item['text_simplified'])}</blockquote>"
-            f"<p><strong>作者/题署：</strong>{html.escape(clean_inline(item.get('author', '')))}</p>"
+            + "".join(metadata)
+            + f"<p><strong>核心引文：</strong></p><blockquote>{html.escape(core_quote)}</blockquote>"
+            + full_text
+            + f"<p><strong>作者/题署：</strong>{html.escape(clean_inline(item.get('author', '')))}</p>"
             f"<p><strong>出处：</strong>{html.escape(location(item))}</p>"
             f"<p class=\"source\"><strong>段落ID：</strong>{html.escape(item['id'])}；"
             f"<a href=\"{html.escape(item['fixed_source_url'], quote=True)}\">固定修订 oldid={item['source_revision_id']}</a></p>"
@@ -181,10 +248,17 @@ def render_html(packet: dict[str, Any]) -> str:
     cards: list[str] = []
     if packet["safety_first"]["required"]:
         cards.append(card_html("⚠️ 先看安全提醒", "safety", f"<p><strong>{html.escape(packet['safety_first']['message'])}</strong></p>"))
-    cards.append(card_html("一句话结论", "summary", f"<p>{html.escape(conclusion(packet))}</p>"))
-    core_empty = "急症风险问题已暂缓古籍检索。" if packet["safety_first"]["classic_retrieval_deferred"] else "当前所收工作底本未检得足够匹配的原典段落。"
+    notice = route_notice(packet)
+    if notice:
+        cards.append(card_html("范围核对", "notice", f"<p><strong>{html.escape(notice)}</strong></p>"))
+    clarify = clarification(packet)
+    if clarify:
+        cards.append(card_html("范围提示", "notice", f"<p>{html.escape(clarify)}</p>"))
+    cards.append(card_html("一句话主旨", "summary", f"<p>{html.escape(conclusion(packet))}</p>"))
+    core_empty = "急症风险问题已暂缓古籍检索。" if packet["safety_first"]["classic_retrieval_deferred"] else "当前所收工作底本未检得足够直接且可独立理解的原典材料。"
     cards.append(card_html("🟩 A｜原典", "core", classic_html(packet["A_core"], core_empty)))
-    cards.append(card_html("🟧 B｜历代医家", "physicians", classic_html(packet["B_physicians"], "当前未检得合格医家材料，不凭记忆补造。")))
+    if packet["B_physicians"]:
+        cards.append(card_html("🟧 B｜历代医家", "physicians", classic_html(packet["B_physicians"], "")))
     if packet["C_modern"]["required"]:
         cards.append(
             card_html(
@@ -193,16 +267,19 @@ def render_html(packet: dict[str, Any]) -> str:
                 modern_html(packet["C_modern"]["cache"]["records"], packet["C_modern"]["online_search_plan"]["required"]),
             )
         )
+    anchor = packet.get("answer_contract", {}).get("primary_passage_id")
+    if anchor:
+        cards.append(card_html("继续研读", "follow-up", f"<p>如需全文或前后文，可继续追问主段落 <code>{html.escape(anchor)}</code>。</p>"))
     style = """
 :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:#f4f1e8;color:#17202a}
 body{margin:0 auto;max-width:920px;padding:24px;font-size:18px;line-height:1.75}
 h1{font-size:30px;line-height:1.3}h2{font-size:23px;margin-top:0}h3{font-size:20px}
 .card{border:3px solid #273746;padding:20px;margin:18px 0;background:#fff}
-.summary{background:#fff9db}.core{background:#eaf7ea;border-color:#176b2c}.physicians{background:#fff0dc;border-color:#9a4d00}.modern{background:#e8f2ff;border-color:#145a9c}.safety{background:#fff0f0;border-color:#9c1c1c}
+.summary{background:#fff9db}.core{background:#eaf7ea;border-color:#176b2c}.physicians{background:#fff0dc;border-color:#9a4d00}.modern{background:#e8f2ff;border-color:#145a9c}.safety{background:#fff0f0;border-color:#9c1c1c}.notice{background:#fff9e6;border-color:#7a5a00}.follow-up{background:#f5f5f5}
 blockquote{margin:12px 0;padding:14px 18px;border-left:6px solid #273746;background:rgba(255,255,255,.72);font-size:19px}
-.source{font-size:16px}a{color:#0645ad;text-decoration:underline;text-underline-offset:3px}strong{font-weight:750}
+details{margin:12px 0}summary{cursor:pointer;font-weight:700;text-decoration:underline}.source{font-size:16px}a{color:#0645ad;text-decoration:underline;text-underline-offset:3px}strong{font-weight:750}
 @media(max-width:640px){body{padding:14px;font-size:17px}.card{padding:15px}h1{font-size:26px}h2{font-size:21px}}
-@media print{body{max-width:none}.card{break-inside:avoid;background:#fff}}
+@media print{body{max-width:none}.card{break-inside:avoid;background:#fff}details>blockquote{display:block}}
 """.strip()
     boundary = "<section class=\"card\"><h2>使用边界</h2><ul><li>工作底本不是唯一权威文本。</li><li>隔离内容不可检索或引用。</li><li>不诊断、不开方、不换算个人剂量、不建议停换药。</li></ul></section>"
     return (

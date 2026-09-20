@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "policy": "Unresolved units are retained for audit but excluded from citation and search.",
-  "passage_count": 290,
+  "passage_count": 288,
   "issue_occurrences": {
     "explicit-missing-glyph": 35,
     "known-ui-text-intrusion": 1,
-    "legacy-glyph-placeholder-ht-kt": 342,
+    "legacy-glyph-placeholder-ht-kt": 340,
     "private-use-character": 0,
     "unicode-replacement-character": 0
   },

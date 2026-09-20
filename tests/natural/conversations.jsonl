@@ -1,0 +1,10 @@
+{"id":"NC001","initial":{"query":"我记得一句口渴才挖井的话","acceptable_top_ids":["SW-000004"]},"follow_ups":[{"query":"把上一条的前后文展开","before":1,"after":1},{"query":"只回到刚才那条原文","before":0,"after":0}]}
+{"id":"NC002","initial":{"query":"上焦像羽毛那句话","acceptable_top_ids":["WBTB-000175"]},"follow_ups":[{"query":"看看它前面和后面怎么接","before":1,"after":1},{"query":"再只看这条本身","before":0,"after":0}]}
+{"id":"NC003","initial":{"query":"为什么把脉只取手腕这里","acceptable_top_ids":["NJ-000001"]},"follow_ups":[{"query":"上一条的下一段是什么","before":0,"after":1},{"query":"再把上文也补上","before":1,"after":1}]}
+{"id":"NC004","initial":{"query":"胸口堵、气短，金匮哪段说过","acceptable_top_ids":["JKY-000129"]},"follow_ups":[{"query":"展开刚才那段上下文","before":1,"after":1},{"query":"只保留刚才作为中心的段落","before":0,"after":0}]}
+{"id":"NC005","initial":{"query":"百合病想吃又吃不下的原句","acceptable_top_ids":["JKY-000058"]},"follow_ups":[{"query":"接着看下一段","before":0,"after":1},{"query":"再回看上一段","before":1,"after":0}]}
+{"id":"NC006","initial":{"query":"一会冷一会热那条伤寒原文","acceptable_top_ids":["SHL-000098"]},"follow_ups":[{"query":"给我它的前后条文","before":1,"after":1},{"query":"只看中心条文","before":0,"after":0}]}
+{"id":"NC007","initial":{"query":"灵枢讲百病怎么开始的地方","acceptable_top_ids":["LS-000665"]},"follow_ups":[{"query":"把岐伯接下来的回答也展开","before":0,"after":1},{"query":"连同上一段一起看","before":1,"after":1}]}
+{"id":"NC008","initial":{"query":"难经七个关口是哪七个","acceptable_top_ids":["NJ-000046"]},"follow_ups":[{"query":"看它前后一难","before":1,"after":1},{"query":"回到七冲门这一条","before":0,"after":0}]}
+{"id":"NC009","initial":{"query":"营卫昼夜怎么运行","acceptable_top_ids":["LS-000146"]},"follow_ups":[{"query":"把上一问和下一问也给我","before":1,"after":1},{"query":"只看岐伯这段回答","before":0,"after":0}]}
+{"id":"NC010","initial":{"query":"桂枝汤头痛发热汗出恶风那条","acceptable_top_ids":["SHL-000054"]},"follow_ups":[{"query":"展开前后条文","before":1,"after":1},{"query":"回到桂枝汤这条","before":0,"after":0}]}

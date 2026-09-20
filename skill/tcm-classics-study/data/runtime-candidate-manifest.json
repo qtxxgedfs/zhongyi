@@ -1,32 +1,33 @@
 {
   "schema_version": 1,
+  "project_version": "1.1.0",
   "status": "candidate-runnable",
   "release_gate_status": "blocked",
   "citable_corpus_status": "pass",
   "warning": "可运行候选版，不是最终无条件发布版；隔离语料不在运行时数据库中。",
-  "classic_passage_count": 53798,
-  "quarantined_passages_excluded": 290,
+  "classic_passage_count": 53800,
+  "quarantined_passages_excluded": 288,
   "modern_verified_record_count": 6,
   "files": [
     {
       "path": "SKILL.md",
-      "sha256": "9b036250b4cab09846623d51357a00b7f9ac3b364359a3aa68319fab59ba1b4f",
-      "size_bytes": 3829
+      "sha256": "40c7e3117fc032a606bea409f053faf090d99588ff55b5918078448d9782ac20",
+      "size_bytes": 5308
     },
     {
       "path": "USER_GUIDE.md",
-      "sha256": "a8c12b88ab997a95c0edc949d4ddf5b581a2f9e5a5d6e029d332e725ceef67e9",
-      "size_bytes": 10390
+      "sha256": "fa7ddbfe9fd0f750a5294bceccfae4ce989e5aff21f905b9bf8f8b0bf5ae539e",
+      "size_bytes": 10827
     },
     {
       "path": "NOTICE.md",
-      "sha256": "fcb496d197770e89c6fb76c24019752102dc523f5445cc01b59b4e80342e546a",
-      "size_bytes": 2486
+      "sha256": "feb85f2b581b2a4b5e7661dec0c21be35866d9b5437c905baa8d3e62f04ffcfc",
+      "size_bytes": 2627
     },
     {
       "path": "scripts/search.py",
-      "sha256": "0733c5a8355f76f56f51935b2720c747e8f07b65cc9a9a0c33c71c853c227e29",
-      "size_bytes": 17214
+      "sha256": "561d68ad2c606de4ab5f3258dcc29c8690ca8142a5806106f579c8483232350e",
+      "size_bytes": 41626
     },
     {
       "path": "scripts/modern_evidence.py",
@@ -35,23 +36,23 @@
     },
     {
       "path": "scripts/study.py",
-      "sha256": "a08140f5184a7c33a26bded39c9b76d432e6b1eb9b6113d33959ff13928fd341",
-      "size_bytes": 7560
+      "sha256": "939b58ed1ec6afe5553b61b34e0badbc0910da692c832a5d0f25273bb57d0c48",
+      "size_bytes": 14918
     },
     {
       "path": "scripts/render.py",
-      "sha256": "7998cc0c5e1f42ddbda49a832c2a5634aa284f2529cd846153a2b290853a3a2e",
-      "size_bytes": 11553
+      "sha256": "9aeb9660327f6b34f1b03a32003c37914599d84be8502cb2f092b7ee17cb1b4f",
+      "size_bytes": 15267
     },
     {
       "path": "scripts/self_check.py",
-      "sha256": "896cf24f23c7ebeff33cb4f27f302253122a181a18c1271d18b27dbffb6201b6",
-      "size_bytes": 7369
+      "sha256": "4a72a459a80c94729787939ff72da3997e77cad53ba7976e5b5bcf033d448e7d",
+      "size_bytes": 10537
     },
     {
       "path": "references/answer-policy.md",
-      "sha256": "614d6ddb37c1d916938e228de850e0e6b8629902df7ad181dbae2688959c6ae5",
-      "size_bytes": 1236
+      "sha256": "6f1aa33b1e8e8adea8eccba8dabc87e661b01bba9bf3598508196b62ad89cfc4",
+      "size_bytes": 4052
     },
     {
       "path": "references/modern-evidence-policy.md",
@@ -70,13 +71,18 @@
     },
     {
       "path": "data/classics.sqlite",
-      "sha256": "76aeadef973a7ac8a0ed4086d975ab893ccd26decf8f3af38663236312c891d8",
+      "sha256": "35316630ad2105cf9384376062f1c524994b63b633a75fbdd8b41130dbf21fc2",
       "size_bytes": 52330496
     },
     {
       "path": "data/classics-index-manifest.json",
-      "sha256": "ee1f34f7b33a540bf001cffe9c41b46dbac8f1f4c8b3004533c29a018c836262",
+      "sha256": "e21e4aec4f0e348ebe263ad3da9f461e180ab83f3b82e206ebbb3158ed0853e2",
       "size_bytes": 1075
+    },
+    {
+      "path": "data/query-rules.json",
+      "sha256": "71bf84b11bd0b4f1940a104d7d55c677c4ae673edf39bac100094de1105771f7",
+      "size_bytes": 10146
     },
     {
       "path": "data/evidence-cache.sqlite",
@@ -90,7 +96,7 @@
     },
     {
       "path": "data/source-manifest.json",
-      "sha256": "498b07ed8d282c4384fc8b897a19b693657df3597955294edd3ff7f4ac130628",
+      "sha256": "06d8cc295153af9e6e7ebfa3fdb72c4b1e663695a5524c4739c4ed9c9b941a6e",
       "size_bytes": 555108
     }
   ]

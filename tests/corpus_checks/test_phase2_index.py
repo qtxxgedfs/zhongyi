@@ -95,7 +95,7 @@ class PhaseTwoIndexTests(unittest.TestCase):
         )
         payload = json.loads(completed.stdout)
         self.assertEqual(payload["database_build_status"], "candidate")
-        self.assertEqual(payload["quarantined_passages_excluded"], 290)
+        self.assertEqual(payload["quarantined_passages_excluded"], 288)
         self.assertTrue(payload["results"])
         self.assertTrue(all("text_simplified" in item for item in payload["results"]))
         self.assertTrue(all("text_search" not in item for item in payload["results"]))

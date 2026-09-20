@@ -65,6 +65,8 @@
         "character_map_path": {"type": "string"},
         "source_dependencies_path": {"type": "string"},
         "manual_repairs_path": {"type": "string"},
+        "passage_text_corrections_path": {"type": "string"},
+        "passage_text_corrections_sha256": {"$ref": "#/$defs/sha256"},
         "conversion_overrides_path": {"type": "string"}
       },
       "additionalProperties": false

@@ -56,10 +56,14 @@ def check_study_and_render(errors: list[str]) -> tuple[bool, bool, bool]:
             "治未病",
         )
         study_smoke = (
-            packet.get("classification", {}).get("level") == "M1"
+            packet.get("schema_version") == 2
+            and packet.get("standard_study_only") is True
+            and packet.get("interaction_principle") == "宁缺毋滥"
+            and packet.get("classification", {}).get("level") == "M1"
             and bool(packet.get("A_core"))
             and bool(packet.get("B_physicians"))
             and packet.get("context_budget", {}).get("selected_characters", 2501) <= 2500
+            and packet.get("answer_contract", {}).get("mode") == "standard"
         )
         if not study_smoke:
             errors.append("study-packet-smoke-failed")
@@ -111,11 +115,75 @@ def check_study_and_render(errors: list[str]) -> tuple[bool, bool, bool]:
     return study_smoke, markdown_render_smoke, m3_classic_retrieval_deferred
 
 
+def check_usability(errors: list[str]) -> tuple[bool, bool, bool, bool]:
+    natural_search_smoke = False
+    fragment_suppression_smoke = False
+    route_recovery_smoke = False
+    broad_scope_smoke = False
+    try:
+        remembered = run_json_script(
+            "search.py",
+            "search",
+            "--query",
+            "我记得病了才治就像口渴才挖井",
+        )
+        natural_search_smoke = bool(remembered.get("results")) and remembered["results"][0]["id"] == "SW-000004"
+        if not natural_search_smoke:
+            errors.append("natural-search-smoke-failed")
+
+        formula = run_json_script(
+            "search.py",
+            "search",
+            "--query",
+            "桂枝汤那段简单说说",
+        )
+        fragment_suppression_smoke = (
+            bool(formula.get("results"))
+            and formula["results"][0]["id"] == "SHL-000054"
+            and all(item.get("match", {}).get("standalone_quality") == "usable" for item in formula["results"])
+            and all(len(item.get("core_quote", "")) <= 320 for item in formula["results"])
+        )
+        if not fragment_suppression_smoke:
+            errors.append("fragment-suppression-smoke-failed")
+
+        mixed = run_json_script(
+            "search.py",
+            "search",
+            "--query",
+            "《难经》里是不是有渴了才挖井的比喻",
+        )
+        route_recovery_smoke = (
+            bool(mixed.get("results"))
+            and mixed["results"][0]["id"] == "SW-000004"
+            and mixed.get("route_resolution", {}).get("conflict_detected") is True
+        )
+        if not route_recovery_smoke:
+            errors.append("route-recovery-smoke-failed")
+
+        broad = run_json_script(
+            "search.py",
+            "search",
+            "--query",
+            "阴阳到底怎么理解",
+        )
+        broad_scope_smoke = (
+            broad.get("needs_clarification", {}).get("required") is True
+            and len(broad.get("results", [])) == 1
+        )
+        if not broad_scope_smoke:
+            errors.append("broad-scope-smoke-failed")
+    except (OSError, subprocess.SubprocessError, json.JSONDecodeError, KeyError, IndexError, TypeError) as error:
+        errors.append(f"usability-smoke-error:{type(error).__name__}")
+    return natural_search_smoke, fragment_suppression_smoke, route_recovery_smoke, broad_scope_smoke
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     errors: list[str] = []
     runtime = load_json(DATA_DIR / "runtime-candidate-manifest.json")
+    if not runtime.get("project_version"):
+        errors.append("runtime-project-version-missing")
     classic_manifest = load_json(DATA_DIR / "classics-index-manifest.json")
     evidence_manifest = load_json(DATA_DIR / "evidence-cache.manifest.json")
     for item in runtime["files"]:
@@ -166,9 +234,11 @@ def main() -> None:
         errors.append("classic-search-smoke-failed")
 
     study_smoke, markdown_render_smoke, m3_classic_retrieval_deferred = check_study_and_render(errors)
+    natural_search_smoke, fragment_suppression_smoke, route_recovery_smoke, broad_scope_smoke = check_usability(errors)
 
     payload = {
         "status": "pass" if not errors else "fail",
+        "project_version": runtime.get("project_version", ""),
         "runtime_status": runtime["status"],
         "release_gate_status": runtime["release_gate_status"],
         "classic_integrity": classic_integrity,
@@ -180,6 +250,10 @@ def main() -> None:
         "study_packet_smoke": study_smoke,
         "markdown_render_smoke": markdown_render_smoke,
         "m3_classic_retrieval_deferred": m3_classic_retrieval_deferred,
+        "natural_search_smoke": natural_search_smoke,
+        "fragment_suppression_smoke": fragment_suppression_smoke,
+        "route_recovery_smoke": route_recovery_smoke,
+        "broad_scope_smoke": broad_scope_smoke,
         "errors": errors,
     }
     print(json.dumps(payload, ensure_ascii=False, indent=2))

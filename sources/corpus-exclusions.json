@@ -9,13 +9,18 @@
     "core_quarantine_blocks_release": true,
     "extension_quarantine_may_be_accepted_with_full_disclosure": true
   },
-  "quarantined_passage_count": 290,
+  "quarantined_passage_count": 288,
   "issue_occurrences": {
     "explicit-missing-glyph": 35,
     "known-ui-text-intrusion": 1,
-    "legacy-glyph-placeholder-ht-kt": 342,
+    "legacy-glyph-placeholder-ht-kt": 340,
     "private-use-character": 0,
     "unicode-replacement-character": 0
+  },
+  "documented_text_corrections": {
+    "path": "sources/normalization/passage-text-corrections.json",
+    "sha256": "09db5fe74778f430001147fae34a72bfce4cec709da6cb5e3fe94207abb90053",
+    "applied_count": 2
   },
   "exclusions": [
     {
@@ -6639,52 +6644,6 @@
       "citation_allowed": false,
       "search_allowed": false,
       "text_simplified": "匡坐篷窗，间回环KT诵，奇情妙绪，层见叠出，满纸灵光，与严陵山色竞秀争奇。"
-    },
-    {
-      "passage_id": "WBTB-000004",
-      "source_id": "core-wenbingtiaobian",
-      "source_page_title": "溫病條辨/原病篇",
-      "source_revision_id": 2490807,
-      "source_raw_sha256": "a47619862c3679a7bddc7ba7b814ebf38263b65b79ab14046500762daeb42aca",
-      "volume": "原病篇",
-      "section": "原病篇",
-      "subsection": "",
-      "speaker": "原典",
-      "speaker_type": "core_text",
-      "issue_types": [
-        "legacy-glyph-placeholder-ht-kt"
-      ],
-      "issue_counts": {
-        "legacy-glyph-placeholder-ht-kt": 1
-      },
-      "reason": "来源含HT/KT旧转录占位符，原字未确认",
-      "resolution_status": "unresolved",
-      "citation_allowed": false,
-      "search_allowed": false,
-      "text_simplified": "如庞安常之《卒病论》，朱肱之《活人书》，韩HT 和之《微旨》，王氏之《证治》，刘守真之《伤寒医鉴》、《伤寒直格》，张子和之《伤寒心镜》等书，非以治伤寒之法治温病，即将温暑认作伤寒， 而疑麻桂之法不可用，遂别立防风通圣、双解通圣、九味羌活等汤，甚至于辛温药中加苦寒，王安道《溯洄集》中辨之最详，兹不再辩。"
-    },
-    {
-      "passage_id": "WBTB-000209",
-      "source_id": "core-wenbingtiaobian",
-      "source_page_title": "溫病條辨/卷六",
-      "source_revision_id": 2490847,
-      "source_raw_sha256": "823b1031a794b638cce249f511bfaef1c5f2e521f6c57383a722edb13cafc0b6",
-      "volume": "卷六",
-      "section": "痉因质疑",
-      "subsection": "",
-      "speaker": "原典",
-      "speaker_type": "core_text",
-      "issue_types": [
-        "legacy-glyph-placeholder-ht-kt"
-      ],
-      "issue_counts": {
-        "legacy-glyph-placeholder-ht-kt": 1
-      },
-      "reason": "来源含HT/KT旧转录占位符，原字未确认",
-      "resolution_status": "unresolved",
-      "citation_allowed": false,
-      "search_allowed": false,
-      "text_simplified": "风为百病之长，六气莫不由风而伤人，所有痉病现证，皆风木刚强屈HT 之象。"
     }
   ]
 }

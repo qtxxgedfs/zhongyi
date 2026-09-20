@@ -29,6 +29,9 @@ DEFAULT_OUTPUT = PROJECT_DIR / "sources" / "processed"
 DEFAULT_QUARANTINE = PROJECT_DIR / "sources" / "quarantine"
 DEFAULT_EXCLUSIONS = PROJECT_DIR / "sources" / "corpus-exclusions.json"
 DEFAULT_OVERRIDES = PROJECT_DIR / "sources" / "normalization" / "conversion-overrides.json"
+DEFAULT_CORRECTIONS = (
+    PROJECT_DIR / "sources" / "normalization" / "passage-text-corrections.json"
+)
 DEFAULT_MAX_CHARS = 700
 DEFAULT_MIN_CHARS = 220
 PREFERRED_BREAK_RE = re.compile(r"[。！？；!?](?:[”’」』》】])?")
@@ -160,6 +163,57 @@ def aggregate_hash(passages: list[dict[str, Any]], field: str) -> str:
     return digest.hexdigest()
 
 
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        while chunk := handle.read(1024 * 1024):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def index_corrections(payload: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    indexed: dict[str, list[dict[str, Any]]] = {}
+    seen_ids: set[str] = set()
+    for correction in payload["corrections"]:
+        correction_id = correction["id"]
+        if correction_id in seen_ids:
+            raise SystemExit(f"Duplicate passage correction ID: {correction_id}")
+        seen_ids.add(correction_id)
+        passage_id = correction["passage_id"]
+        indexed.setdefault(passage_id, []).append(correction)
+    return indexed
+
+
+def apply_passage_corrections(
+    passage_id: str,
+    source_id: str,
+    texts: dict[str, str],
+    corrections_by_passage: dict[str, list[dict[str, Any]]],
+) -> tuple[dict[str, str], list[str]]:
+    applied: list[str] = []
+    for correction in corrections_by_passage.get(passage_id, []):
+        correction_id = correction["id"]
+        if correction["source_id"] != source_id:
+            raise SystemExit(
+                f"Passage correction {correction_id} expected source "
+                f"{correction['source_id']}, got {source_id}"
+            )
+        for field, replacement in correction["fields"].items():
+            if field not in texts:
+                raise SystemExit(f"Passage correction {correction_id} has unknown field: {field}")
+            before = replacement["before"]
+            expected = replacement.get("expected_occurrences", 1)
+            observed = texts[field].count(before)
+            if observed != expected:
+                raise SystemExit(
+                    f"Passage correction {correction_id} expected {expected} occurrence(s) "
+                    f"of {before!r} in {passage_id}.{field}, got {observed}"
+                )
+            texts[field] = texts[field].replace(before, replacement["after"])
+        applied.append(correction_id)
+    return texts, applied
+
+
 def add_links(passages: list[dict[str, Any]]) -> None:
     for index, passage in enumerate(passages):
         passage["previous_id"] = passages[index - 1]["id"] if index > 0 else None
@@ -185,6 +239,7 @@ def main() -> None:
     parser.add_argument("--quarantine-dir", type=Path, default=DEFAULT_QUARANTINE)
     parser.add_argument("--exclusions-output", type=Path, default=DEFAULT_EXCLUSIONS)
     parser.add_argument("--overrides", type=Path, default=DEFAULT_OVERRIDES)
+    parser.add_argument("--corrections", type=Path, default=DEFAULT_CORRECTIONS)
     parser.add_argument("--max-chars", type=int, default=DEFAULT_MAX_CHARS)
     parser.add_argument("--min-chars", type=int, default=DEFAULT_MIN_CHARS)
     args = parser.parse_args()
@@ -193,6 +248,9 @@ def main() -> None:
 
     override_payload = json.loads(args.overrides.read_text(encoding="utf-8"))
     search_replacements = override_payload["search_only_replacements"]
+    correction_payload = json.loads(args.corrections.read_text(encoding="utf-8"))
+    corrections_by_passage = index_corrections(correction_payload)
+    correction_apply_counts: Counter[str] = Counter()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     args.quarantine_dir.mkdir(parents=True, exist_ok=True)
     summaries: list[dict[str, Any]] = []
@@ -219,11 +277,32 @@ def main() -> None:
                 if not re.search(r"[0-9A-Za-z\u3400-\u9fff\U00020000-\U0003134f]", text_simplified):
                     stats["dropped_format_only_segments"] += 1
                     continue
-                detected_issues = issue_counts(text_simplified)
-                quarantine_issues = inherited_issues or detected_issues
-                is_quarantined = bool(quarantine_issues)
                 sequence = len(passages) + 1
                 passage_id = f"{prefix}-{sequence:06d}"
+                texts, correction_ids = apply_passage_corrections(
+                    passage_id,
+                    source_id,
+                    {
+                        "text_source": text_source,
+                        "text_traditional": text_traditional,
+                        "text_simplified": text_simplified,
+                    },
+                    corrections_by_passage,
+                )
+                text_source = texts["text_source"]
+                text_traditional = texts["text_traditional"]
+                text_simplified = texts["text_simplified"]
+                for correction_id in correction_ids:
+                    correction_apply_counts[correction_id] += 1
+                if correction_ids:
+                    stats["documented_text_corrections"] += len(correction_ids)
+                detected_issues = issue_counts(text_simplified)
+                # Corrected passages retain their pre-correction semantic boundaries,
+                # but only still-detectable issues may keep them in quarantine.
+                quarantine_issues = (
+                    detected_issues if correction_ids else inherited_issues or detected_issues
+                )
+                is_quarantined = bool(quarantine_issues)
                 quality_flags = sorted(quarantine_issues)
                 passage = {
                     "id": passage_id,
@@ -269,6 +348,8 @@ def main() -> None:
                     ),
                     "content_sha256": hashlib.sha256(text_traditional.encode("utf-8")).hexdigest(),
                 }
+                if correction_ids:
+                    passage["correction_ids"] = correction_ids
                 passages.append(passage)
                 stats["passages"] += 1
                 stats["characters_simplified"] += len(text_simplified)
@@ -340,6 +421,25 @@ def main() -> None:
             f"{len(citable)} citable; {len(source_quarantine)} quarantined"
         )
 
+    expected_correction_ids = {
+        correction["id"] for correction in correction_payload["corrections"]
+    }
+    incorrectly_applied = {
+        correction_id: correction_apply_counts.get(correction_id, 0)
+        for correction_id in sorted(expected_correction_ids)
+        if correction_apply_counts.get(correction_id, 0) != 1
+    }
+    if incorrectly_applied:
+        raise SystemExit(
+            "Every documented passage correction must apply exactly once: "
+            + json.dumps(incorrectly_applied, ensure_ascii=False, sort_keys=True)
+        )
+
+    correction_audit = {
+        "path": args.corrections.relative_to(PROJECT_DIR).as_posix(),
+        "sha256": sha256_file(args.corrections),
+        "applied_count": sum(correction_apply_counts.values()),
+    }
     quarantine_path = args.quarantine_dir / "passages.jsonl"
     with quarantine_path.open("w", encoding="utf-8", newline="\n") as handle:
         for passage in quarantined_passages:
@@ -381,6 +481,7 @@ def main() -> None:
                 },
                 "quarantined_passage_count": len(exclusions),
                 "issue_occurrences": quarantine_summary["issue_occurrences"],
+                "documented_text_corrections": correction_audit,
                 "exclusions": exclusions,
             },
             ensure_ascii=False,
@@ -404,6 +505,7 @@ def main() -> None:
                 "passage_count": total_passages,
                 "citable_passage_count": total_citable,
                 "quarantined_passage_count": len(quarantined_passages),
+                "documented_text_corrections": correction_audit,
                 "sources": summaries,
             },
             ensure_ascii=False,

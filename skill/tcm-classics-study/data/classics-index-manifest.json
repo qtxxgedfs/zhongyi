@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "generated_at": "2026-09-18T11:24:09+00:00",
+  "generated_at": "2026-09-20T04:17:31+00:00",
   "database_path": "skill/tcm-classics-study/data/classics.sqlite",
-  "database_sha256": "76aeadef973a7ac8a0ed4086d975ab893ccd26decf8f3af38663236312c891d8",
+  "database_sha256": "35316630ad2105cf9384376062f1c524994b63b633a75fbdd8b41130dbf21fc2",
   "database_size_bytes": 52330496,
   "source_count": 26,
-  "citable_passage_count": 53798,
-  "quarantined_passages_excluded": 290,
+  "citable_passage_count": 53800,
+  "quarantined_passages_excluded": 288,
   "index_algorithm": "pretokenized-unique-overlapping-bigrams-fts5",
   "inputs": {
-    "quality_report_sha256": "6b0f35b5e8dba2157f59d816ed7802cd8f38cbfa1238199b764f7b3af026ebf2",
-    "corpus_exclusions_sha256": "d44882ff2e58d45849c46ef1876317191340b26655ce09f1bd8f1a56b8f657a5",
+    "quality_report_sha256": "e4c80bd8573407b6154acf3dfd29495785c4fc185d4ec072104fd70c285e3f06",
+    "corpus_exclusions_sha256": "32017b2c64f6be6119b844edd9c297a0d7b9e30e8465831bc1f785312580f36c",
     "source_inventory_sha256": "785194a358ca7d0e2de4f69609813429c8c918391376518e34c4a2f4a1823a38",
-    "processed_summary_sha256": "4eab4a9ddc543f09b18e3b4dc18f750d96a802e2732a255e29c0b32cffe8a40c",
+    "processed_summary_sha256": "804c2d026dc2d8c12183f2bf372dfb63aef24775b303f540bdac417b4859f23c",
     "search_aliases_sha256": "a940f79ffc4943b4b21c8e3d2719c58b6838b84d2e3fcdf94913a8c255227e43",
     "schema_sha256": "93235fb12cbb3eab65e7e4b2cd065a515f42207a5025ce945ba3b52e4bbeb9eb"
   }

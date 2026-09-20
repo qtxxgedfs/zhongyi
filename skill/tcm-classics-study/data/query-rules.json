@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "policy": "宁缺毋滥：优先直接、完整、可解释的命中，不为凑数展示弱相关材料。",
+  "task_phrases": [
+    "原文在哪里",
+    "原文是什么",
+    "原文怎么说",
+    "原句是什么",
+    "原话是什么",
+    "原话怎么讲",
+    "原话怎么说",
+    "是哪一句",
+    "出自哪里",
+    "出自哪一篇",
+    "在哪一篇",
+    "哪一篇",
+    "哪个地方",
+    "帮我找找",
+    "请帮我找",
+    "请帮我查",
+    "能不能告诉我",
+    "是不是有一句",
+    "是不是有句话说",
+    "我记得有一句",
+    "我记得有句话",
+    "我记得好像",
+    "大概意思是",
+    "怎么解释",
+    "如何解释",
+    "怎样解释",
+    "怎么理解",
+    "如何理解",
+    "是怎么回事",
+    "是什么意思",
+    "讲的是什么",
+    "说的是什么",
+    "在说什么",
+    "到底讲啥",
+    "到底怎么理解",
+    "到底是什么",
+    "简单说说",
+    "简短说说",
+    "什么意思",
+    "简单说",
+    "简短解释",
+    "详细讲讲",
+    "深入讲讲",
+    "展开前后文",
+    "看看前后文",
+    "前后文",
+    "上下文",
+    "用的是什么方",
+    "那句话在哪里",
+    "那句话",
+    "那一句",
+    "那句在哪",
+    "那句",
+    "那一段",
+    "那段",
+    "那一条",
+    "那条",
+    "这一段",
+    "这段",
+    "是哪条",
+    "是哪个",
+    "在哪里",
+    "怎么说",
+    "为什么",
+    "为何",
+    "原文",
+    "原句",
+    "出处",
+    "请查",
+    "帮我查",
+    "请问",
+    "请",
+    "说说",
+    "讲讲",
+    "讲什么",
+    "讲啥",
+    "怎么看",
+    "怎么谈",
+    "怎么界定",
+    "是哪几个字",
+    "到底"
+  ],
+  "filler_phrases": [
+    "我印象里",
+    "我记得",
+    "记不太清",
+    "记不清了",
+    "好像是",
+    "好像",
+    "似乎",
+    "古书里面",
+    "古书里",
+    "书里面",
+    "书里",
+    "有一句话",
+    "有句话",
+    "有一句",
+    "大意",
+    "大概",
+    "是不是说",
+    "是不是",
+    "那个",
+    "这个",
+    "一下",
+    "相关的",
+    "相关"
+  ],
+  "author_routes": [
+    {
+      "aliases": ["张仲景", "仲景"],
+      "canonical": "张仲景",
+      "target_works": ["shanghanlun", "jingui"]
+    },
+    {
+      "aliases": ["吴鞠通", "吴瑭"],
+      "canonical": "吴瑭",
+      "target_works": ["wenbingtiaobian"]
+    }
+  ],
+  "expansions": [
+    {
+      "id": "remembered-well-digging",
+      "triggers": ["口渴才挖井", "渴了才挖井", "口渴了再挖井", "渴的时候才挖井", "挖井的比喻", "生病以后才治", "病了以后才治", "有病了才治"],
+      "terms": ["渴而穿井", "治未病"],
+      "preferred_passage_ids": ["SW-000004"]
+    },
+    {
+      "id": "prevention-before-illness",
+      "triggers": ["平时就要预防", "没病的时候先预防", "没病时先预防", "还没生病就先治", "还没生病就先管起来", "没有生病先治", "预防疾病的说法"],
+      "terms": ["治未病"]
+    },
+    {
+      "id": "remembered-forging",
+      "triggers": ["打仗才造兵器", "打仗才铸兵器", "临打仗才做武器", "临打仗才做兵器", "铸兵器的比喻"],
+      "terms": ["渴而穿井", "治未病"]
+    },
+    {
+      "id": "yin-yang-foundation",
+      "triggers": ["阴阳者天地之道", "阴阳到底是什么意思", "阴阳到底怎么理解", "阴阳是什么", "阴阳的基本意思", "古人怎么讲阴阳", "阴阳是天地间的基本规律", "天地间的基本规律"],
+      "terms": ["阴阳者天地之道"],
+      "preferred_passage_ids": ["SW-000011"],
+      "keep_scope_warning": true
+    },
+    {
+      "id": "wrist-pulse",
+      "triggers": ["只摸手腕的脉", "只看手腕的脉", "只摸手腕", "手腕那里的脉", "只诊手腕", "为什么只取寸口", "把脉为什么摸手腕", "把脉只取手腕"],
+      "terms": ["独取寸口"],
+      "preferred_passage_ids": ["NJ-000001"]
+    },
+    {
+      "id": "chest-obstruction",
+      "triggers": ["胸口堵得慌", "胸口像堵住了", "胸口像堵住", "胸口闷得像塞住", "胸口堵气短", "胸口发堵", "胸口憋闷", "胸口闷还气短", "心口堵"],
+      "terms": ["胸中气塞", "胸痹"],
+      "preferred_passage_ids": ["JKY-000129"]
+    },
+    {
+      "id": "upper-jiao-feather",
+      "triggers": ["上焦如羽", "上焦像羽毛", "上焦像羽毛一样轻", "上焦要轻", "治上焦要像羽毛", "治上焦为什么要轻"],
+      "terms": ["上焦如羽"],
+      "preferred_passage_ids": ["WBTB-000175"]
+    },
+    {
+      "id": "lower-jiao-weight",
+      "triggers": ["下焦像秤砣", "下焦像权", "治下焦为什么要重"],
+      "terms": ["下焦如权"]
+    },
+    {
+      "id": "gui-zhi-pattern",
+      "triggers": ["发热出汗还怕风", "发热出汗又怕风", "出了汗又怕风", "出了汗还怕风", "太阳病出汗怕风", "头疼发热出汗怕风", "头痛发热汗出恶风"],
+      "terms": ["头痛发热汗出恶风", "桂枝汤"],
+      "preferred_passage_ids": ["SHL-000054"]
+    },
+    {
+      "id": "xiao-chai-hu-pattern",
+      "triggers": ["一会冷一会热", "一会儿冷一会儿热", "忽冷忽热胸口胁下发满", "口苦咽干眼花", "口苦嗓子干眼睛发花"],
+      "terms": ["往来寒热", "小柴胡汤"]
+    },
+    {
+      "id": "spleen-not-anatomy",
+      "triggers": ["中医的脾就是脾脏吗", "脾是不是现代的脾脏", "古书的脾等于脾脏吗"],
+      "terms": ["脾"]
+    },
+    {
+      "id": "kidney-not-anatomy",
+      "triggers": ["中医的肾就是肾脏吗", "肾气是不是肾功能", "古书的肾等于肾脏吗"],
+      "terms": ["肾"]
+    },
+    {
+      "id": "ying-wei-day-night",
+      "triggers": ["营卫白天晚上怎么走", "营气卫气白天晚上", "营气卫气昼夜运行", "卫气晚上到哪里", "卫气晚上走到阴分", "卫气晚上是不是走到阴分"],
+      "terms": ["营卫生会", "卫气行于阴"],
+      "preferred_passage_ids": ["LS-000146"]
+    },
+    {
+      "id": "hundred-diseases-begin",
+      "triggers": ["百病是怎么开始的", "百病怎么开始", "风雨寒暑怎么让人生病", "病邪从哪里进来", "病邪从哪儿进来"],
+      "terms": ["百病始生"],
+      "preferred_passage_ids": ["LS-000665"]
+    },
+    {
+      "id": "warm-disease-opening",
+      "triggers": ["温病刚开始有什么特点", "温病刚起先伤哪里", "温病开始先犯哪里", "温邪先伤哪里", "温邪先从肺开始", "温邪是不是先从肺开始"],
+      "terms": ["温邪上受", "首先犯肺"],
+      "preferred_passage_ids": ["LINEAGE-WENBING-YETIANSHI-000002"]
+    },
+    {
+      "id": "three-jiao-treatment",
+      "triggers": ["上焦中焦下焦怎么治", "三焦治法有什么顺序", "治上焦治中焦治下焦", "治中焦像秤平衡", "治中焦如衡"],
+      "terms": ["治上焦如羽", "治中焦如衡", "治下焦如权"],
+      "preferred_passage_ids": ["WBTB-000175"]
+    },
+    {
+      "id": "liver-spleen-transmission",
+      "triggers": ["见到肝有病为什么先顾脾", "见肝有病先顾脾", "肝病为什么先治脾", "肝病会传到脾"],
+      "terms": ["见肝之病", "先实其脾"],
+      "preferred_passage_ids": ["JKY-000003", "NJ-000079"]
+    },
+    {
+      "id": "heart-back-pain",
+      "triggers": ["胸痛连到后背", "后背又连到心口", "心痛彻背背痛彻心"],
+      "terms": ["心痛彻背", "背痛彻心"],
+      "preferred_passage_ids": ["JKY-000129"]
+    },
+    {
+      "id": "baihe-appetite",
+      "triggers": ["想吃又吃不下", "意欲食复不能食", "百合病让人想吃"],
+      "terms": ["意欲食复不能食", "百合病"],
+      "preferred_passage_ids": ["JKY-000058"]
+    },
+    {
+      "id": "seven-gates",
+      "triggers": ["七个关口", "七冲门", "哪七个门"],
+      "terms": ["七冲门"],
+      "preferred_passage_ids": ["NJ-000046"]
+    },
+    {
+      "id": "warm-disease-definition",
+      "triggers": ["怎么界定温病", "温病条辨开头", "温病分哪几类"],
+      "terms": ["温病者"],
+      "preferred_passage_ids": ["WBTB-000020"]
+    },
+    {
+      "id": "jing-shi-ye-topic",
+      "triggers": ["痉湿暍", "痙濕暍"],
+      "terms": ["痉湿"]
+    },
+    {
+      "id": "formula-guizhi",
+      "triggers": ["桂枝汤"],
+      "terms": ["桂枝汤"],
+      "preferred_passage_ids": ["SHL-000054"]
+    },
+    {
+      "id": "formula-mahuang",
+      "triggers": ["麻黄汤"],
+      "terms": ["麻黄汤"],
+      "preferred_passage_ids": ["SHL-000075"]
+    },
+    {
+      "id": "disease-baihe",
+      "triggers": ["百合病"],
+      "terms": ["百合病"],
+      "preferred_passage_ids": ["JKY-000058", "JKY-000064"]
+    },
+    {
+      "id": "phrase-cunkou",
+      "triggers": ["独取寸口", "寸口脉"],
+      "terms": ["独取寸口"],
+      "preferred_passage_ids": ["NJ-000001"]
+    },
+    {
+      "id": "phrase-zhiweibing",
+      "triggers": ["治未病"],
+      "terms": ["治未病"],
+      "preferred_passage_ids": ["SW-000004"]
+    },
+    {
+      "id": "topic-xiongbi",
+      "triggers": ["胸痹"],
+      "terms": ["胸痹"],
+      "preferred_passage_ids": ["JKY-000129"]
+    },
+    {
+      "id": "topic-yingwei",
+      "triggers": ["营卫"],
+      "terms": ["营卫", "卫气行于阴"],
+      "preferred_passage_ids": ["LS-000146", "LS-000149"]
+    },
+    {
+      "id": "topic-weiqi-yingxue",
+      "triggers": ["卫气营血"],
+      "terms": ["卫气营血", "辨卫气营血"],
+      "preferred_passage_ids": ["LINEAGE-WENBING-YETIANSHI-000002", "LINEAGE-WENBING-YETIANSHI-000007"]
+    },
+    {
+      "id": "topic-sanjiao",
+      "triggers": ["三焦"],
+      "terms": ["三焦"]
+    },
+    {
+      "id": "seasonal-yin-yang",
+      "triggers": ["春夏养阳秋冬养阴"],
+      "terms": ["春夏养阳", "秋冬养阴"],
+      "preferred_passage_ids": ["SW-000003"]
+    }
+  ],
+  "broad_concepts": [
+    "阴阳",
+    "气",
+    "血",
+    "经络",
+    "五脏",
+    "六腑",
+    "脉",
+    "伤寒",
+    "温病",
+    "发热",
+    "咳嗽",
+    "养生"
+  ]
+}

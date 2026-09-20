@@ -4,16 +4,18 @@
 
 ## 当前状态
 
-- **代码版本：`1.0.0`**，版本规则与历史见 `VERSION` 和 `CHANGELOG.md`。
+- **代码版本：`1.1.0`**，版本规则与历史见 `VERSION` 和 `CHANGELOG.md`；当前维护交接见 `docs/HANDOFF_1.1.0.md`。
 - **Phase 0：已完成**，见 `docs/phase0-summary.md`。
 - **Phase 1 构建流水线：已完成；发布质量闸门：未通过**，见 `docs/phase1-summary.md` 和 `docs/phase1-quality-report.md`。
 - **Phase 2 索引与检索：已完成候选版**，已生成可审计的本地 SQLite FTS5 索引和检索 CLI。
 - **Phase 3 现代医学证据层：已完成首个可运行版**，见 `docs/phase3-modern-evidence-report.md`。
 - **Phase 4 回答与渲染：已完成**，单调用研究包可输出可访问 Markdown 或自包含 HTML。
 - **Phase 5 功能验收：已通过**，150题、280/280项检查通过；候选包可用构建脚本生成到 `dist/`。
-- 已固定26种作品、973个页面修订，938页进入语料；共54,088条结构化段落，其中53,798条可引用、290条隔离（另丢弃3条纯标点格式碎片）。
-- 原始哈希和结构完整性检查通过；可引用语料未解字为零，清洗状态为 `pass-with-quarantine`。
-- 因五种核心底本尚未完成第二底本校核、《温病条辨》仍有2个核心隔离单元、王冰本805页低校对等级，当前只生成 `sources/source-lock.candidate.json`；**没有生成最终 `source-lock.json`**。
+- **Phase 6 自然问法与结果可用性：已通过**，60题单轮自然问法首条可接受率50/50，10组连续追问锚点10/10；见 `docs/phase6-usability-report.md`。
+- **Phase 7 第二见证试校：已完成代表篇章和CText少量人工参考**，尚未完成五部核心全量校勘；见 `docs/phase7-second-witness-pilot-report.md` 和 `docs/phase7-ctext-lingshu-reference-report.md`。
+- 已固定26种作品、973个页面修订，938页进入语料；共54,088条结构化段落，其中53,800条可引用、288条隔离（另丢弃3条纯标点格式碎片）。
+- 原始哈希和结构完整性检查通过；可引用语料未解字为零，清洗状态为 `pass-with-quarantine`；《温病条辨》两个影像确认缺字已受控修订并解除隔离。
+- 因五种核心底本尚未完成全量第二见证校勘、王冰本805页低校对等级，当前只生成 `sources/source-lock.candidate.json`；**没有生成最终 `source-lock.json`**。
 
 按当前交付范围，代码实现、自动测试、功能验收、运行时自检和候选包构建已经完成。WorkBuddy导入适配及具体用户设备验证由使用方处理，不作为代码完成条件。面向普通读者的使用说明见 [`USER_GUIDE.md`](skill/tcm-classics-study/USER_GUIDE.md)。
 
@@ -26,21 +28,24 @@
 - `sources/processed/`：来源文本、繁体工作字段、简体显示字段和检索字段
 - `sources/quarantine/`：保留但禁止搜索、禁止引用的未解语义单元
 - `sources/corpus-exclusions.json`：逐条隔离原因、位置和修订来源
+- `sources/normalization/passage-text-corrections.json`：保持段落 ID 的影像确认文字修订及证据哈希
 - `sources/completeness-manifest.json`：26种作品的结构完整性清单
 - `sources/quality-report.json`：机器可读质量闸门结果
 - `sources/source-lock.candidate.json`：被质量闸门阻断的候选来源锁
 - `sources/source-manifest.json`、`NOTICE.md`：逐页署名追溯和许可说明
-- `build/classics.sqlite`：约49.9 MiB 的候选运行时索引，只含53,798条可引用段落
+- `build/classics.sqlite`：约49.9 MiB 的候选运行时索引，只含53,800条可引用段落
 - `build/classics-index-manifest.json`：数据库哈希、输入哈希、计数和索引算法
 - `skill/tcm-classics-study/data/classics.sqlite`：已装入Skill的候选经典索引
-- `skill/tcm-classics-study/scripts/search.py`：检索、段落读取、上下文和目录 CLI
+- `skill/tcm-classics-study/data/query-rules.json`：自然问法清理、口语扩展和代表段落规则
+- `skill/tcm-classics-study/scripts/search.py`：精确/关键词/宽松召回、质量重排、软回退、段落读取、上下文和目录 CLI
 - `skill/tcm-classics-study/data/evidence-cache.sqlite`：25个主题、6条完整页面核验记录的现代证据种子缓存
 - `skill/tcm-classics-study/scripts/modern_evidence.py`：M0—M3分类、缓存读取、联网计划和来源检查
-- `skill/tcm-classics-study/scripts/study.py`：首选单调用入口，生成A/B/C分层研究包
-- `skill/tcm-classics-study/scripts/render.py`：可访问Markdown和自包含HTML渲染
+- `skill/tcm-classics-study/scripts/study.py`：首选单调用入口，生成统一标准研读协议的A/B/C分层研究包
+- `skill/tcm-classics-study/scripts/render.py`：默认核心引文、完整段落可展开的可访问Markdown和自包含HTML渲染
 - `skill/tcm-classics-study/scripts/self_check.py`：运行时数据库、哈希、计数、研究包、渲染和M3分流自检
 - `skill/tcm-classics-study/USER_GUIDE.md`：面向普通读者的大字友好使用手册
-- `tests/acceptance/questions.jsonl`、`build/acceptance-results.json`：150题固定验收集及结果
+- `tests/acceptance/questions.jsonl`、`build/acceptance-results.json`：150题固定精确召回与安全验收集及结果
+- `tests/natural/`、`build/natural-acceptance-results.json`：60题自然问法、10组连续追问及可用性验收结果
 
 ## 重建 Phase 1 语料
 
@@ -64,6 +69,7 @@ python builder/build_evidence_cache.py
 python builder/stage_runtime_candidate.py
 python -m unittest discover -s tests -v
 python builder/run_acceptance.py
+python builder/run_natural_acceptance.py
 python builder/benchmark_index.py
 ```
 
@@ -73,19 +79,19 @@ python builder/benchmark_index.py
 
 ```bash
 python skill/tcm-classics-study/scripts/search.py search \
-  --query "《素问》治未病怎么说" --terms "治未病"
+  --query "我记得人病了才治，就像口渴才挖井，那句在哪"
 python skill/tcm-classics-study/scripts/search.py context \
   --id SW-000004 --before 1 --after 1
 python skill/tcm-classics-study/scripts/modern_evidence.py assess \
   --query "针灸对腰痛有效吗，有什么副作用"
 python skill/tcm-classics-study/scripts/study.py \
-  --query "《素问》治未病在说什么，和现代预防有什么区别" --terms "治未病"
+  --query "《素问》治未病在说什么，和现代预防有什么区别"
 python skill/tcm-classics-study/scripts/render.py \
   --input packet.json --format markdown --output answer.md
 python skill/tcm-classics-study/scripts/self_check.py
 ```
 
-性能和召回结果见 `docs/phase2-index-report.md`，现代证据层见 `docs/phase3-modern-evidence-report.md`，安装、升级和回滚见 `docs/INSTALL.md`。当前38项自动测试全部通过，固定验收集150题、280/280项检查通过。
+性能和召回结果见 `docs/phase2-index-report.md`，现代证据层见 `docs/phase3-modern-evidence-report.md`，自然问法可用性见 `docs/phase6-usability-report.md`，安装、升级和回滚见 `docs/INSTALL.md`。当前47项自动测试全部通过；固定验收集150题、280/280项检查通过，自然问法与连续追问验收全部通过。
 
 构建并解压自检候选包：
 

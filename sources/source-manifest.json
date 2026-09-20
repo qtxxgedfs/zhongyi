@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "manifest_status": "candidate-blocked",
-  "generated_at": "2026-09-18T11:24:09+00:00",
+  "generated_at": "2026-09-20T04:17:31+00:00",
   "work_base_disclaimer": "本产品所用工作底本；不是无异文、无错误的唯一权威文本。",
   "attribution": {
     "provider": "Chinese Wikisource",
@@ -14,8 +14,8 @@
   "snapshot_page_count": 973,
   "included_page_count": 938,
   "passage_count": 54088,
-  "citable_passage_count": 53798,
-  "quarantined_passage_count": 290,
+  "citable_passage_count": 53800,
+  "quarantined_passage_count": 288,
   "exclusions_path": "sources/corpus-exclusions.json",
   "sources": [
     {
@@ -449,8 +449,8 @@
       "retrieved_at": "2026-09-18T09:16:20+00:00",
       "license_expression": "Public-domain source work; Wikisource transcription under CC BY-SA 4.0",
       "passage_count": 239,
-      "citable_passage_count": 237,
-      "quarantined_passage_count": 2,
+      "citable_passage_count": 239,
+      "quarantined_passage_count": 0,
       "pages": [
         {
           "title": "溫病條辨",

@@ -6,8 +6,13 @@
     "unresolved_unit_policy": "quarantine"
   },
   "passage_count": 54088,
-  "citable_passage_count": 53798,
-  "quarantined_passage_count": 290,
+  "citable_passage_count": 53800,
+  "quarantined_passage_count": 288,
+  "documented_text_corrections": {
+    "path": "sources/normalization/passage-text-corrections.json",
+    "sha256": "09db5fe74778f430001147fae34a72bfce4cec709da6cb5e3fe94207abb90053",
+    "applied_count": 2
+  },
   "sources": [
     {
       "source_id": "commentary-jingui-chenxiuyuan",
@@ -620,27 +625,25 @@
     {
       "source_id": "core-wenbingtiaobian",
       "passage_count": 239,
-      "citable_passage_count": 237,
-      "quarantined_passage_count": 2,
+      "citable_passage_count": 239,
+      "quarantined_passage_count": 0,
       "statistics": {
-        "characters_simplified": 117542,
-        "citable_characters": 117355,
-        "citable_passages": 237,
+        "characters_simplified": 117538,
+        "citable_characters": 117538,
+        "citable_passages": 239,
+        "documented_text_corrections": 2,
         "passages": 239,
-        "quarantine_issue:legacy-glyph-placeholder-ht-kt": 2,
-        "quarantined_characters": 187,
-        "quarantined_passages": 2,
         "speaker_type:core_text": 221,
         "speaker_type:dialogue": 18,
         "split_blocks": 30
       },
-      "source_aggregate_sha256": "268cab84c50304e90785ba7747432d0f3dae77dcf5f9a3642884117035dd8c03",
-      "traditional_aggregate_sha256": "ba4a390b2c26ba1dd76ab5e7d4832219873bfa65072a7780a042609ccab0362f",
-      "simplified_aggregate_sha256": "4394b05eae52c72441166e6f2d66649f49154cc418838b234e646910f7066f4a",
-      "search_aggregate_sha256": "2f4ca014251013f50be1668a393c55556fc2f9a0723a16367cc817311c112153",
-      "citable_traditional_sha256": "d9012673281dcefb9e951076f56924183fdb6270804d5525da7c94b58e2036b8",
-      "citable_simplified_sha256": "c4535b28fb23e5aef395b7950db983763eee631d93f86689c53a5adfcbe74804",
-      "citable_search_sha256": "04307c15d34e4261114120b26cad60c766e11eb30726fe2f4cb59f8658a7a745",
+      "source_aggregate_sha256": "3d165238079509a0dd7630dce1e196d0a76825db14b429690a8b09e759ed751d",
+      "traditional_aggregate_sha256": "813f8412367c171c635610cf30b0d1d1e9b704e6ef66c7c50e58fef458241e9a",
+      "simplified_aggregate_sha256": "b2e4e6cae2b44bb103bc0031db0137cda939191af999bb3c9ac3a8265ca0d97a",
+      "search_aggregate_sha256": "aa8bf7096ad67c236bed3dc70d687f306bac997591a3187a5a2a278e6063e388",
+      "citable_traditional_sha256": "813f8412367c171c635610cf30b0d1d1e9b704e6ef66c7c50e58fef458241e9a",
+      "citable_simplified_sha256": "b2e4e6cae2b44bb103bc0031db0137cda939191af999bb3c9ac3a8265ca0d97a",
+      "citable_search_sha256": "aa8bf7096ad67c236bed3dc70d687f306bac997591a3187a5a2a278e6063e388",
       "processed_path": "sources/processed/core-wenbingtiaobian/passages.jsonl",
       "max_simplified_characters": 700
     },

@@ -135,10 +135,10 @@ class PhaseOneCorpusTests(unittest.TestCase):
     def test_quarantine_manifest_is_complete_and_non_citable(self) -> None:
         exclusions = load_json("sources/corpus-exclusions.json")
         quarantine = load_json("sources/quarantine/summary.json")
-        self.assertEqual(290, exclusions["quarantined_passage_count"])
+        self.assertEqual(288, exclusions["quarantined_passage_count"])
         self.assertEqual(exclusions["quarantined_passage_count"], quarantine["passage_count"])
         self.assertEqual(35, exclusions["issue_occurrences"]["explicit-missing-glyph"])
-        self.assertEqual(342, exclusions["issue_occurrences"]["legacy-glyph-placeholder-ht-kt"])
+        self.assertEqual(340, exclusions["issue_occurrences"]["legacy-glyph-placeholder-ht-kt"])
         self.assertEqual(1, exclusions["issue_occurrences"]["known-ui-text-intrusion"])
         self.assertTrue(exclusions["policy"]["raw_snapshots_unchanged"])
         self.assertFalse(exclusions["policy"]["unresolved_glyphs_allowed_in_citable_corpus"])
@@ -150,6 +150,28 @@ class PhaseOneCorpusTests(unittest.TestCase):
         nanjing = (SOURCES_DIR / "processed" / "core-nanjing" / "passages.jsonl").read_text(encoding="utf-8")
         self.assertIn("㽲", jingui)
         self.assertIn("啘", nanjing)
+
+    def test_image_confirmed_wenbingtiaobian_corrections_are_citable(self) -> None:
+        corrections = load_json("sources/normalization/passage-text-corrections.json")
+        self.assertEqual(
+            {"WBTB-000004", "WBTB-000209"},
+            {item["passage_id"] for item in corrections["corrections"]},
+        )
+        records = {}
+        path = SOURCES_DIR / "processed" / "core-wenbingtiaobian" / "passages.jsonl"
+        with path.open(encoding="utf-8") as handle:
+            for line in handle:
+                record = json.loads(line)
+                if record["id"] in {"WBTB-000004", "WBTB-000209"}:
+                    records[record["id"]] = record
+        self.assertEqual({"WBTB-000004", "WBTB-000209"}, set(records))
+        self.assertIn("韩祗和", records["WBTB-000004"]["text_simplified"])
+        self.assertIn("屈伸之象", records["WBTB-000209"]["text_simplified"])
+        for record in records.values():
+            self.assertTrue(record["citation_allowed"])
+            self.assertTrue(record["search_allowed"])
+            self.assertEqual("clean", record["quality_status"])
+            self.assertTrue(record["correction_ids"])
 
     def test_medical_xie_display_conversion(self) -> None:
         simplified = []

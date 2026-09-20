@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "status": "comparison-complete-no-corpus-change",
+  "generated_at": "2026-09-20T03:22:16+00:00",
+  "corpus_state": {
+    "modified_by_pilot": false,
+    "passage_ids_modified": false,
+    "quarantine_state_modified": false,
+    "processed_file_sha256": {
+      "core-suwen": "ddbd966d426d8b5d94bf1c0fafb89f6c02d3541e2e172d30f0b87506b3b223d3",
+      "core-lingshu": "4fbcf66ce49a89d78fb604e21643121b0f842652724d98636d62a8947151a250",
+      "core-shanghanlun": "d2d7d6c0da99731444ad1fea93832fd137194b33bf51b7025fb74ab87c47dcfb",
+      "core-jingui": "50f1a28774ab0435ce2a641860ce554a35440026d56b9fbff22786dc9a24bdcb",
+      "core-nanjing": "774ae645e612fcf0a8584f6b28e8f031a32181f818f86feb11a8dfca5b2a2776",
+      "commentary-suwen-wangbing": "6b5de558c3b18acb1f08f64fcfe7542db5c247e774b69016eddff5d3dea9dcb2",
+      "core-wenbingtiaobian": "ebbba7ca30251ea3cc934357f210bf9196bc405c1afe09609fc273229f5580aa"
+    }
+  },
+  "method": {
+    "current_text_field": "text_traditional",
+    "candidate_preparation": [
+      "按固定提交读取根目录 *.txt",
+      "移除 Kanripo 元数据行、段落符和页码标记，但保留页码定位",
+      "仅在 KR-Gaiji 有明确 Unicode 字符时解析外字；其余外字作未知占位，不裁定读法",
+      "按各书结构去除注文或附录；不能稳定分离时缩小到有明确锚点的条文"
+    ],
+    "alignment_normalization": [
+      "繁转简只用于对齐，不改变引文",
+      "移除标点和空白",
+      "合并歧/岐、隂/阴、㑹/会、衞/卫、朙/明、乆/久、荅/答、廼/乃、爲/为、畧/略、岀/出、巳/已、㐫/凶",
+      "用 SequenceMatcher 计算匹配字符和差异操作"
+    ],
+    "metric_warning": "match_ratio 只是定位与估算指标，不是文本优劣分数；未解析外字、篇题和附录会影响数值。"
+  },
+  "core_pilots": [
+    {
+      "target_work_id": "core-suwen",
+      "scope": "《上古天真论篇第一》全文",
+      "current_passage_ids": ["SW-000001", "SW-000002"],
+      "candidate_id": "second-suwen-kanripo-kr3e0001",
+      "candidate_locator": "KR3e0001_001.txt；SBCK 001-1b 至 001-6a",
+      "extraction": "去除平衡圆括号内王冰注和新校正，保留括号外经文",
+      "metrics": {
+        "current_alignment_chars": 904,
+        "candidate_alignment_chars": 904,
+        "matched_chars": 883,
+        "match_ratio": 0.976770,
+        "difference_operations": 20
+      },
+      "reviewed_loci": [
+        {
+          "current": "恬淡虚无",
+          "candidate": "恬惔虚无",
+          "classification": "一般异文或异体",
+          "decision": "hold",
+          "reason": "单一候选不足以裁定。"
+        },
+        {
+          "current": "筋骨懈惰",
+          "candidate": "筋骨解墮",
+          "classification": "一般异文",
+          "decision": "hold-for-image-and-third-witness",
+          "reason": "读法有实质差别，不能按语义顺畅度改文。"
+        },
+        {
+          "current": "髮、壽、德、高、步等通行字形",
+          "candidate": "髪、夀、徳、髙、歩等刻本文字形",
+          "classification": "字形差异",
+          "decision": "ignore-for-substantive-collation"
+        }
+      ],
+      "result": "alignment-viable-core-only",
+      "corpus_change": "none"
+    },
+    {
+      "target_work_id": "core-lingshu",
+      "scope": "《九针十二原第一》全文",
+      "current_passage_ids": ["LS-000001", "LS-000002", "LS-000003", "LS-000004", "LS-000005", "LS-000006"],
+      "candidate_id": "second-lingshu-kanripo-kr3e0002",
+      "candidate_locator": "KR3e0002_001.txt；SBCK 001-1a 至 001-7a",
+      "extraction": "从篇题后首句起，止于‘阳之陵泉也’；排除篇末音释",
+      "metrics": {
+        "current_alignment_chars": 1579,
+        "candidate_alignment_chars": 1575,
+        "matched_chars": 1538,
+        "match_ratio": 0.974034,
+        "difference_operations": 36
+      },
+      "reviewed_loci": [
+        {
+          "current": "法天黄帝问于歧伯曰",
+          "candidate": "黄帝問於歧伯曰（‘法天’仅见篇题）",
+          "classification": "结构差异",
+          "decision": "hold",
+          "reason": "当前本把篇题小注并入正文，需以影像和编辑规则单独裁定。"
+        },
+        {
+          "current": "收租税",
+          "candidate": "收其租税",
+          "classification": "一般异文或候选衍字",
+          "decision": "hold-for-image"
+        },
+        {
+          "current": "荣其逆顺出入之会",
+          "candidate": "營其逆順出入之會",
+          "classification": "一般异文",
+          "decision": "hold"
+        },
+        {
+          "current": "未呟其疾",
+          "candidate": "未覩其疾",
+          "classification": "疑似当前录文问题",
+          "decision": "hold-for-image-and-third-witness"
+        },
+        {
+          "current": "十二原各有所出",
+          "candidate": "二原各有所出",
+          "classification": "疑似候选脱字",
+          "decision": "reject-as-automatic-correction-source",
+          "reason": "候选本自身可见可疑读法，证明其只能作见证。"
+        },
+        {
+          "current": "太渊",
+          "candidate": "大淵",
+          "classification": "一般异文或古今字",
+          "decision": "hold"
+        }
+      ],
+      "result": "best-parseability-but-needs-image-verification",
+      "corpus_change": "none"
+    },
+    {
+      "target_work_id": "core-shanghanlun",
+      "scope": "《辨太阳病脉证并治（上）第五》篇首三条",
+      "current_passage_ids": ["SHL-000053"],
+      "candidate_id": "second-shanghan-kanripo-kr3e0008",
+      "candidate_locator": "KR3e0008_002.txt；SBCK 002-29a 至 002-30a",
+      "extraction": "以当前三条首句为锚，只抽取对应经文行，排除其间成无己注",
+      "metrics": {
+        "current_alignment_chars": 58,
+        "candidate_alignment_chars": 58,
+        "matched_chars": 57,
+        "match_ratio": 0.982759,
+        "difference_operations": 1
+      },
+      "reviewed_loci": [
+        {
+          "current": "阴阳俱紧者名为伤寒",
+          "candidate": "隂陽俱緊者名曰傷寒",
+          "classification": "一般异文",
+          "decision": "hold-for-song-edition-image",
+          "reason": "候选为成注系统，不能直接改动赵开美系统工作底本。"
+        }
+      ],
+      "result": "anchored-locus-comparison-works-full-automatic-extraction-does-not",
+      "corpus_change": "none"
+    },
+    {
+      "target_work_id": "core-jingui",
+      "scope": "《脏腑经络先后病脉证第一》全文",
+      "current_passage_ids": ["JKY-000001", "JKY-000027"],
+      "current_passage_range_note": "连续范围 JKY-000001 至 JKY-000027",
+      "candidate_id": "second-jingui-kanripo-kr3e0007",
+      "candidate_locator": "KR3e0007_001.txt；SBCK 001-1a 至 001-4b",
+      "extraction": "从首个‘问曰’到第二篇篇题前；当前本的‘论十三首、脉证二条’作为结构差异保留",
+      "metrics": {
+        "current_alignment_chars": 1274,
+        "candidate_alignment_chars": 1261,
+        "matched_chars": 1230,
+        "match_ratio": 0.965463,
+        "difference_operations": 37,
+        "known_unknown_gaiji_operations": 2
+      },
+      "reviewed_loci": [
+        {
+          "current": "夫肝之病，补用酸",
+          "candidate": "夫肝之病補用醋",
+          "classification": "一般异文",
+          "decision": "hold-for-image-and-third-witness"
+        },
+        {
+          "current": "千般疢难",
+          "candidate": "千般灾難",
+          "classification": "一般异文",
+          "decision": "hold"
+        },
+        {
+          "current": "针灸、膏摩",
+          "candidate": "鍼炙、膏摩",
+          "classification": "一般异文",
+          "decision": "hold"
+        },
+        {
+          "current": "其目正圆者痉，不治",
+          "candidate": "其目正圓者痊不治",
+          "classification": "疑似候选误字",
+          "decision": "reject-as-automatic-correction-source"
+        },
+        {
+          "current": "实气相搏",
+          "candidate": "實氣相傳",
+          "classification": "一般异文",
+          "decision": "hold-for-image"
+        },
+        {
+          "current": "湿伤于下；湿流关节",
+          "candidate": "&KR0668;傷於下；&KR0668;流關節",
+          "classification": "候选外字未解析",
+          "decision": "unknown-not-a-deletion",
+          "reason": "KR-Gaiji 固定提交只提供字形图片，无 Unicode；对齐统计不得据空占位认定脱字。"
+        }
+      ],
+      "result": "alignment-easy-candidate-has-substantive-quality-warnings",
+      "corpus_change": "none"
+    },
+    {
+      "target_work_id": "core-nanjing",
+      "scope": "《第一难》全文",
+      "current_passage_ids": ["NJ-000001"],
+      "candidate_id": "second-nanjing-kanripo-kr3e0003",
+      "candidate_locator": "KR3e0003_001.txt；经文散见 SBCK 001-1a 至 001-8a",
+      "extraction": "取无缩进经文行，去除难次题签；本次仅限第一难",
+      "metrics": {
+        "current_alignment_chars": 135,
+        "candidate_alignment_chars": 135,
+        "matched_chars": 135,
+        "match_ratio": 1.0,
+        "difference_operations": 0
+      },
+      "third_witness": {
+        "candidate_id": "third-nanjing-kanripo-kr3e0004",
+        "candidate_locator": "KR3e0004_001.txt；经文散见 WYG 001-1a 至 001-4b",
+        "current_alignment_chars": 135,
+        "candidate_alignment_chars": 135,
+        "matched_chars": 134,
+        "match_ratio": 0.992593,
+        "difference_operations": 1,
+        "locus": {
+          "current_and_sbck": "脉之大会",
+          "wyg": "脈之太會",
+          "classification": "版本异文",
+          "decision": "retain-current-pending-image"
+        }
+      },
+      "result": "first-difficulty-stable-third-witness-shows-real-edition-variant",
+      "corpus_change": "none"
+    }
+  ],
+  "wangbing_boundary_pilot": {
+    "target_work_id": "commentary-suwen-wangbing",
+    "candidate_id": "second-suwen-kanripo-kr3e0001",
+    "scope": "KR3e0001_001.txt 的 SBCK 001-1a 至 001-15b，共 30 个页码单元",
+    "sample_size_pages": 30,
+    "balanced_parenthetical_note_blocks": 356,
+    "unmatched_open_parentheses": 0,
+    "unmatched_close_parentheses": 0,
+    "outside_parentheses_cjk_chars": 2687,
+    "blocks_with_new-collation-indicator": 37,
+    "new-collation-indicator_at_block_start": 6,
+    "new-collation-indicator_mid_block": 31,
+    "indicator_blocks_with_slash-mixed-content": 37,
+    "finding": "经文与注文可由圆括号稳定分开；王冰注与‘新校正’在括号内经常以斜线和反向栏序混排，37 个相关块全部是混合块，不能安全自动分层。",
+    "decision": "stop-full-kanripo-commentary-resegmentation",
+    "allowed_follow_up": "KR3e0001 继续仅作经文异文和页码锚点见证；不替换现有 Wikisource 王冰注分层。",
+    "corpus_change": "none"
+  },
+  "wenbingtiaobian_image_pilot": {
+    "purpose": "只核两个核心隔离单元的 HT 占位，不把扫描或 OCR 导入数据库。",
+    "source": {
+      "collection": "北京大学图书馆《开心堂温病条辨》扫描，Archive.org 镜像",
+      "rights_observation": "Archive 元数据未给出 licenseurl 或 rights；扫描只用于人工页面核验，不装包、不重发布。"
+    },
+    "checks": [
+      {
+        "passage_id": "WBTB-000004",
+        "before": "韩HT 和之《微旨》",
+        "image_reading": "韓祗和之微旨",
+        "recommended_replacement": "祗",
+        "confidence": "confirmed-by-image",
+        "archive_identifier": "02093296.cn",
+        "archive_record_url": "https://archive.org/details/02093296.cn",
+        "file_url": "https://archive.org/download/02093296.cn/02093296.cn.pdf",
+        "pdf_page": 50,
+        "pdf_sha256": "1440852ccf41984bcffc057612316fb1cd138d19b6efc751689d6aa11adc3745",
+        "pdf_bytes": 4643230,
+        "decision": "applied-in-controlled-follow-up-with-stable-passage-id"
+      },
+      {
+        "passage_id": "WBTB-000209",
+        "before": "皆风木刚强屈HT 之象",
+        "image_reading": "皆風木剛強屈伸之象",
+        "recommended_replacement": "伸",
+        "confidence": "confirmed-by-image",
+        "archive_identifier": "02093300.cn",
+        "archive_record_url": "https://archive.org/details/02093300.cn",
+        "file_url": "https://archive.org/download/02093300.cn/02093300.cn.pdf",
+        "pdf_page": 13,
+        "pdf_sha256": "c5068cc96fcf7055dc0f9537aa3d34438d4b564bc44ecfe522d2a4b99eb729c1",
+        "pdf_bytes": 1740332,
+        "decision": "applied-in-controlled-follow-up-with-stable-passage-id"
+      }
+    ],
+    "result": "both-glyphs-confirmed-and-applied",
+    "controlled_follow_up": {
+      "correction_file": "sources/normalization/passage-text-corrections.json",
+      "fields_updated": [
+        "text_source",
+        "text_traditional",
+        "text_simplified",
+        "text_search",
+        "quality_status",
+        "citation_allowed",
+        "search_allowed",
+        "content_sha256"
+      ],
+      "passage_ids_preserved": [
+        "WBTB-000004",
+        "WBTB-000209"
+      ],
+      "raw_snapshots_changed": false,
+      "scan_files_packaged": false
+    }
+  },
+  "overall_decision": {
+    "five_core_second_witnesses": "candidate-only",
+    "source_lock": "still-blocked",
+    "release_gate": "no-change",
+    "reason": [
+      "Kanripo 仓库级许可覆盖范围尚未确认",
+      "候选正文无仓库内影像，版本与转录链独立性未证明",
+      "试校发现候选自身也有疑似漏误和大量仅图像外字",
+      "五部核心尚未完成全量、逐项留痕的第二见证校勘"
+    ]
+  }
+}

@@ -22,8 +22,10 @@
 
 本项目对固定 wikitext 快照进行模板展开、版式标记清理、缺字模板解析、Unicode
 规范化、繁简转换、医学字符阅读规范化、说话者/内容角色标注和检索字段生成。
-所有人工字符修复均记录在 `sources/normalization/manual-character-repairs.json`；
-繁简阅读覆盖规则记录在 `sources/normalization/conversion-overrides.json`。含未解字的最小完整语义单元保留在隔离库中，但检索字段置空，禁止搜索和引用；隔离清单见 `sources/corpus-exclusions.json`。
+原始转录层人工字符修复记录在 `sources/normalization/manual-character-repairs.json`；
+为保持既有段落 ID 而在切分后执行的影像确认修订记录在
+`sources/normalization/passage-text-corrections.json`；繁简阅读覆盖规则记录在
+`sources/normalization/conversion-overrides.json`。含未解字的最小完整语义单元保留在隔离库中，但检索字段置空，禁止搜索和引用；隔离清单见 `sources/corpus-exclusions.json`。
 
 ## 现代医学来源
 

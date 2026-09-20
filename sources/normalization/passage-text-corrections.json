@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-20T04:15:00+00:00",
+  "policy": {
+    "purpose": "Apply image-confirmed character corrections after stable passage boundaries and IDs have been assigned.",
+    "raw_snapshots_unchanged": true,
+    "preserve_passage_ids": true,
+    "exact_match_required": true,
+    "scan_images_packaged": false
+  },
+  "corrections": [
+    {
+      "id": "wbtb-000004-han-zhi-he",
+      "passage_id": "WBTB-000004",
+      "source_id": "core-wenbingtiaobian",
+      "classification": "confirmed-missing-character",
+      "fields": {
+        "text_source": {
+          "before": "韓HT 和",
+          "after": "韓祗和",
+          "expected_occurrences": 1
+        },
+        "text_traditional": {
+          "before": "韓HT 和",
+          "after": "韓祗和",
+          "expected_occurrences": 1
+        },
+        "text_simplified": {
+          "before": "韩HT 和",
+          "after": "韩祗和",
+          "expected_occurrences": 1
+        }
+      },
+      "evidence": {
+        "collection": "北京大学图书馆《开心堂温病条辨》扫描，Archive.org 镜像",
+        "archive_identifier": "02093296.cn",
+        "record_url": "https://archive.org/details/02093296.cn",
+        "file_name": "02093296.cn.pdf",
+        "pdf_page": 50,
+        "witnessed_text": "韓祗和之微旨",
+        "pdf_sha256": "1440852ccf41984bcffc057612316fb1cd138d19b6efc751689d6aa11adc3745",
+        "verified_at": "2026-09-20",
+        "verification_method": "manual-image-reading",
+        "rights_note": "Archive metadata did not expose a license or rights field; the scan is evidence only and is not packaged or redistributed."
+      }
+    },
+    {
+      "id": "wbtb-000209-qu-shen",
+      "passage_id": "WBTB-000209",
+      "source_id": "core-wenbingtiaobian",
+      "classification": "confirmed-missing-character",
+      "fields": {
+        "text_source": {
+          "before": "屈HT 之象",
+          "after": "屈伸之象",
+          "expected_occurrences": 1
+        },
+        "text_traditional": {
+          "before": "屈HT 之象",
+          "after": "屈伸之象",
+          "expected_occurrences": 1
+        },
+        "text_simplified": {
+          "before": "屈HT 之象",
+          "after": "屈伸之象",
+          "expected_occurrences": 1
+        }
+      },
+      "evidence": {
+        "collection": "北京大学图书馆《开心堂温病条辨》扫描，Archive.org 镜像",
+        "archive_identifier": "02093300.cn",
+        "record_url": "https://archive.org/details/02093300.cn",
+        "file_name": "02093300.cn.pdf",
+        "pdf_page": 13,
+        "witnessed_text": "皆風木剛強屈伸之象",
+        "pdf_sha256": "c5068cc96fcf7055dc0f9537aa3d34438d4b564bc44ecfe522d2a4b99eb729c1",
+        "verified_at": "2026-09-20",
+        "verification_method": "manual-image-reading",
+        "rights_note": "Archive metadata did not expose a license or rights field; the scan is evidence only and is not packaged or redistributed."
+      }
+    }
+  ]
+}

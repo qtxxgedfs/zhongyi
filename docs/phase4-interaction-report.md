@@ -61,7 +61,7 @@ python scripts/render.py --input packet.json --format html --output answer.html
 
 ## 自动验证
 
-- Phase 4独立测试：5/5通过，并已纳入当前38项全量测试；
+- Phase 4独立测试：5/5通过，并已纳入自动回归；
 - 运行时自检：研究包、Markdown渲染和M3暂缓古籍检索均通过；
 - 150题固定验收中的M0—M3分类和M3安全检查均通过。
 

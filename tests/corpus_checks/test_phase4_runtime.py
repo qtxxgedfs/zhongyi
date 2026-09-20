@@ -56,8 +56,10 @@ class PhaseFourRuntimeTests(unittest.TestCase):
         self.assertIn("## 🟩 A｜原典", rendered)
         self.assertIn("## 🟧 B｜历代医家", rendered)
         self.assertNotIn("## 🟦 C｜现代医学", rendered)
-        self.assertIn(packet["A_core"][0]["text_simplified"], rendered)
+        self.assertIn(packet["A_core"][0]["core_quote"], rendered)
         self.assertIn(packet["A_core"][0]["id"], rendered)
+        if packet["A_core"][0]["full_text_available"]:
+            self.assertIn("默认未展开", rendered)
 
     def test_html_renderer_is_accessible_self_contained_and_escapes_query(self) -> None:
         packet = run_study("《素问》治未病原文<script>alert(1)</script>", "治未病")

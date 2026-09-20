@@ -17,17 +17,33 @@ nul
 # Secrets, credentials, certificates, and database backups
 .env
 .env.*
+.envrc
+.npmrc
+.pypirc
 *.pem
 *.key
 *.p12
 *.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+*.kdbx
+id_rsa*
+id_ed25519*
 credentials*.json
 secrets*.json
 *.bak
 *.backup
 *.dump
+*.dmp
+*.db.bak
+*.db.backup
 *.sqlite.bak
 *.sqlite.backup
+*.sqlite3.bak
+*.sqlite3.backup
+*.sql.gz
 
 # Generated corpus snapshots are governed by source-lock.json and may be large.
 # Uncomment locally if raw snapshots are stored outside version control.
@@ -39,7 +55,15 @@ skill/tcm-classics-study/data/*.sqlite-wal
 skill/tcm-classics-study/data/*.sqlite-shm
 skill/tcm-classics-study/data/package-candidate-manifest.json
 
-# OS/editor
+# Test, coverage, OS, editor, and other transient output
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
 .vscode/

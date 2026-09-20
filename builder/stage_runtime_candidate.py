@@ -82,12 +82,14 @@ def main() -> None:
         *sorted((args.skill_dir / "references").glob("*.md")),
         classic_destination,
         data_dir / "classics-index-manifest.json",
+        data_dir / "query-rules.json",
         args.evidence_db,
         args.evidence_manifest,
         data_dir / "source-manifest.json",
     ]
     runtime_manifest = {
         "schema_version": 1,
+        "project_version": (PROJECT_DIR / "VERSION").read_text(encoding="utf-8").strip(),
         "status": "candidate-runnable",
         "release_gate_status": quality["overall"]["release_gate_status"],
         "citable_corpus_status": quality["overall"]["citable_corpus_status"],

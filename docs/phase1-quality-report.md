@@ -1,6 +1,6 @@
 # Phase 1 语料质量报告
 
-生成时间：`2026-09-18T11:24:09+00:00`
+生成时间：`2026-09-20T04:17:31+00:00`
 
 ## 结论
 
@@ -19,10 +19,10 @@
 - 固定页面快照：973 页
 - 纳入语料页面：938 页
 - 全部段落：54088 条
-- 可引用段落：53798 条
-- 隔离段落：290 条
-- 全部简体显示字符：3,434,734
-- 隔离字符：5,842
+- 可引用段落：53800 条
+- 隔离段落：288 条
+- 全部简体显示字符：3,434,730
+- 隔离字符：5,655
 
 ## 完整性清单
 
@@ -62,7 +62,6 @@
 - `core-shanghanlun`：core source has upstream 25%/50% quality category and lacks completed second-base collation
 - `core-jingui`：core source has upstream 25%/50% quality category and lacks completed second-base collation
 - `core-nanjing`：core source has upstream 25%/50% quality category and lacks completed second-base collation
-- `core-wenbingtiaobian`：core work contains 2 quarantined unresolved semantic units
 - `commentary-suwen-wangbing`：ProofreadPage contains 805 unproofread/problem pages
 
 ## 清洗与字符检查
@@ -77,7 +76,7 @@
 | `core-shanghanlun` | 205 | 205 | 0 | 0 | 0 | core_text:147, dialogue:58 |
 | `core-jingui` | 295 | 295 | 0 | 0 | 0 | core_text:134, textual_collation:86, dialogue:75 |
 | `core-nanjing` | 83 | 83 | 0 | 0 | 0 | core_text:83 |
-| `core-wenbingtiaobian` | 239 | 237 | 2 | 0 | 2 | core_text:221, dialogue:18 |
+| `core-wenbingtiaobian` | 239 | 239 | 0 | 0 | 0 | core_text:221, dialogue:18 |
 | `commentary-suwen-wangbing` | 14170 | 14146 | 24 | 0 | 31 | commentary:7145, quoted_core:5040, textual_collation:1310, dialogue:675 |
 | `commentary-neijing-leijing` | 19021 | 19019 | 2 | 0 | 2 | commentary:9840, quoted_core:8120, dialogue:1061 |
 | `commentary-lingshu-zhangzhicong` | 1568 | 1521 | 47 | 0 | 55 | mixed:1210, commentary:356, preface:2 |
