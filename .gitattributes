@@ -8,8 +8,15 @@
 *.txt text eol=lf
 *.wikitext text eol=lf
 *.lua text eol=lf
+VERSION text eol=lf
 *.sqlite binary
 *.zip binary
+
+# Provenance and runtime manifests hash exact bytes. Do not normalize these
+# trees on add/checkout: generated JSON may contain CRLF even on Windows.
+# This also preserves fixed upstream snapshots without rewriting their hashes.
+sources/** -text whitespace=cr-at-eol
+skill/tcm-classics-study/** -text whitespace=cr-at-eol,-blank-at-eol
 
 # Fixed upstream snapshots preserve source whitespace verbatim.
 sources/raw/** -whitespace

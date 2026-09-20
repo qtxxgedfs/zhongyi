@@ -137,32 +137,66 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
                     limit_commentary=args.limit_commentary,
                     limit_total=args.limit_total,
                     candidate_limit=args.candidate_limit,
-                    route_fallback=True,
+                    route_fallback=getattr(args, "route_fallback", True),
                 )
                 classic_payload = classic_search.search(classic_connection, search_args)
         finally:
             classic_connection.close()
 
-    core = [item for item in classic_payload["results"] if item["layer"] == "core"]
-    extension = [
-        item
-        for item in classic_payload["results"]
-        if item["layer"] != "core" and item.get("speaker_type") != "quoted_core"
-    ]
+    retrieved = classic_payload["results"]
+    ordered = list(retrieved)
+    anchor = next((item for item in retrieved if item["id"] == args.anchor_id), None)
+    anchor_over_budget = bool(anchor and len(anchor["text_simplified"]) > args.character_budget)
+    if anchor:
+        ordered.sort(key=lambda item: (item["id"] != args.anchor_id,
+                                      abs(item["sequence"] - anchor["sequence"])))
+    # Share the full budget across layers. Never silently replace an oversized anchor
+    # with its neighbour, and never change text_simplified to a fabricated/truncated passage.
+    selected, used = fit_budget([] if anchor_over_budget else ordered, args.character_budget)
+    primary_passage_id = (args.anchor_id if anchor and not anchor_over_budget else
+                          selected[0]["id"] if selected and not args.anchor_id else None)
     if args.anchor_id:
-        if core:
-            core, core_chars = fit_budget(core, args.character_budget)
-            extension, extension_chars = [], 0
-        else:
-            extension, extension_chars = fit_budget(extension, args.character_budget)
-            core, core_chars = [], 0
-    else:
-        core_budget = max(1, round(args.character_budget * 0.45))
-        extension_budget = max(1, args.character_budget - core_budget)
-        core, core_chars = fit_budget(core, core_budget)
-        extension, extension_chars = fit_budget(extension, extension_budget)
-    selected = [*core, *extension]
-    primary_passage_id = args.anchor_id or (selected[0]["id"] if selected else None)
+        selected.sort(key=lambda item: item["sequence"])
+    core = [item for item in selected if item["layer"] == "core"]
+    extension = [item for item in selected if item["layer"] != "core"]
+    core_chars = sum(len(item["text_simplified"]) for item in core)
+    extension_chars = used - core_chars
+    alternatives, alternative_chars = fit_budget(classic_payload.get("alternative_results", []),
+                                                  args.character_budget - used)
+    selected_ids = {item["id"] for item in selected}
+    budget_omitted = [{"id": item["id"], "characters": len(item["text_simplified"]),
+                       "reason": "anchor-over-budget" if anchor_over_budget else "character-budget"}
+                      for item in retrieved if item["id"] not in selected_ids]
+    alternative_ids = {item["id"] for item in alternatives}
+    budget_omitted.extend({"id": item["id"], "characters": len(item["text_simplified"]),
+                           "reason": "character-budget", "scope": "alternative"}
+                          for item in classic_payload.get("alternative_results", [])
+                          if item["id"] not in alternative_ids)
+    coverage = classic_payload.get("scope_coverage", [])
+    for group in coverage:
+        if group["status"] == "matched" and not any(
+            classic_search.matches_group(item, item.get("match", {}), group) for item in selected
+        ):
+            group["status"] = "not-displayed-budget"
+    missing_groups = [group["label"] for group in coverage if group["status"] != "matched"]
+    if anchor_over_budget or (retrieved and not selected):
+        classic_payload["needs_clarification"] = {
+            "required": True, "reason": "anchor-over-budget" if anchor_over_budget else "budget-excluded",
+            "prompt": "已检得材料，但完整段落超过本次预算，尚未展示；请增加字符预算后按段落ID读取，不代表未检得。",
+        }
+    elif missing_groups and len(coverage) > 1:
+        classic_payload["needs_clarification"] = {
+            "required": True, "reason": "incomplete-comparison",
+            "prompt": "以下对象尚无可展示的直接材料：" + "、".join(missing_groups) + "；不能据此完成全部比较。",
+        }
+    quality = classic_payload["quality_policy"]
+    quality["retrieved_results"] = len(retrieved)
+    quality["displayed_results"] = len(selected)
+    quality["budget_omitted"] = budget_omitted
+    quality["displayed_alternatives"] = len(alternatives)
+    quality["alternative_budget_omitted_ids"] = [item["id"] for item in classic_payload.get("alternative_results", [])
+                                                if item["id"] not in alternative_ids]
+    classic_payload["scope_coverage"] = coverage
 
     warnings = [
         "本产品使用可追溯工作底本，不声称是无异文、无错误的唯一权威文本。",
@@ -174,13 +208,17 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
         warnings.append("M3问题默认暂缓古籍检索，必须先呈现急救分流；不得用古方替代急救。")
     if classification["modern_layer_required"] and not cache["records"]:
         warnings.append("本地缓存没有可用现代证据；联网失败时不得凭模型记忆补造现代结论。")
-    if classic_payload.get("route_resolution", {}).get("conflict_detected"):
-        warnings.append("用户所述书名或医家可能记混；回答必须说明检索范围为何被放宽。")
+    if classic_payload.get("route_resolution", {}).get("message"):
+        warnings.append(classic_payload["route_resolution"]["message"])
+    if budget_omitted:
+        warnings.append("部分已检得段落因字符预算未展示，详见quality_policy.budget_omitted；不代表未检得。")
     if classic_payload.get("needs_clarification", {}).get("required"):
         warnings.append(classic_payload["needs_clarification"]["prompt"])
 
-    classic_quote_ids = [item["id"] for item in selected]
-    required_sections = ["一句话主旨", "🟩 A｜原典"]
+    classic_quote_ids = [item["id"] for item in [*selected, *alternatives]]
+    required_sections = ["一句话主旨"]
+    if core:
+        required_sections.append("🟩 A｜原典")
     if extension:
         required_sections.append("🟧 B｜历代医家")
     if classification["modern_layer_required"]:
@@ -209,7 +247,9 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
             "quarantined_passages_excluded": classic_payload.get("quarantined_passages_excluded", 0),
             "elapsed_ms": classic_payload.get("elapsed_ms", 0.0),
             "anchor_id": args.anchor_id,
+            "scope_coverage": coverage,
         },
+        "source_alternatives": alternatives,
         "A_core": core,
         "B_physicians": extension,
         "C_modern": {
@@ -219,16 +259,21 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
         },
         "context_budget": {
             "maximum_characters": args.character_budget,
-            "selected_characters": core_chars + extension_chars,
+            "selected_characters": used + alternative_chars,
             "core_characters": core_chars,
             "physician_characters": extension_chars,
+            "alternative_characters": alternative_chars,
         },
         "answer_contract": {
             "protocol_version": 2,
             "mode": "standard",
             "interaction_principle": "宁缺毋滥：不为凑数展示弱相关、残缺或无法独立解释的材料。",
             "required_sections": required_sections,
+            "omit_A_when": "本次未展示原典；指定医家或预算未展示不得表述为原典不存在",
             "omit_B_when": "没有直接相关且可独立解释的医家材料",
+            "source_alternatives_rule": "范围外备选必须单独标注实际作者与作品，不能充当指定医家的观点或补齐比较。",
+            "quoted_core_rule": "上下文中的quoted_core仅为注书转引经文，不是注家的独立观点。",
+            "comparison_complete": not missing_groups,
             "omit_C_when": "classification.level=M0",
             "classic_quote_field": "text_simplified",
             "default_display_quote_field": "core_quote",
@@ -247,8 +292,8 @@ def prepare(args: argparse.Namespace) -> dict[str, Any]:
                 "问题存在合理现代对应时说明对应边界、证据直接性和限制；纯文献题不强加C层。",
             ],
             "route_conflict_rule": (
-                "先说明用户所述书名或医家未获直接支持，再给出放宽检索后更强的出处；不得静默纠正。"
-                if classic_payload.get("route_resolution", {}).get("conflict_detected")
+                "客观说明指定范围的检索情况与范围外材料的实际来源，不推断用户记错，不混淆归属。"
+                if classic_payload.get("route_resolution", {}).get("message")
                 else "not-applicable"
             ),
             "clarification_rule": (
@@ -288,6 +333,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--work", default="auto")
     parser.add_argument("--layers", default="all")
     parser.add_argument("--author")
+    parser.add_argument("--no-route-fallback", dest="route_fallback", action="store_false")
     parser.add_argument("--limit-core", type=int, default=2)
     parser.add_argument("--limit-commentary", type=int, default=2)
     parser.add_argument("--limit-total", type=int, default=4)

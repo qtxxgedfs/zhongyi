@@ -30,12 +30,12 @@
 {"id":"NQ030","category":"colloquial-paraphrase","query":"温病条辨开头怎么界定温病","acceptable_top_ids":["WBTB-000020"]}
 {"id":"NQ031","category":"mixed-source","query":"《难经》里是不是有渴了才挖井的比喻","acceptable_top_ids":["SW-000004"],"expected_route_conflict":true}
 {"id":"NQ032","category":"mixed-source","query":"《灵枢》那句口渴才挖井怎么说","acceptable_top_ids":["SW-000004"],"expected_route_conflict":true}
-{"id":"NQ033","category":"mixed-source","query":"《素问》为什么只摸寸口脉","acceptable_top_ids":["NJ-000001"],"expected_route_conflict":true}
+{"id":"NQ033","category":"mixed-source","query":"《素问》为什么只摸寸口脉","acceptable_top_ids":["NJ-000001"],"result_channel":"alternative_results","expected_route_conflict":false,"expected_clarification":true,"acceptance_note":"指定范围保留相关注书材料；难经只作范围外备选，不因代表段落不同而判错来源。"}
 {"id":"NQ034","category":"mixed-source","query":"《伤寒论》上焦如羽原文","acceptable_top_ids":["WBTB-000175"],"expected_route_conflict":true}
-{"id":"NQ035","category":"mixed-source","query":"《温病条辨》独取寸口怎么解释","acceptable_top_ids":["NJ-000001"],"expected_route_conflict":true}
+{"id":"NQ035","category":"mixed-source","query":"《温病条辨》独取寸口怎么解释","acceptable_top_ids":["NJ-000001"],"result_channel":"alternative_results","expected_primary_empty":true,"expected_route_conflict":false,"expected_clarification":true,"acceptance_note":"指定范围未命中时单列备选，不将备选冒充指定书中的解释。"}
 {"id":"NQ036","category":"mixed-source","query":"《难经》胸中气塞短气原文","acceptable_top_ids":["JKY-000129"],"expected_route_conflict":true}
-{"id":"NQ037","category":"mixed-source","query":"王冰怎么注桂枝汤原文","acceptable_top_ids":["SHL-000054"],"expected_route_conflict":true}
-{"id":"NQ038","category":"mixed-source","query":"叶天士怎么解释独取寸口","acceptable_top_ids":["NJ-000001"],"expected_route_conflict":true}
+{"id":"NQ037","category":"mixed-source","query":"王冰怎么注桂枝汤原文","acceptable_top_ids":["SHL-000054"],"result_channel":"alternative_results","expected_primary_empty":true,"expected_route_conflict":false,"expected_clarification":true,"acceptance_note":"询问指定医家而非辨认出处；原典仅可单列备选，不能替代王冰观点。"}
+{"id":"NQ038","category":"mixed-source","query":"叶天士怎么解释独取寸口","acceptable_top_ids":["NJ-000001"],"result_channel":"alternative_results","expected_primary_empty":true,"expected_route_conflict":false,"expected_clarification":true,"acceptance_note":"询问指定医家而非辨认出处；原典仅可单列备选，不能替代叶天士观点。"}
 {"id":"NQ039","category":"mixed-source","query":"《金匮要略》阴阳者天地之道原文","acceptable_top_ids":["SW-000011"],"expected_route_conflict":true}
 {"id":"NQ040","category":"mixed-source","query":"《温病条辨》桂枝汤头痛发热汗出恶风原文","acceptable_top_ids":["SHL-000054"],"expected_route_conflict":true}
 {"id":"NQ041","category":"broad-scope","query":"阴阳到底怎么理解","expected_clarification":true}

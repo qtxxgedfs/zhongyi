@@ -7,6 +7,9 @@ __pycache__/
 sources/cache/
 build/
 dist/
+tmp/
+temp/
+backups/
 *.tmp
 
 # Local agent/session artifacts and user-owned notes
@@ -44,6 +47,15 @@ secrets*.json
 *.sqlite3.bak
 *.sqlite3.backup
 *.sql.gz
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+# These two reviewed read-only product databases are required for offline use.
+!skill/tcm-classics-study/data/classics.sqlite
+!skill/tcm-classics-study/data/evidence-cache.sqlite
 
 # Generated corpus snapshots are governed by source-lock.json and may be large.
 # Uncomment locally if raw snapshots are stored outside version control.

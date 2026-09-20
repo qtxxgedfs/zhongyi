@@ -15,10 +15,10 @@
 
 在本机构建后热文件缓存条件下，对12类查询各运行3次：
 
-- CLI 内部检索中位数：9.189 ms
-- CLI 内部检索 P95：36.913 ms
-- 含 Python 进程启动的端到端中位数：874.569 ms
-- 含 Python 进程启动的端到端 P95：1240.806 ms
+- CLI 内部检索中位数：13.116 ms
+- CLI 内部检索 P95：53.582 ms
+- 含 Python 进程启动的端到端中位数：873.888 ms
+- 含 Python 进程启动的端到端 P95：1276.112 ms
 - 路由/召回检查：24/24 通过
 
 ## 查询检查
@@ -31,10 +31,10 @@
 | jingui-core | 5 | `JKY-000064` | 是 | 是 |
 | nanjing-core | 3 | `NJ-000001` | 是 | 是 |
 | wenbing-core | 2 | `WBTB-000175` | 是 | 是 |
-| author-zhangjingyue | 1 | `COMMENTARY-NEIJING-LEIJING-000194` | 是 | 是 |
-| author-wangbing | 1 | `COMMENTARY-SUWEN-WANGBING-007078` | 是 | 是 |
-| author-youtaijing | 2 | `COMMENTARY-SHANGHAN-YOUYI-000003` | 是 | 是 |
-| lineage-yetianshi | 1 | `LINEAGE-WENBING-YETIANSHI-000001` | 是 | 是 |
+| author-zhangjingyue | 2 | `COMMENTARY-NEIJING-LEIJING-000197` | 是 | 是 |
+| author-wangbing | 2 | `COMMENTARY-SUWEN-WANGBING-007078` | 是 | 是 |
+| author-youtaijing | 4 | `COMMENTARY-SHANGHAN-YOUYI-000003` | 是 | 是 |
+| lineage-yetianshi | 2 | `LINEAGE-WENBING-YETIANSHI-000001` | 是 | 是 |
 | cross-canon | 1 | `LS-000655` | 是 | 是 |
 | traditional-query | 6 | `SHL-000056` | 是 | 是 |
 

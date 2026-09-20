@@ -55,7 +55,7 @@ python scripts/self_check.py
 
 - `status` 为 `pass`；
 - 两个数据库的 `integrity` 为 `ok`；
-- `study_packet_smoke`、`markdown_render_smoke`、`m3_classic_retrieval_deferred` 均为 `true`；
+- `study_packet_smoke`（含自然语言点名成无己的范围检查）、`markdown_render_smoke`、`m3_classic_retrieval_deferred` 均为 `true`；
 - `release_gate_status` 仍为 `blocked`，这是候选底本状态披露，不代表自检失败。
 
 若 Python 命令名是 `py`，可改用 `py -3 scripts/self_check.py`。
@@ -112,9 +112,9 @@ WorkBuddy 网页工具参数由使用方按宿主版本配置；若宿主不能�
 ## 8. 已知候选风险
 
 - 五种核心原典仍需第二个许可明确底本校核；
-- 《温病条辨》有2个核心隔离语义单元；
+- 《温病条辨》两处影像确认缺字已修订并恢复引用，六部核心当前无隔离段；
 - 王冰本有805个上游低校对/问题页面；
-- 共290个问题段落已物理排除在运行时数据库之外，不能检索或引用；
+- 共288个问题段落已物理排除在运行时数据库之外，不能检索或引用；
 - WorkBuddy导入、网页工具适配和具体设备显示偏好由使用方处理，不属于代码包自检范围。
 
 这些风险不影响候选版自检结果，但在最终来源锁完成前不得移除候选版标识。

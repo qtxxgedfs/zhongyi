@@ -85,8 +85,8 @@ def markdown(payload: dict[str, Any]) -> str:
         "",
         f"- 单轮自然问法：{payload['single_turn_count']}题",
         f"- 连续追问：{payload['conversation_count']}组、{payload['conversation_turn_count']}轮",
-        f"- 自然问法首条可接受率：{payload['top1_acceptance']['passed']}/{payload['top1_acceptance']['total']}（{payload['top1_acceptance']['rate']:.1%}；10题宽泛问题不预设唯一首条）",
-        f"- 记混来源恢复：{payload['route_recovery']['passed']}/{payload['route_recovery']['total']}（{payload['route_recovery']['rate']:.1%}）",
+        f"- 自然问法主结果/备选首条可接受率：{payload['top1_acceptance']['passed']}/{payload['top1_acceptance']['total']}（{payload['top1_acceptance']['rate']:.1%}；10题宽泛问题不预设唯一首条）",
+        f"- 范围行为（含不应回退的反例）：{payload['route_recovery']['passed']}/{payload['route_recovery']['total']}（{payload['route_recovery']['rate']:.1%}）",
         f"- 澄清行为符合预期：{payload['clarification']['passed']}/{payload['clarification']['total']}（{payload['clarification']['rate']:.1%}）",
         f"- 展示结果无独立残片：{payload['result_quality']['passed']}/{payload['result_quality']['total']}（{payload['result_quality']['rate']:.1%}）",
         f"- 连续上下文锚点：{payload['conversation_context']['passed']}/{payload['conversation_context']['total']}（{payload['conversation_context']['rate']:.1%}）",
@@ -115,6 +115,8 @@ def markdown(payload: dict[str, Any]) -> str:
             "",
             "- 本集使用接近普通读者的口语、记忆残片、来源记混、宽泛问题和连续追问，不向检索器提供人工 `terms`。",
             "- 当前问题由项目内人工整理，不包含用户日志或个人健康信息；后续获得真实、去身份化读者问法后应逐步替换开发样本。",
+            "- 1.1.1修订NQ033/035/037/038的预期：指定书籍/医家的解释题保留原范围，范围外结果单列备选；原问题和备选目标ID未变。",
+            "- 所有60题均断言范围冲突（未标注时默认false），并检查主结果与备选的引文质量。自然医家/比较/预算回归另见test_refinement_runtime.py。",
             "- 本报告检查检索与材料组织，不以自动指标替代对白话解释准确性和医家分歧的人工评审。",
             "- 原有150题继续作为精确召回和安全回归集，本集不替代它。",
             "",
@@ -156,10 +158,14 @@ def main() -> None:
             payload = search_module.search(connection, search_args(search_module, case["query"]))
             latency.append((time.perf_counter() - started) * 1000)
             results = payload["results"]
+            evaluated_results = payload[case.get("result_channel", "results")]
+            if case.get("expected_primary_empty") and results:
+                failures.append({"id": case["id"], "check": "scope-substitution", "query": case["query"],
+                                 "reason": "范围外备选不得代替指定范围结果"})
 
             if case.get("acceptable_top_ids") or case.get("acceptable_work_ids"):
                 top1_total += 1
-                if acceptable_first(case, results):
+                if acceptable_first(case, evaluated_results):
                     top1_passed += 1
                 else:
                     failures.append(
@@ -167,11 +173,11 @@ def main() -> None:
                             "id": case["id"],
                             "check": "top1",
                             "query": case["query"],
-                            "reason": "首条不在可接受集合；实际=" + (results[0]["id"] if results else "无结果"),
+                            "reason": "首条不在可接受集合；实际=" + (evaluated_results[0]["id"] if evaluated_results else "无结果"),
                         }
                     )
 
-            expected_conflict = case.get("expected_route_conflict")
+            expected_conflict = case.get("expected_route_conflict", False)
             if expected_conflict is not None:
                 route_total += 1
                 actual = payload["route_resolution"]["conflict_detected"]
@@ -209,7 +215,7 @@ def main() -> None:
                 and bool(item.get("core_quote"))
                 and item["core_quote"] in item.get("text_simplified", "")
                 and len(item["core_quote"]) <= 320
-                for item in results
+                for item in [*results, *payload.get("alternative_results", [])]
             )
             if quality_ok:
                 quality_passed += 1
@@ -293,7 +299,7 @@ def main() -> None:
     }
     result["status"] = (
         "pass"
-        if result["top1_acceptance"]["rate"] >= 0.90
+        if not failures and result["top1_acceptance"]["rate"] >= 0.90
         and result["route_recovery"]["rate"] == 1.0
         and result["clarification"]["rate"] >= 0.95
         and result["result_quality"]["rate"] == 1.0

@@ -45,7 +45,7 @@ WORK_CODES = {
     "温病条辨": "wenbingtiaobian",
 }
 MATCH_TIER_LABELS = {
-    "A": "直接原句命中",
+    "A": "正文命中检索词（不等于整问已获支持）",
     "B": "高覆盖相关命中",
     "C": "部分直接相关",
     "context": "连续上下文",
@@ -114,30 +114,63 @@ def infer_route(
         "authors": [],
         "matched_aliases": [],
     }
-    for item in aliases(connection):
-        alias = item["normalized_alias"]
-        if alias and alias in normalized:
-            if item["alias"] not in route["matched_aliases"]:
-                route["matched_aliases"].append(item["alias"])
-            if item["target_work"] and item["target_work"] not in route["target_works"]:
-                route["target_works"].append(item["target_work"])
-            if item["canon"] and item["canon"] not in route["canons"]:
-                route["canons"].append(item["canon"])
-            if item["kind"] == "author":
-                if item["work_id"] and item["work_id"] not in route["work_ids"]:
-                    route["work_ids"].append(item["work_id"])
-                elif item["canonical"] not in route["authors"]:
-                    route["authors"].append(item["canonical"])
+    works = connection.execute("SELECT id, title, author, layer FROM works").fetchall()
+    route.update({"author_groups": [], "title_work_ids": [], "excluded_work_ids": [],
+                  "hard_scope": False})
+    # Longest source names consume their spans before embedded canon names.
+    source_aliases = [dict(item) for item in aliases(connection) if item["kind"] != "term"]
+    for work in works:
+        if work["layer"] == "core":
+            continue
+        names = [work["title"].strip("《》")]
+        names.extend(rules.get("work_title_aliases", {}).get(work["id"], []))
+        for name in names:
+            source_aliases.append({"alias": name, "kind": "title", "work_id": work["id"],
+                                   "canonical": work["title"], "target_work": None, "canon": None})
     for author_route in rules.get("author_routes", []):
-        for alias in author_route.get("aliases", []):
-            if normalize(alias) not in normalized:
+        for name in author_route["aliases"]:
+            source_aliases.append({"alias": name, "kind": "author", "work_id": None,
+                                   "canonical": author_route["canonical"],
+                                   "target_work": None, "canon": None})
+    occupied: set[int] = set()
+    groups: dict[str, dict[str, Any]] = {}
+    for item in sorted(source_aliases, key=lambda item: -len(normalize(item["alias"]))):
+        alias = normalize(item["alias"])
+        if not alias:
+            continue
+        for match in re.finditer(re.escape(alias), normalized):
+            span = set(range(match.start(), match.end()))
+            if span & occupied:
                 continue
-            if alias not in route["matched_aliases"]:
-                route["matched_aliases"].append(alias)
-            for target in author_route.get("target_works", []):
-                if target not in route["target_works"]:
-                    route["target_works"].append(target)
-            break
+            occupied.update(span)
+            route["matched_aliases"].append(item["alias"])
+            excluded = bool(re.search(r"(?:不看|不查|不要|排除|不包括|不含)$", normalized[:match.start()]))
+            ids = ([item["work_id"]] if item.get("work_id") else
+                   [work["id"] for work in works if normalize(item["canonical"]) in normalize(work["author"])])
+            if excluded:
+                if item.get("target_work"):
+                    ids = [row[0] for row in connection.execute(
+                        "SELECT work_id FROM work_targets WHERE target_work=?", (item["target_work"],))]
+                route["excluded_work_ids"].extend(ids)
+                route["hard_scope"] = True
+                continue
+            if item["kind"] == "author":
+                group = groups.setdefault(item["canonical"], {"label": item["canonical"], "work_ids": []})
+                group["work_ids"].extend(ids)
+            elif item["kind"] == "title":
+                route["title_work_ids"].extend(ids)
+            if item.get("target_work"):
+                route["target_works"].append(item["target_work"])
+            if item.get("canon"):
+                route["canons"].append(item["canon"])
+    for group in groups.values():
+        group["work_ids"] = list(dict.fromkeys(group["work_ids"]))
+        route["author_groups"].append(group)
+        route["work_ids"].extend(group["work_ids"])
+    for key in ("target_works", "canons", "work_ids", "title_work_ids", "excluded_work_ids", "matched_aliases"):
+        route[key] = list(dict.fromkeys(route[key]))
+    route["hard_scope"] = route["hard_scope"] or any(cue in normalized for cue in (
+        "只看", "只查", "只在", "仅看", "仅查", "仅在", "限定", "不要其他", "不要扩展", "不扩展"))
     return route
 
 
@@ -145,23 +178,26 @@ def infer_intent(query: str, route: dict[str, Any], rules: dict[str, Any]) -> di
     normalized = normalize(query)
     if any(normalize(cue) in normalized for cue in ("前后文", "上下文", "上一段", "下一段", "展开")):
         mode = "context"
-    elif any(normalize(cue) in normalized for cue in ("比较", "异同", "不同", "分歧")):
+    elif any(normalize(cue) in normalized for cue in ("比较", "异同", "不同", "分歧", "区别", "对照", "分别")) or len(route.get("author_groups", [])) > 1 or len(route["target_works"]) > 1 or len(route.get("title_work_ids", [])) > 1:
         mode = "compare"
+    elif route["work_ids"] or route["authors"] or route.get("title_work_ids"):
+        mode = "physician"
     elif any(normalize(cue) in normalized for cue in ("原文", "原句", "出处", "哪一篇", "在哪里", "怎么说")):
         mode = "quote_lookup"
-    elif route["work_ids"] or route["authors"] or any(
-        normalize(cue) in normalized for cue in ("注释", "注家", "医家", "解释")
-    ):
+    elif any(normalize(cue) in normalized for cue in ("注释", "注家", "医家", "解释")):
         mode = "physician"
     else:
         mode = "study"
     broad_hits = [item for item in rules.get("broad_concepts", []) if normalize(item) in normalized]
-    has_scope = bool(route["target_works"] or route["canons"] or route["work_ids"] or route["authors"])
+    has_scope = bool(route["target_works"] or route["work_ids"] or route["authors"] or route.get("title_work_ids"))
     scope_too_broad = bool(broad_hits and not has_scope and mode == "study")
     return {
         "mode": mode,
         "scope_too_broad": scope_too_broad,
         "broad_concepts": broad_hits,
+        "source_lookup": any(cue in normalized for cue in (
+            "我记得", "记不清", "好像", "是不是", "出自", "出处", "原话", "原句", "那句"))
+            or ("原文" in normalized and not (route["work_ids"] or route.get("title_work_ids"))),
     }
 
 
@@ -207,14 +243,22 @@ def build_query_plan(
     matched_expansions: list[str] = []
     preferred_passage_ids: list[str] = []
     keep_scope_warning = False
+    matched_triggers: list[str] = []
+    quoted_terms: list[str] = []
+    focus_terms: list[str] = []
     if raw_terms:
         for value in raw_terms.split(","):
             _add_term(terms, term_sources, value.strip(), "explicit", alias_rows)
     else:
         normalized_query = normalize(query)
+        for quoted in QUOTED_RE.findall(query):
+            _add_term(quoted_terms, [], quoted, "quoted", alias_rows)
+            _add_term(terms, term_sources, quoted, "quoted", alias_rows)
         for expansion in rules.get("expansions", []):
             if any(normalize(trigger) in normalized_query for trigger in expansion.get("triggers", [])):
                 matched_expansions.append(expansion["id"])
+                matched_triggers.extend(trigger for trigger in expansion.get("triggers", [])
+                                        if normalize(trigger) in normalized_query)
                 keep_scope_warning = keep_scope_warning or bool(expansion.get("keep_scope_warning"))
                 for passage_id in expansion.get("preferred_passage_ids", []):
                     if passage_id not in preferred_passage_ids:
@@ -222,25 +266,56 @@ def build_query_plan(
                 for term in expansion.get("terms", []):
                     _add_term(terms, term_sources, term, f"expansion:{expansion['id']}", alias_rows)
 
-        for quoted in QUOTED_RE.findall(query):
-            _add_term(terms, term_sources, quoted, "quoted", alias_rows)
-
         if matched_expansions and not keep_scope_warning:
             intent["scope_too_broad"] = False
         residual = normalized_query
-        removable = [*route["matched_aliases"]]
+        removable = [*route["matched_aliases"], *matched_triggers, *quoted_terms]
         for author_route in rules.get("author_routes", []):
             removable.extend(author_route.get("aliases", []))
         removable.extend(rules.get("task_phrases", []))
         removable.extend(rules.get("filler_phrases", []))
         for phrase in sorted({normalize(item) for item in removable if item}, key=len, reverse=True):
-            residual = residual.replace(phrase, "")
-        residual = residual.strip()
-        if not matched_expansions and 2 <= len(residual) <= 18:
-            _add_term(terms, term_sources, residual, "query", alias_rows)
-        elif not terms and residual:
-            _add_term(terms, term_sources, residual[:32], "query-long", alias_rows)
+            residual = residual.replace(phrase, "|")
+        active_focus_rules = [focus for focus in rules.get("focus_rules", [])
+                              if any(normalize(trigger) in normalized_query for trigger in focus["triggers"])]
+        for focus in active_focus_rules:
+            for trigger in focus["triggers"]:
+                residual = residual.replace(normalize(trigger), "|")
+        # Keep content words instead of discarding the rest of an expanded question.
+        fragments = re.split(r"[|的与和及对里呢吗]|(?:请|比较|解释|怎样谈|如何谈|有什么|不要其他医家|不看|只看|只查|不要|原因|服后|治疗)", residual)
+        for fragment in fragments:
+            fragment = fragment.strip()
+            if not 2 <= len(fragment) <= 18:
+                continue
+            if matched_expansions:
+                # A residual must have indexed support; conversational filler is not a focus.
+                rows = connection.execute(
+                    "SELECT p.text_simplified FROM passage_fts JOIN passages p ON p.rowid=passage_fts.rowid "
+                    "WHERE passage_fts MATCH ? LIMIT 40", (fts_expression([fragment]),)).fetchall()
+                if not any(normalize(fragment) in normalize(row[0]) for row in rows):
+                    continue
+                _add_term(focus_terms, [], fragment, "focus", alias_rows)
+            _add_term(terms, term_sources, fragment, "query", alias_rows)
+        for focus in rules.get("focus_rules", []):
+            if any(normalize(trigger) in normalized_query for trigger in focus["triggers"]):
+                for term in focus["terms"]:
+                    normalized_term = apply_term_aliases(term, alias_rows)
+                    if normalized_term not in focus_terms:
+                        focus_terms.append(normalized_term)
+                    _add_term(terms, term_sources, term, "focus", alias_rows)
+        if not terms:
+            residual = residual.replace("|", "")
+            if residual:
+                _add_term(terms, term_sources, residual[:32], "query-long", alias_rows)
 
+    topic_terms = [item["term"] for item in term_sources if item["source"].startswith("expansion:")]
+    if not topic_terms:
+        topic_terms = list(quoted_terms or [item["term"] for item in term_sources if item["source"] != "focus"] or terms)
+    intent["quoted_terms"] = quoted_terms
+    intent["focus_terms"] = focus_terms
+    intent["topic_terms"] = topic_terms
+    if quoted_terms or focus_terms:
+        preferred_passage_ids = []
     return {
         "intent": intent,
         "terms": terms,
@@ -248,6 +323,9 @@ def build_query_plan(
         "matched_expansions": matched_expansions,
         "preferred_passage_ids": preferred_passage_ids,
         "explicit_terms_supplied": bool(raw_terms),
+        "quoted_terms": quoted_terms,
+        "focus_terms": focus_terms,
+        "topic_terms": topic_terms,
     }
 
 
@@ -336,7 +414,20 @@ def query_candidates(
         conditions.append(f"w.canon IN ({placeholders})")
         parameters.extend(route["canons"])
     target_work = WORK_CODES.get(work, work) if work != "auto" else None
-    target_works = [target_work] if target_work else route["target_works"]
+    if target_work and target_work.startswith(("core-", "commentary-", "lineage-")):
+        conditions.append("w.id = ?")
+        parameters.append(target_work)
+        target_works = []
+    else:
+        target_works = [target_work] if target_work else route["target_works"]
+    source_union = (route.get("compare_sources") and work == "auto")
+    if source_union:
+        ids = route.get("title_work_ids", []) + ["core-" + target for target in target_works]
+        if ids:
+            placeholders = ",".join("?" for _ in ids)
+            conditions.append(f"w.id IN ({placeholders})")
+            parameters.extend(ids)
+        target_works = []
     if target_works:
         placeholders = ",".join("?" for _ in target_works)
         conditions.append(
@@ -347,6 +438,13 @@ def query_candidates(
         placeholders = ",".join("?" for _ in route["work_ids"])
         conditions.append(f"w.id IN ({placeholders})")
         parameters.extend(route["work_ids"])
+    for key, operator in (("title_work_ids", "IN"), ("excluded_work_ids", "NOT IN")):
+        if key == "title_work_ids" and source_union:
+            continue
+        if route.get(key):
+            placeholders = ",".join("?" for _ in route[key])
+            conditions.append(f"w.id {operator} ({placeholders})")
+            parameters.extend(route[key])
     if route["authors"]:
         conditions.append("(" + " OR ".join("w.author LIKE ?" for _ in route["authors"]) + ")")
         parameters.extend(f"%{item}%" for item in route["authors"])
@@ -355,8 +453,14 @@ def query_candidates(
         conditions.append(f"w.layer IN ({placeholders})")
         parameters.extend(layers)
     if author:
-        conditions.append("w.author LIKE ?")
-        parameters.append(f"%{author}%")
+        author_route = infer_route(connection, author)
+        if author_route["work_ids"]:
+            placeholders = ",".join("?" for _ in author_route["work_ids"])
+            conditions.append(f"w.id IN ({placeholders})")
+            parameters.extend(author_route["work_ids"])
+        else:
+            conditions.append("w.author LIKE ?")
+            parameters.append(f"%{author}%")
     parameters.append(candidate_limit)
     sql = f"""
         SELECT p.*, w.title, w.author, w.canon, w.layer, w.relationship_json,
@@ -383,6 +487,8 @@ def relaxed_route(route: dict[str, Any]) -> dict[str, Any]:
         "canons": [],
         "work_ids": [],
         "authors": [],
+        "title_work_ids": [],
+        "author_groups": [],
     }
 
 
@@ -414,10 +520,10 @@ def analyze_candidate(
         row["title"] + row["volume"] + row["section"] + row["subsection"] + row["speaker"]
     )
     term_details: list[dict[str, Any]] = []
+    body_tokens = set(bigrams(body))
+    location_tokens = set(bigrams(location_text))
     for term in terms:
         tokens = set(bigrams(term))
-        body_tokens = set(bigrams(body))
-        location_tokens = set(bigrams(location_text))
         exact_body = bool(term and term in body)
         exact_location = bool(term and term in location_text)
         body_coverage = len(tokens & body_tokens) / len(tokens) if tokens else 0.0
@@ -482,12 +588,31 @@ def analyze_candidate(
     reason = fragment_reason(row["text_simplified"])
     if reason:
         score -= 100.0
+    quoted = intent.get("quoted_terms", [])
+    focus = intent.get("focus_terms", [])
+    topics = intent.get("topic_terms", [])
+    quoted_matches = [term for term in quoted if term in body]
+    focus_matches = [term for term in focus if term in body]
+    topic_matches = [term for term in topics if term in body or term in location_text]
     useful = tier in {"A", "B", "C"} and reason is None
+    if quoted and (not quoted_matches or (intent["mode"] != "compare" and len(quoted_matches) != len(quoted))):
+        useful = False
+        reason = reason or "quoted-phrase-not-found"
+    if focus and (not focus_matches or not topic_matches):
+        useful = False
+        reason = reason or "focus-not-supported"
+    score += 120 * len(quoted_matches) + 24 * len(focus_matches) + 12 * len(topic_matches)
+    if quoted_matches or focus_matches:
+        best = {**best, "term": (quoted_matches or focus_matches)[0]}
     return {
         "tier": tier,
         "label": MATCH_TIER_LABELS.get(tier, "弱相关候选"),
         "best_term": best["term"],
         "matched_terms": [item["term"] for item in term_details if item["exact_body"]],
+        "matched_location_terms": [item["term"] for item in term_details if item["exact_location"]],
+        "quoted_matches": quoted_matches,
+        "focus_matches": focus_matches,
+        "quote_context_terms": topics if focus and not quoted else [],
         "coverage": round(float(best["coverage"]), 4),
         "exact_phrase": bool(best["exact_body"]),
         "location_match": bool(best["exact_location"]),
@@ -518,7 +643,8 @@ def score_rows(
 
 
 def has_direct(scored: list[tuple[dict[str, Any], sqlite3.Row]]) -> bool:
-    return any(item[0]["useful"] and item[0]["tier"] in {"A", "B"} for item in scored)
+    return any(item[0]["useful"] and item[0]["tier"] in {"A", "B"}
+               and item[1]["speaker_type"] != "quoted_core" for item in scored)
 
 
 def has_exact_term(scored: list[tuple[dict[str, Any], sqlite3.Row]], term: str) -> bool:
@@ -540,7 +666,7 @@ def has_preferred(
     return any(item[0]["useful"] and item[1]["id"] in preferred_passage_ids for item in scored)
 
 
-def best_sentence(text: str, term: str) -> tuple[str, int, int]:
+def best_sentence(text: str, term: str, companion_terms: list[str] | None = None) -> tuple[str, int, int]:
     if not text:
         return "", 0, 0
     spans = [(match.group(0), match.start(), match.end()) for match in SENTENCE_RE.finditer(text)]
@@ -549,12 +675,13 @@ def best_sentence(text: str, term: str) -> tuple[str, int, int]:
     normalized_term = normalize(term)
     term_tokens = set(bigrams(normalized_term))
 
-    def sentence_score(item: tuple[str, int, int]) -> tuple[int, float, int]:
+    def sentence_score(item: tuple[str, int, int]) -> tuple:
         sentence = normalize(item[0])
         exact = int(bool(normalized_term and normalized_term in sentence))
         tokens = set(bigrams(sentence))
         coverage = len(tokens & term_tokens) / len(term_tokens) if term_tokens else 0.0
-        return exact, coverage, -len(item[0])
+        companion = int(any(word in sentence for word in (companion_terms or [])))
+        return int(exact and companion), companion, exact, coverage, -len(item[0])
 
     sentence, start, end = max(spans, key=sentence_score)
     index = spans.index((sentence, start, end))
@@ -612,7 +739,11 @@ def decorate_payload(
     analysis: dict[str, Any],
 ) -> dict[str, Any]:
     payload = base_row_payload(row)
-    core_quote, quote_start, quote_end = best_sentence(row["text_simplified"], analysis["best_term"])
+    core_quote, quote_start, quote_end = best_sentence(
+        row["text_simplified"], analysis["best_term"], analysis.get("quote_context_terms"))
+    # Strip-aware offsets must identify the actual continuous database substring.
+    quote_start = row["text_simplified"].find(core_quote, quote_start)
+    quote_end = quote_start + len(core_quote)
     payload.update(
         {
             "score": round(float(analysis["score"]), 6),
@@ -630,44 +761,83 @@ def decorate_payload(
     return payload
 
 
+def matches_group(item: Any, analysis: dict[str, Any], group: dict[str, Any]) -> bool:
+    if group.get("work_ids"):
+        return item["work_id"] in group["work_ids"] and (
+            group.get("kind") != "author" or item["speaker_type"] != "quoted_core")
+    return group.get("term") in analysis.get("matched_terms", [])
+
+
+def comparison_groups(connection, route: dict[str, Any], plan: dict[str, Any]) -> list[dict[str, Any]]:
+    groups = [{**group, "kind": "author"} for group in route.get("author_groups", [])]
+    if groups:
+        return groups
+    if plan["intent"]["mode"] != "compare":
+        return []
+    for work_id in route.get("title_work_ids", []):
+        title = connection.execute("SELECT title FROM works WHERE id=?", (work_id,)).fetchone()[0]
+        groups.append({"label": title, "kind": "work", "work_ids": [work_id]})
+    for work in route["target_works"]:
+        title = connection.execute("SELECT title FROM works WHERE id=?", ("core-" + work,)).fetchone()[0]
+        groups.append({"label": title, "kind": "work", "work_ids": ["core-" + work]})
+    if not groups:
+        comparison_terms = (plan["quoted_terms"] or
+                            (plan["focus_terms"] if len(plan["focus_terms"]) > 1 else plan["topic_terms"]))
+        groups = [{"label": term, "kind": "term", "term": term} for term in comparison_terms]
+    return groups
+
+
+def coverage_report(groups, scored, selected) -> list[dict[str, Any]]:
+    return [{**group, "status": (
+        "matched" if any(matches_group(row, analysis, group) for analysis, row in selected) else
+        "not-displayed" if any(analysis["useful"] and matches_group(row, analysis, group)
+                               for analysis, row in scored) else "not-found")}
+            for group in groups]
+
+
 def select_results(
     scored: list[tuple[dict[str, Any], sqlite3.Row]],
     args: argparse.Namespace,
+    groups: list[dict[str, Any]] | None = None,
+    scoped_author: bool = False,
 ) -> tuple[list[tuple[dict[str, Any], sqlite3.Row]], dict[str, int]]:
     selected: list[tuple[dict[str, Any], sqlite3.Row]] = []
     counts = Counter()
-    core_count = 0
-    extension_count = 0
     per_work: Counter[str] = Counter()
-    explicit_author = bool(getattr(args, "author", None))
+    groups = groups or []
+    covered: set[int] = set()
     tier_order = {"A": 0, "B": 1, "C": 2}
-    ranked = sorted(
-        scored,
-        key=lambda item: (
-            0 if item[0].get("preferred_passage") else 1,
-            tier_order.get(item[0]["tier"], 9),
-            0 if item[1]["layer"] == "core" else 1,
-            -item[0]["score"],
-        ),
-    )
-    for analysis, row in ranked:
+    ranked = sorted(scored, key=lambda item: (
+        -len(item[0].get("quoted_matches", [])), -len(item[0].get("focus_matches", [])),
+        0 if item[0].get("preferred_passage") else 1,
+        tier_order.get(item[0]["tier"], 9), 0 if item[1]["layer"] == "core" else 1,
+        -item[0]["score"], item[1]["id"]))
+    commentary_limit = args.limit_commentary
+    if commentary_limit > 0 and len(groups) > 1:
+        commentary_limit = max(commentary_limit, sum(group["kind"] == "author" for group in groups))
+    while ranked and len(selected) < args.limit_total:
+        # Reserve representation for every requested comparison object before filling extras.
+        index = next((i for i, (analysis, row) in enumerate(ranked)
+                      if analysis["useful"] and any(j not in covered and matches_group(row, analysis, group)
+                                                   for j, group in enumerate(groups))), 0)
+        analysis, row = ranked.pop(index)
         if not analysis["useful"]:
             counts["weak_or_fragment"] += 1
             continue
+        if row["speaker_type"] == "quoted_core":
+            counts["quoted_core"] += 1
+            continue
         is_core = row["layer"] == "core"
-        if is_core and core_count >= args.limit_core:
+        layer_count = sum((prior[1]["layer"] == "core") == is_core for prior in selected)
+        if layer_count >= (args.limit_core if is_core else commentary_limit):
             counts["layer_limit"] += 1
             continue
-        if not is_core and extension_count >= args.limit_commentary:
-            counts["layer_limit"] += 1
-            continue
-        if is_core and per_work[row["work_id"]] >= 2:
+        per_work_limit = 2 if is_core or scoped_author or args.author else 1
+        if per_work[row["work_id"]] >= per_work_limit:
             counts["same_work_limit"] += 1
             continue
-        if not is_core and not explicit_author and per_work[row["work_id"]] >= 1:
-            counts["same_work_limit"] += 1
-            continue
-        if any(
+        new_groups = {j for j, group in enumerate(groups) if matches_group(row, analysis, group)} - covered
+        if not new_groups and any(
             jaccard(normalize(prior[1]["text_simplified"]), normalize(row["text_simplified"])) >= 0.90
             for prior in selected
         ):
@@ -675,193 +845,141 @@ def select_results(
             continue
         selected.append((analysis, row))
         per_work[row["work_id"]] += 1
-        core_count += int(is_core)
-        extension_count += int(not is_core)
-        if len(selected) >= args.limit_total:
-            break
-    selected.sort(
-        key=lambda item: (
-            0 if item[0].get("preferred_passage") else 1,
-            tier_order.get(item[0]["tier"], 9),
-            0 if item[1]["layer"] == "core" else 1,
-            -item[0]["score"],
-        )
-    )
+        covered.update(new_groups)
     return selected, dict(counts)
 
 
 def inferred_route_is_active(route: dict[str, Any]) -> bool:
-    return any(route[key] for key in ("target_works", "canons", "work_ids", "authors"))
+    return any(route.get(key) for key in ("target_works", "canons", "work_ids", "authors", "title_work_ids"))
 
 
 def search(connection: sqlite3.Connection, args: argparse.Namespace) -> dict[str, Any]:
     started = time.perf_counter()
     rules = rules_for(args)
     route = infer_route(connection, args.query, rules)
+    if args.author:
+        explicit_route = infer_route(connection, args.author, rules)
+        route["work_ids"] = explicit_route["work_ids"]
+        route["author_groups"] = explicit_route["author_groups"]
+        route["authors"] = []
     plan = build_query_plan(connection, args.query, args.terms, route, rules)
     terms = plan["terms"]
     intent = plan["intent"]
+    route["compare_sources"] = bool(intent["mode"] == "compare" and route["title_work_ids"]
+                                    and route["target_works"] and not route["author_groups"])
     layers = [] if args.layers == "all" else [item.strip() for item in args.layers.split(",") if item.strip()]
+    if not layers and any(cue in normalize(args.query) for cue in ("只看原典", "仅看原典", "只查原典")):
+        layers = ["core"]
     strict_expression = fts_expression(terms)
     broad_expression = fts_expression(terms, broad=True)
     candidate_limit = max(args.candidate_limit, args.limit_total * 20)
 
     preferred_passage_ids = set(plan["preferred_passage_ids"])
-    strict_rows = query_candidates(
-        connection, strict_expression, route, args.canon, args.work, layers, args.author, candidate_limit
-    )
-    scored = score_rows(
-        strict_rows, terms, intent, "all-bigrams", "strict", preferred_passage_ids
-    )
+    groups = comparison_groups(connection, route, plan)
     fts_fallback = False
-    route_fallback = False
-    route_conflict = False
 
-    allow_route_fallback = getattr(args, "route_fallback", True)
-    explicit_filters = args.canon != "auto" or args.work != "auto" or bool(args.author)
-    if (
-        allow_route_fallback
-        and not explicit_filters
-        and inferred_route_is_active(route)
-        and bool(plan["matched_expansions"])
-        and (
-            not has_direct(scored)
-            or bool(
-                plan["matched_expansions"]
-                and terms
-                and not has_exact_term(scored, terms[0])
-            )
-            or bool(
-                intent["mode"] == "quote_lookup"
-                and terms
-                and not has_exact_core(scored, terms[0])
-            )
-            or bool(
-                preferred_passage_ids
-                and not has_preferred(scored, preferred_passage_ids)
-            )
-        )
-        and strict_expression
-    ):
-        fallback_rows = query_candidates(
-            connection,
-            strict_expression,
-            relaxed_route(route),
-            "auto",
-            "auto",
-            layers,
-            None,
-            candidate_limit,
-        )
-        fallback_scored = score_rows(
-            fallback_rows, terms, intent, "all-bigrams", "relaxed", preferred_passage_ids
-        )
-        fallback_is_better = has_direct(fallback_scored) and (
-            not terms
-            or (
-                preferred_passage_ids
-                and has_preferred(fallback_scored, preferred_passage_ids)
-                and not has_preferred(scored, preferred_passage_ids)
-            )
-            or (
-                intent["mode"] == "quote_lookup"
-                and has_exact_core(fallback_scored, terms[0])
-                and not has_exact_core(scored, terms[0])
-            )
-            or (
-                has_exact_term(fallback_scored, terms[0])
-                and not has_exact_term(scored, terms[0])
-            )
-            or not has_direct(scored)
-        )
-        if fallback_is_better:
-            scored = fallback_scored
-            route_fallback = True
-            route_conflict = True
+    def sufficient(items, scoped=True):
+        if scoped and route["target_works"] and not (route["work_ids"] or route["title_work_ids"]):
+            # An associated commentary is not proof that the named original contains a phrase.
+            items = [item for item in items if item[1]["work_id"] in
+                     {"core-" + work for work in route["target_works"]}]
+        if not has_direct(items):
+            return False
+        # A paraphrase's main phrase must be supported; a generic synonym alone
+        # does not establish the remembered wording. Never inspect preferred IDs here.
+        if plan["matched_expansions"] and terms and intent["mode"] != "compare" and not plan["focus_terms"]:
+            return any(a["useful"] and terms[0] in a["matched_terms"] + a["matched_location_terms"]
+                       and r["speaker_type"] != "quoted_core" for a, r in items)
+        return True
 
-    if not has_direct(scored) and broad_expression:
+    def retrieve(active_route, scope, expression, channel, scoped=True):
+        rows = query_candidates(connection, expression, active_route,
+                                args.canon if scoped else "auto", args.work if scoped else "auto",
+                                layers, args.author if scoped else None, candidate_limit)
+        items = score_rows(rows, terms, intent, channel, scope, preferred_passage_ids)
+        if plan["matched_expansions"] and terms and intent["mode"] != "compare" and not plan["focus_terms"]:
+            for analysis, _ in items:
+                if terms[0] not in analysis["matched_terms"] + analysis["matched_location_terms"]:
+                    analysis["useful"] = False
+                    analysis["suppression_reason"] = "main-phrase-not-supported"
+        return items
+
+    def merge(left, right):
+        seen = {row["id"] for _, row in left}
+        return left + [item for item in right if item[1]["id"] not in seen]
+
+    scored = retrieve(route, "strict", strict_expression, "all-bigrams")
+    for term in plan["quoted_terms"] + plan["focus_terms"]:
+        if len(term) >= 2:
+            expression = fts_expression([term])
+            if plan["focus_terms"] and plan["topic_terms"]:
+                expression = "(" + expression + ") AND (" + fts_expression(plan["topic_terms"]) + ")"
+            scored = merge(scored, retrieve(route, "strict", expression, "query-detail"))
+    # Per-object indexed recall prevents a prolific author/work from exhausting the pool.
+    if len(groups) > 1:
+        for group in groups:
+            group_route = route
+            expression = strict_expression
+            if group.get("work_ids"):
+                group_route = {**route, "work_ids": group["work_ids"]}
+            else:
+                expression = fts_expression([group["term"]])
+            scored = merge(scored, retrieve(group_route, "strict", expression, "comparison-object"))
+    if not sufficient(scored) and broad_expression:
         fts_fallback = True
-        active_route = relaxed_route(route) if route_fallback else route
-        broad_rows = query_candidates(
-            connection,
-            broad_expression,
-            active_route,
-            "auto" if route_fallback else args.canon,
-            "auto" if route_fallback else args.work,
-            layers,
-            None if route_fallback else args.author,
-            candidate_limit,
-        )
-        broad_scored = score_rows(
-            broad_rows,
-            terms,
-            intent,
-            "broad-bigrams",
-            "relaxed" if route_fallback else "strict",
-            preferred_passage_ids,
-        )
-        if not any(item[0]["useful"] for item in scored):
-            scored = broad_scored
-        else:
-            seen = {item[1]["id"] for item in scored}
-            scored.extend(item for item in broad_scored if item[1]["id"] not in seen)
-            scored.sort(key=lambda item: (-item[0]["score"], item[1]["work_id"], item[1]["sequence"]))
+        scored = merge(scored, retrieve(route, "strict", broad_expression, "broad-bigrams"))
 
-    if (
-        allow_route_fallback
-        and not explicit_filters
-        and inferred_route_is_active(route)
-        and not route_fallback
-        and not any(item[0]["useful"] for item in scored)
-        and broad_expression
-    ):
-        relaxed_rows = query_candidates(
-            connection,
-            broad_expression,
-            relaxed_route(route),
-            "auto",
-            "auto",
-            layers,
-            None,
-            candidate_limit,
-        )
-        relaxed_scored = score_rows(
-            relaxed_rows, terms, intent, "broad-bigrams", "relaxed", preferred_passage_ids
-        )
-        if any(item[0]["useful"] for item in relaxed_scored):
-            scored = relaxed_scored
-            route_fallback = True
-            route_conflict = True
+    strict_scored = scored
+    alternative_scored = []
+    route_fallback = False
+    explicit_filters = args.canon != "auto" or args.work != "auto" or bool(args.author)
+    can_expand = (getattr(args, "route_fallback", True) and not explicit_filters
+                  and not route.get("hard_scope") and inferred_route_is_active(route))
+    if can_expand and not sufficient(scored):
+        fallback = retrieve(relaxed_route(route), "alternative", strict_expression, "all-bigrams", False)
+        if not sufficient(fallback, False) and broad_expression:
             fts_fallback = True
-
-    if plan["matched_expansions"] and terms and has_exact_term(scored, terms[0]):
-        scored = [
-            item
-            for item in scored
-            if terms[0] in item[0]["matched_terms"]
-            or item[1]["id"] in preferred_passage_ids
-        ]
-    if intent["mode"] == "quote_lookup":
-        scored.sort(
-            key=lambda item: (
-                0 if item[1]["layer"] == "core" else 1,
-                -item[0]["score"],
-                item[1]["work_id"],
-                item[1]["sequence"],
-            )
-        )
-    selected, omitted = select_results(scored, args)
+            fallback = merge(fallback, retrieve(relaxed_route(route), "alternative", broad_expression,
+                                                "broad-bigrams", False))
+        if sufficient(fallback, False):
+            strict_ids = {row["id"] for _, row in scored}
+            alternative_scored = [item for item in fallback if item[1]["id"] not in strict_ids]
+            # Only source-identification questions may promote outside-scope results.
+            if sufficient(alternative_scored, False) and intent["source_lookup"] and intent["mode"] != "compare":
+                scored = alternative_scored
+                route_fallback = True
+    selected, omitted = select_results(scored, args, [] if route_fallback else groups,
+                                       bool(route["author_groups"] or route["title_work_ids"]) and not route_fallback)
+    alternatives, _ = select_results(alternative_scored, args)
+    if route_fallback:
+        alternatives = []
+    coverage = coverage_report(groups, strict_scored, [] if route_fallback else selected)
     if intent["scope_too_broad"] and selected:
         representative = next((item for item in selected if item[1]["layer"] == "core"), selected[0])
         selected = [representative]
         omitted["broad_scope_not_displayed"] = max(0, len(scored) - 1)
     results = [decorate_payload(connection, row, analysis) for analysis, row in selected]
-    recovered_works = list(dict.fromkeys(item["title"] for item in results))
+    alternative_results = [decorate_payload(connection, row, analysis) for analysis, row in alternatives[:2]]
+    recovered_works = list(dict.fromkeys(item["title"] for item in (results if route_fallback else alternative_results)))
     no_results = not results
-    clarification_required = no_results or intent["scope_too_broad"]
+    missing_groups = [group["label"] for group in coverage if group["status"] != "matched"]
+    clarification_required = no_results or intent["scope_too_broad"] or (len(groups) > 1 and bool(missing_groups))
     if no_results:
-        clarification_reason = "no-direct-match"
-        clarification_prompt = "当前工作底本未检得足够直接且可独立理解的材料，请补充书名、原句片段或一个更具体的关键词。"
+        limited = any(a["useful"] and r["speaker_type"] != "quoted_core" for a, r in scored)
+        quoted_only = any(a["useful"] and r["speaker_type"] == "quoted_core" for a, r in strict_scored)
+        clarification_reason = "quoted-core-only" if quoted_only else "no-direct-match"
+        clarification_prompt = ("指定范围仅检得经文转引，尚无足够直接的医家注文。" if quoted_only else
+                                "当前指定范围未检得足够直接且可独立理解的材料，请补充原句片段或具体关键词。")
+        if limited:
+            clarification_reason = "selection-limited"
+            clarification_prompt = "已检得相关材料，但本次条数限制未允许展示；请调整结果条数，不代表未检得。"
+    elif alternative_results and not sufficient(strict_scored):
+        clarification_required = True
+        clarification_reason = "source-not-supported"
+        clarification_prompt = "指定范围的材料尚不足以支持所询原句；范围外结果仅作备选，不能混同来源。"
+    elif missing_groups and len(groups) > 1:
+        clarification_reason = "incomplete-comparison"
+        clarification_prompt = "以下对象尚无可展示的直接材料：" + "、".join(missing_groups) + "；不能据此完成全部比较。"
     elif intent["scope_too_broad"]:
         clarification_reason = "scope-too-broad"
         clarification_prompt = "问题范围较大；以下只给一条代表性材料。继续研读时请限定篇章、概念或医家。"
@@ -877,13 +995,16 @@ def search(connection: sqlite3.Connection, args: argparse.Namespace) -> dict[str
         "route": route,
         "route_resolution": {
             "mode": "relaxed-fallback" if route_fallback else "strict",
-            "conflict_detected": route_conflict,
+            "conflict_detected": route_fallback,
+            "alternatives_available": bool(alternative_results),
+            "hard_scope": bool(route.get("hard_scope") or explicit_filters),
             "requested_aliases": route["matched_aliases"],
-            "recovered_works": recovered_works if route_conflict else [],
+            "recovered_works": recovered_works,
             "message": (
-                "按用户所述书名或医家未检得高质量直接命中，已放宽范围；回答时必须明确提示可能记混。"
-                if route_conflict
-                else ""
+                "指定范围未检得所询内容的足够直接支持；范围外检得" + "、".join(recovered_works)
+                + ("，以下作为出处核对结果，不归属于原指定来源。" if route_fallback else
+                   "，仅列为备选，不代表指定医家的观点。")
+                if recovered_works else ""
             ),
         },
         "needs_clarification": {
@@ -896,6 +1017,8 @@ def search(connection: sqlite3.Connection, args: argparse.Namespace) -> dict[str
             "displayed_results": len(results),
             "omitted_candidates": omitted,
         },
+        "scope_coverage": coverage,
+        "alternative_results": alternative_results,
         "fts_fallback_used": fts_fallback,
         "database_build_status": metadata.get("build_status"),
         "quarantined_passages_excluded": int(metadata.get("quarantined_passages_excluded", 0)),

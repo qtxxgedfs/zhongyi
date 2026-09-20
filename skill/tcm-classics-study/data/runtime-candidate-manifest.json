@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "project_version": "1.1.0",
+  "project_version": "1.1.1",
   "status": "candidate-runnable",
   "release_gate_status": "blocked",
   "citable_corpus_status": "pass",
@@ -11,13 +11,13 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha256": "40c7e3117fc032a606bea409f053faf090d99588ff55b5918078448d9782ac20",
-      "size_bytes": 5308
+      "sha256": "c28afb129e5ebbe0a30cbfd9133a00675fdce9c7b9c593d7a18dfc7ad54e6585",
+      "size_bytes": 6936
     },
     {
       "path": "USER_GUIDE.md",
-      "sha256": "fa7ddbfe9fd0f750a5294bceccfae4ce989e5aff21f905b9bf8f8b0bf5ae539e",
-      "size_bytes": 10827
+      "sha256": "43f2583ed267681cdf962baf7c92a78169da0025799ea4e24ba2f5cc5dfab4eb",
+      "size_bytes": 11597
     },
     {
       "path": "NOTICE.md",
@@ -26,8 +26,8 @@
     },
     {
       "path": "scripts/search.py",
-      "sha256": "561d68ad2c606de4ab5f3258dcc29c8690ca8142a5806106f579c8483232350e",
-      "size_bytes": 41626
+      "sha256": "d632ac7e3da0dbc36224ebf524117bb0a9d81dceec4c56d4d2bcea26ebd0375b",
+      "size_bytes": 54186
     },
     {
       "path": "scripts/modern_evidence.py",
@@ -36,27 +36,27 @@
     },
     {
       "path": "scripts/study.py",
-      "sha256": "939b58ed1ec6afe5553b61b34e0badbc0910da692c832a5d0f25273bb57d0c48",
-      "size_bytes": 14918
+      "sha256": "27496dde67c365543556e8c736bc1aeed43041cb98d328acb673957a7ddb5ff5",
+      "size_bytes": 18497
     },
     {
       "path": "scripts/render.py",
-      "sha256": "9aeb9660327f6b34f1b03a32003c37914599d84be8502cb2f092b7ee17cb1b4f",
-      "size_bytes": 15267
+      "sha256": "67c207bc5c60ebcefa6d4f9045691288edf4391cc63acbf4722f5a9e3ab3bc82",
+      "size_bytes": 17979
     },
     {
       "path": "scripts/self_check.py",
-      "sha256": "4a72a459a80c94729787939ff72da3997e77cad53ba7976e5b5bcf033d448e7d",
-      "size_bytes": 10537
+      "sha256": "41ff8438906a2f56b710519b437c5dd0e1890c6adebee564083459263686e63f",
+      "size_bytes": 11181
     },
     {
       "path": "references/answer-policy.md",
-      "sha256": "6f1aa33b1e8e8adea8eccba8dabc87e661b01bba9bf3598508196b62ad89cfc4",
-      "size_bytes": 4052
+      "sha256": "23edacf97948de38947a3a88ec9622ba86966dac0b3cb72d7f24420d40f85d35",
+      "size_bytes": 5592
     },
     {
       "path": "references/modern-evidence-policy.md",
-      "sha256": "3ed4d6c67516d9eedbe0ba9a17f5b4fc024be37cdae7887ab98a3b0efc305610",
+      "sha256": "8c18b143ebe40ee228816e87d36a6726626c2e8cce247100f60cd1c71bab711c",
       "size_bytes": 2052
     },
     {
@@ -81,8 +81,8 @@
     },
     {
       "path": "data/query-rules.json",
-      "sha256": "71bf84b11bd0b4f1940a104d7d55c677c4ae673edf39bac100094de1105771f7",
-      "size_bytes": 10146
+      "sha256": "cba21b639ac00b80c7e5838680ace1ba9d56d242649330f148ea8fd32ab65873",
+      "size_bytes": 10913
     },
     {
       "path": "data/evidence-cache.sqlite",

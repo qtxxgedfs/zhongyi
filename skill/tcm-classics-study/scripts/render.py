@@ -11,6 +11,19 @@ from pathlib import Path
 from typing import Any
 
 
+RELATION_LABELS = {
+    "direct_commentary": "直接注释", "textual_collation": "校勘辨析",
+    "reordering": "重订编次", "classification": "分类整理",
+    "theoretical_extension": "理论发挥", "clinical_extension": "临床阐发",
+    "disagreement": "作品含辨析或分歧（不代表本段已有分歧）",
+    "lineage_predecessor": "前导学术源流（非后世注家）",
+}
+
+
+def relation_labels(item: dict[str, Any]) -> str:
+    return "、".join(RELATION_LABELS.get(label, label) for label in item.get("relationship", []))
+
+
 def clean_inline(value: str) -> str:
     return " ".join(value.replace("\x00", "").split())
 
@@ -25,6 +38,7 @@ def quote_markdown(value: str) -> str:
 
 
 def conclusion(packet: dict[str, Any]) -> str:
+    """A deterministic reading notice, not an AI-generated topic conclusion."""
     level = packet["classification"]["level"]
     if level == "M3":
         return packet["safety_first"]["message"]
@@ -32,7 +46,7 @@ def conclusion(packet: dict[str, Any]) -> str:
         return "以下将古籍记载与现代疗效或安全证据严格分开；内容用于研读，不构成个体诊疗或用药建议。"
     if level == "M1":
         return "古典理论与现代医学概念通常不能直接等同；以下先列工作底本文献，再说明可核验的对应边界。"
-    return "以下只列当前工作底本中足够直接的材料；未为凑数加入弱相关段落。"
+    return "以下为本次检得的材料预览，不是已完成的白话研读；主旨、逐句解释和关键词由宿主依据引文另行组织。"
 
 
 def route_notice(packet: dict[str, Any]) -> str:
@@ -65,8 +79,10 @@ def markdown_item(item: dict[str, Any], label: str) -> list[str]:
                 "",
             ]
         )
-    if label == "医家" and item.get("relationship"):
-        lines.extend([f"**材料关系：** {'、'.join(item['relationship'])}  "])
+    if item.get("layer") != "core" and item.get("relationship"):
+        lines.extend([f"**材料关系：** {relation_labels(item)}  "])
+    if item.get("speaker_type") == "quoted_core":
+        lines.extend(["**材料性质：** 注书转引经文，不作为医家的独立观点。  "])
     if author:
         lines.extend([f"**作者/题署：** {author}  "])
     if speaker:
@@ -115,19 +131,30 @@ def render_markdown(packet: dict[str, Any]) -> str:
     clarify = clarification(packet)
     if clarify:
         lines.extend(["## 范围提示", "", clarify, ""])
-    lines.extend(["## 一句话主旨", "", conclusion(packet), "", "---", "", "## 🟩 A｜原典", ""])
+    lines.extend(["## 材料预览说明", "", conclusion(packet), ""])
     if packet["A_core"]:
+        lines.extend(["---", "", "## 🟩 A｜原典", ""])
         for item in packet["A_core"]:
             lines.extend(markdown_item(item, "原典"))
     elif packet["safety_first"]["classic_retrieval_deferred"]:
         lines.extend(["急症风险问题已暂缓古籍检索；处理现实安全后，才可另作纯文献研读。", ""])
-    else:
-        lines.extend(["当前所收工作底本未检得足够直接且可独立理解的原典材料。", ""])
+    elif not packet["B_physicians"] and not clarify:
+        lines.extend(["本次没有可展示的指定范围材料，请补充范围或原句。", ""])
 
     if packet["B_physicians"]:
         lines.extend(["---", "", "## 🟧 B｜历代医家", ""])
         for item in packet["B_physicians"]:
             lines.extend(markdown_item(item, "医家"))
+
+    if packet.get("source_alternatives"):
+        lines.extend(["---", "", "## 范围外备选｜不代表指定医家的观点", ""])
+        for item in packet["source_alternatives"]:
+            lines.extend(markdown_item(item, "备选材料"))
+    omitted = packet.get("classic_search", {}).get("quality_policy", {}).get("budget_omitted", [])
+    if omitted:
+        lines.extend(["### 已检得但因预算未展示", "",
+                      "、".join(f"`{item['id']}`（{item['characters']}字）" for item in omitted),
+                      "", "可增加字符预算后按ID读取；这不表示未检得。", ""])
 
     modern = packet["C_modern"]
     if modern["required"]:
@@ -194,8 +221,12 @@ def classic_html(items: list[dict[str, Any]], empty: str) -> str:
             )
         if item.get("relationship") and item.get("layer") != "core":
             metadata.append(
-                f"<p><strong>材料关系：</strong>{html.escape('、'.join(item['relationship']))}</p>"
+                f"<p><strong>材料关系：</strong>{html.escape(relation_labels(item))}</p>"
             )
+        if item.get("speaker_type") == "quoted_core":
+            metadata.append("<p><strong>材料性质：</strong>注书转引经文，不作为医家的独立观点。</p>")
+        if item.get("speaker"):
+            metadata.append(f"<p><strong>本段说话者：</strong>{html.escape(item['speaker'])}</p>")
         full_text = ""
         if item.get("full_text_available"):
             full_text = (
@@ -206,14 +237,14 @@ def classic_html(items: list[dict[str, Any]], empty: str) -> str:
         output.append(
             "<article>"
             f"<h3>{html.escape(clean_inline(item['title']))}</h3>"
-            + "".join(metadata)
             + f"<p><strong>核心引文：</strong></p><blockquote>{html.escape(core_quote)}</blockquote>"
             + full_text
+            + "<details><summary>出处与材料信息</summary>" + "".join(metadata)
             + f"<p><strong>作者/题署：</strong>{html.escape(clean_inline(item.get('author', '')))}</p>"
             f"<p><strong>出处：</strong>{html.escape(location(item))}</p>"
             f"<p class=\"source\"><strong>段落ID：</strong>{html.escape(item['id'])}；"
             f"<a href=\"{html.escape(item['fixed_source_url'], quote=True)}\">固定修订 oldid={item['source_revision_id']}</a></p>"
-            "</article>"
+            "</details></article>"
         )
     return "".join(output)
 
@@ -254,11 +285,23 @@ def render_html(packet: dict[str, Any]) -> str:
     clarify = clarification(packet)
     if clarify:
         cards.append(card_html("范围提示", "notice", f"<p>{html.escape(clarify)}</p>"))
-    cards.append(card_html("一句话主旨", "summary", f"<p>{html.escape(conclusion(packet))}</p>"))
-    core_empty = "急症风险问题已暂缓古籍检索。" if packet["safety_first"]["classic_retrieval_deferred"] else "当前所收工作底本未检得足够直接且可独立理解的原典材料。"
-    cards.append(card_html("🟩 A｜原典", "core", classic_html(packet["A_core"], core_empty)))
+    cards.append(card_html("材料预览说明", "summary", f"<p>{html.escape(conclusion(packet))}</p>"))
+    if packet["A_core"]:
+        cards.append(card_html("🟩 A｜原典", "core", classic_html(packet["A_core"], "")))
+    elif packet["safety_first"]["classic_retrieval_deferred"]:
+        cards.append(card_html("古籍检索状态", "notice", "<p>急症风险问题已暂缓古籍检索。</p>"))
+    elif not packet["B_physicians"] and not clarify:
+        cards.append(card_html("检索状态", "notice", "<p>本次没有可展示的指定范围材料，请补充范围或原句。</p>"))
     if packet["B_physicians"]:
         cards.append(card_html("🟧 B｜历代医家", "physicians", classic_html(packet["B_physicians"], "")))
+    if packet.get("source_alternatives"):
+        cards.append(card_html("范围外备选｜不代表指定医家的观点", "notice",
+                               classic_html(packet["source_alternatives"], "")))
+    omitted = packet.get("classic_search", {}).get("quality_policy", {}).get("budget_omitted", [])
+    if omitted:
+        text = "、".join(f"{item['id']}（{item['characters']}字）" for item in omitted)
+        cards.append(card_html("已检得但因预算未展示", "notice",
+                               f"<p>{html.escape(text)}</p><p>可增加字符预算后按ID读取；这不表示未检得。</p>"))
     if packet["C_modern"]["required"]:
         cards.append(
             card_html(

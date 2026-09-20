@@ -4,14 +4,14 @@
 
 ## 当前状态
 
-- **代码版本：`1.1.0`**，版本规则与历史见 `VERSION` 和 `CHANGELOG.md`；当前维护交接见 `docs/HANDOFF_1.1.0.md`。
+- **代码版本：`1.1.1`**，版本规则与历史见 `VERSION` 和 `CHANGELOG.md`；当前维护交接见 `docs/HANDOFF_1.1.1.md`，精修验证见 `docs/1.1.1-refinement-report.md`。
 - **Phase 0：已完成**，见 `docs/phase0-summary.md`。
 - **Phase 1 构建流水线：已完成；发布质量闸门：未通过**，见 `docs/phase1-summary.md` 和 `docs/phase1-quality-report.md`。
 - **Phase 2 索引与检索：已完成候选版**，已生成可审计的本地 SQLite FTS5 索引和检索 CLI。
 - **Phase 3 现代医学证据层：已完成首个可运行版**，见 `docs/phase3-modern-evidence-report.md`。
 - **Phase 4 回答与渲染：已完成**，单调用研究包可输出可访问 Markdown 或自包含 HTML。
 - **Phase 5 功能验收：已通过**，150题、280/280项检查通过；候选包可用构建脚本生成到 `dist/`。
-- **Phase 6 自然问法与结果可用性：已通过**，60题单轮自然问法首条可接受率50/50，10组连续追问锚点10/10；见 `docs/phase6-usability-report.md`。
+- **Phase 6 自然问法与结果可用性：已通过**，60题单轮自然问法主结果/备选首条可接受率50/50，范围行为60/60，10组连续追问锚点10/10；见 `docs/phase6-usability-report.md`。
 - **Phase 7 第二见证试校：已完成代表篇章和CText少量人工参考**，尚未完成五部核心全量校勘；见 `docs/phase7-second-witness-pilot-report.md` 和 `docs/phase7-ctext-lingshu-reference-report.md`。
 - 已固定26种作品、973个页面修订，938页进入语料；共54,088条结构化段落，其中53,800条可引用、288条隔离（另丢弃3条纯标点格式碎片）。
 - 原始哈希和结构完整性检查通过；可引用语料未解字为零，清洗状态为 `pass-with-quarantine`；《温病条辨》两个影像确认缺字已受控修订并解除隔离。
@@ -37,7 +37,7 @@
 - `build/classics-index-manifest.json`：数据库哈希、输入哈希、计数和索引算法
 - `skill/tcm-classics-study/data/classics.sqlite`：已装入Skill的候选经典索引
 - `skill/tcm-classics-study/data/query-rules.json`：自然问法清理、口语扩展和代表段落规则
-- `skill/tcm-classics-study/scripts/search.py`：精确/关键词/宽松召回、质量重排、软回退、段落读取、上下文和目录 CLI
+- `skill/tcm-classics-study/scripts/search.py`：范围优先的精确/关键词/宽松召回、逐对象比较、单列范围外备选、出处核对软回退、段落读取、上下文和目录 CLI
 - `skill/tcm-classics-study/data/evidence-cache.sqlite`：25个主题、6条完整页面核验记录的现代证据种子缓存
 - `skill/tcm-classics-study/scripts/modern_evidence.py`：M0—M3分类、缓存读取、联网计划和来源检查
 - `skill/tcm-classics-study/scripts/study.py`：首选单调用入口，生成统一标准研读协议的A/B/C分层研究包
@@ -91,7 +91,7 @@ python skill/tcm-classics-study/scripts/render.py \
 python skill/tcm-classics-study/scripts/self_check.py
 ```
 
-性能和召回结果见 `docs/phase2-index-report.md`，现代证据层见 `docs/phase3-modern-evidence-report.md`，自然问法可用性见 `docs/phase6-usability-report.md`，安装、升级和回滚见 `docs/INSTALL.md`。当前47项自动测试全部通过；固定验收集150题、280/280项检查通过，自然问法与连续追问验收全部通过。
+性能和召回结果见 `docs/phase2-index-report.md`，现代证据层见 `docs/phase3-modern-evidence-report.md`，自然问法可用性见 `docs/phase6-usability-report.md`，安装、升级和回滚见 `docs/INSTALL.md`。当前70项自动测试全部通过（含22项范围、比较、预算与展示精修回归）；固定验收集150题、280/280项检查通过，自然问法与连续追问验收全部通过。
 
 构建并解压自检候选包：
 

@@ -67,6 +67,17 @@ def check_study_and_render(errors: list[str]) -> tuple[bool, bool, bool]:
         )
         if not study_smoke:
             errors.append("study-packet-smoke-failed")
+        physician = run_json_script("study.py", "--query", "成无己如何解释桂枝汤原文")
+        physician_ok = (
+            physician.get("classic_search", {}).get("route_resolution", {}).get("mode") == "strict"
+            and not physician.get("source_alternatives")
+            and physician.get("answer_contract", {}).get("primary_passage_id")
+                == "COMMENTARY-SHANGHAN-CHENGWUJI-000118"
+            and all(item["author"] == "成无己" for item in physician.get("B_physicians", []))
+        )
+        if not physician_ok:
+            study_smoke = False
+            errors.append("named-physician-scope-failed")
 
         with tempfile.TemporaryDirectory() as directory:
             packet_path = Path(directory) / "packet.json"
